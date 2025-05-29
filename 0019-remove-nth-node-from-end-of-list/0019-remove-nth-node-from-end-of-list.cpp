@@ -25,6 +25,7 @@ public:
             delete old;
            
         }
+        else{
         ListNode* tempItr = head; 
         int it = 0 ; 
         while(tempItr){
@@ -40,7 +41,7 @@ public:
             it++;
         }
 
-        
+        }   
         return head ; 
         }
     
