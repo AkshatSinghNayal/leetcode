@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0141-linked-list-cycle](https://github.com/AkshatSinghNayal/leetcode/tree/master/0141-linked-list-cycle) |
 | [0148-sort-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0148-sort-list) |
 | [0234-palindrome-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0234-palindrome-linked-list) |
@@ -47,4 +48,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0148-sort-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0148-sort-list) |
+## Array
+|  |
+| ------- |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 <!---LeetCode Topics End-->
