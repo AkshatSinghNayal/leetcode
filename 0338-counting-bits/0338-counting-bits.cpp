@@ -1,16 +1,17 @@
 class Solution {
 public:
     vector<int> countBits(int n) {
-        vector<int> ans; 
-        for(int i = 0 ; i<= n ; i++){
-            int count = 0 ; 
-             int j = i ; 
-            while(j!=0){
-                count++;
-                j = j&(j-1);
-            }
-            ans.push_back(count);
+        vector<int> setBits(n+1);
+        setBits[0] = 0;
+
+        for(int i=1; i<=n; i++){
+            // if i is even, the LSB is 0, then right shifting by 1 won't lose any 1s
+            // if i is odd, the LSB is 1, then right shifting by 1 would lose a 1
+            // (right shifting by 1 is like dividing by 2)
+            // LSB - Least significant bit
+            setBits[i] = setBits[i/2] + i%2;
         }
-        return ans;
+
+        return setBits;
     }
 };
