@@ -1,17 +1,29 @@
 class Solution {
 public:
     vector<int> countBits(int n) {
-        vector<int> setBits(n+1);
-        setBits[0] = 0;
+        vector<int> ans;
 
-        for(int i=1; i<=n; i++){
-            // if i is even, the LSB is 0, then right shifting by 1 won't lose any 1s
-            // if i is odd, the LSB is 1, then right shifting by 1 would lose a 1
-            // (right shifting by 1 is like dividing by 2)
-            // LSB - Least significant bit
-            setBits[i] = setBits[i/2] + i%2;
+        //iterating from 0 to n 
+        for (int i = 0; i <= n; i++)
+        {
+            //sum is initialised as 0
+            int sum = 0;
+            int num = i;
+            
+            //while num not equals to zero
+            while (num != 0)
+            {//we have to count 1's in binary representation of i, therefor % 2
+            
+                sum += num&1;
+                num = num>>1;
+            }
+            //add sum to ans vector
+            ans.push_back(sum);
+
+
+
         }
+    return ans;
 
-        return setBits;
     }
 };
