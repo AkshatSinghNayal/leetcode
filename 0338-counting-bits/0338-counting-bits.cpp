@@ -1,29 +1,13 @@
 class Solution {
 public:
     vector<int> countBits(int n) {
-        vector<int> ans;
+        vector<int> ans(n + 1);
+        ans[0] = 0; // 0 has no set bits
 
-        //iterating from 0 to n 
-        for (int i = 0; i <= n; i++)
-        {
-            //sum is initialised as 0
-            int sum = 0;
-            int num = i;
-            
-            //while num not equals to zero
-            while (num != 0)
-            {//we have to count 1's in binary representation of i, therefor % 2
-            
-                sum += num&1;
-                num = num>>1;
-            }
-            //add sum to ans vector
-            ans.push_back(sum);
-
-
-
+        for (int i = 1; i <= n; i++) {
+            ans[i] = ans[i >> 1] + (i & 1);
         }
-    return ans;
 
+        return ans;
     }
 };
