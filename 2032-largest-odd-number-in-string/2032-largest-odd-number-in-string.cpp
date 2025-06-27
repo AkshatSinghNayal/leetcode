@@ -11,7 +11,6 @@ public:
             }
             
         }
-        num.resize(n);
-        return num;
+       return num.substr(0,n);
     }
 };
