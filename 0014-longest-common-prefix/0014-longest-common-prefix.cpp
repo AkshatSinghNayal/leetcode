@@ -1,28 +1,26 @@
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& s) {
-        int n = s[0].size();
-        int m = s.size();
-        int tempcount = 0 ; 
-        string result="" ;
-        for(int i= 0; i<n ; i++){
-            char sample=s[0][i];
-            for(int j= 0; j<m; j++){
-                if( s[j][i] == sample){
-                   
-                   tempcount++;
+        if (s.empty()) return "";
+
+        string result = "";
+
+        // Loop over each character index of the first string
+        for (int i = 0; i < s[0].size(); i++) {
+            char currentChar = s[0][i];
+
+            // Compare currentChar with the i-th character of all other strings
+            for (int j = 1; j < s.size(); j++) {
+                // Check if index i is valid and characters match
+                if (i >= s[j].size() || s[j][i] != currentChar) {
+                    return result;  // Mismatch or end of one string — return answer
                 }
-                else{
-                    return result ;
-                }
-                if(tempcount==m){
-                    result+=sample;
-                    tempcount=0;
-                }
-                
             }
+
+            // If all strings matched at this index, add the character
+            result += currentChar;
         }
-        return result ;
-        
+
+        return result;
     }
 };
