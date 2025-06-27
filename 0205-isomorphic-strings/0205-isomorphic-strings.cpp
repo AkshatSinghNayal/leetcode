@@ -11,8 +11,8 @@ public:
             if(ans1[s[i]] != ans2[t[i]]){
                 return false;
             }
-            ans1[s[i]]=i+1;
-            ans2[t[i]]=i+1;
+            ans1[s[i]]=i+11;
+            ans2[t[i]]=i+11;
         }
         return true;
     }
