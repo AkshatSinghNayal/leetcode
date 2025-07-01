@@ -10,11 +10,15 @@ public:
             if (nums[mid] == target)
                 return true;
             
-            if (nums[low] == nums[mid] && nums[mid] == nums[high]) {
-    low++;
-    high--;
-    continue; // \U0001f501 prevent invalid logic checks below
-}
+            if (nums[low] == nums[high]) {
+                if (nums[low] == target)
+                    return true;
+                else {
+                    low++;
+                    high--;
+                    continue;
+                }
+            }
 
             if (nums[low] <= nums[mid]) {
                 if (nums[low] <= target && target < nums[mid]) {
