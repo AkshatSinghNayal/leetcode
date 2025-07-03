@@ -1,0 +1,50 @@
+class Solution {
+public:
+
+    bool canMakeB(vector<int>& b , int mid , int k , int m){
+        if((long long)m*k>b.size()) return false;
+        int totalB=0;
+        int flowersUsed =0  ;
+        int kth = k;
+        for(int i = 0 ; i<b.size() ; i++){
+           if(b[i]<=mid && k>0){
+            flowersUsed++;
+            k--;
+            if(flowersUsed==kth){
+                totalB++;
+                k=kth;
+                flowersUsed=0;
+            }
+            
+           }else{
+               if(b[i]<=mid){
+                k=kth-1;
+                flowersUsed=1;
+                totalB++;
+              }else{
+                k=kth;
+                flowersUsed=0;
+              }
+           }
+        }
+        return totalB>=m;
+    }
+
+    int minDays(vector<int>& b, int m, int k) {
+        int low = *min_element(b.begin(),b.end());
+        int high = *max_element(b.begin(),b.end());
+        int mid ; int ans= -1;
+        while(low<=high){
+            mid= low+(high-low)/2; 
+            if(canMakeB(b , mid , k , m)){
+                ans=mid;
+                high=mid-1;
+            }
+            else{
+                low=mid+1;
+            }
+        }
+        return ans;
+
+    }
+};
