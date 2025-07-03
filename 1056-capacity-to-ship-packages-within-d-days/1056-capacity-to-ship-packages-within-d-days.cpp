@@ -11,6 +11,7 @@ public:
             else{
                 totalDaysValid++;
                 totalWeight=w[i];
+                 if (totalDaysValid > days) return false;
             }
         }
         return totalDaysValid<=days;
