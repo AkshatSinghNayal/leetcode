@@ -3,29 +3,20 @@ public:
 
     bool canMakeB(vector<int>& b , int mid , int k , int m){
         if((long long)m*k>b.size()) return false;
-        int totalB=0;
-        int flowersUsed =0  ;
-        int kth = k;
+       int flowersUsed = 0;
+       int totalB=0;
         for(int i = 0 ; i<b.size() ; i++){
-           if(b[i]<=mid && k>0){
+           if(b[i]<=mid){
             flowersUsed++;
-            k--;
-            if(flowersUsed==kth){
+            if(flowersUsed==k){
+                flowersUsed = 0; 
                 totalB++;
-                k=kth;
-                flowersUsed=0;
             }
-            
-           }else{
-               if(b[i]<=mid){
-                k=kth-1;
-                flowersUsed=1;
-                totalB++;
-              }else{
-                k=kth;
-                flowersUsed=0;
-              }
            }
+           else{
+            flowersUsed = 0;
+           }
+           
         }
         return totalB>=m;
     }
