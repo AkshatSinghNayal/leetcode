@@ -1,17 +1,13 @@
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
-        int ones = 0, twos = 0;
+        int one =0 ; int two= 0 ; 
+       for( int i = 0  ; i<nums.size() ; i++){
+        one = (one^nums[i])& ~two;
+         two= (two^nums[i])& ~one;
 
-        for (auto num : nums) {
-            // Update `ones` to include current number's bits that are not in `twos`
-            ones = (ones ^ num) & ~twos;
+       }
+    return one ;
 
-            // Update `twos` to include current number's bits that are not in `ones`
-            twos = (twos ^ num) & ~ones;
-        }
-
-        // `ones` contains the single number that appears only once
-        return ones;
     }
 };
