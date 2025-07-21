@@ -7,7 +7,7 @@ public:
         }
 
         // Get rightmost set bit (the bit where the two unique numbers differ)
- int differenceCreator = xORR & -(unsigned int)xORR;
+ int differenceCreator = xORR & -(long long)xORR;
 
         int bucket1 = 0, bucket2 = 0;
         for (int num : nums) {
