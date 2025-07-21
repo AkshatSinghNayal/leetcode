@@ -85,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0026-remove-duplicates-from-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0033-search-in-rotated-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0075-sort-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/0075-sort-colors) |
+| [0078-subsets](https://github.com/AkshatSinghNayal/leetcode/tree/master/0078-subsets) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0162-find-peak-element](https://github.com/AkshatSinghNayal/leetcode/tree/master/0162-find-peak-element) |
 | [0169-majority-element](https://github.com/AkshatSinghNayal/leetcode/tree/master/0169-majority-element) |
@@ -121,6 +122,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0078-subsets](https://github.com/AkshatSinghNayal/leetcode/tree/master/0078-subsets) |
 | [0231-power-of-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0231-power-of-two) |
 | [0268-missing-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0268-missing-number) |
 | [0338-counting-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0338-counting-bits) |
@@ -154,4 +156,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0451-sort-characters-by-frequency](https://github.com/AkshatSinghNayal/leetcode/tree/master/0451-sort-characters-by-frequency) |
+## Backtracking
+|  |
+| ------- |
+| [0078-subsets](https://github.com/AkshatSinghNayal/leetcode/tree/master/0078-subsets) |
 <!---LeetCode Topics End-->
