@@ -1,22 +1,23 @@
 class Solution {
 public:
     vector<int> singleNumber(vector<int>& nums) {
-        unordered_map<int,int> mp ;
-        for ( int i = 0 ; i<nums.size() ; i++){
-            mp[nums[i]]++;
+        int xORR = 0;  // XOR of the two unique numbers
+        for (int num : nums) {
+            xORR ^= num;
         }
-        int ans; int check = 1; 
-        for(auto it : mp ){
-            if(it.second == 1 ){
-                if(check ==1 ){
-                    ans = it.first ; 
-                    check++;
-                }else{
-                    return {ans , it.first};
-                }
-                
+
+        // Get rightmost set bit (the bit where the two unique numbers differ)
+ int differenceCreator = xORR & -(unsigned int)xORR;
+
+        int bucket1 = 0, bucket2 = 0;
+        for (int num : nums) {
+            if ((num & differenceCreator) != 0) {
+                bucket1 ^= num;
+            } else {
+                bucket2 ^= num;
             }
         }
-        return {0,0};
+
+        return {bucket1, bucket2};
     }
 };
