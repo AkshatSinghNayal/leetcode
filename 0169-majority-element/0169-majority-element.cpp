@@ -1,22 +1,17 @@
 class Solution {
 public:
-    int majorityElement(vector<int>& v) {
-       int n = v.size();
-
-    for (int i = 0; i < n; i++) {
-        //selected element is v[i]
-        int cnt = 0;
-        for (int j = 0; j < n; j++) {
-            // counting the frequency of v[i]
-            if (v[i] == v[j]) {
-                cnt++;
-            }
+    int majorityElement(vector<int>& nums) {
+        unordered_map<int,int> mp ; 
+        int n = nums.size();
+        for(auto it : nums){
+            mp[it]++;
         }
 
-        // check if frquency is greater than n/2:
-        if (cnt > (n / 2))
-            return v[i];
-    }
-    return -1;
+        for( auto it : mp){
+            if((it.second)>(n/2)){
+                return it.first;
+            }
+        }
+        return -1;
     }
 };
