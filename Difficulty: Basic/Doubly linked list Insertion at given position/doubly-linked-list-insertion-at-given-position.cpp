@@ -12,28 +12,26 @@ class Solution {
   public:
     // Function to insert a new node at given position in doubly linked list.
     Node *addNode(Node *head, int pos, int data) {
-       
+        
+        
+        
+        int count = 0 ; 
+        Node* temp = head ; 
+        while(temp && count< pos){
+            temp=temp->next ; 
+            count++; 
+        }
+        
         Node* newNode = new Node(data);
-       int i = 0 ; 
-       Node* temp = head ; 
-       
-       while( temp && i < pos){
-           temp = temp->next; 
-           i++;
-       }
-           if (temp == nullptr && i != pos) {
-            return head;
-        }
-        Node* after = temp->next;
-        temp->next = newNode ;
+        newNode->next = temp->next; 
         newNode->prev = temp;
+
+        if (temp->next != nullptr)        // Step 3: if not inserting at end
+            temp->next->prev = newNode;
+
+        temp->next = newNode;             
         
-        if(after!=nullptr){
-            newNode->next = after ; 
-            after->prev=newNode;
-        }
+        return head; 
         
-        
-        return head;
     }
 };
