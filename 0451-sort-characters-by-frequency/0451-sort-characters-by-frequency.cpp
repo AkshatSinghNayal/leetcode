@@ -1,28 +1,20 @@
-
 class Solution {
 public:
     string frequencySort(string s) {
-        // Step 1: Count frequency of each character
-        map<char, int> mp;
-        for (char ch : s) {
-            mp[ch]++;
+       map<char , int , greater<int>> mp ; 
+        for(auto it : s){
+            mp[it]++; 
         }
-
-        // Step 2: Create a vector of pairs to sort by frequency
-        vector<pair<int, char>> freq;
-        for (auto& it : mp) {
-            freq.push_back({it.second, it.first});
+        vector<pair<int,char>> freq ;
+        for(auto it : mp){
+            freq.push_back({it.second,it.first});
         }
-
-        // Step 3: Sort the vector by frequency in descending order
-        sort(freq.rbegin(), freq.rend());
-
-        // Step 4: Build the result string
-        string result;
-        for (auto& it : freq) {
-            result.append(it.first, it.second);
+        sort(freq.rbegin(),freq.rend());
+       
+        string result="";
+        for(auto it : freq){
+            result+=string(it.first,it.second);
         }
-
         return result;
     }
 };
