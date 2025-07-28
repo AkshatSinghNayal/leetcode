@@ -1,15 +1,12 @@
 class Solution {
 public:
     bool isAnagram(string s, string t) {
-        if(s.size()!=t.size()) return false ; 
-        vector<int>mp1(256,0);
-        vector<int>mp2(256,0);
+        sort(s.begin(),s.end());
+        sort(t.begin(),t.end());
+        if(s.size() != t.size()) return false ; 
 
-        for(int i = 0 ; i<s.size(); i++){
-            mp1[s[i]]++;
-            mp2[t[i]]++;
-        }
-        if(mp1 == mp2) return true;
+        if(s==t)return true; 
         return false;
-    }
+
+    }          
 };
