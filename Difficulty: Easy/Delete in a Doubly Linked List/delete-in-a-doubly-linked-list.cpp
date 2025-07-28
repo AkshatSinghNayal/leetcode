@@ -17,30 +17,35 @@ class Solution {
   public:
     // Function to delete a node at given position.
     Node* deleteNode(Node* head, int x) {
-        
-        Node* temp = head ; 
-        int i = 0; 
-        if( x == 1 ){
-            Node* del = head ; 
-            head= head->next ; 
-            if(head) head->prev= nullptr ; 
-            delete(del);
-            return head ; 
-        }
-        while(temp && i<(x-1)){
-            i++; 
-            temp = temp->next ; 
-        }
-        
-        if( temp == nullptr) return head ; 
-        
-        Node* after = temp->next ; 
-        Node* before = temp->prev ; 
-        
-        if(after) after->prev = before ; 
-        if(before) before->next = after ; 
-        
-        return head; 
+       Node* temp = head ; 
+       if(x==1){
+           Node* newNode = head->next ; 
+           newNode->prev = nullptr; 
+           delete head; 
+           return newNode ;
+       }
+       
+       int count =1 ; 
+       while(temp && count<x){
+           temp = temp->next ; 
+           count++;
+       }
+       if(temp == nullptr) return head ; 
+       Node* after = temp->next ; 
+       Node* before = temp->prev ; 
+       
+       if(after!=nullptr) after->prev = before ; 
+       
+       if(before!=nullptr) before->next = after ; 
+       
+       delete temp ; 
+       return head ; 
         
     }
 };
+
+
+
+
+
+
