@@ -33,5 +33,11 @@ public:
             }
         }
         return ans;
-    }
+    }/*
+    1
+    3
+    3
+    5
+     this was the edge case for the lst left<=right
+    */
 };
