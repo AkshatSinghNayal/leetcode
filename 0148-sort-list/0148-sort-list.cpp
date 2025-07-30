@@ -1,7 +1,17 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
 class Solution {
-public:
-    ListNode* mergeLL(ListNode* l1, ListNode* l2) {
-        ListNode* dummy = new ListNode(-1);
+
+    ListNode* mergeSortFunction(ListNode* l1, ListNode* l2) {
+        ListNode* dummy = new ListNode (-1);
         ListNode* temp = dummy;
         while (l1 != nullptr && l2 != nullptr) {
             if (l1->val <= l2->val) {
@@ -13,37 +23,44 @@ public:
             }
             temp = temp->next;
         }
-        if (l1 != nullptr) {
+
+        while (l1) {
             temp->next = l1;
-        } else {
-            temp->next = l2;
+            l1 = l1->next;
+            temp = temp->next;
         }
+        while (l2) {
+            temp->next = l2;
+            l2 = l2->next;
+            temp = temp->next;
+        }
+
         return dummy->next;
     }
 
-    ListNode* middle(ListNode* head) {
-        ListNode* slow = head;
+    ListNode* middleEleFinder(ListNode* head) {
+       
         ListNode* fast = head->next;
-        while (fast != nullptr && fast->next != nullptr) {
+        ListNode* slow = head;
+        while (fast && fast->next) {
             slow = slow->next;
             fast = fast->next->next;
         }
         return slow;
     }
 
+public:
     ListNode* sortList(ListNode* head) {
-        if (head == nullptr || head->next == nullptr)
-            return head;
-
-        ListNode* mid = middle(head);
+ if ( head == nullptr || head->next == nullptr) return head;
+        ListNode* mid = middleEleFinder(head);
 
         ListNode* right = mid->next;
         mid->next = nullptr;
         ListNode* left = head;
 
-        left = sortList(left);
         right = sortList(right);
+        left = sortList(left);
 
-        return mergeLL(left, right);
+        return mergeSortFunction(left, right);
     }
 };
