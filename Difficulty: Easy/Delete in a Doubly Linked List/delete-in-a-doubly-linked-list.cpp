@@ -20,7 +20,10 @@ class Solution {
        Node* temp = head ; 
        if(x==1){
            Node* newNode = head->next ; 
-           newNode->prev = nullptr; 
+           if (newNode != nullptr) {
+    newNode->prev = nullptr;
+}
+
            delete head; 
            return newNode ;
        }
@@ -36,7 +39,7 @@ class Solution {
        
        if(after!=nullptr) after->prev = before ; 
        
-       if(before!=nullptr) before->next = after ; 
+      before->next = after ; 
        
        delete temp ; 
        return head ; 
