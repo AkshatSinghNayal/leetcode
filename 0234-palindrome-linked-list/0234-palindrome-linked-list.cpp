@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {
-        if (!head || !head->next) return true;
+        if (head == nullptr && head->next == nullptr) return true;
 
         // 1. Find the middle (slow will point to middle)
         ListNode* slow = head;
