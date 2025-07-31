@@ -1,32 +1,49 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
 class Solution {
 public:
     ListNode* deleteMiddle(ListNode* head) {
-        // Empty list case
+        // Empty list
         if (head == nullptr) {
             return nullptr;
         }
         
-        // Single node case
+        // Single node case - this is the middle, so delete it
         if (head->next == nullptr) {
-            // For LeetCode, we might not need to manually delete
-            // delete head; // Commented out as it might cause issues
+            // On LeetCode, we may not need to manually delete nodes
+            // delete head; // Removing explicit delete
             return nullptr;
         }
-
-        // Find the middle node using slow and fast pointers
-        ListNode* slow = head;
-        ListNode* fast = head->next->next;
         
-        // When fast reaches the end, slow will be just before the middle
-        while (fast != nullptr && fast->next != nullptr) {
-            slow = slow->next;
-            fast = fast->next->next;
+        // Special case - for two nodes, the second one is the middle
+        if (head->next->next == nullptr) {
+            head->next = nullptr;
+            // delete middle; // Removing explicit delete
+            return head;
         }
         
-        // Delete the middle node (no explicit memory deallocation for LeetCode)
-        ListNode* toDelete = slow->next;
+        // For lists with 3 or more nodes
+        ListNode* slow = head;
+        ListNode* fast = head->next->next; // Start fast two steps ahead
+        
+        // When fast reaches the end, slow will be just before middle
+        while (fast != nullptr && fast->next != nullptr) {
+            slow = slow->next;
+            fast = fast->next;
+            if (fast->next) fast = fast->next; // Move fast two steps
+        }
+        
+        // Skip the middle node
         slow->next = slow->next->next;
-        // delete toDelete; // Commented out as it might cause issues on LeetCode
+        // No explicit delete for LeetCode
         
         return head;
     }
