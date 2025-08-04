@@ -1,28 +1,17 @@
 class Solution {
 public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
-        unordered_map<int, int> nge_map;
-        stack<int> st;
-
-        for (int i = nums2.size() - 1; i >= 0; i--) {
-            while (!st.empty() && st.top() <= nums2[i]) {
-                st.pop();
+        int n = nums1.size();
+        vector<int> ans(n,-1);
+        for( int i = 0 ; i<n ; i++){
+            int k = find(nums2.begin(),nums2.end(),nums1[i])-nums2.begin();
+            for( int j = k ; j<nums2.size(); j++){
+                if( (j)<nums2.size() && nums2[j]>nums1[i]){
+                    ans[i] = nums2[j];
+                    break;
+                }
             }
-
-            if (!st.empty()) {
-                nge_map[nums2[i]] = st.top();
-            } else {
-                nge_map[nums2[i]] = -1;
-            }
-
-            st.push(nums2[i]);
         }
-
-        vector<int> ans;
-        for (int num : nums1) {
-            ans.push_back(nge_map[num]);
-        }
-
         return ans;
     }
 };
