@@ -78,6 +78,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0056-merge-intervals](https://github.com/AkshatSinghNayal/leetcode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/0075-sort-colors) |
 | [0148-sort-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/AkshatSinghNayal/leetcode/tree/master/0169-majority-element) |
@@ -97,6 +98,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0033-search-in-rotated-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0048-rotate-image](https://github.com/AkshatSinghNayal/leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/0054-spiral-matrix) |
+| [0056-merge-intervals](https://github.com/AkshatSinghNayal/leetcode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/AkshatSinghNayal/leetcode/tree/master/0078-subsets) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
