@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0019-remove-nth-node-from-end-of-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0075-sort-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/0075-sort-colors) |
+| [0088-merge-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0088-merge-sorted-array) |
 | [0141-linked-list-cycle](https://github.com/AkshatSinghNayal/leetcode/tree/master/0141-linked-list-cycle) |
 | [0148-sort-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0148-sort-list) |
 | [0151-reverse-words-in-a-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0151-reverse-words-in-a-string) |
@@ -80,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0056-merge-intervals](https://github.com/AkshatSinghNayal/leetcode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/0075-sort-colors) |
+| [0088-merge-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0088-merge-sorted-array) |
 | [0148-sort-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/AkshatSinghNayal/leetcode/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0229-majority-element-ii) |
@@ -102,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0075-sort-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/AkshatSinghNayal/leetcode/tree/master/0078-subsets) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
+| [0088-merge-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0088-merge-sorted-array) |
 | [0136-single-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0137-single-number-ii) |
 | [0162-find-peak-element](https://github.com/AkshatSinghNayal/leetcode/tree/master/0162-find-peak-element) |
