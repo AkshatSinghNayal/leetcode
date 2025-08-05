@@ -1,43 +1,27 @@
 class Solution {
 public:
     vector<int> nextGreaterElements(vector<int>& nums) {
-        stack<int> st; 
-        unordered_map<int,int> mp;
-        int n = nums.size(); 
+        int n = nums.size();
+        vector<int> ans(n, -1);
+        stack<int> st;
 
-        vector<int> ans;  // Empty vector to hold 2n elements
-        vector<int> ans1(n, -1);  // Final answer array
+        // Iterate from 2n-1 to 0 to simulate circular array
+        for(int i = 2*n - 1; i >= 0; i--) {
+            int curr = nums[i % n];
 
-        // Manually doubling nums into ans vector
-        for(int i = 0; i < n; i++) {
-            ans.push_back(nums[i]);
-        }
-        for(int i = 0; i < n; i++) {
-            ans.push_back(nums[i]);
-        }
-
-        // Process from right to left
-        for(int i = (2*n - 1); i >= 0; i--) {
-            while(!st.empty() && st.top() <= ans[i]) {
+            while(!st.empty() && st.top() <= curr) {
                 st.pop();
             }
 
-            if(i < n) {  // Only for first pass, fill answers
+            if(i < n) {  // Fill ans only for first n indices
                 if(!st.empty()) {
-                    mp[i] = st.top();
-                } else {
-                    mp[i] = -1;
+                    ans[i] = st.top();
                 }
             }
 
-            st.push(ans[i]);
+            st.push(curr);
         }
 
-        // Build ans1 using map
-        for(int i = 0; i < n; i++) {
-            ans1[i] = mp[i];
-        }
-
-        return ans1;
+        return ans;
     }
 };
