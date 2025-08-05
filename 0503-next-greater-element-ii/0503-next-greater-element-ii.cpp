@@ -22,13 +22,13 @@ public:
                 st.pop();
             }
 
-           
+            if(i < n) {  // Only for first pass, fill answers
                 if(!st.empty()) {
                     mp[i] = st.top();
                 } else {
                     mp[i] = -1;
                 }
-            
+            }
 
             st.push(ans[i]);
         }
