@@ -1,7 +1,9 @@
 class Solution {
 public:
     bool isPowerOfTwo(int n) {
-        // Check if n is greater than 0 and satisfies the power of two condition
-        return n > 0 && (n & (n - 1)) == 0;
+
+
+        if(n<=0) return false ;
+       return (n&(n-1)) == 0 ? true: false;
     }
 };
