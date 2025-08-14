@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/0496-next-greater-element-i) |
 | [0940-fruit-into-baskets](https://github.com/AkshatSinghNayal/leetcode/tree/master/0940-fruit-into-baskets) |
 | [0966-binary-subarrays-with-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0966-binary-subarrays-with-sum) |
+| [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 ## Linked List
 |  |
 | ------- |
@@ -129,6 +130,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0966-binary-subarrays-with-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1046-max-consecutive-ones-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/AkshatSinghNayal/leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
+| [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/AkshatSinghNayal/leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1646-kth-missing-positive-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/1646-kth-missing-positive-number) |
 ## Math
@@ -139,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0189-rotate-array) |
 | [0231-power-of-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0231-power-of-two) |
 | [0268-missing-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0268-missing-number) |
+| [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [2032-largest-odd-number-in-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2032-largest-odd-number-in-string) |
 ## Binary Search
 |  |
@@ -231,9 +234,11 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0940-fruit-into-baskets](https://github.com/AkshatSinghNayal/leetcode/tree/master/0940-fruit-into-baskets) |
 | [0966-binary-subarrays-with-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1046-max-consecutive-ones-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1046-max-consecutive-ones-iii) |
+| [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 ## Prefix Sum
 |  |
 | ------- |
 | [0966-binary-subarrays-with-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1046-max-consecutive-ones-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1046-max-consecutive-ones-iii) |
+| [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 <!---LeetCode Topics End-->
