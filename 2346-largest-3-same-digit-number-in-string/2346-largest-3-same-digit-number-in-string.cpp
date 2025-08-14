@@ -1,40 +1,18 @@
 class Solution {
 public:
-    string largestGoodInteger(string nums) { 
-        int right = 0 ;
-       char ele ; int left=0;
-       string result ;
-       int maxi = -1;
-        while(right<nums.size()){
-            
-            if( nums[left] == nums[right]){
-                result+=nums[left];
+    string largestGoodInteger(string num) {
+        int maxi = -1 ; 
+        int count = 1 ; 
+        for( int i = 1 ; i<num.size() ; i++){
+            if(num[i] == num[i-1]){
+                count++;
+                if( count == 3){
+                    maxi = max ( maxi , num[i]-'0');
+                }
+            }else{
+                count=1;
             }
-
-           else if(nums[left]!=nums[right]){
-                left=right;
-                result="";
-                result+=nums[left];
-            }
-           
-           if(result.size() == 3){
-             int temp = stoi(result);
-             maxi = max(maxi , temp);
-             result="";
-           }
-            
-
-            
-            right++;
         }
-        if( maxi == -1){
-            return "";
-
-        }else{
-            if(maxi == 0){
-                return "000";
-            }
-            else return to_string(maxi);
-        }
+        return maxi<0 ? "" : string(3 , '0'+maxi);
     }
 };
