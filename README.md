@@ -79,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0231-power-of-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0231-power-of-two) |
 | [0234-palindrome-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0234-palindrome-linked-list) |
 | [0326-power-of-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/0326-power-of-three) |
+| [0342-power-of-four](https://github.com/AkshatSinghNayal/leetcode/tree/master/0342-power-of-four) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -145,6 +146,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0231-power-of-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0231-power-of-two) |
 | [0268-missing-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0268-missing-number) |
 | [0326-power-of-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/0326-power-of-three) |
+| [0342-power-of-four](https://github.com/AkshatSinghNayal/leetcode/tree/master/0342-power-of-four) |
 | [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [2032-largest-odd-number-in-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2032-largest-odd-number-in-string) |
 ## Binary Search
@@ -171,6 +173,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0260-single-number-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0260-single-number-iii) |
 | [0268-missing-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0268-missing-number) |
 | [0338-counting-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0338-counting-bits) |
+| [0342-power-of-four](https://github.com/AkshatSinghNayal/leetcode/tree/master/0342-power-of-four) |
 ## Counting
 |  |
 | ------- |
