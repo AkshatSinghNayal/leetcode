@@ -113,6 +113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/AkshatSinghNayal/leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/0054-spiral-matrix) |
 | [0056-merge-intervals](https://github.com/AkshatSinghNayal/leetcode/tree/master/0056-merge-intervals) |
+| [0066-plus-one](https://github.com/AkshatSinghNayal/leetcode/tree/master/0066-plus-one) |
 | [0075-sort-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/AkshatSinghNayal/leetcode/tree/master/0078-subsets) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
@@ -147,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0013-roman-to-integer](https://github.com/AkshatSinghNayal/leetcode/tree/master/0013-roman-to-integer) |
 | [0048-rotate-image](https://github.com/AkshatSinghNayal/leetcode/tree/master/0048-rotate-image) |
+| [0066-plus-one](https://github.com/AkshatSinghNayal/leetcode/tree/master/0066-plus-one) |
 | [0189-rotate-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0189-rotate-array) |
 | [0231-power-of-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0231-power-of-two) |
 | [0268-missing-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0268-missing-number) |
