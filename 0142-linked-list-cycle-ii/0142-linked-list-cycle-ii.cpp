@@ -5,7 +5,7 @@ public:
         ListNode* temp = head;
         
         while(temp){
-            if(visited.find(temp) != visited.end()){
+            if(visited.count(temp)){
                 return temp;
             }
             visited.insert(temp);
