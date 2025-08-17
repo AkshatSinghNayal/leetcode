@@ -10,14 +10,9 @@ public:
             freq[s[right] - 'A']++;
             maxFreq = max(maxFreq, freq[s[right] - 'A']);
             windowSize = right - left + 1;
-            while (windowSize - maxFreq > k) {
-                freq[s[left] - 'A']--; // ⚡ fix index
+            if (windowSize - maxFreq > k) {
+                freq[s[left] - 'A']--; 
                 left++;
-                // ⚡ recompute maxFreq from scratch (brute style)
-                maxFreq = 0;
-                for (int i = 0; i < 26; i++) {
-                    maxFreq = max(maxFreq, freq[i]);
-                }
                 windowSize = right - left + 1;
             }
 
