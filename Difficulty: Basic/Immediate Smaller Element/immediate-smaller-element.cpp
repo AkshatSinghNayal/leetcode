@@ -1,14 +1,29 @@
+// User function template for C++
 class Solution {
   public:
     void immediateSmaller(vector<int>& arr) {
-        int n = arr.size();
-        for(int i = 0; i < n - 1; i++) {
-            if(arr[i+1] < arr[i]) {
-                arr[i] = arr[i+1];
-            } else {
-                arr[i] = -1;
+       stack<int> st; 
+       vector<int> ans;
+       
+       
+       for( auto n : arr){
+            
+            if(!st.empty() && st.top()>n){
+                ans.push_back(n);
+                st.pop();
             }
-        }
-        arr[n-1] = -1; // Last element is always -1
+            else if(!st.empty() && st.top()<=n){
+                ans.push_back(-1);
+                st.pop();
+            }
+            
+           
+           st.push(n);
+       }
+       arr[arr.size()-1] = -1;
+       for( int i = 0 ; i< ans.size() ; i++){
+           arr[i] =ans[i];
+       }
+
     }
 };
