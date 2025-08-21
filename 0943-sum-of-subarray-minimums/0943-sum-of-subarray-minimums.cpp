@@ -3,34 +3,38 @@ public:
     int sumSubarrayMins(vector<int>& arr) {
         int n = arr.size();
         const int MOD = 1e9 + 7;
-
-        vector<int> left(n), right(n);
+        int result = 0;
+        
+        vector<int> leftSmallest(n), rightSmallest(n);
         stack<int> st;
 
-        // Previous Smaller Element
-        for (int i = 0; i < n; i++) {
-            while (!st.empty() && arr[st.top()] > arr[i])
+        for( int i = 0 ; i<arr.size() ; i++){
+            while(!st.empty() && arr[st.top()]>arr[i]){
                 st.pop();
-            left[i] = st.empty() ? (i + 1) : (i - st.top());
+            }
+            leftSmallest[i] = st.empty() ? -1 : st.top();
+
             st.push(i);
         }
+           st = stack<int>(); 
 
-        st = stack<int>(); // reset the stack ✅
-
-        // Next Smaller Element
-        for (int i = n - 1; i >= 0; i--) {
-            while (!st.empty() && arr[st.top()] >= arr[i])
+           for( int j = arr.size()-1 ; j>= 0 ; j--){
+            while(!st.empty() && arr[st.top()]>=arr[j]  ){
                 st.pop();
-            right[i] = st.empty() ? (n - i) : (st.top() - i);
-            st.push(i);
-        }
+            }
+            rightSmallest[j] = st.empty() ? n : st.top() ;
+            st.push(j) ;
+           }
 
-        long long res = 0;
-        for (int i = 0; i < n; i++) {
-            long long contrib = (long long)arr[i] * left[i] * right[i];
-            res = (res + contrib) % MOD;
-        }
 
-        return (int)res;
+           for( int i = 0 ; i<arr.size(); i++){
+                int left = i - leftSmallest[i];
+                int right = rightSmallest[i] - i ;
+                long long count = (long long)left*right*1ll*arr[i];
+                 result= (result+count)%MOD;
+           }
+
+        return (int)result;
+       
     }
 };
