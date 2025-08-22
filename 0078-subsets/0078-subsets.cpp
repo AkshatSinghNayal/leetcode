@@ -1,25 +1,21 @@
 class Solution {
 public:
-    void generate(int i, vector<int>& nums, vector<int>& temp,
-                  vector<vector<int>>& result, int size) {
-
-        if (i >= size) {
-            result.push_back(temp);
-            return;
-        }
-
-        temp.push_back(nums[i]);
-        generate(i + 1, nums, temp, result, size);
-        temp.pop_back();
-        generate(i + 1, nums, temp, result, size);
-    }
-
     vector<vector<int>> subsets(vector<int>& nums) {
+        int size = nums.size() ; 
+        int bitMask =  (1<<size);
+        vector<vector<int>> ans ; 
+        vector<int> temp  ; 
+        for( int i = 0 ; i<bitMask ; i++){
+            
+            temp.clear();
+            for( int j = 0 ; j<size ; j++){
+                if(i&(1<<j)){
+                    temp.push_back(nums[j]);
+                }
+            }
+            ans.push_back(temp) ;
 
-        vector<vector<int>> result;
-        vector<int> temp;
-        int size = nums.size();
-        generate(0, nums, temp, result, size);
-        return result;
+        }
+        return ans; 
     }
 };
