@@ -1,21 +1,27 @@
 class Solution {
 public:
-    vector<vector<int>> subsets(vector<int>& nums) {
-        int size = nums.size() ; 
-        int bitMask =  (1<<size);
-        vector<vector<int>> ans ; 
-        vector<int> temp  ; 
-        for( int i = 0 ; i<bitMask ; i++){
-            
-            temp.clear();
-            for( int j = 0 ; j<size ; j++){
-                if(i&(1<<j)){
-                    temp.push_back(nums[j]);
-                }
-            }
-            ans.push_back(temp) ;
 
+    void subsetHelper(vector<int>& nums , vector<int>& temp, vector<vector<int>>& ans , int index  ) {
+
+        if( index >= nums.size()){
+            ans.push_back(temp);
+            return ;
         }
-        return ans; 
+
+        temp.push_back(nums[index]);
+        subsetHelper( nums , temp , ans , index+1);
+        temp.pop_back() ; 
+        subsetHelper( nums , temp , ans , index+1);
+
+
+    }
+
+    vector<vector<int>> subsets(vector<int>& nums) {
+        vector<vector<int>> ans ; 
+        vector<int> temp ; 
+
+        subsetHelper( nums ,temp , ans , 0);
+
+        return ans ; 
     }
 };
