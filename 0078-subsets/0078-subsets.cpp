@@ -3,15 +3,15 @@ public:
 
     void subsetHelper(vector<int>& nums , vector<int>& temp, vector<vector<int>>& ans , int index  ) {
 
-        if( index >= nums.size()){
-            ans.push_back(temp);
-            return ;
-        }
+        
+        ans.push_back(temp);
+        for( int i = index ; i<nums.size() ; i++){
+            temp.push_back(nums[i]);
+            subsetHelper(nums, temp , ans , i+1);
+            temp.pop_back() ; 
 
-        temp.push_back(nums[index]);
-        subsetHelper( nums , temp , ans , index+1);
-        temp.pop_back() ; 
-        subsetHelper( nums , temp , ans , index+1);
+
+        }
 
 
     }
