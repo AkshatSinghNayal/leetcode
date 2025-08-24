@@ -5,16 +5,19 @@ public:
 
         if( target == 0){
             ans.push_back(temp) ;
+            return;
         }
         if( target<0) return ; 
+        if( index>= candidates.size()) return ;
 
 
-        while( index < candidates.size()){
+            if(candidates[index]<=target){
             temp.push_back(candidates[index]);
             combinationSumHelper( candidates , target-candidates[index] , ans , temp, index );
             temp.pop_back() ; 
-            index++;
-        }
+            }
+             combinationSumHelper( candidates , target, ans , temp, index+1 );
+          
 
 
     }
