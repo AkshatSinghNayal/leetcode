@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Linked List
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/0002-add-two-numbers) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/AkshatSinghNayal/leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0141-linked-list-cycle](https://github.com/AkshatSinghNayal/leetcode/tree/master/0141-linked-list-cycle) |
@@ -95,6 +96,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Recursion
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/0002-add-two-numbers) |
 | [0021-merge-two-sorted-lists](https://github.com/AkshatSinghNayal/leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0206-reverse-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0206-reverse-linked-list) |
 | [0231-power-of-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0231-power-of-two) |
@@ -176,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/0002-add-two-numbers) |
 | [0009-palindrome-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0009-palindrome-number) |
 | [0013-roman-to-integer](https://github.com/AkshatSinghNayal/leetcode/tree/master/0013-roman-to-integer) |
 | [0048-rotate-image](https://github.com/AkshatSinghNayal/leetcode/tree/master/0048-rotate-image) |
