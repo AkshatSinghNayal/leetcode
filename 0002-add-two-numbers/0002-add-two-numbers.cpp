@@ -4,10 +4,21 @@ public:
         int carry = 0;
         ListNode* dummy = new ListNode(-1);
         ListNode* temp = dummy;
-
+         int digit1 ; 
+         int digit2;
         while (l1 || l2 || carry) {
-            int digit1 = (l1 ? l1->val : 0);
-            int digit2 = (l2 ? l2->val : 0);
+            if(l1 != nullptr){
+                digit1 = l1->val;
+            }
+            else{
+                digit1 = 0 ; 
+            }
+            if( l2 != nullptr){
+                digit2 = l2->val ;
+            }
+            else{
+                digit2 = 0;
+            }
 
             int sum = digit1 + digit2 + carry;
             carry = sum / 10;
