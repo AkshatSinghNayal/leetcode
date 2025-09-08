@@ -1,10 +1,13 @@
 class Solution {
 public:
     int climbStairs(int n) {
-        double sqrt5 = sqrt(5);
-        double phi = (1 + sqrt5) / 2.0;
-        double psi = (1 - sqrt5) / 2.0;
-        double fib = (pow(phi, n + 1) - pow(psi, n + 1)) / sqrt5;
-        return (int)round(fib);
+        if (n <= 1) return 1;  // base cases
+        int a = 1, b = 1;      // ways(0)=1, ways(1)=1
+        for (int i = 2; i <= n; i++) {
+            int c = a + b;     // current = sum of last two
+            a = b;             // shift forward
+            b = c;
+        }
+        return b;
     }
 };
