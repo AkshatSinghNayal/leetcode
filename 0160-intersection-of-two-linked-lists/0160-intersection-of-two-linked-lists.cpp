@@ -22,35 +22,18 @@ public:
 
         int len1 = lengthFind(headA);
         int len2 = lengthFind(headB);
-        ListNode* finalPtr;
-
-        int totalLen = (max(len1, len2) - min(len1, len2));
-        if (len1 > len2) {
-            finalPtr = headA;
-            
-        } else {
-            finalPtr = headB;
-            
-        }
-        while (totalLen > 0) {
-                finalPtr = finalPtr->next;
-                totalLen--;
-            }
-            
-        ListNode* smaller;
-        if (len1 <= len2) {
-            smaller = headA;
-
-        } else {
-            smaller = headB;
+       
+        int totalLen = abs(len1-len2);
+         while (totalLen > 0) {
+            if (len1 > len2) headA = headA->next;
+            else headB = headB->next;
+            totalLen--;
         }
 
-        while (finalPtr) {
-            if (finalPtr == smaller) {
-                return finalPtr;
-            }
-            finalPtr = finalPtr->next;
-            smaller = smaller->next;
+        while( headA ){
+            if( headA == headB) return headA;
+            headA = headA->next;
+            headB = headB->next;
         }
 
         return nullptr;
