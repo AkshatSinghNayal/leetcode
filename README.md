@@ -155,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0090-subsets-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0090-subsets-ii) |
 | [0136-single-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0137-single-number-ii) |
+| [0152-maximum-product-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/0152-maximum-product-subarray) |
 | [0162-find-peak-element](https://github.com/AkshatSinghNayal/leetcode/tree/master/0162-find-peak-element) |
 | [0169-majority-element](https://github.com/AkshatSinghNayal/leetcode/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0189-rotate-array) |
@@ -244,6 +245,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0042-trapping-rain-water) |
 | [0070-climbing-stairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/0070-climbing-stairs) |
 | [0131-palindrome-partitioning](https://github.com/AkshatSinghNayal/leetcode/tree/master/0131-palindrome-partitioning) |
+| [0152-maximum-product-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/0152-maximum-product-subarray) |
 | [0338-counting-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0338-counting-bits) |
 | [0943-sum-of-subarray-minimums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0943-sum-of-subarray-minimums) |
 ## Greedy
