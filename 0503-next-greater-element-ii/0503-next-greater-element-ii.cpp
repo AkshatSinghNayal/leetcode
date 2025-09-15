@@ -2,26 +2,25 @@ class Solution {
 public:
     vector<int> nextGreaterElements(vector<int>& nums) {
         int n = nums.size();
-        vector<int> ans(n, -1);
         stack<int> st;
+        vector<int> ans;
+        int right = (2 * n )- 1;
+        while (right >= 0) {
 
-
-        // Iterate from 2n-1 to 0 to simulate circular array
-        for( int i  = 2*n-1 ; i>= 0 ; i--){
-            int curr = (i%n);
-            while(!st.empty() && st.top()<= nums[curr]) st.pop();
-
-            if( i < n ) {
-              if(!st.empty()) {
-                    ans[i] = st.top();
+            while (!st.empty() && st.top() <= nums[right%n]) {
+                st.pop();
+            }
+            if (right < n ) {
+                if (!st.empty()) {
+                    ans.push_back(st.top());
+                } else {
+                    ans.push_back(-1);
                 }
             }
-
-
-
-            st.push(nums[curr]);
+            st.push(nums[right%n]);
+            right--;
         }
-
+        reverse(ans.begin(), ans.end());
         return ans;
     }
 };
