@@ -207,6 +207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0268-missing-number) |
 | [0326-power-of-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/AkshatSinghNayal/leetcode/tree/master/0342-power-of-four) |
+| [0357-count-numbers-with-unique-digits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0357-count-numbers-with-unique-digits) |
 | [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1448-maximum-69-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/1448-maximum-69-number) |
 | [1693-sum-of-all-odd-length-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1693-sum-of-all-odd-length-subarrays) |
@@ -259,6 +260,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0131-palindrome-partitioning](https://github.com/AkshatSinghNayal/leetcode/tree/master/0131-palindrome-partitioning) |
 | [0152-maximum-product-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/0152-maximum-product-subarray) |
 | [0338-counting-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0338-counting-bits) |
+| [0357-count-numbers-with-unique-digits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0357-count-numbers-with-unique-digits) |
 | [0943-sum-of-subarray-minimums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0943-sum-of-subarray-minimums) |
 ## Greedy
 |  |
@@ -290,6 +292,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0078-subsets](https://github.com/AkshatSinghNayal/leetcode/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0090-subsets-ii) |
 | [0131-palindrome-partitioning](https://github.com/AkshatSinghNayal/leetcode/tree/master/0131-palindrome-partitioning) |
+| [0357-count-numbers-with-unique-digits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0357-count-numbers-with-unique-digits) |
 ## Matrix
 |  |
 | ------- |
