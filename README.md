@@ -188,6 +188,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/AkshatSinghNayal/leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1646-kth-missing-positive-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/1646-kth-missing-positive-number) |
 | [1693-sum-of-all-odd-length-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1693-sum-of-all-odd-length-subarrays) |
+| [2106-find-greatest-common-divisor-of-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2227-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2227-sum-of-subarray-ranges) |
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2316-count-hills-and-valleys-in-an-array) |
 ## Math
@@ -213,6 +214,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1693-sum-of-all-odd-length-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1693-sum-of-all-odd-length-subarrays) |
 | [2032-largest-odd-number-in-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2032-largest-odd-number-in-string) |
 | [2050-count-good-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2050-count-good-numbers) |
+| [2106-find-greatest-common-divisor-of-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2608-count-the-digits-that-divide-a-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/2608-count-the-digits-that-divide-a-number) |
 ## Binary Search
 |  |
@@ -351,4 +353,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/0070-climbing-stairs) |
+## Number Theory
+|  |
+| ------- |
+| [2106-find-greatest-common-divisor-of-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2106-find-greatest-common-divisor-of-array) |
 <!---LeetCode Topics End-->
