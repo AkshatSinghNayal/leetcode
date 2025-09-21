@@ -220,6 +220,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2032-largest-odd-number-in-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2032-largest-odd-number-in-string) |
 | [2050-count-good-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2050-count-good-numbers) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2106-find-greatest-common-divisor-of-array) |
+| [2238-a-number-after-a-double-reversal](https://github.com/AkshatSinghNayal/leetcode/tree/master/2238-a-number-after-a-double-reversal) |
 | [2608-count-the-digits-that-divide-a-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/2608-count-the-digits-that-divide-a-number) |
 ## Binary Search
 |  |
