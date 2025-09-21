@@ -13,28 +13,27 @@ public:
     }
 
     bool wordPattern(string pattern, string s) {
-        unordered_map<char, string> c2s;
-        unordered_map<string, char> s2c;
+        unordered_map<char, string> mp1;
+        unordered_map<string, char> mp2;
         int left = 0;
 
         for (int i = 0; i < pattern.size(); i++) {
-            string word = helper(s, left);
-            if (word.empty()) return false; // fewer words than pattern
+            string temp = helper(s, left);
 
-            char c = pattern[i];
+            if( temp.empty()) return false; 
+            char c  = pattern[i]; 
+            if( mp1.count(c) && mp1[c]!=temp) return false;
+            if( mp2.count(temp) && mp2[temp]!=c) return false; 
 
-            // Check existing mapping
-            if (c2s.count(c) && c2s[c] != word) return false;
-            if (s2c.count(word) && s2c[word] != c) return false;
 
-            // Set mapping
-            c2s[c] = word;
-            s2c[word] = c;
-        }
+            mp1[c] = temp ;
+            mp2[temp] = c ; 
 
-        // Extra words in s?
-        if (left < s.size()) return false;
 
+
+
+        }  
+        if( left < s.size() ) return false;
         return true;
     }
 };
