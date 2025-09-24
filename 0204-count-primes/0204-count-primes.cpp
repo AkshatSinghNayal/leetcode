@@ -17,7 +17,7 @@ public:
         }
 
         int count = 0;
-        for (int i = 2; i < ans.size(); i++) { // start from 2
+        for (int i = 2; i < n; i++) { // start from 2
             if (ans[i] == 0) {
                 count++;
             }
