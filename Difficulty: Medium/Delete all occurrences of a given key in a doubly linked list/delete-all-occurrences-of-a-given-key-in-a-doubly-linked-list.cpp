@@ -12,31 +12,28 @@ struct Node
 class Solution {
   public:
     void deleteAllOccurOfX(struct Node** head_ref, int x) {
-      
-        Node* temp = *head_ref;
         
+        Node* temp = *head_ref ; 
         
-        while( temp){
-            if(temp->data ==x ){
-                 if (temp == *head_ref) {
-                    *head_ref = temp->next;
+        while( temp ){
+            if(temp->data == x ){
+                Node* after = temp->next ; 
+                Node* before = temp->prev ; 
+                
+                if( temp == *head_ref ){
+                    *head_ref = after ; 
+                    delete temp ; 
+                    temp = after ; 
+                    continue ;
                 }
-                
-                Node* nextPointer = temp->next;
-                Node* prevPointer = temp->prev;
-                
-                if(nextPointer) nextPointer->prev  = prevPointer;
-                if(prevPointer) prevPointer->next = nextPointer;
-                
-                delete(temp);
-                temp = nextPointer;
-                
+                if( before ) before->next = after ; 
+                if(after) after->prev =before ; 
+                delete temp ; 
+                temp = after ; 
+                continue ; 
             }
-            else{
-                temp = temp->next;
-            }
+            temp= temp->next ;  
         }
-        
-        
+       
     }
 };
