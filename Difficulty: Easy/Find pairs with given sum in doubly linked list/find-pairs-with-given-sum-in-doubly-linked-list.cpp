@@ -1,22 +1,34 @@
+// User function Template for C++
 
+/* Doubly linked list node class
+class Node
+{
+public:
+    int data;
+    Node *next, *prev;
+    Node(int val) : data(val), next(NULL), prev(NULL)
+    {
+    }
+};
+*/
 
 class Solution {
   public:
     vector<pair<int, int>> findPairsWithGivenSum(Node *head, int target) {
-        Node* temp = head;
-        vector<pair<int, int>> freq;
-        unordered_set<int> pairing; // more efficient for lookups
-
-        while (temp) {
-            int complement = target - temp->data;
-            if (pairing.find(complement) != pairing.end()) {
-                freq.push_back({complement, temp->data});
-            } else {
-                pairing.insert(temp->data);
+        
+        vector<pair<int,int>> ans ;
+        unordered_set<int> seen ;
+        Node* temp = head ; 
+        while(temp){
+            int data = temp->data;
+            int compliment = target-(data);
+            if(seen.find(compliment) != seen.end()){
+                ans.push_back({compliment,data}); 
             }
-            temp = temp->next; // forgot to move temp forward
+            seen.insert(data);
+            temp=temp->next ;
         }
-        sort(freq.begin(),freq.end());
-        return freq;
+        sort(ans.begin(),ans.end());
+        return ans ; 
     }
 };
