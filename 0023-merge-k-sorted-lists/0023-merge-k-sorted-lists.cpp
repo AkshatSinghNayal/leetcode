@@ -24,7 +24,7 @@ public:
     ListNode* mergeKLists(vector<ListNode*>& list) {
         vector<ListNode*> ans ; 
         for( int i =  0 ; i<list.size() ; i++){
-            if( !list[i] ) continue; 
+            // if( !list[i] ) continue; 
             ListNode * temp = list[i] ;
             while( temp) {
                 ans.push_back(temp); 
