@@ -1,7 +1,7 @@
 class Solution {
 public:
 
-    bool isPrime( int temp , vector<int>& nums) {
+    bool isPrime( int temp ) {
         if( temp <= 1) return false ; 
         int i = 2 ; 
         for( i ; i*i<=temp ; i++){
@@ -14,7 +14,7 @@ public:
         long long sum1 = 0 ; 
         long long sum2= 0 ; 
         for(  int i = 0; i<nums.size() ; i++){
-            if(isPrime(i , nums)){
+            if(isPrime(i )){
                 sum1+=nums[i]; 
             }
             else{
