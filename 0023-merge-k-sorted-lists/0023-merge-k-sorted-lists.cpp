@@ -10,33 +10,25 @@
  */
 class Solution {
 public:
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        priority_queue< pair< int , ListNode* > , vector< pair < int , ListNode* >> , greater< pair<int, ListNode*>> > pq ; 
 
-    void mergeAns ( vector<ListNode*> & ans  , ListNode*& temp ){
-        
-        for( int i = 0 ; i<ans.size() ; i++){
-            temp->next = ans[i]; 
-            temp= temp->next ; 
-        }
-        temp->next = nullptr ; 
-        
-    }
+        for(int i = 0; i < lists.size(); i++) {
+    if(lists[i]) pq.push({lists[i]->val, lists[i]}); // take care of the empty or the null list here ->>>> forgot one time next time b careful ; 
+}
 
-    ListNode* mergeKLists(vector<ListNode*>& list) {
-        vector<ListNode*> ans ; 
-        for( int i =  0 ; i<list.size() ; i++){
-            // if( !list[i] ) continue; 
-            ListNode * temp = list[i] ;
-            while( temp) {
-                ans.push_back(temp); 
-                temp  = temp->next ; 
-            }
+
+        ListNode* dummy = new ListNode ( -1 ) ; 
+        ListNode* temp =dummy ; 
+        while( !pq.empty()){
+            ListNode* node = pq.top().second ; 
+            pq.pop(); 
+            temp->next = node ; 
+            temp = temp->next ; 
+            if( node->next ){
+                pq.push({node->next->val , node->next}); 
+            } 
         }
-        sort(ans.begin(), ans.end(), [](ListNode* a, ListNode* b) {
-            return a->val < b->val;
-        });
-        ListNode* head = new ListNode (-1); 
-        ListNode * temp = head ; 
-        mergeAns( ans , temp  ); 
-        return head->next ; 
+        return dummy->next; 
     }
 };
