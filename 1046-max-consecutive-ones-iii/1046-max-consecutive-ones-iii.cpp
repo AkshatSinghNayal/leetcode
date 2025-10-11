@@ -8,7 +8,7 @@ public:
                 countZeros++;
             }
            
-            while( countZeros>k){
+            if( countZeros>k){
                 if(nums[l] == 0 ){
                     countZeros--;
                 }
