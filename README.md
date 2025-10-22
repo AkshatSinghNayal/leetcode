@@ -185,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0088-merge-sorted-array) |
 | [0090-subsets-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0090-subsets-ii) |
+| [0135-candy](https://github.com/AkshatSinghNayal/leetcode/tree/master/0135-candy) |
 | [0136-single-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0137-single-number-ii) |
 | [0152-maximum-product-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/0152-maximum-product-subarray) |
@@ -321,6 +322,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0045-jump-game-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0055-jump-game) |
+| [0135-candy](https://github.com/AkshatSinghNayal/leetcode/tree/master/0135-candy) |
 | [0435-non-overlapping-intervals](https://github.com/AkshatSinghNayal/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/AkshatSinghNayal/leetcode/tree/master/0455-assign-cookies) |
 | [0621-task-scheduler](https://github.com/AkshatSinghNayal/leetcode/tree/master/0621-task-scheduler) |
