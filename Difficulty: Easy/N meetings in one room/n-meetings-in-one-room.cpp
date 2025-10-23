@@ -9,9 +9,9 @@ class Solution {
         meetings.push_back({start[i], end[i]});
 
     // sort by end time
-    sort(meetings.begin(), meetings.end(),
-         [](auto &a, auto &b){ return a.second < b.second; });
-         
+   sort(meetings.begin(),meetings.end(),[](auto &a , auto &b){
+       return a.second < b.second;
+   });
          int count = 1;
           
            int ed = meetings[0].second; 
