@@ -12,27 +12,26 @@
  */
 class Solution {
 public:
-        int maxi = INT_MIN;
-    int helper(TreeNode* root) {
+    int helper(TreeNode* root , int &maxi ) {
         if (root == nullptr)
             return 0; // base case: empty tree → depth = 0
 
-        int left = helper(root->left);
-        int right = helper(root->right);
+        int left = helper(root->left , maxi);
+        int right = helper(root->right , maxi );
+
+        maxi = max(maxi , left+right);
 
         return 1 + max(left, right); // include current node
     }
 
     int diameterOfBinaryTree(TreeNode* root) {
-        if( root == nullptr) return 0 ;
-        int left = helper(root->left);
-        int right = helper(root->right);
+        int maxi = INT_MIN;
+         helper( root ,maxi );
 
-        maxi = max(maxi, left + right);
-        diameterOfBinaryTree(root->left);
-        diameterOfBinaryTree(root->right);
+         return maxi ; 
+
         
 
-        return maxi;
+        
     }
 };
