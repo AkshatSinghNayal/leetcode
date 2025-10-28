@@ -1,20 +1,11 @@
 class Solution {
 public:
     int firstUniqChar(string s) {
-        unordered_map<char,int> mp ; 
-        char temp ;
-        for( int i = 0 ; i<s.size() ; i++){
-            mp[s[i]]++; 
-        }
-
-         for( int i  = 0 ; i<s.size() ; i++){
-            char c = s[i]; 
-            if( mp[c] == 1 ){
-                temp = c; 
-                break;
-            }
-         }
-        int a = s.find(temp); 
-        return a ; 
+        vector<int> v(26,0);
+		for(char c : s) v[c - 'a']++;
+		for(int i = 0; i < s.length(); i++){
+			if(v[s[i] - 'a'] == 1) return i;
+		}
+		return -1;
     }
 };
