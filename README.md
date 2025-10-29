@@ -277,6 +277,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2238-a-number-after-a-double-reversal](https://github.com/AkshatSinghNayal/leetcode/tree/master/2238-a-number-after-a-double-reversal) |
 | [2481-strictly-palindromic-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/2481-strictly-palindromic-number) |
 | [2608-count-the-digits-that-divide-a-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/2608-count-the-digits-that-divide-a-number) |
+| [3676-smallest-number-with-all-set-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/3676-smallest-number-with-all-set-bits) |
 | [3936-split-array-by-prime-indices](https://github.com/AkshatSinghNayal/leetcode/tree/master/3936-split-array-by-prime-indices) |
 ## Binary Search
 |  |
@@ -313,6 +314,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0389-find-the-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/0389-find-the-difference) |
 | [1610-xor-operation-in-an-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1610-xor-operation-in-an-array) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/2323-minimum-bit-flips-to-convert-number) |
+| [3676-smallest-number-with-all-set-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/3676-smallest-number-with-all-set-bits) |
 ## Counting
 |  |
 | ------- |
