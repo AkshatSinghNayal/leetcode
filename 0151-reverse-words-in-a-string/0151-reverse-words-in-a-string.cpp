@@ -1,31 +1,38 @@
 class Solution {
 public:
+    void reverseRange(string& s, int i, int j) {
+        while (i < j) {
+            swap(s[i++], s[j--]);
+        }
+    }
+
     string reverseWords(string s) {
-        
-        int i  = 0 ;int j = s.size()-1; 
-        vector<string> ans;
-        while( s[i]==' ')i++;
 
-        while( s[j]==' ')j--;
+        string result = "";
+        reverse(s.begin(), s.end());
+        int i = 0;
+        int j = s.size() - 1;
 
-        while(i<=j){
-            string result=""; 
-            while(s[i]!=' ' && i<=j){
-                result+=s[i]; 
-                i++; 
+        while (s[i] == ' ')
+            i++;
+
+        while (s[j] == ' ')
+            j--;
+        int k = i;
+
+        while (i <= j) {
+            while (k <= j && s[k] != ' ') {
+                k++;
             }
-            ans.push_back(result);
-            while( s[i]==' ')i++;
-        }
-        reverse(ans.begin(),ans.end());
+            reverseRange(s, i, k - 1);
 
-            string res; 
-        for( int i = 0; i<ans.size() ; i++){
-            res+=ans[i]; 
-            if(i<ans.size()-1){
-                res+=' '; 
-            }
+            if (!result.empty()) result += ' ';
+            result += s.substr(i, k - i);
+
+           while(k<=j && s[k] == ' ')k++; 
+           i= k;
         }
-        return res ;
+
+        return result;
     }
 };
