@@ -14,7 +14,8 @@ public:
             }
             
             if( count == 0  ) {
-                ele= nums[i+1]; 
+                ele= nums[i]; 
+                count=1 ; 
             }
         }
         return ele ; 
