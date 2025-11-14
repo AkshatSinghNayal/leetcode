@@ -8,34 +8,20 @@
  */
 class Solution {
 public:
-    int lengthFind(ListNode* head) {
-        int len = 0;
-        ListNode* temp = head;
-        while (temp) {
-            len++;
-            temp = temp->next;
-        }
-        return len;
-    }
-
-    ListNode* getIntersectionNode(ListNode* headA, ListNode* headB) {
-
-        int len1 = lengthFind(headA);
-        int len2 = lengthFind(headB);
-       
-        int totalLen = abs(len1-len2);
-         while (totalLen > 0) {
-            if (len1 > len2) headA = headA->next;
-            else headB = headB->next;
-            totalLen--;
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        unordered_set<ListNode*> st ; 
+        while( headA){
+            st.insert(headA); 
+            headA = headA->next; 
         }
 
-        while( headA ){
-            if( headA == headB) return headA;
-            headA = headA->next;
-            headB = headB->next;
+        while( headB ){
+            if( st.find(headB)  != st.end()){
+                return headB;
+            }
+            headB = headB->next ;
         }
 
-        return nullptr;
+        return nullptr ;
     }
 };
