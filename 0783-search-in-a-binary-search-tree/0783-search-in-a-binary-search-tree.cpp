@@ -11,28 +11,12 @@
  */
 class Solution {
 public:
-
-    void findNode( TreeNode* root , TreeNode*& node , int target ){
-
-            if( !root ) return ; 
-            if( root->val == target ){
-                node = root ; 
-                return ; 
-            }
-
-            if( root->left &&  root->val > target){
-                findNode( root->left , node , target ); 
-            }
-            
-            else{
-                findNode( root->right , node , target ) ;
-            }
-            
-    }
-
     TreeNode* searchBST(TreeNode* root, int val) {
-        TreeNode* node = nullptr ; 
-        findNode( root , node  , val) ;
-        return node ; 
+        if(!root ) return nullptr ; 
+        if( root->val  ==  val  ) return root ; 
+        else if( root->val > val ) return  searchBST( root->left , val ) ; 
+        else{
+            return searchBST( root->right , val ) ; 
+        }
     }
 };
