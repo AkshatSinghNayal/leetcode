@@ -11,22 +11,28 @@
  */
 class Solution {
 public:
-    TreeNode* searchBST(TreeNode* root, int val) {
-        if(!root) return root ; 
-        queue<TreeNode*> q ; 
-        q.push(root); 
-        TreeNode* node = nullptr; 
-        while(!q.empty()){
-             node = q.front();
-            q.pop() ;
-            
-            if( node->val == val ) {
-                return node ; 
+
+    void findNode( TreeNode* root , TreeNode*& node , int target ){
+
+           
+            if( root->val == target ){
+                node = root ; 
+                return ; 
             }
 
-            if(node->left) q.push(node->left); 
-            if( node->right) q.push(node->right);
-        }
-        return nullptr ; 
+            if( root->left &&  root->val > target){
+                findNode( root->left , node , target ); 
+            }
+            
+            else if( root->right && root->val < target ){
+                findNode( root->right , node , target ) ;
+            }
+            
+    }
+
+    TreeNode* searchBST(TreeNode* root, int val) {
+        TreeNode* node = nullptr ; 
+        findNode( root , node  , val) ;
+        return node ; 
     }
 };
