@@ -14,7 +14,7 @@ public:
 
     void findNode( TreeNode* root , TreeNode*& node , int target ){
 
-           
+            if( !root ) return ; 
             if( root->val == target ){
                 node = root ; 
                 return ; 
@@ -24,7 +24,7 @@ public:
                 findNode( root->left , node , target ); 
             }
             
-            else if( root->right && root->val < target ){
+            else{
                 findNode( root->right , node , target ) ;
             }
             
