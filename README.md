@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/AkshatSinghNayal/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0013-roman-to-integer](https://github.com/AkshatSinghNayal/leetcode/tree/master/0013-roman-to-integer) |
+| [0128-longest-consecutive-sequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0141-linked-list-cycle](https://github.com/AkshatSinghNayal/leetcode/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/AkshatSinghNayal/leetcode/tree/master/0160-intersection-of-two-linked-lists) |
@@ -206,6 +207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0088-merge-sorted-array) |
 | [0090-subsets-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0090-subsets-ii) |
+| [0128-longest-consecutive-sequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0135-candy](https://github.com/AkshatSinghNayal/leetcode/tree/master/0135-candy) |
 | [0136-single-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0137-single-number-ii) |
@@ -562,4 +564,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
+## Union Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->
