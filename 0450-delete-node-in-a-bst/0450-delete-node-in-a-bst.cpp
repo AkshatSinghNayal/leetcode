@@ -1,40 +1,58 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
 class Solution {
 public:
-    TreeNode* deleteNode(TreeNode* root, int key) {
-        if (!root) return nullptr;
+    TreeNode* deleteNode(TreeNode* Node, int key) {
+        TreeNode* root= Node ; 
+        if( !root ) return root; 
 
-        if (key < root->val) {
-            root->left = deleteNode(root->left, key);
+        if( root->val > key ){
+            root->left = deleteNode(root->left , key ) ; 
         }
-        else if (key > root->val) {
-            root->right = deleteNode(root->right, key);
+        else if ( root->val < key ){
+            root->right = deleteNode( root->right , key ) ; 
         }
-        else {
-            // Found the node to delete
+        else{   
+            
+            // case1: 
+            // both the nodes are nullptr so we will return nullptr 
+            if( !root->right && !root->left ) return nullptr ; 
 
-            // Case 1: no children
-            if (!root->left && !root->right) {
-                return nullptr;
+            // case2 : 
+            // when one node is nullptr and other one is not nullptr so we will return the not null node ; 
+
+            if(!root->left ) return root->right ; 
+            if(!root->right) return root->left ; 
+
+
+            // case3:
+            // when both are nodes are not-null so  we have to compare and return according to the situation 
+
+            TreeNode* greatest = root->right ; 
+            TreeNode* ans = root->left ; 
+            TreeNode* smallest = root->left ; 
+
+            while( smallest->right ){
+                smallest = smallest->right; 
             }
+            smallest->right= greatest ; 
 
-            // Case 2: one child
-            if (!root->left) return root->right;
-            if (!root->right) return root->left;
+            return ans ;
 
-            // Case 3: two children
-            // find inorder successor (smallest in right subtree)
-            TreeNode* successor = root->right;
-            while (successor->left) {
-                successor = successor->left;
-            }
 
-            // replace root value with successor value
-            root->val = successor->val;
 
-            // delete the successor
-            root->right = deleteNode(root->right, successor->val);
+
         }
+        return Node ; 
 
-        return root;
     }
 };
