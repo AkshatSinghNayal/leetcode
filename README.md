@@ -248,6 +248,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/AkshatSinghNayal/leetcode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
+| [1548-check-if-all-1s-are-at-least-length-k-places-away](https://github.com/AkshatSinghNayal/leetcode/tree/master/1548-check-if-all-1s-are-at-least-length-k-places-away) |
 | [1603-running-sum-of-1d-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1603-running-sum-of-1d-array) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/AkshatSinghNayal/leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1635-number-of-good-pairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/1635-number-of-good-pairs) |
