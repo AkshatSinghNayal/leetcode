@@ -1,29 +1,53 @@
 class Solution {
 public:
     bool findTarget(TreeNode* root, int k) {
-        unordered_set<int> st;
-        stack<TreeNode*> s;
-        TreeNode* curr = root;
+        if (!root) return false;
         
-        while (curr || !s.empty()) {
-            while (curr) { // Go to the leftmost node
-                s.push(curr);
-                curr = curr->left;
-            }
+        // Two stacks for iterative in-order and reverse in-order traversal
+        stack<TreeNode*> inorderStack, reverseInorderStack;
+        TreeNode* inorderNode = root;
+        TreeNode* reverseInorderNode = root;
+        
+        // Initialize the in-order traversal (left to right)
+        while (inorderNode) {
+            inorderStack.push(inorderNode);
+            inorderNode = inorderNode->left;
+        }
+
+        // Initialize the reverse in-order traversal (right to left)
+        while (reverseInorderNode) {
+            reverseInorderStack.push(reverseInorderNode);
+            reverseInorderNode = reverseInorderNode->right;
+        }
+
+        // Two-pointer technique: one for in-order, one for reverse in-order
+        while (!inorderStack.empty() && !reverseInorderStack.empty()) {
+            TreeNode* leftNode = inorderStack.top();
+            TreeNode* rightNode = reverseInorderStack.top();
             
-            curr = s.top();
-            s.pop();
-            
-            // Check if the complement exists
-            if (st.find(k - curr->val) != st.end()) {
+            // If we find the target sum
+            if (leftNode != rightNode && leftNode->val + rightNode->val == k) {
                 return true;
             }
             
-            // Insert current node value into the set
-            st.insert(curr->val);
-            
-            // Move to the right subtree
-            curr = curr->right;
+            // If the sum is less than k, move the in-order pointer forward (next larger element)
+            if (leftNode->val + rightNode->val < k) {
+                inorderStack.pop();
+                TreeNode* node = leftNode->right;
+                while (node) {
+                    inorderStack.push(node);
+                    node = node->left;
+                }
+            } 
+            // If the sum is greater than k, move the reverse in-order pointer backward (next smaller element)
+            else {
+                reverseInorderStack.pop();
+                TreeNode* node = rightNode->left;
+                while (node) {
+                    reverseInorderStack.push(node);
+                    node = node->right;
+                }
+            }
         }
         
         return false;
