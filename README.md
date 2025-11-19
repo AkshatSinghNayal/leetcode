@@ -177,6 +177,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0451-sort-characters-by-frequency](https://github.com/AkshatSinghNayal/leetcode/tree/master/0451-sort-characters-by-frequency) |
 | [0455-assign-cookies](https://github.com/AkshatSinghNayal/leetcode/tree/master/0455-assign-cookies) |
 | [0621-task-scheduler](https://github.com/AkshatSinghNayal/leetcode/tree/master/0621-task-scheduler) |
+| [0748-largest-number-at-least-twice-of-others](https://github.com/AkshatSinghNayal/leetcode/tree/master/0748-largest-number-at-least-twice-of-others) |
 | [0876-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0876-hand-of-straights) |
 | [1019-squares-of-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1019-squares-of-a-sorted-array) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -236,6 +237,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0540-single-element-in-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0621-task-scheduler](https://github.com/AkshatSinghNayal/leetcode/tree/master/0621-task-scheduler) |
 | [0735-asteroid-collision](https://github.com/AkshatSinghNayal/leetcode/tree/master/0735-asteroid-collision) |
+| [0748-largest-number-at-least-twice-of-others](https://github.com/AkshatSinghNayal/leetcode/tree/master/0748-largest-number-at-least-twice-of-others) |
 | [0792-binary-search](https://github.com/AkshatSinghNayal/leetcode/tree/master/0792-binary-search) |
 | [0876-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0876-hand-of-straights) |
 | [0890-lemonade-change](https://github.com/AkshatSinghNayal/leetcode/tree/master/0890-lemonade-change) |
