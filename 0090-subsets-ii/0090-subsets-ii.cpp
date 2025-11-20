@@ -7,22 +7,12 @@ public:
             return;
         }
 
-        // -----------------------------
-        // OPTION 1: Do NOT take nums[index]
-        // -----------------------------
-        int next = index + 1;
-        // skip all duplicates when not taking
-        while (next < nums.size() && nums[next] == nums[index]) {
-            next++;
-        }
-        solve(next, nums, temp, ans);
-
-        // -----------------------------
-        // OPTION 2: Take nums[index]
-        // -----------------------------
-        temp.push_back(nums[index]);
-        solve(index + 1, nums, temp, ans);
-        temp.pop_back();
+        temp.push_back(nums[index]); 
+        solve( index + 1 ,  nums , temp , ans ); 
+        temp.pop_back(); 
+        while( index+1 < nums.size() && nums[index] == nums[index+1]) index++; 
+        solve(index+1 , nums, temp , ans) ; 
+       
     }
 
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
