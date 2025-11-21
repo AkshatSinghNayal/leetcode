@@ -5,7 +5,7 @@ public:
         
         int left = 0, right = 0, far = 0, jump = 0;
         
-        while (right < nums.size() - 1) {  // We don't need to jump if we're already at the last element
+        while (right < nums.size() ) {  // We don't need to jump if we're already at the last element
             far = 0;  // Reset far for each jump range
             
             // Explore all positions within the current jump's range
