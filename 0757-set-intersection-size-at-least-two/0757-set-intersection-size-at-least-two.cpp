@@ -9,7 +9,7 @@ public:
         for(auto &i:intervals){
             if(b<i[0]){
                 b=i[1];
-                a=b-1;
+                a=i[1]-1;
                 ans+=2;
             }
             else if(a<i[0]){
