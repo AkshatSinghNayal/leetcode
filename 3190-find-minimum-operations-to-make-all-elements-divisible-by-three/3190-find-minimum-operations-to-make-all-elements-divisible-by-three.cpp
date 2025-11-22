@@ -7,9 +7,9 @@ public:
             if( it%3 == 0 ) threes++;
         }
 
-        if( threes>=1 ) return n-threes ;
+         return n-threes ;
 
-        return n ;
+        
 
     }
 };
