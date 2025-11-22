@@ -7,7 +7,6 @@ public:
             if( it%3 == 0 ) threes++;
         }
 
-        if( threes == nums.size()) return 0 ;
         if( threes>=1 ) return n-threes ;
 
         return n ;
