@@ -21,7 +21,6 @@ public:
             int size = q.size() ;
                 maxi = max(maxi , q.back().second - q.front().second+1);
                 int left= q.front().second;
-                // int left = 1 ;
             for( int i  = 0 ;i<size ; i++){
                 
                 auto node = q.front() ;
