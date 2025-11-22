@@ -24,7 +24,7 @@ public:
             for( int i  = 0 ;i<size ; i++){
                 
                 auto node = q.front() ;
-                int initial = node.second-left ;
+                long long int initial = node.second-left ;
                 q.pop() ;
                 
                 if( node.first->left ) q.push( {node.first->left , initial*2+1 }); 
