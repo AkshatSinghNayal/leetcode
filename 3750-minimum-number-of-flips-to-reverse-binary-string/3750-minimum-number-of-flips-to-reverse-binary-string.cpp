@@ -1,20 +1,19 @@
 class Solution {
 public:
     int minimumFlips(int n) {
-        string s="";
-        int msb=31-__builtin_clz(n);
-        for(int i=msb;i>=0;i--){
-            if((1LL<<i)&n){
-                s+='1';
-            }
-            else s+='0';
+        string revStr =""; 
+        int k  = n ; 
+        while(k!=0){
+            revStr.push_back((k&1)+'0');
+            k>>=1;
         }
-        string temp=s;
-        reverse(temp.begin(),temp.end());
-        int cnt=0;
-        for(int i=0;i<temp.size();i++){
-            if(temp[i]!=s[i])cnt++;
+        int count = 0;
+        reverse(revStr.begin(),revStr.end()); 
+        k = n; 
+        for( int i  = 0  ; i<revStr.size() ; i++){
+            if( (k&1) != revStr[i]-'0') count++;
+            k>>=1 ;
         }
-        return cnt;
+        return count;
     }
 };
