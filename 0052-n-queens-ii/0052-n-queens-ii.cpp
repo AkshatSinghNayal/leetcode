@@ -21,25 +21,28 @@ public:
         return true; 
     }
 
-    int helperFunction( int n , vector<vector<int>>& ans , int row , int count ){
+    void helperFunction( int n , vector<vector<int>>& ans , int row , int &count ){
         
         if( row  == n ) {
-           return count+=1 ; 
+            count+=1 ; 
+            return ;
         }
 
         for( int col = 0 ; col<n ; col++){
            if (check( row , col , ans , n )){
                 ans[row][col] = 1; 
-             count =   helperFunction( n , ans , row+1 , count); 
+           helperFunction( n , ans , row+1 , count); 
                 ans[row][col] = 0; 
             }
         }
-        return count ; 
+        
     }
 
     int totalNQueens(int n) {
         if( n ==1 ) return 1 ; 
         vector<vector<int>> ans(n ,vector<int>(n,0)); 
-       return helperFunction( n , ans, 0 , 0   ) ; 
+        int count  = 0 ;
+        helperFunction( n , ans, 0 , count  ) ; 
+        return count ; 
     }
 };
