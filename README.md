@@ -190,6 +190,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0922-sort-array-by-parity-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0922-sort-array-by-parity-ii) |
 | [1019-squares-of-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1019-squares-of-a-sorted-array) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2327-largest-number-after-digit-swaps-by-parity](https://github.com/AkshatSinghNayal/leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
@@ -265,6 +266,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1034-subarrays-with-k-different-integers](https://github.com/AkshatSinghNayal/leetcode/tree/master/1034-subarrays-with-k-different-integers) |
 | [1046-max-consecutive-ones-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/AkshatSinghNayal/leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
+| [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/AkshatSinghNayal/leetcode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
@@ -396,6 +398,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0357-count-numbers-with-unique-digits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0357-count-numbers-with-unique-digits) |
 | [0435-non-overlapping-intervals](https://github.com/AkshatSinghNayal/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0943-sum-of-subarray-minimums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0943-sum-of-subarray-minimums) |
+| [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 ## Greedy
 |  |
 | ------- |
@@ -409,6 +412,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0759-set-intersection-size-at-least-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0759-set-intersection-size-at-least-two) |
 | [0876-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0876-hand-of-straights) |
 | [0890-lemonade-change](https://github.com/AkshatSinghNayal/leetcode/tree/master/0890-lemonade-change) |
+| [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1448-maximum-69-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/1448-maximum-69-number) |
 | [2032-largest-odd-number-in-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2032-largest-odd-number-in-string) |
