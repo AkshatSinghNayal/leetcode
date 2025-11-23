@@ -1,48 +1,38 @@
 class Solution {
 public:
-
-    bool check( int row , int col , vector<vector<int>>& ans , int n ){
-        // case 1 : upper side 
-
-        for( int i =row ;i>= 0 ;i--){
-            if(ans[i][col] == 1 ) return false ;
+    bool check(int row, int col, vector<vector<int>>& ans, int n) {
+        // Check all previously placed queens (rows 0 to row-1)
+        for(int i = 0; i < row; i++) {
+            for(int j = 0; j < n; j++) {
+                if(ans[i][j] == 1) {
+                    // Same column check
+                    if(j == col) return false;
+                    
+                    // Diagonal check using abs()
+                    if(abs(i - row) == abs(j - col)) return false;
+                }
+            }
         }
-
-        // case 2: diagonal left : 
-        for( int i = row , j = col ; i>=0 && j>=0 ; i--, j--){
-            if(ans[i][j] ==1 ) return false; 
-        }
-
-        // case 3 right diagonal : 
-        for( int i = row , j =col ; i>=0 && j<n ; i--,j++){
-            if(ans[i][j] ==1 ) return false;
-        }
-
-        return true; 
+        return true;
     }
 
-    void helperFunction( int n , vector<vector<int>>& ans , int row , int &count ){
-        
-        if( row  == n ) {
-            count+=1 ; 
-            return ;
+    int helperFunction(int n, vector<vector<int>>& ans, int row, int count) {
+        if(row == n) {
+            return count + 1;
         }
 
-        for( int col = 0 ; col<n ; col++){
-           if (check( row , col , ans , n )){
+        for(int col = 0; col < n; col++) {
+            if(check(row, col, ans, n)) {
                 ans[row][col] = 1; 
-           helperFunction( n , ans , row+1 , count); 
+                count = helperFunction(n, ans, row + 1, count);
                 ans[row][col] = 0; 
             }
         }
-        
+        return count; 
     }
 
     int totalNQueens(int n) {
-        if( n ==1 ) return 1 ; 
-        vector<vector<int>> ans(n ,vector<int>(n,0)); 
-        int count  = 0 ;
-        helperFunction( n , ans, 0 , count  ) ; 
-        return count ; 
+        vector<vector<int>> ans(n, vector<int>(n, 0)); 
+        return helperFunction(n, ans, 0, 0); 
     }
 };
