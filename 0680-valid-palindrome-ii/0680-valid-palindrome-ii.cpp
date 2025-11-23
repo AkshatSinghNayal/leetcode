@@ -1,30 +1,23 @@
 class Solution {
 public:
+
+    bool check( string& s , int left , int right ){
+        while( left < right ){
+            if( s[left++] != s[right-- ]) return false ;
+        }
+        return true; 
+    }
+
     bool validPalindrome(string s) {
+        bool first = true; 
         int n = s.size() ; 
-        if(n == 1 ) return true; 
-        int left = 0  , right = n -1; 
-        bool first = true;
-
-        while( left<right ){
-
-            if( s[left] !=s[right]  ){
-                if( left+1 < n && s[left+1] == s[right] && first ){
-                    left++; 
-                    first = false;
-                }
-                else if( right-1>=0 && s[right-1] == s[left] && first){
-                    right--; 
-                    first=false ;
-                }
-                else{
-                    return false;
-                }
+        int left = 0  , right = n-1 ; 
+        while( left < right ){
+            if( s[left] !=s[right]  && first ) {
+            return check( s, left+1 , right ) || check( s , left , right-1 ) ; 
+                
             }
-            
-
-            left++ ; right-- ; 
-
+            left++ ; right--; 
         }
         return true;
     }
