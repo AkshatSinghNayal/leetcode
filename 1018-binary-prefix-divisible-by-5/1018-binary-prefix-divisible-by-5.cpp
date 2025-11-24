@@ -9,7 +9,7 @@ public:
             result = ((result << 1) + nums[i])%5;
             
             // Check if the current result is divisible by 5
-            ans.emplace_back(result == 0 );
+            ans.push_back(result == 0 );
         }
         
         return ans;
