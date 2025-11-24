@@ -1,13 +1,17 @@
 class Solution {
 public:
     vector<bool> prefixesDivBy5(vector<int>& nums) {
-        vector<bool> answer;
-        int prefix = 0;
-        int length = nums.size();
-        for (int i = 0; i < length; i++) {
-            prefix = ((prefix << 1) + nums[i]) % 5;
-            answer.emplace_back(prefix == 0);
+        vector<bool> ans;
+        int result = 0;
+        
+        for (int i = 0; i < nums.size(); i++) {
+            // Update the result by shifting left and adding the current number (binary digit)
+            result = ((result << 1) + nums[i])%5;
+            
+            // Check if the current result is divisible by 5
+            ans.emplace_back(result == 0 );
         }
-        return answer;
+        
+        return ans;
     }
 };
