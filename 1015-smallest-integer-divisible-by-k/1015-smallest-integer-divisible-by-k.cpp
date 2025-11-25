@@ -8,7 +8,7 @@ public:
         int count =  1; 
         bool flag =  false; 
          for( int i = 0  ; i<=k ; i++){
-            ans =  (ans*10+1)%k; 
+            ans =  (ans%k*10+1)%k; 
             if( ans ==  0  ){
                 flag = true; 
                 break; 
