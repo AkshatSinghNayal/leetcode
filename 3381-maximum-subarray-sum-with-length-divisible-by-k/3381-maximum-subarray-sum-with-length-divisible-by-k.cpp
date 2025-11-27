@@ -1,25 +1,15 @@
 class Solution {
 public:
     long long maxSubarraySum(vector<int>& nums, int k) {
-        int n=nums.size();
-        vector<long long> pre(n+1,0);
-
-        long long sol=LLONG_MIN;
-
-        for(int i=0;i<n;i++){
-            pre[i+1]=pre[i]+nums[i];
+        int n = nums.size();
+        long long prefixSum = 0, maxSum = LONG_LONG_MIN;
+        vector<long long> kSum(k, LONG_LONG_MAX / 2);
+        kSum[k - 1] = 0;
+        for (int i = 0; i < n; i++) {
+            prefixSum += nums[i];
+            maxSum = max(maxSum, prefixSum - kSum[i % k]);
+            kSum[i % k] = min(kSum[i % k], prefixSum);
         }
-
-        for(int i=0;i<k && i<n;i++){
-            long long sum=0;
-            for(int j=i;j+k<=n;j+=k){
-                long long curr_sum= pre[j+k]-pre[j];
-                
-                sum = max(curr_sum,sum+curr_sum);
-                sol = max(sol,sum);
-            }
-        }
-
-        return sol;
+        return maxSum;
     }
 };
