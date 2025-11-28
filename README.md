@@ -158,6 +158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0326-power-of-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/AkshatSinghNayal/leetcode/tree/master/0342-power-of-four) |
 | [0390-elimination-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0390-elimination-game) |
+| [0509-fibonacci-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0509-fibonacci-number) |
 | [2050-count-good-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2050-count-good-numbers) |
 ## Divide and Conquer
 |  |
@@ -320,6 +321,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0357-count-numbers-with-unique-digits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0357-count-numbers-with-unique-digits) |
 | [0372-super-pow](https://github.com/AkshatSinghNayal/leetcode/tree/master/0372-super-pow) |
 | [0390-elimination-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0390-elimination-game) |
+| [0509-fibonacci-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0509-fibonacci-number) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1444-number-of-steps-to-reduce-a-number-to-zero](https://github.com/AkshatSinghNayal/leetcode/tree/master/1444-number-of-steps-to-reduce-a-number-to-zero) |
@@ -407,6 +409,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0338-counting-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0338-counting-bits) |
 | [0357-count-numbers-with-unique-digits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0357-count-numbers-with-unique-digits) |
 | [0435-non-overlapping-intervals](https://github.com/AkshatSinghNayal/leetcode/tree/master/0435-non-overlapping-intervals) |
+| [0509-fibonacci-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0509-fibonacci-number) |
 | [0943-sum-of-subarray-minimums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0943-sum-of-subarray-minimums) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 ## Greedy
@@ -530,6 +533,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/0070-climbing-stairs) |
+| [0509-fibonacci-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0509-fibonacci-number) |
 ## Number Theory
 |  |
 | ------- |
