@@ -5,7 +5,7 @@ public:
         if(n<=1) return n ; 
 
         if(dp[n] != -1){
-            dp[n]; 
+            return dp[n]; 
         }
 
         return dp[n] = helperFunction( dp , n-1 ) + helperFunction(dp , n-2 ) ;
