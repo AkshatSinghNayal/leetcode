@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0424-longest-repeating-character-replacement](https://github.com/AkshatSinghNayal/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0451-sort-characters-by-frequency](https://github.com/AkshatSinghNayal/leetcode/tree/master/0451-sort-characters-by-frequency) |
 | [0496-next-greater-element-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/0496-next-greater-element-i) |
+| [0523-continuous-subarray-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0523-continuous-subarray-sum) |
 | [0621-task-scheduler](https://github.com/AkshatSinghNayal/leetcode/tree/master/0621-task-scheduler) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/AkshatSinghNayal/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0876-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0876-hand-of-straights) |
@@ -253,6 +254,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0485-max-consecutive-ones](https://github.com/AkshatSinghNayal/leetcode/tree/master/0485-max-consecutive-ones) |
 | [0496-next-greater-element-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0503-next-greater-element-ii) |
+| [0523-continuous-subarray-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0523-continuous-subarray-sum) |
 | [0540-single-element-in-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0621-task-scheduler](https://github.com/AkshatSinghNayal/leetcode/tree/master/0621-task-scheduler) |
 | [0713-subarray-product-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/0713-subarray-product-less-than-k) |
@@ -323,6 +325,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0372-super-pow](https://github.com/AkshatSinghNayal/leetcode/tree/master/0372-super-pow) |
 | [0390-elimination-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0390-elimination-game) |
 | [0509-fibonacci-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0509-fibonacci-number) |
+| [0523-continuous-subarray-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0523-continuous-subarray-sum) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1444-number-of-steps-to-reduce-a-number-to-zero](https://github.com/AkshatSinghNayal/leetcode/tree/master/1444-number-of-steps-to-reduce-a-number-to-zero) |
@@ -519,6 +522,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/AkshatSinghNayal/leetcode/tree/master/0238-product-of-array-except-self) |
+| [0523-continuous-subarray-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0523-continuous-subarray-sum) |
 | [0713-subarray-product-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [0966-binary-subarrays-with-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1046-max-consecutive-ones-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1046-max-consecutive-ones-iii) |
