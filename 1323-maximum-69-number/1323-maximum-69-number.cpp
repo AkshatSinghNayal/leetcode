@@ -1,21 +1,17 @@
 class Solution {
 public:
     int maximum69Number (int num) {
-       
-       string s= to_string(num) ;
-       bool found =  false; 
-       for( int i  = 0 ; i<s.size() ; i++){
-            if( s[i] ==  '6'){
-                found = true; 
-                s[i] = '9' ; 
-                break ; 
-            }
-       }
+        int temp =  num ; 
+        int position = 1; 
+        int assume = 0; 
 
-        if( found ){
-            int temp = stoi(s); 
-            return temp ; 
+        while( temp ){
+            if( temp%10 == 6 ){
+                assume = position ; 
+            }
+            temp/=10 ;
+            position  = position*10; 
         }
-        return num ; 
+        return num+( assume*3 ) ; 
     }
 };
