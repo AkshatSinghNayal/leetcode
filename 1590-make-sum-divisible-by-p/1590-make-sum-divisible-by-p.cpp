@@ -1,34 +1,29 @@
 class Solution {
 public:
     int minSubarray(vector<int>& nums, int p) {
-        long long total = 0;
-        for (int x : nums)
-            total = (total + x) % p;
-
-        // If already divisible, nothing to remove
-        if (total == 0) return 0;
-
-        unordered_map<int, int> lastIndex;
-        lastIndex[0] = -1;   // To allow subarray starting at index 0
-
-        long long prefix = 0;
         int n = nums.size();
-        int ans = n + 1;
-
-        for (int i = 0; i < n; i++) {
-            prefix = (prefix + nums[i]) % p;
-
-            // We want prefix[j] such that (prefix[i] - prefix[j]) % p == total
-            long long need = (prefix - total + p) % p;
-
-            if (lastIndex.count(need)) {
-                ans = min(ans, i - lastIndex[need]);
-            }
-
-            // Save / update prefix modulo index
-            lastIndex[prefix] = i;
+        int sum = 0;
+        for(int i = 0; i<n; i++){
+            sum = (sum + nums[i])%p;
         }
+        int target = sum % p;
+        if(target == 0){
+            return 0;
+        }
+        unordered_map<int, int> mp;
+        int curr = 0;
+        mp[0] = -1;
+       
+        int ans = n;
+        for(int i = 0; i<n; i++){
+            curr = (curr + nums[i]) %p;
 
-        return ans == n + 1 ? -1 : ans;
+            int r = (curr - target + p) % p;
+            if(mp.find(r) != mp.end()){
+                ans = min(ans, i - mp[r]);
+            }
+            mp[curr] = i;
+        }
+        return ans == n ? -1: ans;
     }
 };
