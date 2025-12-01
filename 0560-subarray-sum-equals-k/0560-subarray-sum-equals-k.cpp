@@ -1,25 +1,19 @@
 class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
-        unordered_map<int, int> mp;
-        mp[0] = 1; // prefix sum 0 occurs once
+        unordered_map<int,int> mp ; 
+        int pre = 0 ; 
+        mp[0]=  1 ; 
+        int count= 0 ; 
         
-        int pre = 0;
-        int count = 0;
-
-        for (int x : nums) {
-            pre += x;
-            int need = pre - k;
-
-            // if need exists, add all occurrences
-            if (mp.count(need)) {
-                count += mp[need];
+        for( int i  = 0 ; i<nums.size() ; i++){
+            pre += nums[i];
+            int compliment =  (pre-k) ; 
+            if(mp.count(compliment)){
+                count+=mp[compliment]; 
             }
-
-            // record prefix sum
             mp[pre]++;
         }
-
-        return count;
+        return count ; 
     }
 };
