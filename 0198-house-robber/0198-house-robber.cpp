@@ -9,7 +9,7 @@ public:
         if( dp[n] != -1 ) return dp[n]; 
 
         int take= nums[n] + solve ( nums , dp , n-2); 
-        int notTake = 0 + solve( nums , dp , n-1 ) ; 
+        int notTake =  solve( nums , dp , n-1 ) ; 
 
         return dp[n] = max( take , notTake )  ;
         
