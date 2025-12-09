@@ -3,19 +3,20 @@ public:
 
 
     int maxProduct(vector<int>& nums) {
-        int n = nums.size();
-    vector<int> maxProd(n), minProd(n);
-
-    maxProd[0] = minProd[0] = nums[0];
+        int currMax = nums[0];
+    int currMin = nums[0];
     int ans = nums[0];
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < nums.size(); i++) {
         int x = nums[i];
 
-        maxProd[i] = max({x, x * maxProd[i-1], x * minProd[i-1]});
-        minProd[i] = min({x, x * maxProd[i-1], x * minProd[i-1]});
+        int tempMax = max({x, currMax * x, currMin * x});
+        int tempMin = min({x, currMax * x, currMin * x});
 
-        ans = max(ans, maxProd[i]);
+        currMax = tempMax;
+        currMin = tempMin;
+
+        ans = max(ans, currMax);
     }
 
     return ans;
