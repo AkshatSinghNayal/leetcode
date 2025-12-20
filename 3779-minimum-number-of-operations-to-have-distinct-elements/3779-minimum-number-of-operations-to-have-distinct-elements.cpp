@@ -1,15 +1,16 @@
 class Solution {
 public:
     int minOperations(vector<int>& nums) {
-        map<int,int>mp;
-        int cnt=0;
-        int k=0;
-        for(int i=nums.size()-1;i>=0;i--){
-            mp[nums[i]]++;
-            if(mp[nums[i]]>1)break;
-            cnt++;
+        unordered_map<int,int> mp ; 
+        int n  =  nums.size(); 
+        int count = 0  ; 
+        for( int i  = n-1 ; i>= 0 ; i--){
+            mp[nums[i]]++; 
+            if( mp[nums[i]]>1) break; // found dubplicate now we have to count the ele then ceil division ; 
+            count++; 
+
         }
-        int n=nums.size()-cnt;
-        return (n+2)/3;
+        int totalOperations = n - count ; 
+        return( totalOperations + 2 ) / 3; 
     }
 };
