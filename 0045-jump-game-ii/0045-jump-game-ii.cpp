@@ -15,6 +15,7 @@ public:
                 jumps++;
                 currentEnd = farthest;
             }
+            if( currentEnd >=n-1 ) break;
         }
         return jumps;
     }
