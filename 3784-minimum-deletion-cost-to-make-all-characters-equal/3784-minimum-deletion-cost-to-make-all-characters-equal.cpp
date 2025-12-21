@@ -8,7 +8,7 @@ public:
             mp[temp] = mp[temp]+cost[i]; 
         }
         long long maxi  = LLONG_MIN ; 
-        char final;
+        char final=' ';
         for( auto& it : mp ){
              if( maxi < it.second ){
                 maxi = it.second ; 
