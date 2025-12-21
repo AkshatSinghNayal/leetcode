@@ -1,19 +1,26 @@
 class Solution {
 public:
     long long minCost(string s, vector<int>& cost) {
-        unordered_map<char, long long> mp;
-        long long total = 0;
-
-        for (int i = 0; i < s.size(); i++) {
-            mp[s[i]] += cost[i];
-            total += cost[i];
+        int n  =  s.size() ; 
+        unordered_map<char,long long> mp ; 
+        for( int i  = 0 ; i< n ; i++){
+            char temp = s[i]; 
+            mp[temp] = mp[temp]+cost[i]; 
         }
-
-        long long maxi = 0;
-        for (auto &it : mp) {
-            maxi = max(maxi, it.second);
+        long long maxi  = LLONG_MIN ; 
+        char final;
+        for( auto& it : mp ){
+             if( maxi < it.second ){
+                maxi = it.second ; 
+                final = it.first ; 
+             }
         }
-
-        return total - maxi;
+        cout<<" this is final " << final << " " ; 
+        
+        long long totalCost = 0 ; 
+        for( auto& it : mp ){
+            if(maxi != it.second or it.first!=final ) totalCost+=it.second; 
+        }
+        return totalCost ; 
     }
 };
