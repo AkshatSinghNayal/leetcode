@@ -124,6 +124,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0557-reverse-words-in-a-string-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0680-valid-palindrome-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0812-rotate-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0812-rotate-string) |
+| [0944-delete-columns-to-make-sorted](https://github.com/AkshatSinghNayal/leetcode/tree/master/0944-delete-columns-to-make-sorted) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/AkshatSinghNayal/leetcode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1542-consecutive-characters](https://github.com/AkshatSinghNayal/leetcode/tree/master/1542-consecutive-characters) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/AkshatSinghNayal/leetcode/tree/master/1636-number-of-substrings-with-only-1s) |
@@ -277,6 +278,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0922-sort-array-by-parity-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0922-sort-array-by-parity-ii) |
 | [0940-fruit-into-baskets](https://github.com/AkshatSinghNayal/leetcode/tree/master/0940-fruit-into-baskets) |
 | [0943-sum-of-subarray-minimums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0943-sum-of-subarray-minimums) |
+| [0944-delete-columns-to-make-sorted](https://github.com/AkshatSinghNayal/leetcode/tree/master/0944-delete-columns-to-make-sorted) |
 | [0966-binary-subarrays-with-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/AkshatSinghNayal/leetcode/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1019-squares-of-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1019-squares-of-a-sorted-array) |
