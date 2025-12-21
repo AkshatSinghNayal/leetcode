@@ -15,7 +15,7 @@ public:
                 final = it.first ; 
              }
         }
-        cout<<" this is final " << final << " " ; 
+        
         
         long long totalCost = 0 ; 
         for( auto& it : mp ){
