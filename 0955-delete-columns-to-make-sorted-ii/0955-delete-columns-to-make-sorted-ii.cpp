@@ -4,38 +4,24 @@ public:
         int n = strs.size(); 
         int count = 0; 
         int m = strs[0].size(); 
-        vector<bool> sorted(n - 1, false);  // CHANGE 1: Track ordered pairs
+        vector<bool> sorted(n - 1, false);  // FIX 1: n-1 instead of n
         
-        for(int i = 0; i < m; i++) {
-            bool fine = true;  // CHANGE 2: Move inside loop
+        for(int col = 0; col < m; col++) {
+            bool deleted = false;
             
-            for(int j = 1; j < n; j++) {
-                // CHANGE 3: Only check if not already sorted
-                if(!sorted[j-1] && strs[j][i] < strs[j-1][i]) { 
-                    count++; 
-                    fine = false; 
+            for(int row = 0; row < n-1; row++) { 
+                if(!sorted[row] && strs[row][col] > strs[row+1][col]){
+                    count++;
+                    deleted = true; 
                     break; 
                 }
             }
-            
-            // CHANGE 4: If column is kept, update sorted pairs
-            if(fine) {
-                for(int j = 1; j < n; j++) {
-                    if(strs[j][i] > strs[j-1][i]) {
-                        sorted[j-1] = true;
-                    }
-                }
+            if(deleted){
+                continue; 
             }
-            
-            // CHANGE 5: Check if all pairs are sorted
-            bool allSorted = true;
-            for(int j = 0; j < n - 1; j++) {
-                if(!sorted[j]) {
-                    allSorted = false;
-                    break;
-                }
+            for(int i = 0; i < n - 1; i++){  // FIX 2: n-1 instead of n
+                 sorted[i] = sorted[i] | (strs[i][col] < strs[i+1][col]);  
             }
-            if(allSorted) break;
         }
         return count; 
     }
