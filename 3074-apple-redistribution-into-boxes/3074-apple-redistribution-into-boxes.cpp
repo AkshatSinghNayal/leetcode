@@ -3,7 +3,7 @@ public:
     int minimumBoxes(vector<int>& apple, vector<int>& capacity) {
         sort( capacity.rbegin(),capacity.rend()) ; 
         int i  = 0  ; 
-        int n  = apple.size() ; int m = capacity.size() ; 
+        int n  = apple.size() ; 
             long long total = 0 ; 
             long long canHold = capacity[0]; int canHoldIdx =1 ; 
             int count = 1; 
