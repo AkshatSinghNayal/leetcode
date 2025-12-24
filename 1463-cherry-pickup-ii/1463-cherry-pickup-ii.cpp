@@ -28,7 +28,6 @@ public:
                 else
                     value = grid[row][colIndexOfR1] + grid[row][colIndexOfR2]; 
 
-               
                 int result = value + solve(grid, dp, row + 1, colIndexOfR1 + i, colIndexOfR2 + j, rowAtEachLayer, colAtEachLayer);
                 maxi = max(maxi, result);
             }
@@ -42,7 +41,6 @@ public:
         int rowAtEachLayer = grid.size(); 
         int colAtEachLayer = grid[0].size(); 
 
-       
         vector<vector<vector<int>>> dp(rowAtEachLayer, vector<vector<int>>(colAtEachLayer, vector<int>(colAtEachLayer, -1)));
 
         int row = 0;
