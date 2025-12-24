@@ -1,13 +1,21 @@
 class Solution {
 public:
     int minimumBoxes(vector<int>& apple, vector<int>& capacity) {
-        long long total = accumulate( apple.begin(),apple.end() , 0 ); 
-        sort( capacity.rbegin(), capacity.rend()); 
-        int canHold  = 0  , count = 0  ; 
-        for( int i = 0  ; i<capacity.size() ; i++){
-            canHold +=capacity[i]; 
-            count++; 
-            if( canHold>= total) break; 
+        sort( capacity.rbegin(),capacity.rend()) ; 
+        int i  = 0  ; 
+        int n  = apple.size() ; 
+            long long total = 0 ; 
+            long long canHold = capacity[0]; int canHoldIdx =1 ; 
+            int count = 1; 
+        while( i < n ){
+            if( total+apple[i] <= canHold ){
+                total+=apple[i];
+                i++; 
+            }
+            else{
+               count++; 
+               canHold+=capacity[canHoldIdx++];
+            }
         }
         return count ; 
     }
