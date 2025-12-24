@@ -1,44 +1,25 @@
 class Solution {
 public:
-    int solve(vector<vector<int>>& matrix, vector<vector<int>>& dp, int row,
-              int col, int n) {
-        // Out of bounds check - must come BEFORE accessing matrix
-        if (col < 0 || col >= n)
-            return INT_MAX;
-        
-        // Base case: If we've reached the first row, return the matrix value
-        if (row == 0)
-            return matrix[row][col];
-
-        // If already computed, return the stored result
-        if (dp[row][col] != INT_MIN)
-            return dp[row][col];
-
-        // Calculate the minimum falling path sum from three possible directions
-        int up = solve(matrix, dp, row - 1, col, n);
-        int left = solve(matrix, dp, row - 1, col - 1, n);
-        int right = solve(matrix, dp, row - 1, col + 1, n);
-
-        // Handle overflow: only add if the path is valid
-        int minPath = min({up, left, right});
-        if (minPath == INT_MAX)
-            dp[row][col] = INT_MAX;
-        else
-            dp[row][col] = matrix[row][col] + minPath;
-
-        return dp[row][col];
-    }
-
     int minFallingPathSum(vector<vector<int>>& matrix) {
         int n = matrix.size();
-        vector<vector<int>> dp(n, vector<int>(n, INT_MIN));
+        vector<vector<int>> dp(n, vector<int>(n,0));
+        for( int i = 0  ; i< n ; i++) dp[0][i] = matrix[0][i]; 
+        for( int i =  1 ; i < n ; i++){
+            int left = 1e9; 
+            int right = 1e9; 
+            for( int j  = 0  ; j< n ; j++){
+                int up = dp[i-1][j]; 
+                if( j-1 >= 0  )  left =  dp[i-1][j-1]; 
+                if( j+1 <n )  right =  dp[i-1][j+1]; 
 
-        // Try all starting positions in the last row
-        int result = INT_MAX;
-        for (int col = 0; col < n; col++) {
-            result = min(result, solve(matrix, dp, n - 1, col, n));
+                dp[i][j] = matrix[i][j] + min({ up , left , right }); 
+            }
         }
-
-        return result;
+        int mini = INT_MAX  ; 
+        for( int i  = 0 ; i< n  ; i++){
+            int val = dp[n-1][i] ; 
+            mini = min( mini , val ) ; 
+        }
+        return mini ; 
     }
 };
