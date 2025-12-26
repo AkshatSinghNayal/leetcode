@@ -1,27 +1,36 @@
 class Solution {
   public:
-    
-   bool solve( vector<int>& arr , vector<vector<int>>& dp , int i , int target ){
-        
-        if (target == 0) return true;  // Base case: If target is 0, we found a subset
-        if (i < 0) return false;  // Base case: If index goes out of bounds, no subset sum possible
-        
-        if (dp[i][target] != -1) return dp[i][target];  // Check if result is already computed
-        
-        // Recursively check both cases: include or exclude the current element
-        bool take = false;
-        if (arr[i] <= target) {
-            take = solve(arr, dp, i - 1, target - arr[i]);  // Include the current element
-        }
-        bool notTake = solve(arr, dp, i - 1, target);  // Exclude the current element
-        
-        // Memoize the result for the current subproblem
-        return dp[i][target] = take || notTake;  // If either case works, return true
-    }
-        
     bool isSubsetSum(vector<int>& arr, int sum) {
-        int n = arr.size(); 
-        vector<vector<int>> dp(n, vector<int>(sum + 1, -1));  // dp[i][target] initialized to -1
-        return solve(arr, dp, n - 1, sum);  // Start from the last index and the target sum
+        int n = arr.size();
+        
+        // Create the dp table: n rows (items), sum+1 columns (target sum)
+        vector<vector<bool>> dp(n, vector<bool>(sum + 1, false));
+        
+        // Initialize the first column (target sum 0 is always achievable)
+        for (int i = 0; i < n; i++) {
+            dp[i][0] = true;  // Sum 0 is always achievable (take no elements)
+        }
+        
+        // Initialize the first row (consider only arr[0])
+        if (arr[0] <= sum) {
+            dp[0][arr[0]] = true;
+        }
+
+        // Fill the dp table
+        for (int i = 1; i < n; i++) {
+            for (int target = 1; target <= sum; target++) {
+                bool notTake = dp[i-1][target];  // Do not include arr[i]
+                bool take = false;
+                
+                if (arr[i] <= target) {
+                    take = dp[i-1][target - arr[i]];  // Include arr[i]
+                }
+
+                dp[i][target] = take || notTake;  // Take or not take the element
+            }
+        }
+
+        // The last cell of the dp table contains the answer
+        return dp[n-1][sum];
     }
 };
