@@ -7,34 +7,29 @@ public:
 
         int n = nums.size();
         
-        // Create the dp table: n rows (items), sum+1 columns (target sum)
         vector<vector<bool>> dp(n, vector<bool>(target+1, false));
         
-        // Initialize the first column (target sum 0 is always achievable)
         for (int i = 0; i < n; i++) {
-            dp[i][0] = true;  // Sum 0 is always achievable (take no elements)
+            dp[i][0] = true;  
         }
         
-        // Initialize the first row (consider only nums[0])
         if (nums[0] <= target) {
             dp[0][nums[0]] = true;
         }
 
-        // Fill the dp table
         for (int i = 1; i < n; i++) {
             for (int tar = 1; tar <= target; tar++) {
-                bool notTake = dp[i-1][tar];  // Do not include nums[i]
+                bool notTake = dp[i-1][tar]; 
                 bool take = false;
                 
                 if (nums[i] <= tar) {
-                    take = dp[i-1][tar - nums[i]];  // Include nums[i]
+                    take = dp[i-1][tar - nums[i]];  
                 }
 
-                dp[i][tar] = take || notTake;  // Take or not take the element
+                dp[i][tar] = take || notTake;  
             }
         }
 
-        // The last cell of the dp table contains the answer
         return dp[n-1][target];
     }
 };
