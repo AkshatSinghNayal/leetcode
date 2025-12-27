@@ -1,33 +1,26 @@
 class Solution {
 public:
-
-    int solve(vector<vector<int>>& triangle , vector<vector<int>>& dp , int row , int col , int size ){
-
-        if( col <0 or col>= size  )return 1e9; 
-        
-        if( row == 0 ) return triangle[row][col]; 
-
-        if( dp[row][col]  != -1 ) return dp[row][col]; 
-
-        int up = ( row-1>= 0 ) ? solve( triangle , dp , row-1 , col , triangle[row-1].size()) : 1e9 ;
-        int left =  ( row-1>= 0 ) ? solve( triangle , dp , row-1 , col-1 , triangle[row-1].size()) : 1e9;      
-
-        return dp[row][col] = triangle[row][col] + min(up, left);
-    }
-
     int minimumTotal(vector<vector<int>>& triangle) {
-        int row = triangle.size(); 
-        if( row ==  1 ) {
-            int maxi = accumulate(triangle[0].begin(),triangle[0].end(),0); 
-            return maxi;
+         int n = triangle.size();
+
+        vector<vector<int>> dp(n);
+        for (int i = 0; i < n; i++) {
+            dp[i] = vector<int>(triangle[i].size(), 1e8);
         }
-        int col = triangle[row-1].size(); 
-        vector<vector<int>> dp ( row , vector<int>(col, -1)); 
-        int result = INT_MAX ;
-        int size= (row-2>=0 ) ? triangle[row-1].size() : 0 ; 
-        for( int i = 0 ; i<col ; i++){
-            result = min( { result , solve(triangle , dp , row-1 , i  , size)}); 
+        dp[0][0] = triangle[0][0]; 
+
+        for( int i  =1 ; i< n ; i++){
+            for(int j  = 0 ; j<triangle[i].size(); j++){
+                int up = (j< triangle[i].size()-1 ) ? dp[i-1][j] : 1e8; 
+                int left = ( j-1 >=0 ) ? dp[i-1][j-1] : 1e8; 
+
+                dp[i][j]= triangle[i][j]+min(up,left);
+            }
         }
-        return result ; 
+        int mini = INT_MAX; 
+        for( int i  = 0;  i<dp[n-1].size() ; i++){
+            mini = min ( mini , dp[n-1][i]); 
+        }
+        return mini; 
     }
 };
