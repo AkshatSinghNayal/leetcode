@@ -5,7 +5,7 @@ public:
         int size = triangle[n-1].size(); 
         vector<int>prev(size  , 1e8 ); 
         prev[0]=triangle[0][0]; 
-        for( int i  =1 ; i<size ; i++){
+        for( int i  =1 ; i<n ; i++){
             vector<int> temp(size,1e8);
             for(int j = 0; j<=i; j++){
                 int up = (j<i) ? prev[j] : 1e8 ; 
