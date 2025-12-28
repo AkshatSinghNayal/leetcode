@@ -296,6 +296,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1046-max-consecutive-ones-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/AkshatSinghNayal/leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
+| [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1463-cherry-pickup-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1463-cherry-pickup-ii) |
@@ -393,6 +394,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0907-koko-eating-bananas](https://github.com/AkshatSinghNayal/leetcode/tree/master/0907-koko-eating-bananas) |
 | [1046-max-consecutive-ones-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/AkshatSinghNayal/leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
+| [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/AkshatSinghNayal/leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1646-kth-missing-positive-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/1646-kth-missing-positive-number) |
 ## Bit Manipulation
@@ -514,6 +516,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/0054-spiral-matrix) |
 | [0064-minimum-path-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0064-minimum-path-sum) |
 | [0931-minimum-falling-path-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0931-minimum-falling-path-sum) |
+| [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1463-cherry-pickup-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1463-cherry-pickup-ii) |
 ## Simulation
 |  |
