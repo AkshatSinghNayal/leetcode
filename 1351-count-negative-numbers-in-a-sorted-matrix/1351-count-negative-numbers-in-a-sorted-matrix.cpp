@@ -8,16 +8,14 @@ public:
         int col = m-1;
 
         int count = 0;
-        while(row<n && col>=0){
-            int val = grid[row][col];
-            if(val<0){
-                count+=(n-row);
-                col--;
+        while( row<n and col>= 0 ){
+            int value = grid[row][col]; 
+            if( value < 0 ){
+                count+=n-row ; 
+                col--; 
             }
-            else{
-                row++;
-            }
+            else row++; 
         }
-        return count;
+        return count; 
     }
 };
