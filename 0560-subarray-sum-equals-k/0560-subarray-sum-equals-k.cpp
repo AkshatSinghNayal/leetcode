@@ -11,11 +11,11 @@ public:
             int compliment = sum-k; 
             if( mp.count(compliment)){
                 count+=mp[compliment]; 
-                mp[sum]++; 
+               
             }
-           else{
+          
              mp[sum]++; 
-           }
+           
         }
         
         return count ; 
