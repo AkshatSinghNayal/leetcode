@@ -2,13 +2,12 @@ class Solution {
 public:
     vector<int> plusOne(vector<int>& v) {
         reverse(v.begin(),v.end());
-        int sum  = 1 ; 
-        int carry = 0 ;
+         
+        int carry = 1 ;
         for( int i = 0;  i<v.size();i++){
-            sum = v[i]+sum+carry;
-            carry = sum/10 ;
-            sum = sum%10;
-            v[i] = sum ; 
+           int sum = v[i]+carry;
+            carry = sum/10; 
+            v[i] = sum%10;
             sum=sum/10;
             
         }
