@@ -1,35 +1,51 @@
 class Solution {
 public:
-    bool isPrime(int n) {
-        if (n < 2) return false;
-        for (int i = 2; i * i <= n; i++) {
-            if (n % i == 0) return false;
+bool isPrime(int n) {
+    if (n <= 1) return false;
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0)
+            return false;
+    }
+    return true;
+}
+
+    int solve( int num , int& sum , int count){
+        
+        for(int i = 2 ; i*i<=num ; i++){
+            if( num% i == 0 ){
+                if( num/i == i ){
+                    sum+=i ; 
+                    count+=1; 
+                }
+                else{
+                    sum+=i; 
+                    sum+=num/i; 
+                    count+=2; 
+                }
+            }
+            if( count>2 )return -1 ; 
         }
-        return true;
+        return (count == 2) ? 2 : -1 ;
     }
 
     int sumFourDivisors(vector<int>& nums) {
-        int ans = 0;
-
-        for( auto& it : nums ){
-            for(int i =2 ; i*i<=it ; i++){
-                int temp =  round(cbrt(it)); 
-                if( temp*temp*temp == it and isPrime(temp)){
-                    ans += 1+ temp + temp*temp + it; 
-                    break; 
-                }
-                else{
-                    if( it% i  == 0 ){
-                        int anotherOfI = it/i; 
-                        if( i!= anotherOfI and isPrime( i ) and isPrime(anotherOfI)){
-                            ans+=1 + i + anotherOfI + it ; 
-                            break; 
-                        }
-                    }
+        int n  = nums.size() ;
+        long long globalCount =0; 
+        for(int i = 0 ; i<n ; i++){
+        int sum = 0 ; 
+            int number = nums[i]; 
+            if( isPrime(number)){
+                continue;
+            }
+            else{
+                int count = solve( number , sum , 0); 
+                if( count == 2 ){
+                    globalCount = globalCount+1+number+sum; 
                 }
             }
+            
+
         }
-        
-        return ans;
+        return globalCount;
     }
 };
