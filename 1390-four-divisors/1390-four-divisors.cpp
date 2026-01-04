@@ -33,7 +33,7 @@ bool isPrime(int n) {
         long long globalCount =0; 
         for(int i = 0 ; i<n ; i++){
         int sum = 0 ; 
-            int number = nums[i]; int count = 0 ; 
+            int number = nums[i]; 
             if( isPrime(number)){
                 continue;
             }
