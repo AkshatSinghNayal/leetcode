@@ -2,27 +2,32 @@ class Solution {
 public:
     int minDeletionSize(vector<string>& strs) {
         int n = strs.size(); 
-        int count = 0; 
-        int m = strs[0].size(); 
-        vector<bool> sorted(n - 1, false);  // FIX 1: n-1 instead of n
-        
-        for(int col = 0; col < m; col++) {
-            bool deleted = false;
-            
-            for(int row = 0; row < n-1; row++) { 
-                if(!sorted[row] && strs[row][col] > strs[row+1][col]){
+        vector<bool> possible(n-1, false); 
+        int count = 0;
+        int col = strs[0].size(); 
+
+        for(int i = 0 ; i< col ; i++){
+            bool del = false; 
+            for(int j = 1; j<n ; j++){
+                if( !possible[j-1] and j-1>= 0 and  strs[j][i]<strs[j-1][i] ){
                     count++;
-                    deleted = true; 
+                    del = true; 
                     break; 
                 }
             }
-            if(deleted){
+            if( del ){
                 continue; 
             }
-            for(int i = 0; i < n - 1; i++){  // FIX 2: n-1 instead of n
-                 sorted[i] = sorted[i] | (strs[i][col] < strs[i+1][col]);  
+            else {
+                for(int k =0 ; k< possible.size() ; k++){
+                    possible[k] = possible[k] | (k+1 < n and strs[k][i] < strs[k+1][i] ); 
+                
+                }
+
             }
+            
         }
         return count; 
+
     }
 };
