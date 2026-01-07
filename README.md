@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0219-contains-duplicate-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0219-contains-duplicate-ii) |
 | [0229-majority-element-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0229-majority-element-ii) |
 | [0242-valid-anagram](https://github.com/AkshatSinghNayal/leetcode/tree/master/0242-valid-anagram) |
+| [0264-ugly-number-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0264-ugly-number-ii) |
 | [0268-missing-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0268-missing-number) |
 | [0290-word-pattern](https://github.com/AkshatSinghNayal/leetcode/tree/master/0290-word-pattern) |
 | [0349-intersection-of-two-arrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/0349-intersection-of-two-arrays) |
@@ -355,6 +356,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0231-power-of-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0231-power-of-two) |
 | [0258-add-digits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0258-add-digits) |
 | [0263-ugly-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0263-ugly-number) |
+| [0264-ugly-number-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0264-ugly-number-ii) |
 | [0268-missing-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0268-missing-number) |
 | [0326-power-of-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/AkshatSinghNayal/leetcode/tree/master/0342-power-of-four) |
@@ -459,6 +461,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0131-palindrome-partitioning](https://github.com/AkshatSinghNayal/leetcode/tree/master/0131-palindrome-partitioning) |
 | [0152-maximum-product-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/AkshatSinghNayal/leetcode/tree/master/0198-house-robber) |
+| [0264-ugly-number-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0264-ugly-number-ii) |
 | [0338-counting-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0338-counting-bits) |
 | [0357-count-numbers-with-unique-digits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0357-count-numbers-with-unique-digits) |
 | [0416-partition-equal-subset-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0416-partition-equal-subset-sum) |
@@ -505,6 +508,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/AkshatSinghNayal/leetcode/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
+| [0264-ugly-number-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0264-ugly-number-ii) |
 | [0451-sort-characters-by-frequency](https://github.com/AkshatSinghNayal/leetcode/tree/master/0451-sort-characters-by-frequency) |
 | [0621-task-scheduler](https://github.com/AkshatSinghNayal/leetcode/tree/master/0621-task-scheduler) |
 | [2327-largest-number-after-digit-swaps-by-parity](https://github.com/AkshatSinghNayal/leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
