@@ -2,7 +2,7 @@ class Solution {
 public:
     bool check(int row, int col, vector<vector<int>>& ans, int n) {
         // Check all previously placed queens (rows 0 to row-1)
-        for(int i = 0; i < row; i++) {
+        for(int i = 0; i <= row; i++) {
             for(int j = 0; j < n; j++) {
                 if(ans[i][j] == 1) {
                     // Same column check
