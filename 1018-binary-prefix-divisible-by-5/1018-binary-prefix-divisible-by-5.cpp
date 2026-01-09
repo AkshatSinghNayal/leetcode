@@ -15,3 +15,29 @@ public:
         return ans;
     }
 };
+
+
+
+// Why does result * 2 + 1 work?
+
+// Because binary is base-2.
+
+// Rule for any number system
+
+// If a number is written in base B, then adding a new digit d means:
+
+// new number
+// =
+// (
+// old number
+// ×
+// 𝐵
+// )
+// +
+// 𝑑
+// new number=(old number×B)+d
+// Decimal example (base-10) — obvious case
+
+// Number: 47
+
+// Add digit 3 → 473
