@@ -102,6 +102,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1019-squares-of-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1019-squares-of-a-sorted-array) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 | [2481-strictly-palindromic-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/2481-strictly-palindromic-number) |
+| [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
 ## String
 |  |
 | ------- |
@@ -140,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2418-sort-the-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/2418-sort-the-people) |
 | [2483-minimum-penalty-for-a-shop](https://github.com/AkshatSinghNayal/leetcode/tree/master/2483-minimum-penalty-for-a-shop) |
 | [3194-find-words-containing-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3194-find-words-containing-character) |
+| [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
 ## Stack
 |  |
 | ------- |
@@ -394,6 +396,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/3676-smallest-number-with-all-set-bits) |
+| [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
 | [3936-split-array-by-prime-indices](https://github.com/AkshatSinghNayal/leetcode/tree/master/3936-split-array-by-prime-indices) |
 ## Binary Search
 |  |
@@ -435,6 +438,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1610-xor-operation-in-an-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1610-xor-operation-in-an-array) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/2323-minimum-bit-flips-to-convert-number) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/3676-smallest-number-with-all-set-bits) |
+| [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
 ## Counting
 |  |
 | ------- |
