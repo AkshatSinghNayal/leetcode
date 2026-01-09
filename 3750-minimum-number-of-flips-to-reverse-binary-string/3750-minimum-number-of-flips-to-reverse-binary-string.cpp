@@ -1,23 +1,26 @@
 class Solution {
 public:
     int minimumFlips(int n) {
-        int msb = 31 - __builtin_clz(n); 
-        int k  = n ;
-        string s  = "";
-        for( int i = msb ; i>=0 ;i-- ){
-            if( (1ll << i)&(n) ){
+        string s=""; 
+        int msb=31-__builtin_clz(n);
+        
+        for(int i = 0 ; i<=msb ; i++){
+            int mask =1<<i;
+            if(mask&n){
                 s+='1';
             }
             else{
-                s+='0'; 
+                s+='0';
             }
-        }  
-        string revStr = s ; 
-        int operations = 0 ;
-        reverse(revStr.begin(),revStr.end()); 
-        for( int i = 0 ; i<s.size() ;i++){
-            if( s[i] != revStr[i]) operations++;
-        } 
-        return operations ;
+            
+        }
+        int count = 0; 
+        string temp = s ;
+        cout<<temp;
+        reverse(s.begin(),s.end()); 
+        for(int i= 0; i<s.size() ; i++){
+            if(temp[i]!=s[i])count++; 
+        }
+        return count ; 
     }
 };
