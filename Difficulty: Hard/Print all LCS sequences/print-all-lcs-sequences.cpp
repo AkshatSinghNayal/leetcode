@@ -1,54 +1,59 @@
 class Solution {
-public:
-    vector<vector<int>> dp;
-    string s1, s2;
-    map<pair<int,int>, set<string>> memo;
-
-    set<string> backtrack(int i, int j) {
-        if (i == 0 || j == 0)
-            return {""};
-
-        if (memo.count({i, j}))
-            return memo[{i, j}];
-
+  public:
+    string text1, text2; // Need these as member variables
+    
+    set<string> backtracking(int n, int m, vector<vector<int>>& dp, 
+                             map<pair<int,int>, set<string>>& memo) {
+        // Base case
+        if (n == 0 || m == 0) return {""};
+        
+        // Check memo
+        if (memo.count({n, m})) {
+            return memo[{n, m}];
+        }
+        
         set<string> result;
-
-        if (s1[i-1] == s2[j-1]) {
-            set<string> prev = backtrack(i-1, j-1);
-            for (auto &str : prev)
-                result.insert(str + s1[i-1]);
-        } else {
-            if (dp[i-1][j] == dp[i][j]) {
-                auto up = backtrack(i-1, j);
-                result.insert(up.begin(), up.end());
+        
+        // If characters match, prepend to all subsequences from (n-1, m-1)
+        if (text1[n-1] == text2[m-1]) {
+            set<string> prev = backtracking(n-1, m-1, dp, memo);
+            for (const string& s : prev) {
+                result.insert(s + text1[n-1]);
             }
-            if (dp[i][j-1] == dp[i][j]) {
-                auto left = backtrack(i, j-1);
+        } 
+        else {
+            // If they don't match, explore both directions if they lead to LCS
+            if (dp[n-1][m] == dp[n][m]) {
+                set<string> left = backtracking(n-1, m, dp, memo);
                 result.insert(left.begin(), left.end());
             }
-        }
-
-        return memo[{i, j}] = result;
-    }
-
-    vector<string> allLCS(string &a, string &b) {
-        s1 = a;
-        s2 = b;
-        int n = s1.size(), m = s2.size();
-
-        dp.assign(n+1, vector<int>(m+1, 0));
-
-        // Build LCS length DP
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= m; j++) {
-                if (s1[i-1] == s2[j-1])
-                    dp[i][j] = 1 + dp[i-1][j-1];
-                else
-                    dp[i][j] = max(dp[i-1][j], dp[i][j-1]);
+            if (dp[n][m-1] == dp[n][m]) {
+                set<string> up = backtracking(n, m-1, dp, memo);
+                result.insert(up.begin(), up.end());
             }
         }
-
-        set<string> ans = backtrack(n, m);
-        return vector<string>(ans.begin(), ans.end());
+        
+        memo[{n, m}] = result;
+        return result;
+    }
+  
+    vector<string> allLCS(string &s1, string &s2) {
+        text1 = s1;
+        text2 = s2;
+        int n = text1.size(), m = text2.size();
+        
+        vector<vector<int>> dp(n+1, vector<int>(m+1, 0));
+        
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= m; j++) {
+                dp[i][j] = (text1[i-1] == text2[j-1]) ? 
+                           1 + dp[i-1][j-1] : 
+                           max(dp[i-1][j], dp[i][j-1]);
+            }
+        }
+        
+        map<pair<int,int>, set<string>> memo;
+        auto res = backtracking(n, m, dp, memo);
+        return vector<string>(res.begin(), res.end());
     }
 };
