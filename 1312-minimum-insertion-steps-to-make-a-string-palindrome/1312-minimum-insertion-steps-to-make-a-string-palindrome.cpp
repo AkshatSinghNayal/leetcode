@@ -12,9 +12,8 @@ public:
                 dp[i][j] = ( text1[i-1] == text2[j-1] ) ? 1+dp[i-1][j-1] : max ( dp[i-1][j] , dp[i][j-1]); 
             }
         }
-        int temp= dp[n][m];
-        int total = text1.size() ; 
-        return total-temp ; 
+       
+        return n - dp[n][m] ; 
 
     }
 };
