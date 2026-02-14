@@ -1,8 +1,7 @@
 class Solution {
 public:
     string mapWordWeights(vector<string>& words, vector<int>& weights) {
-        string temp = " abcdefghijklmnopqrstuvwxyz";
-        cout<< temp[1];
+        
         string result = ""; 
         for(auto& it : words){
             int size = it.size(); 
@@ -11,8 +10,8 @@ public:
                 digit+=weights[it[i]-'a'];
             }
             digit=digit%26;
-            digit = 26-digit;
-            result+=temp[digit];
+            digit = 25-digit;
+            result+='a'+digit;
         }
         return result;
     }
