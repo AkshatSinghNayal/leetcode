@@ -1,44 +1,33 @@
 class Solution {
 public:
-
-    long long solve(int i, int taken,vector<int>& nums,vector<int>& colors,vector<vector<long long>>& dp) {
-
-        if(i < 0) return 0;
-
-        if(dp[i][taken] != -1)
-            return dp[i][taken];
-
-        long long ans = 0;
-
-        if(taken == 0) {
-            // Not taking current
-            ans = max(
-                solve(i-1, 0, nums, colors, dp),
-                solve(i-1, 1, nums, colors, dp)
-            );
+    long long rob(vector<int>& nums, vector<int>& colors) {
+        int n = nums.size();
+        if (n == 1) return nums[0];
+        
+        vector<long long> dp(n);
+        
+        // Base case
+        dp[0] = nums[0];
+        
+        // Handle i = 1 separately
+        dp[1] = max((long long)nums[1], dp[0]);
+        if (colors[1] != colors[0]) {
+            dp[1] = max(dp[1], (long long)nums[1] + nums[0]);
         }
-        else {
-            // Taking current
-            long long val = nums[i];
-
-            // Case 1: previous not taken
-            ans = solve(i-1, 0, nums, colors, dp) + val;
-
-            // Case 2: previous taken AND colors differ
-            if(i-1 >= 0 && colors[i-1] != colors[i]) {
-                ans = max(ans,solve(i-1, 1, nums, colors, dp) + val);
+        
+        for (int i = 2; i < n; i++) {
+            // Skip current
+            dp[i] = dp[i - 1];
+            
+            // Take non-adjacent
+            dp[i] = max(dp[i], (long long)nums[i] + dp[i - 2]);
+            
+            // Take adjacent if colors differ
+            if (colors[i] != colors[i - 1]) {
+                dp[i] = max(dp[i], (long long)nums[i] + dp[i - 1]);
             }
         }
-
-        return dp[i][taken] = ans;
-    }
-
-    long long rob(vector<int>& nums, vector<int>& colors) {
-
-        int n = nums.size();
-
-        vector<vector<long long>> dp(n,vector<long long>(2, -1));
-
-        return max(solve(n-1, 0, nums, colors, dp),solve(n-1, 1, nums, colors, dp));
+        
+        return dp[n - 1];
     }
 };
