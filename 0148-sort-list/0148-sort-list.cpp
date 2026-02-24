@@ -9,58 +9,52 @@
  * };
  */
 class Solution {
-
-    ListNode* mergeSortFunction(ListNode* l1, ListNode* l2) {
-        ListNode* dummy = new ListNode (-1);
-        ListNode* temp = dummy;
-        while (l1 != nullptr && l2 != nullptr) {
-            if (l1->val <= l2->val) {
-                temp->next = l1;
-                l1 = l1->next;
-            } else {
-                temp->next = l2;
-                l2 = l2->next;
-            }
-            temp = temp->next;
-        }
-
-        while (l1) {
-            temp->next = l1;
-            l1 = l1->next;
-            temp = temp->next;
-        }
-        while (l2) {
-            temp->next = l2;
-            l2 = l2->next;
-            temp = temp->next;
-        }
-
-        return dummy->next;
-    }
-
-    ListNode* middleEleFinder(ListNode* head) {
-       
-        ListNode* fast = head->next;
-        ListNode* slow = head;
-        while (fast && fast->next) {
-            slow = slow->next;
-            fast = fast->next->next;
-        }
-        return slow;
-    }
-
 public:
+
+    ListNode* merging( ListNode* left , ListNode* right ){
+        ListNode* temp =  new ListNode(-1);
+        ListNode* dummy = temp ; 
+        while( left and right ){
+            if( left->val < right->val ){
+                dummy->next = left; 
+                left = left->next;
+            }
+            else{
+                dummy->next = right; 
+                right = right->next;
+            }
+            dummy = dummy->next;
+
+        }
+
+        if(left){
+            dummy->next = left ; 
+        }
+
+        if(right){
+            dummy->next = right ; 
+        }
+
+        return temp->next;
+    }
+
     ListNode* sortList(ListNode* head) {
- if ( head == nullptr || head->next == nullptr) return head;
-        ListNode* mid = middleEleFinder(head);
+        if(!head or !head->next ) return head; 
+        ListNode* slow = head , *fast =head->next; 
 
-        ListNode* right = mid->next;
-        mid->next = nullptr;
-        ListNode* left = head;
+        while( fast and fast->next){
+            slow = slow->next; 
+            fast=fast->next->next; 
+        }
 
-        right = sortList(right);
-        left = sortList(left);
+        ListNode* start = head ;
+        fast = slow->next ;                                                           
+        slow->next = nullptr ; 
 
-        return mergeSortFunction(left, right);
+        auto left = sortList(start); 
+        auto right = sortList(fast); 
+
+        return merging( left , right ); 
+
     }
 };
