@@ -26,10 +26,7 @@ public:
                 }
             }
         }
-        int result = 0 ;
-        for(int i =  1; i<= V ; i++ ){
-            result = max(result,ans[i]); 
-        }
+        int result = *max_element(ans.begin()+1 , ans.end()); 
         return ( result == INT_MAX ) ? -1 : result   ; 
 
         
