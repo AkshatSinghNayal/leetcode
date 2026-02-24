@@ -11,7 +11,7 @@
 class Solution {
 public:
 
-    ListNode* merging( ListNode* left , ListNode* right ){
+    ListNode* merging( ListNode*& left , ListNode*& right ){
         ListNode* temp =  new ListNode(-1);
         ListNode* dummy = temp ; 
         while( left and right ){
