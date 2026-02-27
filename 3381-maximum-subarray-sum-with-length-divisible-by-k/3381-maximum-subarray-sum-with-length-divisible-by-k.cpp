@@ -67,3 +67,45 @@ public:
 // length % k
 
 // That’s a very common mistake.
+
+
+// 📌 Think in prefix array form
+
+// If we build prefix like:
+
+// prefix[0] = 0
+// prefix[1] = nums[0]
+// prefix[2] = nums[0] + nums[1]
+// ...
+
+// Then:
+
+// prefix[x] means first x elements
+
+// Subarray length between prefix[j] and prefix[i] is:
+
+// j - i
+
+// For length divisible by k:
+
+// (j - i) % k == 0
+
+// So:
+
+// j % k == i % k
+
+// 🚀 In our loop
+
+// At iteration i:
+
+// We just computed sum of first i + 1 elements
+
+// So this corresponds to prefix index = i + 1
+
+// That’s why we use:
+
+// rem = (i + 1) % k;
+
+// NOT:
+
+// i % k   ❌
