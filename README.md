@@ -148,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1542-consecutive-characters](https://github.com/AkshatSinghNayal/leetcode/tree/master/1542-consecutive-characters) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/AkshatSinghNayal/leetcode/tree/master/1636-number-of-substrings-with-only-1s) |
+| [1869-longer-contiguous-segments-of-ones-than-zeros](https://github.com/AkshatSinghNayal/leetcode/tree/master/1869-longer-contiguous-segments-of-ones-than-zeros) |
 | [2032-largest-odd-number-in-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2032-largest-odd-number-in-string) |
 | [2219-maximum-number-of-words-found-in-sentences](https://github.com/AkshatSinghNayal/leetcode/tree/master/2219-maximum-number-of-words-found-in-sentences) |
 | [2337-remove-digit-from-number-to-maximize-result](https://github.com/AkshatSinghNayal/leetcode/tree/master/2337-remove-digit-from-number-to-maximize-result) |
