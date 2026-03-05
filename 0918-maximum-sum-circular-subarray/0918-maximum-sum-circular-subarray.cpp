@@ -1,26 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std ; 
+
 class Solution {
 public:
     int maxSubarraySumCircular(vector<int>& nums) {
-        int totalSum = 0;
-        int curMax = 0, maxSum = nums[0];
-        int curMin = 0, minSum = nums[0];
-        
-        for (int num : nums) {
-            totalSum += num;
-            
-            // Kadane for max subarray
-            curMax = max(curMax + num, num);
-            maxSum = max(maxSum, curMax);
-            
-            // Kadane for min subarray
-            curMin = min(curMin + num, num);
-            minSum = min(minSum, curMin);
+        int maxSum = nums[0], bestMax = nums[0] , bestMin = nums[0] , minSum = nums[0] , ans = nums[0] ;
+        int n = nums.size(); 
+        int i = 1 ; 
+        int total = accumulate( nums.begin() , nums.end() , 0 ) ; 
+
+        while( i < n ){
+            bestMax = max( bestMax + nums[i] , nums[i] ); 
+            maxSum = max( maxSum , bestMax );
+
+            bestMin = min(bestMin+nums[i] , nums[i]); 
+            minSum = min( minSum , bestMin );
+            i++; 
         }
-        
-        // If all elements are negative
-        if (maxSum < 0)
-            return maxSum;
-        
-        return max(maxSum, totalSum - minSum);
+
+        if(maxSum<0){
+            return maxSum ; 
+        }
+
+        ans = max( maxSum , total - minSum); 
+        return ans ; 
     }
 };
