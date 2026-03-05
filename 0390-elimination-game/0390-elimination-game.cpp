@@ -1,21 +1,20 @@
 class Solution {
 public:
     int lastRemaining(int n) {
-        long long gap = 1 , rem = n , last =  1 ; 
+        if( n ==1 ) return 1;
+        int gap = 1 , head = 1 , rem = n ; 
         bool left = true; 
-        while( rem > 1 ){
-            if( left == false and (rem%2 == 0) ){
-                rem/=2 ;
-                gap*=2;
-                left=!left;
-                continue;
+
+        while(rem>1){
+            if( (left == false and rem %2 != 0) or left == true  ){
+                // change head
+                head+=gap; 
             }
-            left=!left; 
-            last = last+gap ;
-            gap *=2 ; 
-            rem/=2; 
+            rem/=2;
+            gap*=2;
+            left = !left;
 
         }
-        return (int)last; 
+    return head;
     }
 };
