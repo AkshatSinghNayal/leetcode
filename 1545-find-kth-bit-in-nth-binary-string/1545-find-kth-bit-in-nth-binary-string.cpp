@@ -11,7 +11,7 @@ public:
                 s+= ( s[j] == '0') ? '1' : '0';
             }
         } 
-        cout << s ; 
+        // cout << s ; 
         return s[k-1]; 
     }
 };
