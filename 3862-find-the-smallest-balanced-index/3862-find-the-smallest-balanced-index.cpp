@@ -15,7 +15,7 @@ public:
                 index = i;
             }
             if(product > LIMIT / nums[i])
-                product = LLONG_MAX-1;
+               { product = LLONG_MAX-1; break;}
             else
                 product *= nums[i];
         }
