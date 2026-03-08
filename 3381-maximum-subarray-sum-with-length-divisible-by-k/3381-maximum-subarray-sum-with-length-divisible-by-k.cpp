@@ -1,25 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     long long maxSubarraySum(vector<int>& nums, int k) {
-        int n = nums.size();
-        vector<long long> minPrefix(k, LLONG_MAX);
+        int n = nums.size() ; 
+        vector<long long> prefix(k+1 , LLONG_MAX);
+        prefix[0] = 0; 
+        long long currPrefix= 0  , ans = LLONG_MIN; 
 
-        long long prefix = 0;
-        long long answer = LLONG_MIN;
+        for( int i  = 0 ; i<n ;i++ ){
+            currPrefix += nums[i]; 
+            int mod = (  i+1)%k; 
 
-        minPrefix[0] = 0;
-
-        for (int i = 0; i < n; i++) {
-            prefix += nums[i];
-            int mod = (i + 1) % k;
-
-            if (minPrefix[mod] != LLONG_MAX) {
-                answer = max(answer, prefix - minPrefix[mod]);
+            if( prefix[mod] != LLONG_MAX ){
+                ans = max(ans , currPrefix - prefix[mod]);
             }
 
-            minPrefix[mod] = min(minPrefix[mod], prefix);
+            prefix[mod] = min( prefix[mod] , currPrefix ); 
+
         }
 
-        return answer;
+        return ans;
+
     }
 };
