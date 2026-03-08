@@ -1,25 +1,30 @@
 ////// I bow to Lord Satyanarayan and Lord Hanuman ///////////
 #include <bits/stdc++.h>
-using namespace std; 
+using namespace std;
+
 class Solution {
 public:
     int minSubArrayLen(int target, vector<int>& nums) {
-        int left = 0 , mini = INT_MAX ,  right = 0 , n =  nums.size() ; 
-        long long sum = 0 ; 
-
-        while( right < n and left < n ){
-            sum+=nums[right]; 
-            
-            while( left < n and sum>= target ){
-                if( left <= right ){
-                    mini = min( mini , right - left +1 ); 
-                }
-                sum-=nums[left]; 
-                left++; 
-            }
-
-            right++; 
+        int n = nums.size();
+        
+        vector<long long> prefix(n + 1, 0);
+        
+        for(int i = 1; i <= n; i++){
+            prefix[i] = prefix[i - 1] + nums[i - 1];
         }
-        return (mini == INT_MAX ) ?  0 : mini; 
+        
+        int ans = INT_MAX;
+        
+        for(int i = 0; i < n; i++){
+            long long needed = target + prefix[i];
+            
+            int j = lower_bound(prefix.begin() + i + 1, prefix.end(), needed) - prefix.begin();
+            
+            if(j <= n){
+                ans = min(ans, j - i);
+            }
+        }
+        
+        return ans == INT_MAX ? 0 : ans;
     }
 };
