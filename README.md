@@ -374,6 +374,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2227-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2227-sum-of-subarray-ranges) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2293-min-max-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/2293-min-max-game) |
+| [2302-count-subarrays-with-score-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/2302-count-subarrays-with-score-less-than-k) |
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2316-count-hills-and-valleys-in-an-array) |
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2410-maximum-matching-of-players-with-trainers) |
 | [2418-sort-the-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/2418-sort-the-people) |
@@ -473,6 +474,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/AkshatSinghNayal/leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1646-kth-missing-positive-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/1646-kth-missing-positive-number) |
+| [2302-count-subarrays-with-score-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/2302-count-subarrays-with-score-less-than-k) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -677,6 +679,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/AkshatSinghNayal/leetcode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/AkshatSinghNayal/leetcode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
+| [2302-count-subarrays-with-score-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/2302-count-subarrays-with-score-less-than-k) |
 | [2962-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/AkshatSinghNayal/leetcode/tree/master/2962-count-subarrays-where-max-element-appears-at-least-k-times) |
 ## Prefix Sum
 |  |
@@ -694,6 +697,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1590-make-sum-divisible-by-p](https://github.com/AkshatSinghNayal/leetcode/tree/master/1590-make-sum-divisible-by-p) |
 | [1603-running-sum-of-1d-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1603-running-sum-of-1d-array) |
 | [1693-sum-of-all-odd-length-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1693-sum-of-all-odd-length-subarrays) |
+| [2302-count-subarrays-with-score-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/2302-count-subarrays-with-score-less-than-k) |
 | [2483-minimum-penalty-for-a-shop](https://github.com/AkshatSinghNayal/leetcode/tree/master/2483-minimum-penalty-for-a-shop) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 ## Quickselect
