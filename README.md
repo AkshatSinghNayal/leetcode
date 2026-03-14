@@ -80,6 +80,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/AkshatSinghNayal/leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0011-container-with-most-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0015-3sum) |
 | [0018-4sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0018-4sum) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
@@ -269,6 +270,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0001-two-sum) |
+| [0011-container-with-most-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0015-3sum) |
 | [0018-4sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0018-4sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
@@ -554,6 +556,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0011-container-with-most-water) |
 | [0045-jump-game-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0055-jump-game) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
