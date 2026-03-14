@@ -1,3 +1,6 @@
+////// I bow to Lord Satyanarayan and Lord Hanuman ///////////
+#include<bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     int maxArea(vector<int>& nums) {
