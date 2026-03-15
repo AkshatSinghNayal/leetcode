@@ -1,7 +1,9 @@
+////// I bow to Lord Satyanarayan and Lord Hanuman ///////////
+#include<bits/stdc++.h>
+using namespace std; 
 class Solution {
 public:
     int countCommas(int n) {
-        if( n<=999) return 0; 
-        return ( n - 1000+1 ); 
+        return ( n<= 999 ) ? 0 : n-1000+1; 
     }
 };
