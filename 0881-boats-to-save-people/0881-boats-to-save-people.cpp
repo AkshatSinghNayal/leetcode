@@ -1,3 +1,6 @@
+////// I bow to Lord Satyanarayan and Lord Hanuman ///////////
+#include<bits/stdc++.h>
+using namespace std; 
 class Solution {
 public:
     int numRescueBoats(vector<int>& people, int limit) {
@@ -16,9 +19,6 @@ public:
                 right--; 
                 boatCount++;
             }
-
-
-
         
         }
         return boatCount;
