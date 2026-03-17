@@ -1,26 +1,32 @@
 class Solution {
 public:
     int kthSmallest(vector<vector<int>>& matrix, int k) {
-        priority_queue<int, vector<int>, greater<int>> pq;
-        int n  = matrix[0].size() ;
-        for(auto& it : matrix){
-            for(int i  = 0 ; i<n ; i++ ){
-                pq.push(it[i]);
-            }
+        int n = matrix.size();
+
+        priority_queue<
+            tuple<int,int,int>,
+            vector<tuple<int,int,int>>,
+            greater<tuple<int,int,int>>
+        > pq;
+
+        // Step 1: push first element of each row
+        for(int i = 0; i < n; i++) {
+            pq.push({matrix[i][0], i, 0});
         }
 
-       int i = 1 ;
-        while(!pq.empty()){
-            auto ele= pq.top();
-            // cout << ele << " " ;
+        // Step 2: process k elements
+        while(k--) {
+            auto [val, r, c] = pq.top();
             pq.pop();
 
-            if( i == k) return ele ;
+            // If next element exists in same row, push it
+            if(c + 1 < n) {
+                pq.push({matrix[r][c + 1], r, c + 1});
+            }
 
-            i++;
-
+            if(k == 0) return val;
         }
 
-        return -1 ;
+        return -1;
     }
 };
