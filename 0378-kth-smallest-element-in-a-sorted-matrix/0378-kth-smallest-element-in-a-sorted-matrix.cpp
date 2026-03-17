@@ -2,31 +2,31 @@ class Solution {
 public:
     int kthSmallest(vector<vector<int>>& matrix, int k) {
         int n = matrix.size();
+        int low = matrix[0][0];
+        int high = matrix[n-1][n-1];
 
-        priority_queue<
-            tuple<int,int,int>,
-            vector<tuple<int,int,int>>,
-            greater<tuple<int,int,int>>
-        > pq;
+        while (low < high) {
+            int mid = low + (high - low) / 2;
 
-        // Step 1: push first element of each row
-        for(int i = 0; i < n; i++) {
-            pq.push({matrix[i][0], i, 0});
-        }
+            int count = 0;
+            int row = n - 1, col = 0;
 
-        // Step 2: process k elements
-        while(k--) {
-            auto [val, r, c] = pq.top();
-            pq.pop();
-
-            // If next element exists in same row, push it
-            if(c + 1 < n) {
-                pq.push({matrix[r][c + 1], r, c + 1});
+            // count elements <= mid
+            while (row >= 0 && col < n) {
+                if (matrix[row][col] <= mid) {
+                    count += (row + 1);
+                    col++;
+                } else {
+                    row--;
+                }
             }
 
-            if(k == 0) return val;
+            if (count < k)
+                low = mid + 1;
+            else
+                high = mid;
         }
 
-        return -1;
+        return low;
     }
 };
