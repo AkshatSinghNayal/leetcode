@@ -1,49 +1,46 @@
 class Solution {
 public:
     string minRemoveToMakeValid(string s) {
-        stack<char>st;
-        int n = s.size(); 
-        string result ="";
-        for(int i  = 0  ;i< n ;i++ ){
-            char ch = s[i]; 
-
-            if( ch !='(' and ch!=')'){
-                result+=ch;
+        int count = 0 ; 
+        string result =""; 
+        for(auto& it : s ){
+            if( it == '(') {
+                count++; 
+                result+=it;
             }
-            else if( ch == '('){
-                st.push(ch);
-                result+=ch;
+            else if( it == ')'){
+                if( count>=1 ){
+                    result+=it;
+                }
+                count--;
+            }
+            else {
+                result+=it;
+            }
+
+            if( count <0 ) count =0;
+        }
+        string temp = ""; 
+        count = 0 ; 
+        for(int i  = result.size() -1 ; i>= 0 ;i-- ){
+            char it = result[i]; 
+
+            if( it == ')'){
+                count++; 
+                temp+=it;
+            }
+            else if(it == '('){
+                if( count >=1 ){
+                    temp+=it; 
+                }
+                count--; 
             }
             else{
-                if(!st.empty()){
-                    result+=ch;
-                    st.pop();
-                }
+                temp+=it; 
             }
+            if( count < 0 ) count =0 ; 
         }
-        n = result.size();
-        string temp ="" ;
-        st = stack<char>(); 
-        for( int i = n-1 ; i>= 0  ;i-- ){
-            char ch = result[i]; 
-
-            if( ch != '(' and ch!=')'){
-                temp+=ch;
-            }
-            else if( ch == ')' ){
-                st.push(ch);
-                temp+=ch;
-            }
-            else{
-                if(!st.empty()){
-                    temp+=ch; 
-                    st.pop(); 
-                }
-            }
-
-        }
-
-        reverse(temp.begin() , temp.end());
+        reverse( temp.begin() , temp.end()); 
         return temp ; 
     }
 };
