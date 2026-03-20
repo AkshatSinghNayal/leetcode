@@ -60,7 +60,7 @@ public:
         
 
         if( distinct - 1 <= count ){
-            return count-1; 
+            return distinct - 1; 
         }
         return -1 ; 
 
