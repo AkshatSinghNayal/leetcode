@@ -14,14 +14,8 @@ public:
                     q.pop() ; 
                     for(auto& it : graph[node]){
                         if( color[it] == -1 ){
-                            if( color[node] == 0 ){
-                                color[it] = 1; 
-                                q.push(it); 
-                            }
-                            else{
-                                color[it] = 0;
-                                q.push(it); 
-                            }
+                            color[it] = 1 -color[node];
+                            q.push(it);
                         }
                         else{
                             if(color[node] == color[it]){
