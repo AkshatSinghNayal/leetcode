@@ -1,35 +1,35 @@
 class Solution {
 public:
     int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
-        vector<int>ans(n , INT_MAX ); 
-        // step distance node ;
-        priority_queue<pair<int,pair<int,int>> , vector<pair<int,pair<int,int>>> , greater<pair<int,pair<int,int>>>> q; 
-        q.push({0 , {0 , src}}); 
-        vector<vector<pair<int,int>>>list(n); 
-
-        for(auto& it : flights){
+        vector<vector<pair<int,int>>>list( n ); 
+        for(auto& it : flights ){
             list[it[0]].push_back({it[1] , it[2]}); 
         }
+        priority_queue<pair<int,int> , vector<pair<int,int>> , greater<pair<int,int>>> pq ; // node , dis 
+
+        vector<int>ans(n , INT_MAX ); 
+        queue<tuple<int,int,int>>q;
+        q.push({src,0 ,0}); 
 
         while(!q.empty()){
-            auto [ steps , info ] = q.top() ; 
-            auto [distance ,  node ] = info ; 
-            q.pop(); 
+            auto [ currNode , currDis , count ] = q.front(); q.pop(); 
 
-            if( steps > k ) continue; 
+            if( count>k and currDis > ans[currNode] ) continue;
 
-            for(auto& it : list[node]){
-                auto [ node1 , dist ] = it ; 
-                if( ans[node1] > dist+distance ){
-                    ans[node1] = dist+distance ; 
-                    q.push({ steps+1 , { ans[node1] , node1}}); 
+            for(auto& it : list[currNode]){
+                auto [toNode , toDis] = it;
+
+                if( ans[toNode] > toDis+currDis and count <= k ){
+                    ans[toNode] = toDis+currDis;
+                    q.push({toNode , toDis+currDis , count+1}); 
                 }
+
             }
-
-
         }
 
+
         return ( ans[dst] == INT_MAX ) ? -1 : ans[dst]; 
+
 
     }
 };
