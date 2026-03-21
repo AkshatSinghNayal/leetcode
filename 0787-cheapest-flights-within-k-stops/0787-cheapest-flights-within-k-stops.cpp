@@ -14,12 +14,12 @@ public:
         while(!q.empty()){
             auto [ currNode , currDis , count ] = q.front(); q.pop(); 
 
-            if( count>k and currDis > ans[currNode] ) continue;
+            if( count>k  ) continue;
 
             for(auto& it : list[currNode]){
                 auto [toNode , toDis] = it;
 
-                if( ans[toNode] > toDis+currDis and count <= k ){
+                if( ans[toNode] > toDis+currDis ){
                     ans[toNode] = toDis+currDis;
                     q.push({toNode , toDis+currDis , count+1}); 
                 }
