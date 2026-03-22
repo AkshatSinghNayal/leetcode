@@ -1,32 +1,29 @@
 class Solution {
 public:
-    int minRemovals(vector<int>& nums, int target) {
-        int n = nums.size();
 
-        unordered_map<int, int> dp;
-        dp[0] = 0;  // XOR 0 with 0 elements
-
-        for (auto num : nums) {
-            unordered_map<int, int> new_dp = dp;
-
-            for (auto &it : dp) {
-                int x = it.first;
-                int sz = it.second;
-
-                int new_xor = x ^ num;
-
-                if (new_dp.find(new_xor) != new_dp.end()) {
-                    new_dp[new_xor] = max(new_dp[new_xor], sz + 1);
-                } else {
-                    new_dp[new_xor] = sz + 1;
-                }
+    int solve(vector<int>& nums , vector<vector<int>>& dp , int target , int i ){
+        if( i < 0 ){
+            if( target == 0 ){
+                return 0;
             }
-
-            dp = new_dp;
+            return 1e9;
         }
 
-        if (dp.find(target) == dp.end()) return -1;
+        if(dp[i][target] != -1 ) return dp[i][target]; 
 
-        return n - dp[target];  // removals = total - kept
+        int take = solve( nums , dp , target^nums[i] , i-1 ); 
+        int notTake = 1+ solve( nums ,dp, target , i-1); 
+
+        return dp[i][target] = min(take , notTake);
+
+    }
+
+    int minRemovals(vector<int>& nums, int target) {
+        int n  = nums.size(); 
+        int MAX_XOR = 1 << 14; // 16384 ->> 2^x 
+        vector<vector<int>> dp(n, vector<int>(MAX_XOR, -1));
+        int ans = solve( nums , dp , target , n-1);
+
+        return ( ans >= 1e9 ) ? -1 : ans; 
     }
 };
