@@ -1,40 +1,38 @@
 class Solution {
 public:
     bool canPartitionGrid(vector<vector<int>>& grid) {
-        int n = grid.size()  , m = grid[0].size();
-        long long total = 0; 
-        vector<long long> row(n) ;  vector<long long> col(m); 
+        int n = grid.size(), m = grid[0].size();
         
-        
-        for(int i = 0 ; i< n ;i++ ){
-            row[i] = accumulate(grid[i].begin(), grid[i].end() , 0LL);
-            total+=row[i]; 
-        }
-        for( int i = 0 ; i< m ; i++ ){
-            long long temp = 0; 
-            for(int j = 0 ; j< n ;j++ ){
-                temp+= grid[j][i]; 
+        vector<long long> rowSum(n, 0), colSum(m, 0);
+        long long total = 0;
+
+        // Precompute row and column sums
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < m; j++) {
+                rowSum[i] += grid[i][j];
+                colSum[j] += grid[i][j];
+                total += grid[i][j];
             }
-            col[i] = temp;
-            
         }
 
-        if(total%2 != 0 ) return false;
-        long long temp1 = total / 2;
+        if(total % 2) return false;
 
-        for( int i = 0 ; i< n; i++ ){
-            temp1-=row[i]; 
-            if(temp1 == 0  ) return true;
-            if( temp1< 0 ) break;
+        long long half = total / 2, curr = 0;
+
+        // Check row-wise partition
+        for(int i = 0; i < n; i++) {
+            curr += rowSum[i];
+            if(curr == half) return true;
         }
 
-        temp1 = total/2; 
+        curr = 0;
 
-        for(int i  = 0 ;i< m ;i++ ){
-            temp1-=col[i]; 
-            if( temp1 == 0 ) return true; 
-            if( temp1< 0 ) break;
+        // Check column-wise partition
+        for(int j = 0; j < m; j++) {
+            curr += colSum[j];
+            if(curr == half) return true;
         }
+
         return false;
     }
 };
