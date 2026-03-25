@@ -1,46 +1,29 @@
 class Solution {
 public:
-
-    class comp{
-    public:
-        bool operator()(const pair<int,char>& a , const pair<int,char>& b ){
-            return a.first < b.first;
-        }
-    };
-
     int leastInterval(vector<char>& tasks, int n) {
-        int size = tasks.size();
-        if(n == 0) return size;
+        unordered_map<char,int>mp;
+        int operations = 0; 
+        for(auto& it : tasks)mp[it]++; 
+        priority_queue<pair<int,char> , vector<pair<int,char>>>pq;
+        for(auto& it : mp ) pq.push({it.second,it.first});
 
-        int operation = 0; 
-        priority_queue<pair<int,char>, vector<pair<int,char>>, comp> pq;  
-        unordered_map<char,int> mp; 
-
-        for(auto& it : tasks) mp[it]++; 
-        for(auto& it : mp) pq.push({it.second ,it.first}); 
-        mp.clear();
         while(!pq.empty()){
-            int temp = 0;
-            int tempo = n + 1;
-
-            mp.clear(); // ✅ IMPORTANT FIX
-
-            while(tempo-- && !pq.empty()){
-                auto [freq, ch] = pq.top(); pq.pop();
-                temp++;
-                freq--;
-                if(freq > 0) mp[ch] = freq;
-
+            mp.clear();
+            int temp = n+1 , tempo =0 ;
+            while(temp-- and !pq.empty()){
+                auto [freq , ch ] = pq.top() ; pq.pop();
+                if(freq>0){
+                    tempo++; 
+                    freq--; 
+                    mp[ch] = freq;
+                }
             }
-
-            for(auto& it : mp){
-                pq.push({it.second, it.first});
+            for(auto& it : mp ){
+                if( it.second >0 ) pq.push({it.second , it.first}); 
             }
-
-            if(!pq.empty()) operation += (n + 1);
-            else operation += temp;
+            if(!pq.empty()) operations+=n+1;
+            else operations+=tempo;
         }
-
-        return operation;
+        return operations;
     }
 };
