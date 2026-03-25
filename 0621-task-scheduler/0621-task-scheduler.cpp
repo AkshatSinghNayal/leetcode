@@ -1,63 +1,42 @@
 class Solution {
 public:
-int leastInterval(vector<char>& tasks, int n) {
-if (n == 0) {
-return tasks.size();
+
+    class comp{
+        public :
+        bool operator()(const pair<int,char>& a , const pair<int,char>& b ){
+            return a.first < b.first;
+        }
+    };
+
+    int leastInterval(vector<char>& tasks, int n) {
+        int size = tasks.size();
+        int operation = 0; 
+        priority_queue<pair<int,char> , vector<pair<int,char>> , comp>pq;  
+        unordered_map<char,int>mp; 
+        for(auto& it : tasks) mp[it]++; 
+        for(auto& it : mp ) pq.push({it.second ,it.first}); 
+
+        while(!pq.empty()){
+    int temp = 0;
+    int tempo = n + 1; // ✅ n+1 not n
+    mp.clear();        // ✅ clear stale frequencies each cycle
+    
+    while(tempo-- && !pq.empty()){
+        auto [freq, ch] = pq.top(); pq.pop();
+        temp++;
+        freq--;
+        if(freq > 0) mp[ch] = freq; // ✅ only store remaining
+    }
+    
+    for(auto& it : mp){
+        pq.push({it.second, it.first});
+    }
+    
+    if(!pq.empty()) operation += (n+1);
+    else operation += temp;
 }
 
-    // Step 1: Count frequencies
-    vector<int> freq(26, 0);
-    for (int i = 0; i < tasks.size(); i++) {
-        char c = tasks[i];
-        freq[c - 'A']++;
+        return operation;
+
     }
-
-    // Step 2: Push frequencies into max heap
-    priority_queue<int> pq;
-    for (int i = 0; i < 26; i++) {
-        if (freq[i] > 0) {
-            pq.push(freq[i]);
-        }
-    }
-
-    int time = 0;
-
-    // Step 3: Process tasks in cycles of n+1
-    while (!pq.empty()) {
-        vector<int> temp;
-        int executed = 0;
-
-        // pick up to n+1 tasks
-        for (int i = 0; i <= n; i++) {
-            if (!pq.empty()) {
-                int cur = pq.top();
-                pq.pop();
-
-                cur = cur - 1;
-                executed++;
-
-                if (cur > 0) {
-                    temp.push_back(cur);
-                }
-            }
-        }
-
-        // push remaining tasks back into heap
-        for (int i = 0; i < temp.size(); i++) {
-            pq.push(temp[i]);
-        }
-
-        // Step 4: Add time
-        if (pq.empty()) {
-            // no more tasks left, only add executed tasks
-            time = time + executed;
-        } else {
-            // tasks still left, must count whole cycle
-            time = time + (n + 1);
-        }
-    }
-
-    return time;
-}
-
 };
