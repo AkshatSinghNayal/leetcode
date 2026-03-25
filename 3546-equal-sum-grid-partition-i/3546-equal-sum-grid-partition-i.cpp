@@ -19,6 +19,7 @@ public:
                 temp-=grid[j][i]; 
             }
             if( temp == 0  ) return true;
+            if( temp<0 ) return false;
         }
         return false;
     }
