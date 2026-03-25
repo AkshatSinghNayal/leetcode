@@ -1,14 +1,12 @@
 class Solution {
 public:
     bool isUgly(int n) {
-        if (n ==1 ) return true; 
-        if(n<=0 ) return false ; 
-
-        for( auto& it : { 2, 3 ,5 }){
-            while( n % it ==  0 ){
-                n/=it ; 
+        if( n<= 0) return false;
+        for(int i  =  2; i<= 5 ;i++ ){
+            while( n%i == 0 ){
+                n/=i;
             }
         }
-        return n == 1 ;
+        return n==1;
     }
 };
