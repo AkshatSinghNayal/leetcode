@@ -8,7 +8,7 @@ public:
         vector<vector<int>> dp(n, vector<int>(MAX_VAL, INF));
 
         // Base case
-        dp[0][nums[0]] = min(dp[0][nums[0]], 0);
+        dp[0][nums[0]] = 0;
         dp[0][0] = min(dp[0][0], 1);
 
         for (int i = 1; i < n; i++) {
