@@ -439,6 +439,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3546-equal-sum-grid-partition-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3546-equal-sum-grid-partition-i) |
 | [3779-minimum-number-of-operations-to-have-distinct-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3779-minimum-number-of-operations-to-have-distinct-elements) |
+| [3877-minimum-removals-to-achieve-target-xor](https://github.com/AkshatSinghNayal/leetcode/tree/master/3877-minimum-removals-to-achieve-target-xor) |
 | [3936-split-array-by-prime-indices](https://github.com/AkshatSinghNayal/leetcode/tree/master/3936-split-array-by-prime-indices) |
 ## Math
 |  |
@@ -557,6 +558,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2351-first-letter-to-appear-twice](https://github.com/AkshatSinghNayal/leetcode/tree/master/2351-first-letter-to-appear-twice) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/3676-smallest-number-with-all-set-bits) |
 | [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
+| [3877-minimum-removals-to-achieve-target-xor](https://github.com/AkshatSinghNayal/leetcode/tree/master/3877-minimum-removals-to-achieve-target-xor) |
 ## Counting
 |  |
 | ------- |
@@ -609,6 +611,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/AkshatSinghNayal/leetcode/tree/master/1312-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1463-cherry-pickup-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1463-cherry-pickup-ii) |
+| [3877-minimum-removals-to-achieve-target-xor](https://github.com/AkshatSinghNayal/leetcode/tree/master/3877-minimum-removals-to-achieve-target-xor) |
 ## Greedy
 |  |
 | ------- |
