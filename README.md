@@ -409,6 +409,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1605-minimum-number-of-days-to-make-m-bouquets](https://github.com/AkshatSinghNayal/leetcode/tree/master/1605-minimum-number-of-days-to-make-m-bouquets) |
 | [1635-number-of-good-pairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/1635-number-of-good-pairs) |
 | [1646-kth-missing-positive-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/1646-kth-missing-positive-number) |
+| [1685-sum-of-absolute-differences-in-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1685-sum-of-absolute-differences-in-a-sorted-array) |
 | [1693-sum-of-all-odd-length-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1693-sum-of-all-odd-length-subarrays) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2219-maximum-number-of-words-found-in-sentences](https://github.com/AkshatSinghNayal/leetcode/tree/master/2219-maximum-number-of-words-found-in-sentences) |
@@ -478,6 +479,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1610-xor-operation-in-an-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1610-xor-operation-in-an-array) |
 | [1635-number-of-good-pairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/1635-number-of-good-pairs) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/AkshatSinghNayal/leetcode/tree/master/1636-number-of-substrings-with-only-1s) |
+| [1685-sum-of-absolute-differences-in-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1685-sum-of-absolute-differences-in-a-sorted-array) |
 | [1693-sum-of-all-odd-length-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1693-sum-of-all-odd-length-subarrays) |
 | [1817-calculate-money-in-leetcode-bank](https://github.com/AkshatSinghNayal/leetcode/tree/master/1817-calculate-money-in-leetcode-bank) |
 | [2032-largest-odd-number-in-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2032-largest-odd-number-in-string) |
@@ -771,6 +773,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/AkshatSinghNayal/leetcode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1590-make-sum-divisible-by-p](https://github.com/AkshatSinghNayal/leetcode/tree/master/1590-make-sum-divisible-by-p) |
 | [1603-running-sum-of-1d-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1603-running-sum-of-1d-array) |
+| [1685-sum-of-absolute-differences-in-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1685-sum-of-absolute-differences-in-a-sorted-array) |
 | [1693-sum-of-all-odd-length-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1693-sum-of-all-odd-length-subarrays) |
 | [2302-count-subarrays-with-score-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/2302-count-subarrays-with-score-less-than-k) |
 | [2483-minimum-penalty-for-a-shop](https://github.com/AkshatSinghNayal/leetcode/tree/master/2483-minimum-penalty-for-a-shop) |
