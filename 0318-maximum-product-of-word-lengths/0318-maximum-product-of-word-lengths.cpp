@@ -1,32 +1,29 @@
+////// I bow to Lord Satyanarayan and Lord Hanuman ///////////
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     int maxProduct(vector<string>& words) {
-        
-        long long maxi = 0; 
-        int n  = words.size() ; 
-        for(int i = 0 ; i< n-1 ;i++ ){
-            string temp = words[i]; 
-            vector<int>ans(26,-1);
-            for(auto& it : temp){
-                ans[it-'a']++; 
+        int n =  words.size();
+        vector<int>bits(n);
+        for(int i = 0 ;i< n; i++ ){
+            int num = 0; 
+            for(int j = 0  ; j<words[i].size() ; j++ ){
+                num |= 1<<(words[i][j]-'a'); 
             }
-
-            for(int j = i+1 ; j<=n-1;  j++ ){
-                bool flag = false;
-                for(int k = 0; k<words[j].size(); k++ ){
-                    if(ans[words[j][k]-'a'] != -1 ){
-                        flag = true;
-                        break;
-                    }
-                }
-                    if(!flag){
-                        maxi = max(maxi, (long long)words[j].size() * (long long)words[i].size());
-                    } 
-
-            }
-
-            
+            bits[i] = num; 
         }
-        return (int)maxi; 
+        int maxi = 0; 
+        for(int i = 0 ;i< n-1 ;i++ ){
+            for( int j =i+1; j<n ;j++ ){
+                if( (bits[i] & bits[j]) == 0  ){
+                    maxi = max( maxi , (int)words[i].size()*(int)words[j].size());
+                }
+            }
+        }
+        return maxi ; 
     }
 };
+
+
+// video link ->>> https://www.youtube.com/watch?v=3XHAikDnB2w
