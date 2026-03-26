@@ -10,11 +10,11 @@ public:
         }
 
         for(int i = 0 ; i< n;i++ ){
-            int left = prefix[i]-nums[i]; 
+            int left = (i-1>=0) ? prefix[i-1]  : 0;
             int right = prefix[n-1]-prefix[i]; 
 
-            int temp = abs(i*nums[i] - left );
-            int temp1 =abs( ((n-1-i)*nums[i]) - right ); 
+            int temp = (i*nums[i] - left) ;
+            int temp1 =  right -((n-1-i)*nums[i])  ; 
 
             result[i]=temp+temp1;
 
