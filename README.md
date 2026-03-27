@@ -673,6 +673,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/AkshatSinghNayal/leetcode/tree/master/0621-task-scheduler) |
 | [0658-find-k-closest-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/0658-find-k-closest-elements) |
 | [0692-top-k-frequent-words](https://github.com/AkshatSinghNayal/leetcode/tree/master/0692-top-k-frequent-words) |
+| [0703-kth-largest-element-in-a-stream](https://github.com/AkshatSinghNayal/leetcode/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0743-network-delay-time](https://github.com/AkshatSinghNayal/leetcode/tree/master/0743-network-delay-time) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/AkshatSinghNayal/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0973-k-closest-points-to-origin](https://github.com/AkshatSinghNayal/leetcode/tree/master/0973-k-closest-points-to-origin) |
@@ -737,6 +738,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0155-min-stack](https://github.com/AkshatSinghNayal/leetcode/tree/master/0155-min-stack) |
 | [0225-implement-stack-using-queues](https://github.com/AkshatSinghNayal/leetcode/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/AkshatSinghNayal/leetcode/tree/master/0232-implement-queue-using-stacks) |
+| [0703-kth-largest-element-in-a-stream](https://github.com/AkshatSinghNayal/leetcode/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0895-maximum-frequency-stack](https://github.com/AkshatSinghNayal/leetcode/tree/master/0895-maximum-frequency-stack) |
 ## Queue
 |  |
@@ -843,6 +845,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0543-diameter-of-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/AkshatSinghNayal/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0703-kth-largest-element-in-a-stream](https://github.com/AkshatSinghNayal/leetcode/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0783-search-in-a-binary-search-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0783-search-in-a-binary-search-tree) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -876,6 +879,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0543-diameter-of-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/AkshatSinghNayal/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0703-kth-largest-element-in-a-stream](https://github.com/AkshatSinghNayal/leetcode/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0783-search-in-a-binary-search-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0783-search-in-a-binary-search-tree) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -976,6 +980,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0450-delete-node-in-a-bst](https://github.com/AkshatSinghNayal/leetcode/tree/master/0450-delete-node-in-a-bst) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/AkshatSinghNayal/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0703-kth-largest-element-in-a-stream](https://github.com/AkshatSinghNayal/leetcode/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0783-search-in-a-binary-search-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0783-search-in-a-binary-search-tree) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 ## Combinatorics
@@ -1037,4 +1042,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0895-maximum-frequency-stack](https://github.com/AkshatSinghNayal/leetcode/tree/master/0895-maximum-frequency-stack) |
 | [1818-minimum-absolute-sum-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/1818-minimum-absolute-sum-difference) |
+## Data Stream
+|  |
+| ------- |
+| [0703-kth-largest-element-in-a-stream](https://github.com/AkshatSinghNayal/leetcode/tree/master/0703-kth-largest-element-in-a-stream) |
 <!---LeetCode Topics End-->
