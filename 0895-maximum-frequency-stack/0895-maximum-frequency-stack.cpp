@@ -1,34 +1,44 @@
 class FreqStack {
 public:
-    unordered_map<int,int> freq;
-    int timer = 0;
+    struct Node{
+        int freq, timeArrived, value;
+    }; 
 
-    struct Node {
-        int f, t, val;
-    };
-
-    struct comp {
-        bool operator()(const Node& a, const Node& b) {
-            if (a.f == b.f)
-                return a.t < b.t;   // more recent first
-            return a.f < b.f;       // higher freq first
+    class comp{
+        public: 
+        bool operator()(const Node& a , const Node& b ){
+            if(a.freq == b.freq){
+                return a.timeArrived < b.timeArrived;
+            }
+            return a.freq<b.freq;
         }
     };
 
-    priority_queue<Node, vector<Node>, comp> pq;
+    unordered_map<int,int> mp ; 
+    priority_queue<Node, vector<Node> , comp>pq;
+    int globalTime = 0; 
 
-    FreqStack() {}
 
+    FreqStack() {
+        
+    }
+    
     void push(int val) {
-        freq[val]++;
-        pq.push({freq[val], timer++, val});
+        mp[val]++; 
+        pq.push({ mp[val] , globalTime++ ,val }); 
     }
-
+    
     int pop() {
-        Node top = pq.top();
+        Node top = pq.top(); 
+        mp[top.value]--; 
         pq.pop();
-
-        freq[top.val]--;   // decrease frequency
-        return top.val;
-    }
+        return top.value;
+    }   
 };
+
+/**
+ * Your FreqStack object will be instantiated and called as such:
+ * FreqStack* obj = new FreqStack();
+ * obj->push(val);
+ * int param_2 = obj->pop();
+ */
