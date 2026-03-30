@@ -59,6 +59,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2351-first-letter-to-appear-twice](https://github.com/AkshatSinghNayal/leetcode/tree/master/2351-first-letter-to-appear-twice) |
 | [2418-sort-the-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/2418-sort-the-people) |
 | [2716-minimize-string-length](https://github.com/AkshatSinghNayal/leetcode/tree/master/2716-minimize-string-length) |
+| [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3779-minimum-number-of-operations-to-have-distinct-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3779-minimum-number-of-operations-to-have-distinct-elements) |
 ## Linked List
@@ -185,6 +186,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2483-minimum-penalty-for-a-shop](https://github.com/AkshatSinghNayal/leetcode/tree/master/2483-minimum-penalty-for-a-shop) |
 | [2716-minimize-string-length](https://github.com/AkshatSinghNayal/leetcode/tree/master/2716-minimize-string-length) |
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/2839-check-if-strings-can-be-made-equal-with-operations-i) |
+| [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
 | [2937-make-three-strings-equal](https://github.com/AkshatSinghNayal/leetcode/tree/master/2937-make-three-strings-equal) |
 | [3194-find-words-containing-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3194-find-words-containing-character) |
 | [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
@@ -290,6 +292,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2410-maximum-matching-of-players-with-trainers) |
 | [2418-sort-the-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/2418-sort-the-people) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
+| [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
 | [3024-type-of-triangle](https://github.com/AkshatSinghNayal/leetcode/tree/master/3024-type-of-triangle) |
 | [3074-apple-redistribution-into-boxes](https://github.com/AkshatSinghNayal/leetcode/tree/master/3074-apple-redistribution-into-boxes) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/AkshatSinghNayal/leetcode/tree/master/3075-maximize-happiness-of-selected-children) |
