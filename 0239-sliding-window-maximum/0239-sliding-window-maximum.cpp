@@ -1,26 +1,37 @@
 class Solution {
 public:
-    vector<int> maxSlidingWindow(vector<int>& nums, int k) {
-        vector<int>ans;
-        deque<int>dq;
-        int n = nums.size() , right = 0 , left = 0 ; 
-        if( k> n ) return ans;
-        while(right <n ){
-            
-            while(!dq.empty() and nums[dq.back()] < nums[right] ){
-                dq.pop_back(); 
+
+    class comp {
+    public:
+        bool operator()(const pair<int,int>& a, const pair<int,int>& b) {
+            if (a.first == b.first) {
+                return a.second > b.second; 
             }
-            dq.push_back(right);
-            
-            if( right -left +1 == k ){
-                ans.push_back(nums[dq.front()]);
-                if( left == dq.front() ) dq.pop_front();
+            return a.first < b.first;
+        }
+    };
+
+    vector<int> maxSlidingWindow(vector<int>& nums, int k) {
+        int left = 0, right = 0, n = nums.size(); 
+        vector<int> ans; 
+        
+        priority_queue<pair<int,int>, vector<pair<int,int>>, comp> pq;
+
+        while (right < n) {
+            pq.push({nums[right], right});
+
+            if (right - left + 1 == k) {
+
+                // Remove elements out of window
+                while (!pq.empty() && pq.top().second < left) {
+                    pq.pop();
+                }
+
+                ans.push_back(pq.top().first);
                 left++;
             }
-
-            right++; 
+            right++;
         }
-
-        return ans ; 
+        return ans; 
     }
 };
