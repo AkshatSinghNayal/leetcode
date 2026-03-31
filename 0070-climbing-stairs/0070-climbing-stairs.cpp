@@ -1,16 +1,20 @@
-/////////////// I Bow To Lord Krishna Ans Lord Hanuman ////////
 class Solution {
 public:
-    int recurssion(int n, vector<int>& memo) {
-        if (n == 1) return 1;
-        if (n == 2) return 2;
-        if (memo[n] != -1) return memo[n];
-       
-        return memo[n] =recurssion(n - 1, memo) + recurssion(n - 2, memo);
+
+    int dp1( int n , vector<int>&dp){
+        // if( n<0 ) return 0; 
+        if( n <=1  ) return 1;
+        if( dp[n]!= -1 ) return dp[n]; 
+        int one = dp1(n-1,dp);
+        int two = dp1(n-2,dp);
+
+        return dp[n]=(one+two);
+
     }
-    
+
+
     int climbStairs(int n) {
-        vector<int> memo(n + 1, -1); 
-        return recurssion(n, memo);
+        vector<int> dp(n+1 , -1); 
+        return dp1( n , dp );
     }
 };
