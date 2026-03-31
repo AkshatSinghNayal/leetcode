@@ -2,22 +2,22 @@ class Solution {
 public:
     int jump(vector<int>& nums) {
         int n = nums.size();
-        if (n <= 1) return 0;
-
-        int jumps = 0;
-        int currEnd = 0;
-        int farthest = 0;
-
-        for (int i = 0; i < n ; i++) {
-            farthest = max(farthest, i + nums[i]);
-
-            if (i == currEnd) {
-                jumps++;
-                currEnd = farthest;
+        if(n==1) return 0;
+        int i = 0  , count =0, maxJump = 0 , globalMaxJump = nums[0]  ; 
+        while( i <n ){
+            while( i < n and i<=globalMaxJump){
+                maxJump = max( maxJump , i+nums[i]);
+                if( i==globalMaxJump ){
+                count++; 
+                if( globalMaxJump == n-1 ) return count;
+                globalMaxJump = maxJump;
             }
-            if( currEnd >= n-1) break; 
-        }
+                i++;
+            }
+            
+            if(globalMaxJump>n-1) return count+1;
 
-        return jumps;
+        }   
+        return count;
     }
 };
