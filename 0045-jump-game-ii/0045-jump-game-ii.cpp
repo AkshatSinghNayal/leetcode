@@ -9,15 +9,14 @@ public:
                 maxJump = max( maxJump , i+nums[i]);
                 if( i==globalMaxJump ){
                 count++; 
-                if( globalMaxJump == n-1 ) return count;
                 globalMaxJump = maxJump;
             }
+                if( globalMaxJump >=n-1 ) return count+1;
                 i++;
             }
             
-            if(globalMaxJump>n-1) return count+1;
 
         }   
-        return count;
+        return -1;
     }
 };
