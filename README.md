@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/AkshatSinghNayal/leetcode/tree/master/0621-task-scheduler) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/AkshatSinghNayal/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0692-top-k-frequent-words](https://github.com/AkshatSinghNayal/leetcode/tree/master/0692-top-k-frequent-words) |
+| [0705-design-hashset](https://github.com/AkshatSinghNayal/leetcode/tree/master/0705-design-hashset) |
 | [0869-reordered-power-of-2](https://github.com/AkshatSinghNayal/leetcode/tree/master/0869-reordered-power-of-2) |
 | [0876-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0876-hand-of-straights) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -82,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0237-delete-node-in-a-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0237-delete-node-in-a-linked-list) |
 | [0328-odd-even-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0328-odd-even-linked-list) |
 | [0355-design-twitter](https://github.com/AkshatSinghNayal/leetcode/tree/master/0355-design-twitter) |
+| [0705-design-hashset](https://github.com/AkshatSinghNayal/leetcode/tree/master/0705-design-hashset) |
 | [0908-middle-of-the-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0908-middle-of-the-linked-list) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 ## Two Pointers
@@ -385,6 +387,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0658-find-k-closest-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/0658-find-k-closest-elements) |
 | [0682-baseball-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0682-baseball-game) |
 | [0692-top-k-frequent-words](https://github.com/AkshatSinghNayal/leetcode/tree/master/0692-top-k-frequent-words) |
+| [0705-design-hashset](https://github.com/AkshatSinghNayal/leetcode/tree/master/0705-design-hashset) |
 | [0713-subarray-product-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/0713-subarray-product-less-than-k) |
 | [0735-asteroid-collision](https://github.com/AkshatSinghNayal/leetcode/tree/master/0735-asteroid-collision) |
 | [0748-largest-number-at-least-twice-of-others](https://github.com/AkshatSinghNayal/leetcode/tree/master/0748-largest-number-at-least-twice-of-others) |
@@ -770,6 +773,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0295-find-median-from-data-stream](https://github.com/AkshatSinghNayal/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0355-design-twitter](https://github.com/AkshatSinghNayal/leetcode/tree/master/0355-design-twitter) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/AkshatSinghNayal/leetcode/tree/master/0703-kth-largest-element-in-a-stream) |
+| [0705-design-hashset](https://github.com/AkshatSinghNayal/leetcode/tree/master/0705-design-hashset) |
 | [0895-maximum-frequency-stack](https://github.com/AkshatSinghNayal/leetcode/tree/master/0895-maximum-frequency-stack) |
 ## Queue
 |  |
@@ -1053,6 +1057,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Function
 |  |
 | ------- |
+| [0705-design-hashset](https://github.com/AkshatSinghNayal/leetcode/tree/master/0705-design-hashset) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 ## Monotonic Queue
 |  |
