@@ -518,6 +518,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0504-base-7](https://github.com/AkshatSinghNayal/leetcode/tree/master/0504-base-7) |
 | [0509-fibonacci-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0509-fibonacci-number) |
 | [0523-continuous-subarray-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0523-continuous-subarray-sum) |
+| [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/AkshatSinghNayal/leetcode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0869-reordered-power-of-2](https://github.com/AkshatSinghNayal/leetcode/tree/master/0869-reordered-power-of-2) |
 | [0973-k-closest-points-to-origin](https://github.com/AkshatSinghNayal/leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/1015-smallest-integer-divisible-by-k) |
@@ -597,6 +598,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0342-power-of-four](https://github.com/AkshatSinghNayal/leetcode/tree/master/0342-power-of-four) |
 | [0371-sum-of-two-integers](https://github.com/AkshatSinghNayal/leetcode/tree/master/0371-sum-of-two-integers) |
 | [0389-find-the-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/0389-find-the-difference) |
+| [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/AkshatSinghNayal/leetcode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/AkshatSinghNayal/leetcode/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
 | [1444-number-of-steps-to-reduce-a-number-to-zero](https://github.com/AkshatSinghNayal/leetcode/tree/master/1444-number-of-steps-to-reduce-a-number-to-zero) |
