@@ -1,22 +1,32 @@
 class Solution {
 public:
+
+    class comp{
+        public: 
+        bool operator()( const int a , const int b ){
+            return a> b ; 
+        }
+    }; 
+
     long long maximumScore(vector<int>& nums, string s) {
-        long long ans = 0;
-        priority_queue<int> pq;
+        long long ans  = 0  ; 
+        int count1 =0 ; 
+        int n  = nums.size(); long long sum = 0; 
+        priority_queue<int , vector<int> , comp > pq ; 
+        for(int i = n-1 ; i>=0 ;i-- ){
+            if( s[i] == '1') count1++; 
 
-        int i = 0;
-        int n = s.size();
-        while (i < n) {
+            if(count1>0 or s[i] == '1'){
+                pq.push(nums[i]); 
+                sum+=nums[i]; 
+            }
 
-            pq.push(nums[i]);
-            if (s[i] == '1') {
-                ans += pq.top();
+            while(pq.size() > count1 ){
+                sum-=pq.top();
                 pq.pop();
             }
 
-            i++;
         }
-
-        return ans;
+        return sum; 
     }
 };
