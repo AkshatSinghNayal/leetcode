@@ -1,51 +1,41 @@
 class Solution {
 public:
-bool isPrime(int n) {
+
+    bool isPrime(int n) {
     if (n <= 1) return false;
-    for (int i = 2; i * i <= n; i++) {
-        if (n % i == 0)
-            return false;
+    if (n == 2) return true;
+    if (n % 2 == 0) return false;
+
+    for (int i = 3; i * i <= n; i += 2) {
+        if (n % i == 0) return false;
     }
     return true;
-}
-
-    int solve( int num , int& sum , int count){
-        
-        for(int i = 2 ; i*i<=num ; i++){
-            if( num% i == 0 ){
-                if( num/i == i ){
-                    sum+=i ; 
-                    count+=1; 
-                }
-                else{
-                    sum+=i; 
-                    sum+=num/i; 
-                    count+=2; 
-                }
-            }
-            if( count>2 )return -1 ; 
-        }
-        return (count == 2) ? 2 : -1 ;
-    }
+    }       
 
     int sumFourDivisors(vector<int>& nums) {
-        int n  = nums.size() ;
-        long long globalCount =0; 
-        for(int i = 0 ; i<n ; i++){
-        int sum = 0 ; 
-            int number = nums[i]; 
-            if( isPrime(number)){
-                continue;
-            }
-            else{
-                int count = solve( number , sum , 0); 
-                if( count == 2 ){
-                    globalCount = globalCount+1+number+sum; 
+    int sum = 0; 
+
+        for(auto& it : nums ){
+            int count = 2; 
+            if(isPrime(it)) continue;
+            int temp = 1+it; 
+
+            for( int i = 2; i*i<=it ; i++   ){
+                if( it%i == 0 ){
+                    count++; 
+                    temp+=i;
+                    if( i!=(it/i)){
+                        count++;
+                        temp+=(it/i);
+                    }
                 }
+
+                if(count >4 ) break;
             }
-            
+            if(count == 4 ) sum+=temp;
 
         }
-        return globalCount;
+
+        return sum;
     }
 };
