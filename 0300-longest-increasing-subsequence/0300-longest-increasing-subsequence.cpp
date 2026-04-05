@@ -1,28 +1,25 @@
 class Solution {
 public:
+
+
     int lengthOfLIS(vector<int>& nums) {
-        int n = nums.size();
+        int n  = nums.size(); 
+        vector<vector<int>>dp(n+1 , vector(n+1 , 0 )); 
+        // dp[n][*] for dp[n][-1 to n+1 ] all things 0, because  if( currIdx >= nums.size() ) return 0; 
 
-        // dp[curr][prev+1]
-        vector<vector<int>> dp(n + 1, vector<int>(n + 1, 0));
+         for(int currIdx = n-1; currIdx >= 0; currIdx--){
+            for(int prevIdx = currIdx-1; prevIdx >= -1; prevIdx--){
+                int take = 0; 
 
-        // base case already handled: dp[n][*] = 0
-
-        for (int curr = n - 1; curr >= 0; curr--) {
-            for (int prev = curr - 1; prev >= -1; prev--) {
-
-                int take = 0;
-                if (prev == -1 || nums[curr] > nums[prev]) {
-                    take = 1 + dp[curr + 1][curr + 1];
+                if(prevIdx == -1 || nums[currIdx] > nums[prevIdx]){
+                    take = 1 + dp[currIdx+1][currIdx+1];
                 }
 
-                int notTake = dp[curr + 1][prev + 1];
-
-                dp[curr][prev + 1] = max(take, notTake);
+                dp[currIdx][prevIdx+1] = max(take, dp[currIdx+1][prevIdx+1]); 
             }
         }
 
-        // start from curr = 0, prev = -1 → shifted to 0
-        return dp[0][0];
+
+        return dp[0][0]; 
     }
 };
