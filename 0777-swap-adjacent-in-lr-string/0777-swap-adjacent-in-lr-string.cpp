@@ -1,25 +1,31 @@
 class Solution {
 public:
-    bool canTransform(string s, string r) {
-        int n = s.size();
-        int left = 0, right = 0;
+    bool canTransform(string start, string result) {
+        int i = 0, j =0 , n  = start.size(); 
+        while( i< n and j < n ){
+            
 
-        while (left < n || right < n) {
-            while (left < n && s[left] == 'X') left++;
-            while (right < n && r[right] == 'X') right++;
+            while(i < n and start[i] ==  'X') i++; 
+            while( j< n and result[j] ==  'X')j++; 
+            if(i >= n || j >= n) break;
+            if( start[i]!= result[j]) return false;
 
-            // if (left == n || right == n)
-            //     return left == n && right == n;
+            if( start[i] == 'R' and j<i ) return false;
+            if( start[i] == 'L' and i<j )  return false;
 
-            if (s[left] != r[right]) return false;
-
-            if (s[left] == 'R' && left > right) return false;
-            if (s[left] == 'L' && left < right) return false;
-
-            left++;
-            right++;
+            i++ ; j++ ; 
         }
+        
 
-        return true;
+        while(i < n) {
+            if(start[i] != 'X') return false;
+            i++;
+        }
+        while(j < n) {
+            if(result[j] != 'X') return false;
+            j++;
+        }
+        
+        return true; 
     }
 };
