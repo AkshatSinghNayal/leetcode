@@ -471,6 +471,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2418-sort-the-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/2418-sort-the-people) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2462-total-cost-to-hire-k-workers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2462-total-cost-to-hire-k-workers) |
+| [2498-frog-jump-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2498-frog-jump-ii) |
 | [2511-maximum-enemy-forts-that-can-be-captured](https://github.com/AkshatSinghNayal/leetcode/tree/master/2511-maximum-enemy-forts-that-can-be-captured) |
 | [2654-minimum-number-of-operations-to-make-all-array-elements-equal-to-1](https://github.com/AkshatSinghNayal/leetcode/tree/master/2654-minimum-number-of-operations-to-make-all-array-elements-equal-to-1) |
 | [2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1](https://github.com/AkshatSinghNayal/leetcode/tree/master/2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1) |
@@ -586,6 +587,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1646-kth-missing-positive-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/1646-kth-missing-positive-number) |
 | [1818-minimum-absolute-sum-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/1818-minimum-absolute-sum-difference) |
 | [2302-count-subarrays-with-score-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/2302-count-subarrays-with-score-less-than-k) |
+| [2498-frog-jump-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2498-frog-jump-ii) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -706,6 +708,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2208-minimum-operations-to-halve-array-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/2208-minimum-operations-to-halve-array-sum) |
 | [2337-remove-digit-from-number-to-maximize-result](https://github.com/AkshatSinghNayal/leetcode/tree/master/2337-remove-digit-from-number-to-maximize-result) |
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2410-maximum-matching-of-players-with-trainers) |
+| [2498-frog-jump-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2498-frog-jump-ii) |
 | [3074-apple-redistribution-into-boxes](https://github.com/AkshatSinghNayal/leetcode/tree/master/3074-apple-redistribution-into-boxes) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/AkshatSinghNayal/leetcode/tree/master/3075-maximize-happiness-of-selected-children) |
 | [3781-maximum-score-after-binary-swaps](https://github.com/AkshatSinghNayal/leetcode/tree/master/3781-maximum-score-after-binary-swaps) |
