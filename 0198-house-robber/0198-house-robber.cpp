@@ -1,15 +1,17 @@
 class Solution {
 public:
-    int rob(vector<int>& nums) {
-        int n = nums.size() ; 
-        vector<int>dp(n , 0 ) ; 
-        dp[0] = nums[0]; 
 
-        for( int i = 1  ; i< n ;i++){
-            int take = nums[i] + ( i-2 >= 0 ? dp[i-2] : 0 ); 
-            int notTake = dp[i-1]; 
-            dp[i] = max( take , notTake); 
-        }
-        return dp[n-1]; 
+    int solve(vector<int>& nums, vector<int>&dp , int i ){
+        // base
+        if( i< 0 ) return 0;
+        if(dp[i]!= -1 ) return dp[i]; 
+
+        return dp[i] = max( nums[i]+solve( nums , dp , i-2 ) , solve(nums , dp , i-1)); 
+    }
+
+    int rob(vector<int>& nums) {
+        int n = nums.size();
+        vector<int>dp(n,-1);
+        return solve(nums,dp,n-1); 
     }
 };
