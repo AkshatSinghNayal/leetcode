@@ -1,28 +1,27 @@
 class Solution {
 public:
+
+    int solve( vector<int>& nums , vector<vector<int>>& dp , int target  , int i ){
+        // base here
+        if (i < 0) {
+    return target == 0 ? 0 : INT_MAX;
+}
+        if( dp[i][target]!= -1 ) return dp[i][target];
+
+        int take = solve( nums , dp ,target^nums[i] , i-1);
+int notTake = solve(nums, dp, target, i-1);
+if (notTake != INT_MAX) notTake += 1;
+        return dp[i][target] = min( take  , notTake );
+
+    }
+
     int minRemovals(vector<int>& nums, int target) {
         int n = nums.size();
-        int MAX_VAL = 1 << 14;
-        const int INF = 1e9;
+        int MAX_VAL = 1<<14 ;
+        vector<vector<int>>dp(n , vector<int>( MAX_VAL , -1 )); 
 
-        vector<vector<int>> dp(n, vector<int>(MAX_VAL, INF));
+        int ans = solve( nums ,dp , target , n-1 ) ;
+        return ans == INT_MAX ? -1 : ans;
 
-        // Base case
-        dp[0][nums[0]] = 0;
-        dp[0][0] = min(dp[0][0], 1);
-
-        for (int i = 1; i < n; i++) {
-            for (int x = 0; x < MAX_VAL; x++) {
-                // Remove
-                dp[i][x] = min(dp[i][x], 1 + dp[i-1][x]);
-
-                // Keep
-                int prev = x ^ nums[i];
-                dp[i][x] = min(dp[i][x], dp[i-1][prev]);
-            }
-        }
-
-        int ans = dp[n-1][target];
-        return (ans >= INF) ? -1 : ans;
     }
 };
