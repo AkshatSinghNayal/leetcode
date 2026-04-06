@@ -1,46 +1,39 @@
 class MedianFinder {
 public:
 
-    class comp{
-        public: 
-        bool operator()( const double& a , const double& b ){
-            return a < b; 
-        }
-    }; 
+    priority_queue<double,vector<double>,greater<double>> right; 
+    priority_queue<double>left;
     int size ; 
-    priority_queue<int,vector<int> , comp > left ;
-    priority_queue<int , vector<int> ,greater<int>> right ;
 
     MedianFinder() {
-        size = 0;
+        size = 0;  
     }
     
     void addNum(int num) {
-        
-        double temp = (double)num;
-        right.push(temp);
-        if( left.size() < right.size() ){
+        right.push((double)num);
+        if(left.size()<right.size()){
             left.push(right.top());
             right.pop();
         }
 
-        while( !left.empty() and !right.empty() and left.top()> right.top() ){
-           
-                auto ele = left.top();
-                auto ele2 = right.top();
-                right.pop(); left.pop();
-                right.push(ele);
-                left.push(ele2 ); 
-           
+        if(!left.empty() and !right.empty() and left.top()>right.top()){
+            auto leftTop = left.top();
+            auto rightTop = right.top();
+            left.pop(); right.pop();
+            left.push(rightTop);
+            right.push(leftTop);
         }
+
+
+
         size++; 
     }
     
     double findMedian() {
-        if( size%2 != 0  ){
+        if( size&1 ){
             return left.top();
         }
-        return (double)(left.top()+right.top())/2;
+        return (left.top()+right.top())/2;
     }
 };
 
