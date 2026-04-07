@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0409-longest-palindrome](https://github.com/AkshatSinghNayal/leetcode/tree/master/0409-longest-palindrome) |
 | [0424-longest-repeating-character-replacement](https://github.com/AkshatSinghNayal/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0451-sort-characters-by-frequency](https://github.com/AkshatSinghNayal/leetcode/tree/master/0451-sort-characters-by-frequency) |
+| [0480-sliding-window-median](https://github.com/AkshatSinghNayal/leetcode/tree/master/0480-sliding-window-median) |
 | [0496-next-greater-element-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/0496-next-greater-element-i) |
 | [0523-continuous-subarray-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/0560-subarray-sum-equals-k) |
@@ -393,6 +394,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0417-pacific-atlantic-water-flow](https://github.com/AkshatSinghNayal/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0435-non-overlapping-intervals](https://github.com/AkshatSinghNayal/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/AkshatSinghNayal/leetcode/tree/master/0455-assign-cookies) |
+| [0480-sliding-window-median](https://github.com/AkshatSinghNayal/leetcode/tree/master/0480-sliding-window-median) |
 | [0485-max-consecutive-ones](https://github.com/AkshatSinghNayal/leetcode/tree/master/0485-max-consecutive-ones) |
 | [0496-next-greater-element-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/0496-next-greater-element-i) |
 | [0502-ipo](https://github.com/AkshatSinghNayal/leetcode/tree/master/0502-ipo) |
@@ -740,6 +742,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0373-find-k-pairs-with-smallest-sums) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0451-sort-characters-by-frequency](https://github.com/AkshatSinghNayal/leetcode/tree/master/0451-sort-characters-by-frequency) |
+| [0480-sliding-window-median](https://github.com/AkshatSinghNayal/leetcode/tree/master/0480-sliding-window-median) |
 | [0502-ipo](https://github.com/AkshatSinghNayal/leetcode/tree/master/0502-ipo) |
 | [0506-relative-ranks](https://github.com/AkshatSinghNayal/leetcode/tree/master/0506-relative-ranks) |
 | [0621-task-scheduler](https://github.com/AkshatSinghNayal/leetcode/tree/master/0621-task-scheduler) |
@@ -853,6 +856,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0219-contains-duplicate-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0219-contains-duplicate-ii) |
 | [0239-sliding-window-maximum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0239-sliding-window-maximum) |
 | [0424-longest-repeating-character-replacement](https://github.com/AkshatSinghNayal/leetcode/tree/master/0424-longest-repeating-character-replacement) |
+| [0480-sliding-window-median](https://github.com/AkshatSinghNayal/leetcode/tree/master/0480-sliding-window-median) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/AkshatSinghNayal/leetcode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0658-find-k-closest-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/0658-find-k-closest-elements) |
 | [0713-subarray-product-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/0713-subarray-product-less-than-k) |
