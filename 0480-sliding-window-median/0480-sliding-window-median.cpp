@@ -18,7 +18,7 @@ public:
                 leftSide.erase(it);
             }
 
-            if( right-left +1 > k ){ // this is the case when we have more element in multiset
+            if( left <=n-k and right-left +1 > k ){ // this is the case when we have more element in multiset
                 pair<long , int> toRemove = {nums[right-k],right-k}; 
                 if( leftSide.find(toRemove)!=leftSide.end()) leftSide.erase(toRemove);
                 else if(rightSide.find(toRemove)!=rightSide.end()) rightSide.erase(toRemove);
@@ -33,9 +33,10 @@ public:
                     leftSide.insert(*it);
                     rightSide.erase(it); 
                 }
+                left++; 
             }
 
-            if( right>=k-1 ){
+            if( right -left +1 == k  ){
                 double median; 
                 if( k%2 != 0 ){
                     auto it = prev(leftSide.end()); 
