@@ -12,7 +12,7 @@ public:
             leftSide.insert(*it);
             rightSide.erase(it);
 
-            if(leftSide.size() > rightSide.size()+1 ){
+            if(leftSide.size()-1 > rightSide.size() ){
                 auto it  = prev(leftSide.end());
                 rightSide.insert(*it);
                 leftSide.erase(it);
