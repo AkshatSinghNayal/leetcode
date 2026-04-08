@@ -1,34 +1,70 @@
-#include <vector>
-#include <set>
+#include <bits/stdc++.h>
 using namespace std;
 
 class Solution {
 public:
     vector<double> medianSlidingWindow(vector<int>& nums, int k) {
-        // multiset to maintain sorted order of the window
-        multiset<int> window(nums.begin(), nums.begin() + k);
-        
-        // iterator pointing to the "middle" element (median)
-        auto mid = next(window.begin(), k / 2);
-        
-        vector<double> medians;
+        // max heap (left side) stores smaller half
+        multiset<pair<int,int>> leftSide;
+        // min heap (right side) stores larger half
+        multiset<pair<int,int>, greater<pair<int,int>>> rightSide;
 
-        for (int i = k; ; i++) {
-            // Compute median:
-            // - For odd k, *mid is the median
-            // - For even k, average *mid and previous element
-            medians.push_back((double(*mid) + *prev(mid, 1 - k % 2)) / 2);
+        vector<double> ans;
+        int n = nums.size();
 
-            // If we reached the end of the array, return the result
-            if (i == nums.size()) return medians;
+        for(int i = 0; i < n; ++i) {
+            pair<int,int> newPair = {nums[i], i};
 
-            // Insert the new element from the right of the window
-            window.insert(nums[i]);
-            if (nums[i] < *mid) mid--; // median shifts left if new element is smaller
+            // insert into rightSide first
+            rightSide.insert(newPair);
 
-            // Remove the element leaving the window (from the left)
-            if (nums[i - k] <= *mid) mid++; // median shifts right if removed element <= median
-            window.erase(window.lower_bound(nums[i - k]));
+            // balance: move smallest of rightSide to leftSide
+            auto rightMin = prev(rightSide.end()); // largest in rightSide due to greater
+            leftSide.insert(*rightMin);
+            rightSide.erase(rightMin);
+
+            // rebalance sizes
+            if(leftSide.size() > rightSide.size() + 1) {
+                auto leftMax = prev(leftSide.end());
+                rightSide.insert(*leftMax);
+                leftSide.erase(leftMax);
+            }
+
+            // remove the element going out of window
+            if(i >= k) {
+                pair<int,int> out = {nums[i - k], i - k};
+                if(leftSide.find(out) != leftSide.end()) {
+                    leftSide.erase(leftSide.find(out));
+                } else {
+                    rightSide.erase(rightSide.find(out));
+                }
+
+                // rebalance again after removal
+                if(leftSide.size() > rightSide.size() + 1) {
+                    auto leftMax = prev(leftSide.end());
+                    rightSide.insert(*leftMax);
+                    leftSide.erase(leftMax);
+                } else if(leftSide.size() < rightSide.size()) {
+                    auto rightMin2 = prev(rightSide.end());
+                    leftSide.insert(*rightMin2);
+                    rightSide.erase(rightMin2);
+                }
+            }
+
+            // calculate median
+            if(i >= k - 1) {
+                double median;
+                if(k % 2 != 0) { // odd
+                    median = (double)prev(leftSide.end())->first;
+                } else { // even
+                    double leftMaxVal = (double)prev(leftSide.end())->first;
+                    double rightMinVal = (double)prev(rightSide.end())->first; // largest in rightSide
+                    median = (leftMaxVal + rightMinVal) / 2.0;
+                }
+                ans.push_back(median);
+            }
         }
+
+        return ans;
     }
 };
