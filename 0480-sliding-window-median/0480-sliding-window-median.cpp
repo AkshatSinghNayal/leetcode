@@ -1,68 +1,67 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 class Solution {
 public:
     vector<double> medianSlidingWindow(vector<int>& nums, int k) {
-        // max heap (left side) stores smaller half
-        multiset<pair<int,int>> leftSide;
-        // min heap (right side) stores larger half
-        multiset<pair<int,int>, greater<pair<int,int>>> rightSide;
-
+        multiset<pair<double,int>> leftSide;  // smaller half
+        multiset<pair<double,int>, greater<pair<double,int>>> rightSide; // larger half
         vector<double> ans;
         int n = nums.size();
+        int left = 0, right = 0;
 
-        for(int i = 0; i < n; ++i) {
-            pair<int,int> newPair = {nums[i], i};
+        while(right < n) {
+            double ele = (double)nums[right];
+            pair<double,int> newPair = {ele, right};
 
             // insert into rightSide first
             rightSide.insert(newPair);
 
-            // balance: move smallest of rightSide to leftSide
-            auto rightMin = prev(rightSide.end()); // largest in rightSide due to greater
-            leftSide.insert(*rightMin);
-            rightSide.erase(rightMin);
+            // move smallest of rightSide to leftSide
+            auto itRight = prev(rightSide.end()); // largest in rightSide (descending order)
+            leftSide.insert(*itRight);
+            rightSide.erase(itRight);
 
             // rebalance sizes
             if(leftSide.size() > rightSide.size() + 1) {
-                auto leftMax = prev(leftSide.end());
-                rightSide.insert(*leftMax);
-                leftSide.erase(leftMax);
+                auto itLeft = prev(leftSide.end());
+                rightSide.insert(*itLeft);
+                leftSide.erase(itLeft);
             }
 
-            // remove the element going out of window
-            if(i >= k) {
-                pair<int,int> out = {nums[i - k], i - k};
+            // remove outgoing element when window slides
+            if(right - left + 1 > k) {
+                pair<double,int> out = { (double)nums[left], left };
                 if(leftSide.find(out) != leftSide.end()) {
                     leftSide.erase(leftSide.find(out));
                 } else {
                     rightSide.erase(rightSide.find(out));
                 }
+                left++;
 
-                // rebalance again after removal
+                // rebalance after removal
                 if(leftSide.size() > rightSide.size() + 1) {
-                    auto leftMax = prev(leftSide.end());
-                    rightSide.insert(*leftMax);
-                    leftSide.erase(leftMax);
+                    auto itLeft = prev(leftSide.end());
+                    rightSide.insert(*itLeft);
+                    leftSide.erase(itLeft);
                 } else if(leftSide.size() < rightSide.size()) {
-                    auto rightMin2 = prev(rightSide.end());
-                    leftSide.insert(*rightMin2);
-                    rightSide.erase(rightMin2);
+                    auto itRight2 = prev(rightSide.end());
+                    leftSide.insert(*itRight2);
+                    rightSide.erase(itRight2);
                 }
             }
 
-            // calculate median
-            if(i >= k - 1) {
+            // compute median if window has size k
+            if(right - left + 1 == k) {
                 double median;
-                if(k % 2 != 0) { // odd
-                    median = (double)prev(leftSide.end())->first;
-                } else { // even
-                    double leftMaxVal = (double)prev(leftSide.end())->first;
-                    double rightMinVal = (double)prev(rightSide.end())->first; // largest in rightSide
-                    median = (leftMaxVal + rightMinVal) / 2.0;
+                if(k % 2 != 0) {
+                    median = prev(leftSide.end())->first; // max of leftSide
+                } else {
+                    double leftMax = prev(leftSide.end())->first;
+                    double rightMin = prev(rightSide.end())->first;
+                    median = (leftMax + rightMin) / 2.0;
                 }
                 ans.push_back(median);
             }
+
+            right++;
         }
 
         return ans;
