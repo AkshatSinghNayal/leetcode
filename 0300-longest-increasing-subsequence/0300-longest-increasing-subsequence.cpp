@@ -1,22 +1,24 @@
 class Solution {
-public:
-    int lengthOfLIS(vector<int>& nums) {
-        int n  = nums.size() ;
-        vector<vector<int>>dp(n+1,vector<int>(n+1 ,0 )); 
+public: 
 
-        // for(int i  = 0 ; i<=n; i++ ){
-        //     dp[n][i] = 0; 
-        // } base case see memoization for clear vision  
+    int solve(vector<int>& nums , vector<vector<int>>& dp , int curr , int prev){
+        // base
+if (curr >= nums.size()) return 0;
 
-        for(int currIdx = n-1 ;currIdx>=0 ;currIdx-- ){
-            for(int prevIdx = currIdx-1 ; prevIdx>=-1 ; prevIdx-- ){
-                int take = 0; 
-                if( prevIdx == -1 || nums[currIdx] > nums[prevIdx]  ){
-                    take = 1 + dp[currIdx+1][currIdx+1]; 
-                }
-                dp[currIdx][prevIdx+1] = max( take , dp[currIdx+1][prevIdx+1]); 
-            }
+        if( dp[curr][prev+1] != -1 ) return dp[curr][prev+1] ; 
+        int take = 0 ; 
+        if( prev == -1  or nums[curr] > nums[prev] ){
+            take = 1 + solve(nums , dp , curr+1 , curr ); 
         }
-        return dp[0][0]; 
+        int notTake = solve( nums , dp , curr+1 , prev);
+
+
+        return dp[curr][prev+1] = max( take , notTake) ;
+    }
+
+    int lengthOfLIS(vector<int>& nums) {
+        int n=  nums.size() ; 
+        vector<vector<int>>dp( n , vector<int>(n ,-1)); 
+        return solve( nums , dp , 0 , -1 ) ; 
     }
 };
