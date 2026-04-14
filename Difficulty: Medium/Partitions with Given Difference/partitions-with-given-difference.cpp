@@ -1,25 +1,31 @@
 class Solution {
   public:
-    int countPartitions(vector<int>& arr, int diff) {
-
-        long long target = accumulate(arr.begin(), arr.end(), 0);
-
-        if (target < diff || (target + diff) % 2 != 0)
-            return 0;
-
-        int s1 = (target + diff) / 2;
-
-        vector<int> dp(target + 1, 0);
-        dp[0] = 1;
-
-        if (arr[0] <= target) dp[arr[0]] += 1;
-
-        for (int i = 1; i < arr.size(); i++) {
-            for (int tar = target; tar >= 1 && arr[i] <= tar; tar--) {
-                dp[tar] += dp[tar - arr[i]];
-            }
+    
+    int solve(vector<vector<int>>&dp , int i , int target , vector<int>& arr ){
+        //base 
+        if( i < 0 ){
+            return (target == 0  ) ? 1 : 0;
         }
-
-        return dp[s1];
+        
+        if( dp[i][target] !=-1 ) return dp[i][target]; 
+        
+        int take = 0; 
+        if( target >= arr[i]){
+            take = solve( dp , i-1 , target-arr[i] , arr ); 
+        }
+        int notTake = solve( dp , i-1 , target , arr ); 
+        
+        
+        return dp[i][target] = (take + notTake ); 
+    }
+  
+    int countPartitions(vector<int>& arr, int diff) {
+        int n  = arr.size(); 
+        int sum = accumulate(arr.begin() , arr.end() , 0); 
+        if ((sum - diff) < 0 || (sum - diff) % 2 != 0) return 0;
+        int target = (sum-diff)/2;
+        vector<vector<int>>dp( n , vector<int>(target+1 ,-1)); 
+        return solve( dp , n-1 , target , arr ); 
+     
     }
 };
