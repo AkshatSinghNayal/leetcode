@@ -8,16 +8,17 @@ public:
         int target = (sum-diff)/2;
         vector<int>prev(target+1 ,0); 
         
-        prev[0] = 1; 
+        prev[0] = 1;
+        if(arr[0]<=target) prev[arr[0]]+=1;
 
 
-        for(int i = 1; i<= n ; i++ ){
+        for(int i = 1; i<n ; i++ ){
         vector<int>curr(target+1 ,0); 
 
             for(int j= 0; j<= target ; j++ ){
                 int take = 0; 
-                if( j >= arr[i-1]){
-                    take =prev[j-arr[i-1]];  
+                if( j >= arr[i]){
+                    take =prev[j-arr[i]];  
                 }
                 int notTake = prev[j]; 
 
