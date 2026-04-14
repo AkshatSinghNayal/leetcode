@@ -399,6 +399,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/AkshatSinghNayal/leetcode/tree/master/0455-assign-cookies) |
 | [0480-sliding-window-median](https://github.com/AkshatSinghNayal/leetcode/tree/master/0480-sliding-window-median) |
 | [0485-max-consecutive-ones](https://github.com/AkshatSinghNayal/leetcode/tree/master/0485-max-consecutive-ones) |
+| [0494-target-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0494-target-sum) |
 | [0496-next-greater-element-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/0496-next-greater-element-i) |
 | [0502-ipo](https://github.com/AkshatSinghNayal/leetcode/tree/master/0502-ipo) |
 | [0503-next-greater-element-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0503-next-greater-element-ii) |
@@ -673,6 +674,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0392-is-subsequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/0392-is-subsequence) |
 | [0416-partition-equal-subset-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0435-non-overlapping-intervals](https://github.com/AkshatSinghNayal/leetcode/tree/master/0435-non-overlapping-intervals) |
+| [0494-target-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0494-target-sum) |
 | [0509-fibonacci-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0509-fibonacci-number) |
 | [0516-longest-palindromic-subsequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0518-coin-change-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0518-coin-change-ii) |
@@ -791,6 +793,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0090-subsets-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0090-subsets-ii) |
 | [0131-palindrome-partitioning](https://github.com/AkshatSinghNayal/leetcode/tree/master/0131-palindrome-partitioning) |
 | [0357-count-numbers-with-unique-digits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0357-count-numbers-with-unique-digits) |
+| [0494-target-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0494-target-sum) |
 ## Matrix
 |  |
 | ------- |
