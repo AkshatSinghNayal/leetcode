@@ -473,6 +473,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1693-sum-of-all-odd-length-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1693-sum-of-all-odd-length-subarrays) |
 | [1818-minimum-absolute-sum-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/1818-minimum-absolute-sum-difference) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/AkshatSinghNayal/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
+| [2078-two-furthest-houses-with-different-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2191-sort-the-jumbled-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2191-sort-the-jumbled-numbers) |
 | [2208-minimum-operations-to-halve-array-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/2208-minimum-operations-to-halve-array-sum) |
@@ -732,6 +733,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1642-furthest-building-you-can-reach](https://github.com/AkshatSinghNayal/leetcode/tree/master/1642-furthest-building-you-can-reach) |
 | [2027-minimum-moves-to-convert-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2027-minimum-moves-to-convert-string) |
 | [2032-largest-odd-number-in-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2032-largest-odd-number-in-string) |
+| [2078-two-furthest-houses-with-different-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2116-check-if-a-parentheses-string-can-be-valid) |
 | [2208-minimum-operations-to-halve-array-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/2208-minimum-operations-to-halve-array-sum) |
 | [2337-remove-digit-from-number-to-maximize-result](https://github.com/AkshatSinghNayal/leetcode/tree/master/2337-remove-digit-from-number-to-maximize-result) |
