@@ -6,12 +6,11 @@ public:
         freq[0] =1 ; 
         long long sum = 0; 
         for(auto& it  : nums ){
-            sum=(sum+it)%k;
-            int target = ( sum + k )%k;
-            if(freq.count(target)){
-                ans+=freq[target]; 
+            sum=((sum+it)%k +k)%k; 
+            if(freq.count(sum)){
+                ans+=freq[sum]; 
             }
-            freq[target]++; 
+            freq[sum]++; 
         }
         return ans; 
     }
