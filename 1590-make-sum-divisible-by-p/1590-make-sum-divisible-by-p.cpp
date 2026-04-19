@@ -1,29 +1,29 @@
 class Solution {
 public:
     int minSubarray(vector<int>& nums, int p) {
-        unordered_map<int,int> mp;
-        mp[0] = -1 ;
-        long long target  = 0; 
-        int n = nums.size();
-        for(auto& it : nums ){
-            target =(target+ it)%p;
-        }
-        if( target == 0 ) return 0 ;
+    long long total = accumulate(nums.begin(), nums.end(), 0LL); 
+    int target = total % p;
+    if (target == 0) return 0; 
 
-        int prefix =0 , mini =INT_MAX; 
+    unordered_map<int,int> freq;
+    freq[0] = -1; 
 
-        for(int i = 0 ;i< n ;i++ ){
-            prefix = (prefix+nums[i])%p;
-            const int MOD = (prefix - target + p )%p;
-            if(mp.count(MOD)){
-                mini = min(mini , i-mp[MOD]);
-            }
-            mp[prefix]=i; 
+    int ans = nums.size();
+    int currentMOD = 0; 
 
+    for (int i = 0; i < nums.size(); i++) {
+        currentMOD = (currentMOD + nums[i]) % p; 
+
+        int weWant = (currentMOD - target + p) % p;
+
+        if (freq.count(weWant)) {
+            ans = min(ans, i - freq[weWant]);    
         }
 
-        return (mini == INT_MAX or mini ==  n ) ? -1 : mini ; 
-    }
+        freq[currentMOD] = i;
+    }   
+
+    return ans == nums.size() ? -1 : ans;
+}
+    
 };
-
-
