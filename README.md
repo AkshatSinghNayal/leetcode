@@ -464,6 +464,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1460-make-two-arrays-equal-by-reversing-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1460-make-two-arrays-equal-by-reversing-subarrays) |
 | [1463-cherry-pickup-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1463-cherry-pickup-ii) |
+| [1514-path-with-maximum-probability](https://github.com/AkshatSinghNayal/leetcode/tree/master/1514-path-with-maximum-probability) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/AkshatSinghNayal/leetcode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1548-check-if-all-1s-are-at-least-length-k-places-away](https://github.com/AkshatSinghNayal/leetcode/tree/master/1548-check-if-all-1s-are-at-least-length-k-places-away) |
 | [1590-make-sum-divisible-by-p](https://github.com/AkshatSinghNayal/leetcode/tree/master/1590-make-sum-divisible-by-p) |
@@ -785,6 +786,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0973-k-closest-points-to-origin](https://github.com/AkshatSinghNayal/leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/AkshatSinghNayal/leetcode/tree/master/1046-last-stone-weight) |
 | [1405-longest-happy-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/1405-longest-happy-string) |
+| [1514-path-with-maximum-probability](https://github.com/AkshatSinghNayal/leetcode/tree/master/1514-path-with-maximum-probability) |
 | [1631-path-with-minimum-effort](https://github.com/AkshatSinghNayal/leetcode/tree/master/1631-path-with-minimum-effort) |
 | [1642-furthest-building-you-can-reach](https://github.com/AkshatSinghNayal/leetcode/tree/master/1642-furthest-building-you-can-reach) |
 | [2208-minimum-operations-to-halve-array-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/2208-minimum-operations-to-halve-array-sum) |
@@ -1146,11 +1148,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0785-is-graph-bipartite](https://github.com/AkshatSinghNayal/leetcode/tree/master/0785-is-graph-bipartite) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/AkshatSinghNayal/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/AkshatSinghNayal/leetcode/tree/master/1319-number-of-operations-to-make-network-connected) |
+| [1514-path-with-maximum-probability](https://github.com/AkshatSinghNayal/leetcode/tree/master/1514-path-with-maximum-probability) |
 ## Shortest Path
 |  |
 | ------- |
 | [0743-network-delay-time](https://github.com/AkshatSinghNayal/leetcode/tree/master/0743-network-delay-time) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/AkshatSinghNayal/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
+| [1514-path-with-maximum-probability](https://github.com/AkshatSinghNayal/leetcode/tree/master/1514-path-with-maximum-probability) |
 ## Rolling Hash
 |  |
 | ------- |
