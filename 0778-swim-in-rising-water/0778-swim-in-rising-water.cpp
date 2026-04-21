@@ -1,43 +1,73 @@
+class DSU {
+public:
+    vector<int> parent, size;
+
+    DSU(int n) {
+        parent.resize(n);
+        size.resize(n, 1);
+        for (int i = 0; i < n; i++) parent[i] = i;
+    }
+
+    int find(int x) {
+        if (parent[x] != x)
+            parent[x] = find(parent[x]);
+        return parent[x];
+    }
+
+    void unite(int a, int b) {
+        a = find(a);
+        b = find(b);
+        if (a == b) return;
+
+        // attach smaller tree under larger one
+        if (size[a] < size[b]) swap(a, b);
+
+        parent[b] = a;
+        size[a] += size[b];
+    }
+};
+
 class Solution {
 public:
-
-    class comp{
-        public:
-        bool operator()(const tuple<int,int,int>&a , const tuple<int,int,int>&b ){
-            return get<0>(a) > get<0>(b); 
-        }
-    }; 
-
     int swimInWater(vector<vector<int>>& grid) {
-        priority_queue<tuple<int,int,int>,vector<tuple<int,int,int>>,comp>pq;
-        int n  = grid.size(); 
-        vector<vector<int>>ans(n , vector<int>(n , INT_MAX));
-        vector<vector<int>>dist{{1,0},{0,1},{0,-1},{-1,0}}; 
-        pq.push({grid[0][0], 0 , 0 }); 
-        ans[0][0] = grid[0][0];
+        int n = grid.size();
+        vector<tuple<int,int,int>> cells;
 
-        while(!pq.empty()){
-            auto [ maxi , i , j ] = pq.top(); pq.pop(); 
-            if(ans[i][j] > maxi ) continue; 
+        // store (height, i, j)
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                cells.push_back({grid[i][j], i, j});
+            }
+        }
 
-            if( i == n-1 and j == n-1 ) return maxi; 
+        sort(cells.begin(), cells.end());
 
-            for(auto& it : dist ){
-                int move1 = i+it[0]; 
-                int move2 = j+it[1]; 
+        DSU dsu(n * n);
+        vector<vector<bool>> active(n, vector<bool>(n, false));
 
-                if(move1<n and move1>=0 and move2 < n and move2>= 0 ){
-                    int temp = max(maxi ,grid[move1][move2]); 
-                    if( ans[move1][move2] > temp ){
-                        ans[move1][move2] = temp;
-                        pq.push({ans[move1][move2] , move1 , move2}); 
-                    }
+        vector<pair<int,int>> dir{{1,0},{0,1},{0,-1},{-1,0}};
+
+        for (auto &[h, i, j] : cells) {
+            active[i][j] = true;
+
+            int id1 = i * n + j;
+
+            for (auto &d : dir) {
+                int ni = i + d.first;
+                int nj = j + d.second;
+
+                if (ni >= 0 && nj >= 0 && ni < n && nj < n && active[ni][nj]) {
+                    int id2 = ni * n + nj;
+                    dsu.unite(id1, id2);
                 }
-
             }
 
+            // check connectivity
+            if (dsu.find(0) == dsu.find(n*n - 1)) {
+                return h;
+            }
         }
-        return -1; 
-         
+
+        return -1;
     }
 };
