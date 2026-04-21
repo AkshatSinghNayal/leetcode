@@ -1,37 +1,33 @@
 class Solution {
 public:
     int findMaximizedCapital(int k, int w, vector<int>& profits, vector<int>& capital) {
-        priority_queue<int>pq; // store max profit 
-        vector<pair<int,int>>arr;
-        int i =0 ,n =profits.size(); 
-        while(i<n){
-            arr.push_back({ capital[i] , profits[i]});
-            i++;
+        int n = profits.size(); 
+        vector<pair<int,int>>temp; 
+        priority_queue<int>pq;
+        for(int i = 0 ;i< n ;i++ ){
+           temp.push_back({capital[i] , profits[i]}); 
         }
-        sort(arr.begin(),arr.end() ,[&](auto a , auto b){
-            if( a.first == b.first){
-                return a.first > b.first ; 
+        sort(temp.begin() , temp.end());
+        int i = 0 ; 
+        while( i< n and k>0 ){
+            while( i< n and  w>= temp[i].first ){
+                pq.push(temp[i].second); 
+                i++; 
             }
-            return a.first < b.first;
-        }); 
-        
-        i = 0; 
-        while(  k> 0){
-            bool found = false;
-            while( i< n and arr[i].first <= w ){
-                pq.push(arr[i].second );
-                i++;
-                found = true;
-            }
-            if(!pq.empty()){
-                w+=pq.top();
-                pq.pop();
+
+            if(!pq.empty() and k>0 ){
+                w+=pq.top(); 
+                pq.pop(); 
                 k--;
             }
-            if(!found && pq.empty()) break;
+            else {
+                break;
+            }
         }
-        
-
+        while(k>0 and !pq.empty()){
+            w+=pq.top(); pq.pop(); 
+            k--;
+        }
         return w;
     }
 };
