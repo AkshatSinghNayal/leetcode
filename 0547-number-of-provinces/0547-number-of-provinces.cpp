@@ -42,12 +42,12 @@ public:
         for(int i = 0; i< n; i++ ){
             for(int j  = 0 ;j < n; j++ ){
                 if(isConnected[i][j] ==  1 ){
-                    d.unionBySize( i , j) ; 
+                    d.unionBySize( i+1 , j+1) ; 
                 }
             }
         }
         int count = 0; 
-        for(int i  = 0; i< n ; i++ ){
+        for(int i  = 1; i<=n ; i++ ){
             if( d.parent[i] == i ) count++; 
         }
 
