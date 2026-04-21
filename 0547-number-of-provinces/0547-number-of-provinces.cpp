@@ -1,61 +1,56 @@
-class Disjointset{
-public:
-    vector<int> parent , size;
+class Disjoint{
+    public: 
+    vector<int>size , parent; 
 
-    Disjointset(int n){
-        parent.resize(n+1);
-        size.resize(n+1, 1);
-        for(int i = 1; i <= n; i++){
-            parent[i] = i;
-        }
+    Disjoint(int V  ){
+        size.resize(V+1 , 1); 
+        parent.resize(V+1); 
+
+        for(int i  = 0 ;i<=V ; i++ ) parent[i] = i; 
     }
 
-    int findParent(int node){
-        if(node == parent[node]) return node;
-        return parent[node] = findParent(parent[node]);
+    int findParent( int n ){
+
+        if( parent[n] == n  ) return n; 
+        return parent[n] = findParent(parent[n]); 
     }
 
-    void unionBySize(int u , int v){
-        int rootA = findParent(u);
-        int rootB = findParent(v);
+    void unionBySize( int u , int v ){
+        int NodeA = findParent(u); 
+        int NodeB = findParent(v); 
 
-        if(rootA == rootB) return;
+        if( NodeA == NodeB ) return ; 
 
-        if(size[rootA] < size[rootB]){
-            parent[rootA] = rootB;
-            size[rootB] += size[rootA];
+        if( size[NodeA] > size[NodeB]){
+            parent[NodeB ] = NodeA;
+            size[NodeA] +=size[NodeB];
         }
         else{
-            parent[rootB] = rootA;
-            size[rootA] += size[rootB];
+            parent[NodeA] = NodeB;
+            size[NodeB] +=size[NodeA];
         }
+
     }
-};
+}; 
 
 class Solution {
 public:
     int findCircleNum(vector<vector<int>>& isConnected) {
+        int n = isConnected.size(); 
+        Disjoint d(n);
 
-        int V = isConnected.size();
-        Disjointset d1(V);
-
-        // shift +1 while calling union
-        for(int i = 0; i < V; i++){
-            for(int j = 0; j < V; j++){
-                if(isConnected[i][j] == 1){
-                    d1.unionBySize(i+1 , j+1);
+        for(int i = 0; i< n; i++ ){
+            for(int j  = 0 ;j < n; j++ ){
+                if(isConnected[i][j] ==  1 ){
+                    d.unionBySize( i , j) ; 
                 }
             }
         }
-
-        int count = 0;
-
-        // only check 1 to V
-        for(int i = 1; i <= V; i++){
-            if(d1.parent[i] == i)
-                count++;
+        int count = 0; 
+        for(int i  = 0; i< n ; i++ ){
+            if( d.parent[i] == i ) count++; 
         }
 
-        return count;
+        return count; 
     }
 };
