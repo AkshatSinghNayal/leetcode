@@ -42,6 +42,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0692-top-k-frequent-words](https://github.com/AkshatSinghNayal/leetcode/tree/master/0692-top-k-frequent-words) |
 | [0705-design-hashset](https://github.com/AkshatSinghNayal/leetcode/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/AkshatSinghNayal/leetcode/tree/master/0706-design-hashmap) |
+| [0846-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0846-hand-of-straights) |
 | [0869-reordered-power-of-2](https://github.com/AkshatSinghNayal/leetcode/tree/master/0869-reordered-power-of-2) |
 | [0876-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0876-hand-of-straights) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -303,6 +304,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0748-largest-number-at-least-twice-of-others](https://github.com/AkshatSinghNayal/leetcode/tree/master/0748-largest-number-at-least-twice-of-others) |
 | [0757-set-intersection-size-at-least-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0757-set-intersection-size-at-least-two) |
 | [0759-set-intersection-size-at-least-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0759-set-intersection-size-at-least-two) |
+| [0846-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0846-hand-of-straights) |
 | [0857-minimum-cost-to-hire-k-workers](https://github.com/AkshatSinghNayal/leetcode/tree/master/0857-minimum-cost-to-hire-k-workers) |
 | [0869-reordered-power-of-2](https://github.com/AkshatSinghNayal/leetcode/tree/master/0869-reordered-power-of-2) |
 | [0876-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0876-hand-of-straights) |
@@ -427,6 +429,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0759-set-intersection-size-at-least-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0759-set-intersection-size-at-least-two) |
 | [0778-swim-in-rising-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0778-swim-in-rising-water) |
 | [0792-binary-search](https://github.com/AkshatSinghNayal/leetcode/tree/master/0792-binary-search) |
+| [0846-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0846-hand-of-straights) |
 | [0857-minimum-cost-to-hire-k-workers](https://github.com/AkshatSinghNayal/leetcode/tree/master/0857-minimum-cost-to-hire-k-workers) |
 | [0876-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0876-hand-of-straights) |
 | [0879-profitable-schemes](https://github.com/AkshatSinghNayal/leetcode/tree/master/0879-profitable-schemes) |
@@ -728,6 +731,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0680-valid-palindrome-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0757-set-intersection-size-at-least-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0757-set-intersection-size-at-least-two) |
 | [0759-set-intersection-size-at-least-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0759-set-intersection-size-at-least-two) |
+| [0846-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0846-hand-of-straights) |
 | [0857-minimum-cost-to-hire-k-workers](https://github.com/AkshatSinghNayal/leetcode/tree/master/0857-minimum-cost-to-hire-k-workers) |
 | [0876-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0876-hand-of-straights) |
 | [0881-boats-to-save-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/0881-boats-to-save-people) |
