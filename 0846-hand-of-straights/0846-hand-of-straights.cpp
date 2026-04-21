@@ -34,7 +34,6 @@ public:
                     mp[ele] = freq;
                 }
             }
-            if( !temp) return false;
             for(auto& it  : mp ){
                 pq.push({it.first , it.second }); 
             }
