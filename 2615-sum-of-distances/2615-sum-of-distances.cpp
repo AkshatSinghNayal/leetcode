@@ -11,24 +11,20 @@ public:
 
         // instead of looping i → j, process each group once
         for(auto &p : mp){
-            auto &it = p.second;   // same vector you were using
+            auto &it = p.second;   
             int k = it.size();
 
             if(k == 1) continue;
-
-            // prefix sum of indices
-            vector<long long> pref(k);
-            pref[0] = it[0];
-
-            for(int i = 1; i < k; i++){
-                pref[i] = pref[i - 1] + it[i];
+            vector<long long> prefix(k); 
+            prefix[0] = it[0]; 
+            for(int i =1 ; i<k ; i++ ){
+                prefix[i] = prefix[i-1]+it[i];
             }
+            for(int i = 0 ;i < k ;i++ ){
+                long long left = ( i> 0 ) ? ( 1LL*it[i]*i - prefix[i-1] ) : 0; 
+                long long right= ( i <k-1) ? ( (prefix[k-1]-prefix[i])-1LL*it[i]*(k-i-1)) : 0; 
 
-            // compute answer for each index in this group
-            for(int i = 0; i < k; i++){
-                long long left = (long long)it[i] * i - (i > 0 ? pref[i - 1] : 0);
-                long long right = (pref[k - 1] - pref[i]) - (long long)it[i] * (k - i - 1);
-                ans[it[i]] = left + right;
+                ans[it[i]] = left+right;
             }
         }
 
