@@ -126,6 +126,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0392-is-subsequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/0392-is-subsequence) |
 | [0443-string-compression](https://github.com/AkshatSinghNayal/leetcode/tree/master/0443-string-compression) |
 | [0455-assign-cookies](https://github.com/AkshatSinghNayal/leetcode/tree/master/0455-assign-cookies) |
+| [0556-next-greater-element-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0556-next-greater-element-iii) |
 | [0557-reverse-words-in-a-string-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/AkshatSinghNayal/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0658-find-k-closest-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/0658-find-k-closest-elements) |
@@ -174,6 +175,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0504-base-7](https://github.com/AkshatSinghNayal/leetcode/tree/master/0504-base-7) |
 | [0516-longest-palindromic-subsequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/0516-longest-palindromic-subsequence) |
 | [0520-detect-capital](https://github.com/AkshatSinghNayal/leetcode/tree/master/0520-detect-capital) |
+| [0556-next-greater-element-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0556-next-greater-element-iii) |
 | [0557-reverse-words-in-a-string-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0583-delete-operation-for-two-strings](https://github.com/AkshatSinghNayal/leetcode/tree/master/0583-delete-operation-for-two-strings) |
 | [0677-map-sum-pairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/0677-map-sum-pairs) |
@@ -559,6 +561,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0504-base-7](https://github.com/AkshatSinghNayal/leetcode/tree/master/0504-base-7) |
 | [0509-fibonacci-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0509-fibonacci-number) |
 | [0523-continuous-subarray-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0523-continuous-subarray-sum) |
+| [0556-next-greater-element-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0556-next-greater-element-iii) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/AkshatSinghNayal/leetcode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0869-reordered-power-of-2](https://github.com/AkshatSinghNayal/leetcode/tree/master/0869-reordered-power-of-2) |
 | [0973-k-closest-points-to-origin](https://github.com/AkshatSinghNayal/leetcode/tree/master/0973-k-closest-points-to-origin) |
