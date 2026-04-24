@@ -240,6 +240,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2116-check-if-a-parentheses-string-can-be-valid) |
 | [2227-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2227-sum-of-subarray-ranges) |
+| [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
 | [3834-merge-adjacent-equal-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3834-merge-adjacent-equal-elements) |
 ## Recursion
 |  |
@@ -328,6 +329,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2327-largest-number-after-digit-swaps-by-parity](https://github.com/AkshatSinghNayal/leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2410-maximum-matching-of-players-with-trainers) |
 | [2418-sort-the-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/2418-sort-the-people) |
+| [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
 | [3024-type-of-triangle](https://github.com/AkshatSinghNayal/leetcode/tree/master/3024-type-of-triangle) |
@@ -503,6 +505,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2410-maximum-matching-of-players-with-trainers) |
 | [2418-sort-the-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/2418-sort-the-people) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/2432-number-of-zero-filled-subarrays) |
+| [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
 | [2462-total-cost-to-hire-k-workers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2462-total-cost-to-hire-k-workers) |
 | [2498-frog-jump-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2498-frog-jump-ii) |
 | [2511-maximum-enemy-forts-that-can-be-captured](https://github.com/AkshatSinghNayal/leetcode/tree/master/2511-maximum-enemy-forts-that-can-be-captured) |
@@ -627,6 +630,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1818-minimum-absolute-sum-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/1818-minimum-absolute-sum-difference) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/AkshatSinghNayal/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2302-count-subarrays-with-score-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/2302-count-subarrays-with-score-less-than-k) |
+| [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
 | [2498-frog-jump-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2498-frog-jump-ii) |
 ## Bit Manipulation
 |  |
@@ -807,6 +811,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1642-furthest-building-you-can-reach](https://github.com/AkshatSinghNayal/leetcode/tree/master/1642-furthest-building-you-can-reach) |
 | [2208-minimum-operations-to-halve-array-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/2208-minimum-operations-to-halve-array-sum) |
 | [2327-largest-number-after-digit-swaps-by-parity](https://github.com/AkshatSinghNayal/leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
+| [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
 | [2462-total-cost-to-hire-k-workers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2462-total-cost-to-hire-k-workers) |
 | [3226-minimum-number-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/3226-minimum-number-game) |
 | [3781-maximum-score-after-binary-swaps](https://github.com/AkshatSinghNayal/leetcode/tree/master/3781-maximum-score-after-binary-swaps) |
@@ -900,6 +905,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0503-next-greater-element-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0503-next-greater-element-ii) |
 | [0943-sum-of-subarray-minimums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0943-sum-of-subarray-minimums) |
 | [2227-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2227-sum-of-subarray-ranges) |
+| [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
 ## Sliding Window
 |  |
 | ------- |
