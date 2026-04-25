@@ -1,7 +1,14 @@
 class Solution {
 public:
     bool validDigit(int n, int x) {
-        string s = to_string(n); 
-        return ( s[0] != x+'0' and s.find(x+'0') != string::npos ) ? true : false;
+        int digit = (n == 0) ? 1 : log10(abs(n)) + 1;
+        bool found = false;
+        while(digit--){
+            int temp = n%10; 
+            if( digit == 0 and x == temp ) return false;
+            if( temp == x ) found = true; 
+            n/=10; 
+        }
+        return ( found ) ? true : false;
     }
 };
