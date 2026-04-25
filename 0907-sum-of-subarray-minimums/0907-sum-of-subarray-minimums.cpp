@@ -34,9 +34,7 @@ public:
         }
        
         for(int i =0 ;i <  n; i++ ){ 
-            globalSum = (globalSum + 
-        (1LL*(i - prev[i]) * (next[i] - i) % MOD * nums[i] % MOD)
-    ) % MOD;
+            globalSum = (globalSum + (1LL*(i - prev[i]) * (next[i] - i) % MOD * nums[i] % MOD)) % MOD;
         }
         return globalSum;
     }
