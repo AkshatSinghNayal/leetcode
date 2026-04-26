@@ -11,13 +11,14 @@ public:
             }
             result+=nums[i]; 
         }
-        int i = 0 ;
-        while(i<n and result[i] == '0') i++; 
-        n= result.size(); 
-        if( k>0) n=n-k-i;
-        if(n<0) return "0"; 
-        result = result.substr(i , n); 
-        return result.size() == 0 ? "0" : result; 
+       while(k>0 and !result.empty()){
+            k--; 
+            result.pop_back();
+       }
+       int i  = 0 ; n = result.size(); 
+       while(i < n and result[i] == '0')i++; 
+       result = result.substr(i);
+       return result.size() == 0 ? "0" : result;
         
     }
 };
