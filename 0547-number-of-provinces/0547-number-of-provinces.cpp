@@ -1,56 +1,36 @@
-class Disjoint{
-    public: 
-    vector<int>size , parent; 
-
-    Disjoint(int V  ){
-        size.resize(V+1 , 1); 
-        parent.resize(V+1); 
-
-        for(int i  = 0 ;i<=V ; i++ ) parent[i] = i; 
-    }
-
-    int findParent( int n ){
-
-        if( parent[n] == n  ) return n; 
-        return parent[n] = findParent(parent[n]); 
-    }
-
-    void unionBySize( int u , int v ){
-        int NodeA = findParent(u); 
-        int NodeB = findParent(v); 
-
-        if( NodeA == NodeB ) return ; 
-
-        if( size[NodeA] > size[NodeB]){
-            parent[NodeB ] = NodeA;
-            size[NodeA] +=size[NodeB];
-        }
-        else{
-            parent[NodeA] = NodeB;
-            size[NodeB] +=size[NodeA];
-        }
-
-    }
-}; 
-
 class Solution {
 public:
-    int findCircleNum(vector<vector<int>>& isConnected) {
-        int n = isConnected.size(); 
-        Disjoint d(n);
 
-        for(int i = 0; i< n; i++ ){
-            for(int j  = 0 ;j < n; j++ ){
-                if(isConnected[i][j] ==  1 ){
-                    d.unionBySize( i+1 , j+1) ; 
+    void dfs(vector<vector<int>>& list , int i, vector<int>& vis ){
+        vis[i] =1 ; 
+        for(auto& it : list[i]){
+            if(vis[it] ==-1 ){
+                dfs(list , it , vis); 
+            }
+        }
+    }
+
+    int findCircleNum(vector<vector<int>>& grid) {
+        int n = grid.size(); 
+        vector<vector<int>>list(n); 
+
+        for(int i  = 0;i < n ;i++ ){
+            for(int j = 0 ; j<n; j++ ){
+                if(i!=j and grid[i][j] == 1 ){
+                    list[i].push_back(j); 
+                    list[j].push_back(i);
                 }
             }
         }
-        int count = 0; 
-        for(int i  = 1; i<=n ; i++ ){
-            if( d.parent[i] == i ) count++; 
+        vector<int>vis(n,-1); int count  = 0 ; 
+        for(int i= 0; i< n ; i++ ){
+            if(vis[i] == -1){
+                dfs(list , i, vis);
+                count++; 
+            }
         }
 
-        return count; 
+        return count;
+
     }
 };
