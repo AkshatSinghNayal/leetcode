@@ -11,13 +11,14 @@ public:
 
         for(auto& it : mp ){
             auto [ele , vec] = it; 
-            if(vec.size() <3) continue; 
-            int size = vec.size();
-            for(int i =0 ; i<size ; i++ ){
-                int j = (i+1)%size; 
-                int k = (i+2)%size; 
-                mini = min({ mini , abs( abs(vec[i]-vec[j])+abs(vec[j]-vec[k]) +  abs(vec[k]-vec[i]) )}); 
-            } 
+            for (int i = 0; i + 2 < vec.size(); i++) {
+    int a = vec[i];
+    int b = vec[i + 1];
+    int c = vec[i + 2];
+
+    int sum = abs(a - b) + abs(b - c) + abs(c - a);
+    mini = min(mini, sum);
+}
 
         }
         
