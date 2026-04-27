@@ -243,6 +243,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0943-sum-of-subarray-minimums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0943-sum-of-subarray-minimums) |
 | [1209-remove-all-adjacent-duplicates-in-string-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1209-remove-all-adjacent-duplicates-in-string-ii) |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
+| [2104-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2104-sum-of-subarray-ranges) |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2116-check-if-a-parentheses-string-can-be-valid) |
 | [2227-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2227-sum-of-subarray-ranges) |
 | [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
@@ -500,6 +501,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1818-minimum-absolute-sum-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/1818-minimum-absolute-sum-difference) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/AkshatSinghNayal/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
+| [2104-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2104-sum-of-subarray-ranges) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2121-intervals-between-identical-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/2121-intervals-between-identical-elements) |
 | [2191-sort-the-jumbled-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2191-sort-the-jumbled-numbers) |
@@ -924,6 +926,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/AkshatSinghNayal/leetcode/tree/master/0739-daily-temperatures) |
 | [0907-sum-of-subarray-minimums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0907-sum-of-subarray-minimums) |
 | [0943-sum-of-subarray-minimums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0943-sum-of-subarray-minimums) |
+| [2104-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2104-sum-of-subarray-ranges) |
 | [2227-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2227-sum-of-subarray-ranges) |
 | [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
 ## Sliding Window
