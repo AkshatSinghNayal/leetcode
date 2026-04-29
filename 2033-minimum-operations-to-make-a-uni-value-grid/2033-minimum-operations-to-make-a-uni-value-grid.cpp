@@ -11,7 +11,7 @@ public:
 
         int base = arr[0];
         for (int val : arr) {
-            if (abs(val - base) % x != 0) return -1;
+            if ((val - base) % x != 0) return -1;
         }
 
         sort(arr.begin(), arr.end());
