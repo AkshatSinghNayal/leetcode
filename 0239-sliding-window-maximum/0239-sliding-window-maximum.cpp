@@ -1,19 +1,35 @@
-#include <bits/stdc++.h>
-using namespace std; 
 class Solution {
 public:
-    vector<int> maxSlidingWindow(vector<int>& nums, int k) {
-        deque<int>dq;
-        int n = nums.size(); vector<int>ans;
-        for(int  i = 0;i<n; i++ ){
 
-            while( !dq.empty() and nums[dq.back()]<nums[i] ) dq.pop_back(); 
-            dq.push_back(i); 
-            while( !dq.empty() and i-k>= dq.front()) dq.pop_front(); 
-            if( i >= k-1 ){
-                ans.push_back(nums[dq.front()]); 
-            } 
-        } 
+    class comp {
+    public:
+        bool operator()(const pair<int,int>& a, const pair<int,int>& b) {
+            
+            return a.first < b.first;
+        }
+    };
+
+    vector<int> maxSlidingWindow(vector<int>& nums, int k) {
+        int left = 0, right = 0, n = nums.size(); 
+        vector<int> ans; 
+        
+        priority_queue<pair<int,int>, vector<pair<int,int>>, comp> pq;
+
+        while (right < n) {
+            pq.push({nums[right], right});
+
+            if (right - left + 1 == k) {
+
+                // Remove elements out of window
+                while (!pq.empty() && pq.top().second < left) {
+                    pq.pop();
+                }
+
+                ans.push_back(pq.top().first);
+                left++;
+            }
+            right++;
+        }
         return ans; 
     }
 };
