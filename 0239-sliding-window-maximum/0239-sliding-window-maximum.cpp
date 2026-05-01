@@ -9,7 +9,7 @@ public:
 
             while( !dq.empty() and nums[dq.back()]<nums[i] ) dq.pop_back(); 
             dq.push_back(i); 
-            while( !dq.empty() and i-k>= dq.front()) dq.pop_front(); 
+            if( i-k>= dq.front()) dq.pop_front(); 
             if( i >= k-1 ){
                 ans.push_back(nums[dq.front()]); 
             } 
