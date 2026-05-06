@@ -1,17 +1,17 @@
 class Solution {
 public:
     int lastStoneWeight(vector<int>& stones) {
-        priority_queue<int>pq(stones.begin(),stones.end());
+        priority_queue<int>pq(stones.begin() , stones.end()); 
+        if(pq.size() ==1 ) return pq.top(); 
         while(!pq.empty()){
-            int top = pq.top() ;pq.pop(); 
-            int toppy = INT_MAX;
-            if(!pq.empty()){
-                toppy = pq.top(); pq.pop(); 
+            int first = pq.top(); pq.pop(); 
+            int second = INT_MIN;
+            if( !pq.empty()){
+                second = pq.top(); pq.pop(); 
             }
-            if( toppy == INT_MAX ) return top; 
-            if( top>toppy){
-                pq.push( top - toppy );
-            }
+            if( second == INT_MIN ) return first; 
+            else if( first > second ) pq.push( first-second);  
+
         }
         return 0; 
     }
