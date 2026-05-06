@@ -1,24 +1,22 @@
 class Solution {
 public:
     int halveArray(vector<int>& nums) {
-        double total = accumulate(nums.begin(), nums.end(), 0.0);
-        double target = total / 2;
-
-        priority_queue<double> pq(nums.begin(), nums.end());
-
-        int operations = 0;
-        double reduced = 0;
-
-        while (reduced < target) {
-            
-            auto half = pq.top()/2;
-            reduced+=half;
-            pq.pop(); 
-            pq.push(half); 
-
-            operations++; 
+        double total = accumulate(nums.begin() , nums.end(),0LL);
+        double temp=total/2;  
+        priority_queue<double>pq(nums.begin(), nums.end());
+        int count = 0; 
+        while(!pq.empty()){
+            if(!pq.empty() and total>temp){
+                count++;
+                auto top = pq.top(); pq.pop();
+                total-=top;
+                total+=top/2;
+                pq.push(top/2);  
+            }
+            else{
+                break; 
+            }
         }
-
-        return operations;
+        return count;
     }
 };
