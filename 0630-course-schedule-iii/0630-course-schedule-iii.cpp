@@ -2,26 +2,36 @@ class Solution {
 public:
     int scheduleCourse(vector<vector<int>>& courses) {
         vector<pair<int,int>>temp;
-        for(auto& it : courses ){
-            temp.push_back({it[1],it[0]}); 
+        int done = 0;  
+        for(auto& it : courses){
+            temp.push_back({it[1] , it[0]}); 
         }
-        sort(temp.begin(),temp.end());
-        int maxi = 0 ; long long total = 0; 
-        priority_queue<int>pq; 
-        for(auto& it : temp ){
-            total+=it.second;
-            pq.push(it.second);
+        sort(temp.begin() , temp.end() , [&](auto a , auto b ){
+            auto [ first  , second ] = a; 
+            auto [ firstB , secondB] = b; 
 
-            while(!pq.empty() and total>it.first){
-                total-=pq.top(); 
-                pq.pop(); 
+            if( first == firstB ){
+                return second < secondB ; 
+            }   
+            return first < firstB ; 
+        }); 
+
+        priority_queue<int>pq;
+        long long total =0;
+
+        for(auto& it : temp ){
+            auto [second , first ] = it;
+            pq.push(first);
+            done++; 
+            total+=first; 
+            while(total>second){
+                total-=pq.top(); pq.pop(); 
+                done--; 
             }
 
-            int size = pq.size();
-            maxi = max(maxi,size); 
-            
-            
-        } 
-        return maxi;
+        }
+
+        return done;
+
     }
 };
