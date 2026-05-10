@@ -1,79 +1,60 @@
 class Solution {
 public:
-    struct Point {
-        int x, y, z;
 
-        bool operator==(const Point& other) const {
-            return x == other.x && y == other.y && z == other.z;
-        }
-    };
-
-    struct Hash {
-        size_t operator()(const Point& p) const {
-            return ((1LL * p.x * 1000003 + p.y) * 1000003 + p.z);
+    struct VectorHash {
+        size_t operator()(const vector<int>& v) const {
+            size_t h = 0;
+            for (int x : v) {
+                h ^= std::hash<int>()(x) + 0x9e3779b9 + (h << 6) + (h >> 2);
+            }
+            return h;
         }
     };
 
     int minGenerations(vector<vector<int>>& points, vector<int>& target) {
 
-        
-        Point tar = {target[0], target[1], target[2]};
+        unordered_set<vector<int>, VectorHash> all(points.begin(), points.end());
 
-        unordered_set<Point, Hash> seen;
-        vector<Point> all;
+        if (all.count(target)) return 0;
+        if (all.size() <= 1) return -1;
 
-        // generation 0
-        for (auto &p : points) {
-            Point cur = {p[0], p[1], p[2]};
+        vector<vector<int>> current = points;
 
-            if (cur == tar) return 0;
-
-            if (!seen.count(cur)) {
-                seen.insert(cur);
-                all.push_back(cur);
-            }
-        }
-
-        int generation = 0;
+        int k = 0;
 
         while (true) {
-            generation++;
 
-            vector<Point> newlyAdded;
+            vector<vector<int>> next;
+            unordered_set<vector<int>, VectorHash> addedThisRound;
 
-            int n = all.size();
+            int n = current.size();
 
             for (int i = 0; i < n; i++) {
                 for (int j = i + 1; j < n; j++) {
 
-                    // distinct coordinates only
-                    if (all[i] == all[j]) continue;
+                    vector<int> mid(3);
 
-                    Point c = {
-                        (all[i].x + all[j].x) / 2,
-                        (all[i].y + all[j].y) / 2,
-                        (all[i].z + all[j].z) / 2
-                    };
+                    for (int d = 0; d < 3; d++) {
+                        mid[d] = (current[i][d] + current[j][d]) / 2;
+                    }
 
-                    if (!seen.count(c)) {
+                    if (mid == target) return k + 1;
 
-                        if (c == tar)
-                            return generation;
-
-                        seen.insert(c);
-                        newlyAdded.push_back(c);
+                    // only add new points
+                    if (!all.count(mid)) {
+                        all.insert(mid);
+                        addedThisRound.insert(mid);
+                        next.push_back(mid);
                     }
                 }
             }
 
-            // no new points formed
-            if (newlyAdded.empty())
-                return -1;
+            if (next.empty()) return -1;
 
-            for (auto &p : newlyAdded)
-                all.push_back(p);
+            // move to next generation
+            current.insert(current.end(), next.begin(), next.end());
+
+            k++;
         }
-
-        return -1;
     }
 };
