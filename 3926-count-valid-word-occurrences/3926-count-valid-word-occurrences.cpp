@@ -1,48 +1,37 @@
 class Solution {
 public:
-    
-    bool isLetter(char c) {
-        return c >= 'a' && c <= 'z';
-    }
+    bool isChar(char c) { return (c >= 'a' and c <= 'z'); }
 
-    vector<int> countWordOccurrences(vector<string>& chunks,vector<string>& queries) {
+    vector<int> countWordOccurrences(vector<string>& chunks,
+                                     vector<string>& queries) {
+        int n = queries.size();
+        unordered_map<string, int> mp;
+        vector<int> ans(n);
+        string temp = "";
+        for (auto& it : chunks) {
+            temp += it;
+        }
+        string current = "";
+        int i  = (temp[0] == '-') ? i= 1 : 0; 
+        int size = temp.size(); 
+        size = (temp[size-1] == '-') ? size-1 : size; 
+        for ( i ; i < size; i++) {
+            char it = temp[i];
 
-        string s;
-
-        for (auto &x : chunks)
-            s += x;
-
-        unordered_map<string,int> freq;
-
-        int n = s.size();
-        string cur = "";
-
-        for (int i = 0; i < n; i++) {
-
-            char c = s[i];
-
-            if (isLetter(c)) {
-                cur += c;
-            }
-            else if ( c == '-' && i > 0 && i + 1 < n && isLetter(s[i - 1]) && isLetter(s[i + 1])) {
-                cur += '-';
-            }
-            else {
-                if (!cur.empty()) {
-                    freq[cur]++;
-                    cur.clear();
-                }
+            if (isChar(it)) {
+                current += it;
+            } else if (it == ' ' or((i-1>=0 and i+1 <size) and ( it=='-' and !isChar(temp[i-1])) or ( it=='-' and !isChar(temp[i+1])))) {
+                if(!current.empty())  mp[current]++;
+                cout<< current << " "; 
+                current.clear();
+            } else {
+                current += it;
             }
         }
-
-        if (!cur.empty())
-            freq[cur]++;
-
-        vector<int> ans;
-
-        for (auto &q : queries)
-            ans.push_back(freq[q]);
-
+        if(!current.empty()) mp[current]++;
+        for (int i = 0; i < n; i++) {
+            ans[i] = mp[queries[i]];
+        }
         return ans;
     }
 };
