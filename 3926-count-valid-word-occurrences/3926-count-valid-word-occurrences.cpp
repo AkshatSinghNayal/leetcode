@@ -22,7 +22,6 @@ public:
                 current += it;
             } else if (it == ' ' or((i-1>=0 and i+1 <size) and ( it=='-' and !isChar(temp[i-1])) or ( it=='-' and !isChar(temp[i+1])))) {
                 if(!current.empty())  mp[current]++;
-                cout<< current << " "; 
                 current.clear();
             } else {
                 current += it;
