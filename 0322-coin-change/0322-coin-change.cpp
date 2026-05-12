@@ -3,17 +3,20 @@ public:
     int coinChange(vector<int>& coins, int amount) {
         int n  = coins.size(); 
         if( amount == 0 ) return 0; 
-        vector<vector<int>>dp(n+1,vector<int>(amount+1,INT_MAX-1));
-        dp[0][0] =0;
+        vector<int>prev(amount+1,INT_MAX-1);
+        prev[0] =0;
         for(int i = 1 ; i<= n; i++ ){
-            for(int j = 0 ; j<=amount ; j++ ){
-                int take = ( coins[i-1] <= j ) ? 1+dp[i][j-coins[i-1]]: INT_MAX-1; 
-                int notTake = dp[i-1][j];
+        vector<int>curr(amount+1,INT_MAX-1);
 
-                dp[i][j] = min(take,notTake); 
+            for(int j = 0 ; j<=amount ; j++ ){
+                int take = ( coins[i-1] <= j ) ? 1+curr[j-coins[i-1]]: INT_MAX-1; 
+                int notTake = prev[j];
+
+                curr[j] = min(take,notTake);
             }
+                prev=curr;
         }
 
-        return dp[n][amount] == INT_MAX-1 ? -1 : dp[n][amount];
+        return prev[amount] == INT_MAX-1 ? -1 : prev[amount];
     }
 };
