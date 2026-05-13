@@ -1,22 +1,30 @@
 class Solution {
 public:
+
+    int solve(vector<vector<int>>&dp, int i , int amount ,vector<int>& coins ){
+        //base
+        if( amount == 0 ) return 0; 
+        if( i  == 0 ){
+            if( amount%coins[i] == 0  ) return amount/coins[i]; 
+            return INT_MAX-1; 
+        }
+
+        if(dp[i][amount] !=-1) return dp[i][amount]; 
+
+        int take = ( coins[i] <= amount ) ? 1+solve(dp , i, amount-coins[i] , coins) : INT_MAX-1; 
+
+        int notTake = solve( dp , i-1 , amount , coins ); 
+
+        return dp[i][amount] = min(take , notTake); 
+
+
+    }
+
     int coinChange(vector<int>& coins, int amount) {
         int n  = coins.size(); 
         if( amount == 0 ) return 0; 
-        vector<int>prev(amount+1,INT_MAX-1);
-        prev[0] =0;
-        for(int i = 1 ; i<= n; i++ ){
-        vector<int>curr(amount+1,INT_MAX-1);
-
-            for(int j = 0 ; j<=amount ; j++ ){
-                int take = ( coins[i-1] <= j ) ? 1+curr[j-coins[i-1]]: INT_MAX-1; 
-                int notTake = prev[j];
-
-                curr[j] = min(take,notTake);
-            }
-                prev=curr;
-        }
-
-        return prev[amount] == INT_MAX-1 ? -1 : prev[amount];
+        vector<vector<int>>dp(n,vector<int>(amount+1,-1));
+        int result = solve(dp , n-1 , amount ,coins); 
+        return result == INT_MAX-1 ? -1 : result;
     }
 };
