@@ -3,18 +3,9 @@ using namespace std;
 class Solution {
 public:
 
-    // int solve(vector<vector<vector<int>>>&dp,vector<pair<int,int>>&nums, int i , int one , int zero ){
-    //     if( i== 0 ){
-    //         return (nums[i].first <= one and nums[i].second <= zero ) ? 1 : 0;
-    //     }        
-
-    //     if(dp[i][one][zero] != -1 ) return dp[i][one][zero]; 
-       
-    // }
-
     int findMaxForm(vector<string>& strs, int zero, int one) {
         int n  = strs.size(); 
-        vector<pair<int,int>>nums(n); // one zero
+        vector<pair<int,int>>nums(n); 
         vector<vector<vector<int>>>dp(n+1,vector<vector<int>>(one+1,vector<int>(zero+1,0))); 
 
         for(int i = 0 ;i<n ;i++ ){
