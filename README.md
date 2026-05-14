@@ -221,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/2839-check-if-strings-can-be-made-equal-with-operations-i) |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
 | [2937-make-three-strings-equal](https://github.com/AkshatSinghNayal/leetcode/tree/master/2937-make-three-strings-equal) |
+| [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
 | [3194-find-words-containing-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3194-find-words-containing-character) |
 | [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
 | [3781-maximum-score-after-binary-swaps](https://github.com/AkshatSinghNayal/leetcode/tree/master/3781-maximum-score-after-binary-swaps) |
@@ -627,6 +628,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2769-find-the-maximum-achievable-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/2769-find-the-maximum-achievable-number) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/AkshatSinghNayal/leetcode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3024-type-of-triangle](https://github.com/AkshatSinghNayal/leetcode/tree/master/3024-type-of-triangle) |
+| [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/3172-divisible-and-non-divisible-sums-difference) |
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
@@ -713,6 +715,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1635-number-of-good-pairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/1635-number-of-good-pairs) |
 | [2347-best-poker-hand](https://github.com/AkshatSinghNayal/leetcode/tree/master/2347-best-poker-hand) |
 | [2351-first-letter-to-appear-twice](https://github.com/AkshatSinghNayal/leetcode/tree/master/2351-first-letter-to-appear-twice) |
+| [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
 ## Dynamic Programming
 |  |
 | ------- |
