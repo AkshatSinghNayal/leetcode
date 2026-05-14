@@ -7,7 +7,7 @@ public:
         if ((sum - diff) < 0 || (sum - diff) % 2 != 0) return 0;
         int target = (sum-diff)/2;
         vector<int>prev(target+1 ,0); 
-        
+        // dhgfd
         prev[0] = 1;
         if(arr[0]<=target) prev[arr[0]]+=1;
 
