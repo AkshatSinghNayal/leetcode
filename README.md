@@ -225,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3194-find-words-containing-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3194-find-words-containing-character) |
 | [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
 | [3781-maximum-score-after-binary-swaps](https://github.com/AkshatSinghNayal/leetcode/tree/master/3781-maximum-score-after-binary-swaps) |
+| [3931-check-adjacent-digit-differences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3931-check-adjacent-digit-differences) |
 ## Stack
 |  |
 | ------- |
