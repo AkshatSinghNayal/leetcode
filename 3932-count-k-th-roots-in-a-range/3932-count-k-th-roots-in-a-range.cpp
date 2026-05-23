@@ -1,51 +1,62 @@
 class Solution {
 public:
+
     long long power(long long a, int k, long long limit) {
-    if (a == 0) return 0;
+        long long res = 1;
 
-    long long res = 1;
+        while (k--) {
+            if ( a!=0 and res > limit / a)
+                return limit + 1;
 
-    while (k--) {
-        if (res > limit / a)
-            return limit + 1;
+            res *= a;
+        }
 
-        res *= a;
+        return res;
     }
 
-    return res;
-}
     int countKthRoots(int l, int r, int k) {
+
         if (k == 1) return r - l + 1;
 
-        int left = 0, right = 1e6;
-
-        // first x such that x^k >= l
-        int low = 1e6, high = -1;
+        int low = -1, high = -1;
 
         int lo = 0, hi = r;
+
+        // first x such that x^k >= l
         while (lo <= hi) {
+
             int mid = lo + (hi - lo) / 2;
 
-            if (power(mid, k, r) >= l) {
+            long long val = power(mid, k, r);
+
+            if (val >= l) {
                 low = mid;
                 hi = mid - 1;
-            } else {
+            }
+            else {
                 lo = mid + 1;
             }
         }
 
-        // last x such that x^k <= r
         lo = 0, hi = r;
+
+        // last x such that x^k <= r
         while (lo <= hi) {
+
             int mid = lo + (hi - lo) / 2;
 
-            if (power(mid, k, r) <= r) {
+            long long val = power(mid, k, r);
+
+            if (val <= r) {
                 high = mid;
                 lo = mid + 1;
-            } else {
+            }
+            else {
                 hi = mid - 1;
             }
         }
+
+        if (low == -1 || high == -1) return 0;
 
         return max(0, high - low + 1);
     }
