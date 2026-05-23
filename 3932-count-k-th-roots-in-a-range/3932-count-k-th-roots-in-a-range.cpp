@@ -17,12 +17,12 @@ public:
     int countKthRoots(int l, int r, int k) {
         if (k == 1) return r - l + 1;
 
-        int left = 0, right = r;
+        int left = 0, right = 1e6;
 
         // first x such that x^k >= l
         int low = 1e6, high = -1;
 
-        int lo = 0, hi = 1e6;
+        int lo = 0, hi = r;
         while (lo <= hi) {
             int mid = lo + (hi - lo) / 2;
 
