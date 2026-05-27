@@ -28,8 +28,8 @@ public:
         if(!is_increasing){
             reverse(nums.begin(),nums.end());
             min_idx = n-min_idx-1;
-            is_decreasing = checkIfIncreasing(nums,min_idx,n);
         }
+            is_decreasing = checkIfIncreasing(nums,min_idx,n);
         if(!is_increasing and !is_decreasing)
             return -1;
 
