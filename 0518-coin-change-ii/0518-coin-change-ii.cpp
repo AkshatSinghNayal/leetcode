@@ -4,8 +4,8 @@ public:
     int solve(vector<int>& coins , vector<vector<int>>& dp , int i , int amount ){
         //base
 
-        if( i==0 ){
-            return ( amount%coins[i] == 0 ) ? 1 : 0;  ; 
+        if( i <  0 ){
+            return ( amount == 0 ) ? 1 : 0;  ; 
         }
          
 
