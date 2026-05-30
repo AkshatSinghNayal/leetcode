@@ -1,32 +1,26 @@
 class Solution {
 public:
 
-    int findTargetSumWays(vector<int>& arr, int diff) {
-        int n  = arr.size(); 
-        int sum = accumulate(arr.begin() , arr.end() , 0); 
-        if ((sum - diff) < 0 || (sum - diff) % 2 != 0) return 0;
-        int target = (sum-diff)/2;
-        vector<int>prev(target+1 ,0); 
-        // dhgfd
-        prev[0] = 1;
-        if(arr[0]<=target) prev[arr[0]]+=1;
-
-
-        for(int i = 1; i<n ; i++ ){
-        vector<int>curr(target+1 ,0); 
-
-            for(int j= 0; j<= target ; j++ ){
-                int take = 0; 
-                if( j >= arr[i]){
-                    take =prev[j-arr[i]];  
-                }
-                int notTake = prev[j]; 
-
-
-                curr[j] = (take + notTake ); 
-            }
-            prev = curr; 
+    int solve( vector<int>& nums , vector<vector<int>>& dp , int i , int target ){
+        //base 
+        if(i<0){
+            return (target == 0 ) ? 1 : 0 ;
         }
-        return prev[target]; 
+        if( dp[i][target] != -1 ) return dp[i][target]; 
+
+        long long  take = ( target>= nums[i]) ? solve( nums , dp , i-1 , target-nums[i]) : 0 ; 
+        long long notTake = solve(nums,dp , i-1 , target); 
+
+        return dp[i][target] = take+notTake;
+    }
+
+    int findTargetSumWays(vector<int>& nums, int want) {
+        int n = nums.size();
+        long long total = accumulate( nums.begin() , nums.end() , 0LL ); 
+        if(  (total - want) <0 or  (total - want) %2 != 0 ) return 0 ; 
+        int target = ( total - want )/2; 
+        vector<vector<int>>dp(n,vector<int>(target+1 , -1 )); 
+       
+        return solve( nums , dp , n-1 , target ) ;   
     }
 };
