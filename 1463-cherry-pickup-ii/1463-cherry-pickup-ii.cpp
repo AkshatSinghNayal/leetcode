@@ -1,33 +1,51 @@
 class Solution {
 public:
-
-    int solve(vector<vector<int>>& grid, vector<vector<vector<int>>>&dp , int ro , int col1, int col2 , int col, int row  ){
-        // base 
-        if( ro>= row or col1 >= col or col2 >= col or col1<0 or col2<0 ) return -1e5; 
-
-        if( ro == row-1 ){
-            int val = ( col1 == col2 ) ? grid[ro][col1] : grid[ro][col1]+grid[ro][col2] ;
-            return val; 
-        }
-
-        if( dp[ro][col1][col2] != -1 ) return dp[ro][col1][col2] ; 
-        
-        int maxi  = 0; 
-        for( int i = -1 ;i<= 1 ; i++ ){
-            int result =0; 
-            for(int j = -1 ; j<= 1 ; j++ ){
-                int value = ( ro < row and col1 == col2 ) ? grid[ro][col1] : grid[ro][col1]+grid[ro][col2] ;
-                result = value+ solve(grid , dp , ro+1, col1 + i , col2+j , col , row);
-                maxi = max( result , maxi ) ;    
-            }
-            
-        }
-        return dp[ro][col1][col2] = maxi  ;
-    }
-
     int cherryPickup(vector<vector<int>>& grid) {
-        int n = grid.size() , m = grid[0].size(); 
-        vector<vector<vector<int>>>dp(n , vector<vector<int>>(m , vector<int>(m , -1))); 
-        return solve( grid , dp, 0 ,0, m-1 , m, n ) ; 
+        int n = grid.size();
+        int m = grid[0].size();
+
+        vector<vector<vector<int>>> dp(
+            n + 1,
+            vector<vector<int>>(m + 1, vector<int>(m + 1, 0))
+        );
+
+        for (int row = n - 1; row >= 0; row--) {
+
+            for (int c1 = 1; c1 <= m; c1++) {
+
+                for (int c2 = 1; c2 <= m; c2++) {
+
+                    int maxi = 0;
+
+                    for (int d1 = -1; d1 <= 1; d1++) {
+
+                        for (int d2 = -1; d2 <= 1; d2++) {
+
+                            int nc1 = c1 + d1;
+                            int nc2 = c2 + d2;
+
+                            if (nc1 < 1 || nc1 > m ||
+                                nc2 < 1 || nc2 > m)
+                                continue;
+
+                            int cherries =
+                                (c1 == c2)
+                                    ? grid[row][c1 - 1]
+                                    : grid[row][c1 - 1] +
+                                      grid[row][c2 - 1];
+
+                            maxi = max(
+                                maxi,
+                                cherries + dp[row + 1][nc1][nc2]
+                            );
+                        }
+                    }
+
+                    dp[row][c1][c2] = maxi;
+                }
+            }
+        }
+
+        return dp[0][1][m];
     }
 };
