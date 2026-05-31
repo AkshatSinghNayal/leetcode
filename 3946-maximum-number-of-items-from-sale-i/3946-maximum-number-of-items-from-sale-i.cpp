@@ -10,24 +10,27 @@ public:
                 if(i != j && items[j][0] % items[i][0] == 0)
                     bonus[i]++;
 
-        vector<vector<int>> dp(n + 1 , vector<int>(bud + 1 , 0));
+       vector<int>prev(bud + 1 , 0);
 
         for(int i = 1 ; i <= n ; i++){
+       vector<int>curr(bud + 1 , 0);
 
-    int price = items[i-1][1];
+        int price = items[i-1][1];
 
     for(int budget = 0 ; budget <= bud ; budget++){
 
-        int take = ( budget >= price ) ? dp[i-1][budget-price] + 1 + bonus[i-1] : 0 ;
-        int notTake = dp[i-1][budget] ;
+        int take = ( budget >= price ) ? prev[budget-price] + 1 + bonus[i-1] : 0 ;
+        int notTake = prev[budget] ;
 
-        dp[i][budget] = max( take , notTake ) ;
+        curr[budget] = max( take , notTake ) ;
     }
 
     for(int budget = price ; budget <= bud ; budget++)
-        dp[i][budget] = max( dp[i][budget] , dp[i][budget-price] + 1 ) ;
+        curr[budget] = max( curr[budget] , curr[budget-price] + 1 ) ;
+
+        prev= curr ; 
 }
 
-        return dp[n][bud];
+        return prev[bud];
     }
 };
