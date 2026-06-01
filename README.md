@@ -345,6 +345,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1460-make-two-arrays-equal-by-reversing-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1460-make-two-arrays-equal-by-reversing-subarrays) |
 | [1818-minimum-absolute-sum-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/1818-minimum-absolute-sum-difference) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
+| [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/AkshatSinghNayal/leetcode/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2191-sort-the-jumbled-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2191-sort-the-jumbled-numbers) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2327-largest-number-after-digit-swaps-by-parity](https://github.com/AkshatSinghNayal/leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
@@ -530,6 +531,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2104-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2104-sum-of-subarray-ranges) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2121-intervals-between-identical-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/2121-intervals-between-identical-elements) |
+| [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/AkshatSinghNayal/leetcode/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2191-sort-the-jumbled-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2191-sort-the-jumbled-numbers) |
 | [2208-minimum-operations-to-halve-array-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/2208-minimum-operations-to-halve-array-sum) |
 | [2219-maximum-number-of-words-found-in-sentences](https://github.com/AkshatSinghNayal/leetcode/tree/master/2219-maximum-number-of-words-found-in-sentences) |
@@ -815,6 +817,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2032-largest-odd-number-in-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2032-largest-odd-number-in-string) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2116-check-if-a-parentheses-string-can-be-valid) |
+| [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/AkshatSinghNayal/leetcode/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2208-minimum-operations-to-halve-array-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/2208-minimum-operations-to-halve-array-sum) |
 | [2337-remove-digit-from-number-to-maximize-result](https://github.com/AkshatSinghNayal/leetcode/tree/master/2337-remove-digit-from-number-to-maximize-result) |
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2410-maximum-matching-of-players-with-trainers) |
