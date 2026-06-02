@@ -1,22 +1,19 @@
 class Solution {
 public:
     int halveArray(vector<int>& nums) {
-        double total = accumulate(nums.begin() , nums.end(),0LL);
-        double temp=total/2;  
-        priority_queue<double>pq(nums.begin(), nums.end());
         int count = 0; 
-        while(!pq.empty()){
-            if(!pq.empty() and total>temp){
-                count++;
-                auto top = pq.top(); pq.pop();
-                total-=top;
-                total+=top/2;
-                pq.push(top/2);  
-            }
-            else{
-                break; 
-            }
+        priority_queue<double>pq(nums.begin() , nums.end()); 
+        double total = accumulate(nums.begin() , nums.end() , 0.0 ); 
+        double half = (double)total/2.0; 
+
+        while(!pq.empty() and total> half){
+            count++;
+            double temp = pq.top()/2.0; pq.pop(); 
+            cout<<temp << " " ; 
+            pq.push(temp); 
+            total-=temp;
         }
+        cout<<"total->" << total ;
         return count;
     }
 };
