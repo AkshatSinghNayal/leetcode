@@ -1,11 +1,22 @@
 class Solution {
 public:
-    int findKthLargest(vector<int>& nums, int k) {
-        priority_queue<int , vector<int> , greater<int>> q ;
-        for(int i = 0 ;i< nums.size() ; i++ ){
-            q.push(nums[i]); 
-            if(q.size()>k) q.pop();
+
+    class comp{
+        public: 
+        bool operator()(int a , int b ){
+            return a> b ; 
         }
-    return q.top()  ;
+    }; 
+
+    int findKthLargest(vector<int>& nums, int k) {
+        priority_queue<int , vector<int> , comp>pq ; 
+        
+        for(auto& it : nums ){
+            pq.push(it); 
+            if(pq.size()>k){
+                pq.pop();
+            }
+        }
+        return pq.top(); 
     }
 };
