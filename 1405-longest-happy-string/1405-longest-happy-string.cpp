@@ -9,30 +9,21 @@ public:
 
         while(!pq.empty()){
             auto [ freq , ch1] =  pq.top() ; pq.pop(); 
-            
-            if(result.empty()){
-                int temp = min(2 , freq); 
-                freq-=temp; 
-                result+=string(temp, ch1);
-            }
+            int n = result.size(); 
 
-            if(!result.empty()){
-                if(result.back() == ch1){
-                    if(pq.empty()) break; 
+            if( n>=2 and result[n-1] == ch1 and result[n-2] == ch1 ){
+                if( pq.empty() ) break;
                 auto [freq2 , ch2] = pq.top(); pq.pop(); 
-                int temp = min(1 , freq2) ; 
-                result+= string(temp ,ch2 ); 
-                freq2-=temp; 
-                if(freq2>0) pq.push({freq2,ch2}); 
-                }
-                else{
-                    int temp = min(2,freq); 
-                    result+=string(temp ,ch1); 
-                    freq-=temp; 
-                }
+                result+=ch2; 
+                freq2-=1; 
+                if(freq2>0) pq.push({freq2 , ch2});
+                if(freq >0 ) pq.push({freq, ch1}); 
             }
-            
-            if(freq>0) pq.push({freq,ch1}); 
+            else{
+                result+=ch1;
+                freq-=1; 
+                if(freq>0) pq.push({freq,ch1}); 
+            }
 
         }
         return result;
