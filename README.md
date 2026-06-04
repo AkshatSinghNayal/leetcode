@@ -649,6 +649,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/3676-smallest-number-with-all-set-bits) |
 | [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
+| [3751-total-waviness-of-numbers-in-range-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3932-count-k-th-roots-in-a-range](https://github.com/AkshatSinghNayal/leetcode/tree/master/3932-count-k-th-roots-in-a-range) |
 | [3936-split-array-by-prime-indices](https://github.com/AkshatSinghNayal/leetcode/tree/master/3936-split-array-by-prime-indices) |
 ## Binary Search
@@ -787,6 +788,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/AkshatSinghNayal/leetcode/tree/master/1312-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1463-cherry-pickup-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1463-cherry-pickup-ii) |
+| [3751-total-waviness-of-numbers-in-range-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3877-minimum-removals-to-achieve-target-xor](https://github.com/AkshatSinghNayal/leetcode/tree/master/3877-minimum-removals-to-achieve-target-xor) |
 ## Greedy
 |  |
@@ -1136,6 +1138,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0869-reordered-power-of-2](https://github.com/AkshatSinghNayal/leetcode/tree/master/0869-reordered-power-of-2) |
 | [2337-remove-digit-from-number-to-maximize-result](https://github.com/AkshatSinghNayal/leetcode/tree/master/2337-remove-digit-from-number-to-maximize-result) |
 | [3546-equal-sum-grid-partition-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3546-equal-sum-grid-partition-i) |
+| [3751-total-waviness-of-numbers-in-range-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 ## Brainteaser
 |  |
 | ------- |
