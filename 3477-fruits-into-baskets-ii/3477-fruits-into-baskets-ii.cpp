@@ -6,11 +6,11 @@ public:
             int ele= fruits[i]; 
             bool found  = false;
             for(int j = 0; j<fruits.size() ; j++ ){
-                if(found) continue;
+                
                 if(baskets[j] >= ele ){
                     count++; 
                     baskets[j] = INT_MIN;
-                    found = true;
+                    break;
                 }
 
             }
