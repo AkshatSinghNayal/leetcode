@@ -1,11 +1,15 @@
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
-        int maxi = -1e5 , localMaxi = -1e5 ; 
-        for(auto&it : nums ){
-            localMaxi = max(localMaxi+it , it); 
-            maxi = max(localMaxi ,maxi ); 
+        int maxi = INT_MIN; 
+        int temp = 1e-5;
+        int n = nums.size(); 
+        for(auto& it : nums ){
+            temp+=it;
+            temp = max(temp , it ); 
+            maxi = max(temp , maxi ); 
         }
-        return maxi; 
+        cout<<temp<< " " << maxi ;
+        return maxi;
     }
 };
