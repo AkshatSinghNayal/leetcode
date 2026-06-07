@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/AkshatSinghNayal/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0013-roman-to-integer](https://github.com/AkshatSinghNayal/leetcode/tree/master/0013-roman-to-integer) |
+| [0041-first-missing-positive](https://github.com/AkshatSinghNayal/leetcode/tree/master/0041-first-missing-positive) |
 | [0076-minimum-window-substring](https://github.com/AkshatSinghNayal/leetcode/tree/master/0076-minimum-window-substring) |
 | [0127-word-ladder](https://github.com/AkshatSinghNayal/leetcode/tree/master/0127-word-ladder) |
 | [0128-longest-consecutive-sequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/0128-longest-consecutive-sequence) |
@@ -384,6 +385,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0033-search-in-rotated-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0039-combination-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0040-combination-sum-ii) |
+| [0041-first-missing-positive](https://github.com/AkshatSinghNayal/leetcode/tree/master/0041-first-missing-positive) |
 | [0042-trapping-rain-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0045-jump-game-ii) |
 | [0047-permutations-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0047-permutations-ii) |
