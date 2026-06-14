@@ -80,6 +80,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3779-minimum-number-of-operations-to-have-distinct-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3779-minimum-number-of-operations-to-have-distinct-elements) |
+| [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
 ## Linked List
 |  |
 | ------- |
@@ -233,6 +234,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3194-find-words-containing-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3194-find-words-containing-character) |
 | [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
 | [3781-maximum-score-after-binary-swaps](https://github.com/AkshatSinghNayal/leetcode/tree/master/3781-maximum-score-after-binary-swaps) |
+| [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
 | [3931-check-adjacent-digit-differences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3931-check-adjacent-digit-differences) |
 ## Stack
 |  |
@@ -590,6 +592,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3834-merge-adjacent-equal-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3834-merge-adjacent-equal-elements) |
 | [3847-find-the-score-difference-in-a-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/3847-find-the-score-difference-in-a-game) |
 | [3877-minimum-removals-to-achieve-target-xor](https://github.com/AkshatSinghNayal/leetcode/tree/master/3877-minimum-removals-to-achieve-target-xor) |
+| [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
 | [3936-split-array-by-prime-indices](https://github.com/AkshatSinghNayal/leetcode/tree/master/3936-split-array-by-prime-indices) |
 ## Math
 |  |
@@ -750,6 +753,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2347-best-poker-hand](https://github.com/AkshatSinghNayal/leetcode/tree/master/2347-best-poker-hand) |
 | [2351-first-letter-to-appear-twice](https://github.com/AkshatSinghNayal/leetcode/tree/master/2351-first-letter-to-appear-twice) |
 | [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
+| [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
 ## Dynamic Programming
 |  |
 | ------- |
