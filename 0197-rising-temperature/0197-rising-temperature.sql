@@ -2,5 +2,5 @@
 SELECT w1.id
 FROM Weather AS w1
 INNER JOIN Weather AS w2
-ON DATEDIFF(w1.recordDate , w2.recordDate ) =1 
+WHERE w2.recordDate = DATE_SUB(w1.recordDate , INTERVAL 1 DAY) 
 AND (w2.temperature < w1.temperature);
