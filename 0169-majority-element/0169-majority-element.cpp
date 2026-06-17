@@ -1,19 +1,16 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        int majority = nums[0]; 
-    int count = 1 ; 
-    int n = nums.size() ; 
-    for(int i = 1 ; i< n; i++ ){
-        if( majority == nums[i]) count++; 
-        else {
-            count--; 
-            if( count ==  0 ){
-                majority = nums[i]; 
-                count = 1; 
-            }
+        unordered_map<int,int>mp; 
+        priority_queue<pair<int,int>>pq;
+        for(auto& it : nums ){
+            mp[it]++; 
         }
-    }
-    return majority ; 
+
+        for(auto& [ele,freq] : mp ){
+            pq.push({freq,ele}); 
+        }
+        return (!pq.empty()) ? pq.top().second : -1; 
+    
     }
 };
