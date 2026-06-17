@@ -1,20 +1,26 @@
 class Solution {
 public:
-    
-    int target;
-    vector<vector<int>> res;
-    vector<int> tmp;
-    void dfs(vector<vector<int>>& graph, int currNode = 0) {
-        tmp.push_back(currNode);
-        if (currNode == target) res.push_back(tmp);
-        else for (int node: graph[currNode]) {
-            dfs(graph, node);
+
+    void dfs(vector<vector<int>>& list,vector<vector<int>>&paths , vector<int>&temp, int target ){
+
+        if( target == temp.back() ){
+            paths.push_back(temp);
         }
-		tmp.pop_back();
+
+        for(auto& it : list[temp.back()]){
+            temp.push_back(it);
+            dfs(list , paths , temp , target );
+            temp.pop_back();
+
+        }
+
     }
-    vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& graph) {
-        target = graph.size() - 1;
-        dfs(graph);
-        return res;
+
+    vector<vector<int>> allPathsSourceTarget(vector<vector<int>>& list){
+        vector<vector<int>>paths; vector<int>temp; 
+        int n  = list.size(); 
+        temp.push_back(0);
+        dfs( list , paths , temp , n-1 ); 
+        return paths;   
     }
 };
