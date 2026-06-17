@@ -924,6 +924,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0131-palindrome-partitioning](https://github.com/AkshatSinghNayal/leetcode/tree/master/0131-palindrome-partitioning) |
 | [0357-count-numbers-with-unique-digits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0357-count-numbers-with-unique-digits) |
 | [0494-target-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0494-target-sum) |
+| [0797-all-paths-from-source-to-target](https://github.com/AkshatSinghNayal/leetcode/tree/master/0797-all-paths-from-source-to-target) |
 ## Matrix
 |  |
 | ------- |
@@ -1200,6 +1201,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-swim-in-rising-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0778-swim-in-rising-water) |
 | [0785-is-graph-bipartite](https://github.com/AkshatSinghNayal/leetcode/tree/master/0785-is-graph-bipartite) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/AkshatSinghNayal/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
+| [0797-all-paths-from-source-to-target](https://github.com/AkshatSinghNayal/leetcode/tree/master/0797-all-paths-from-source-to-target) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [0934-shortest-bridge](https://github.com/AkshatSinghNayal/leetcode/tree/master/0934-shortest-bridge) |
 | [1020-number-of-enclaves](https://github.com/AkshatSinghNayal/leetcode/tree/master/1020-number-of-enclaves) |
@@ -1238,6 +1240,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-swim-in-rising-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0778-swim-in-rising-water) |
 | [0785-is-graph-bipartite](https://github.com/AkshatSinghNayal/leetcode/tree/master/0785-is-graph-bipartite) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/AkshatSinghNayal/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
+| [0797-all-paths-from-source-to-target](https://github.com/AkshatSinghNayal/leetcode/tree/master/0797-all-paths-from-source-to-target) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [0934-shortest-bridge](https://github.com/AkshatSinghNayal/leetcode/tree/master/0934-shortest-bridge) |
 | [0994-rotting-oranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/0994-rotting-oranges) |
@@ -1300,6 +1303,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0743-network-delay-time](https://github.com/AkshatSinghNayal/leetcode/tree/master/0743-network-delay-time) |
 | [0785-is-graph-bipartite](https://github.com/AkshatSinghNayal/leetcode/tree/master/0785-is-graph-bipartite) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/AkshatSinghNayal/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
+| [0797-all-paths-from-source-to-target](https://github.com/AkshatSinghNayal/leetcode/tree/master/0797-all-paths-from-source-to-target) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/AkshatSinghNayal/leetcode/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1514-path-with-maximum-probability](https://github.com/AkshatSinghNayal/leetcode/tree/master/1514-path-with-maximum-probability) |
 ## Shortest Path
