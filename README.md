@@ -1308,6 +1308,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0797-all-paths-from-source-to-target](https://github.com/AkshatSinghNayal/leetcode/tree/master/0797-all-paths-from-source-to-target) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/AkshatSinghNayal/leetcode/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1514-path-with-maximum-probability](https://github.com/AkshatSinghNayal/leetcode/tree/master/1514-path-with-maximum-probability) |
+| [1791-find-center-of-star-graph](https://github.com/AkshatSinghNayal/leetcode/tree/master/1791-find-center-of-star-graph) |
 ## Shortest Path
 |  |
 | ------- |
