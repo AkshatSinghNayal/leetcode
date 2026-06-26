@@ -1,31 +1,42 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
 class Solution {
 public:
     ListNode* rotateRight(ListNode* head, int k) {
-        if(!head or k == 0 or !head->next) return head; 
-        int count = 0;
-        ListNode* temp = head; 
-        ListNode* dummy= head;
-        ListNode* take = head;  
+        if(!head) return head; 
+        ListNode*temp = head; 
+        int count =0; 
         while(temp){
             count++; 
-            if(!temp->next) dummy = temp; 
-            temp = temp->next;
+            temp = temp->next; 
         }
-        k = k%count; 
-        if(k==0) return head;
-        int reach = count -k ; 
+        int rotation = k % count;
+        if(rotation ==0 ) return head; 
+
         temp = head; 
-        while(reach-- and temp ){
-            if(reach == 0  ){
-                take = temp->next;
-                temp->next = nullptr;
-                break;
-            }
-            temp = temp->next;
+        k = count-rotation; 
+        while( temp and --k  ){
+            temp = temp->next; 
         }
-        dummy->next = head; 
-        head=take;
-        return head;
-        
+        ListNode* dummy = new ListNode(); ListNode* tempo = new ListNode(); 
+        if(temp->next){
+            dummy  = temp->next; 
+            tempo = temp->next; 
+            temp->next = nullptr ; 
+        }
+
+        while(dummy->next) dummy = dummy->next; 
+        if(dummy) dummy->next = head; 
+        if(tempo) return tempo;
+        return head; 
+
     }
 };
