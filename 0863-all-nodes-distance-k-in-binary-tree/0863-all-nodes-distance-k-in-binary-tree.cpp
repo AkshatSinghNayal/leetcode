@@ -62,9 +62,9 @@ public:
 
                 for (auto it : mp[node]) {
                     if (vis[it->val] == -1) {
-                        vis[it->val] = 1;
                         q1.push(it);
                     }
+                        vis[node->val] = 1;
                 }
             }
 
