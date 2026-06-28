@@ -12,28 +12,31 @@
 class Solution {
 public:
     int maxLevelSum(TreeNode* root) {
-        queue<TreeNode*> q ; 
+        queue<TreeNode*>q; 
         q.push(root); 
-        long long globalSum = LLONG_MIN; 
-        int count =0 ; 
-        int finalIndex = 1; 
-        while( !q.empty() ){
-            count++; 
-            long long sum = 0; 
+
+        pair<long long,int>best; // sum , level
+        best = {INT_MIN,INT_MIN};
+        int level =0; 
+
+        while(!q.empty()){
+            ++level;
+            long long total = 0; 
             int size = q.size(); 
-            for(int i = 0 ; i< size; i++){
-                auto node = q.front(); 
-                q.pop(); 
-                sum+=node->val; 
-                if( node->left ) q.push(node->left ); 
-                if(node->right ) q.push(node->right); 
+            for(int i  = 0;i<size; i++ ){
+                auto node = q.front() ; q.pop(); 
+                total+=node->val;
+
+
+                if(node->left) q.push(node->left); 
+                if(node->right) q.push(node->right); 
             }
-             
-            if( sum > globalSum ){
-                globalSum = sum ;  
-                finalIndex = count ;
+
+            if(best.first < total ){
+                best ={total, level}; 
             }
         }
-        return finalIndex; 
+        // cout<<best.first << " " << best.second;
+        return best.second;
     }
 };
