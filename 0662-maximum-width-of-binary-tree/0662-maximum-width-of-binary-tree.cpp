@@ -12,27 +12,35 @@
 class Solution {
 public:
     int widthOfBinaryTree(TreeNode* root) {
-        queue<pair< TreeNode* , int>> q; 
-        if( root == nullptr ) return 0 ;
-        int maxi = INT_MIN ;
-        q.push({ root , 0 }) ;
+        int maxi = 0;
+        if(!root->left and !root->right ) return 1; 
+        queue<pair<TreeNode*,long long>>q; 
+        q.push({root,0});
+        long long mini = 0; 
 
-        while( !q.empty()){
-            int size = q.size() ;
-                maxi = max(maxi , q.back().second - q.front().second+1);
-                int left= q.front().second;
-            for( int i  = 0 ;i<size ; i++){
-                
-                auto node = q.front() ;
-                long long int initial = node.second-left ;
-                q.pop() ;
-                
-                if( node.first->left ) q.push( {node.first->left , initial*2+1 }); 
-                if( node.first->right) q.push({node.first->right , initial*2+2});
-                
+        while(!q.empty()){
+            long long left =0 , right = 0 ;
+            long long size =q.size();
+            mini = q.front().second;
+            for(int i = 0;i<size ;i++ ){
+                auto [node , idx] = q.front() ; q.pop(); 
+                idx-=mini;
+                if( i == 0  ){
+                    left = idx; 
+                }
+                if(i == size-1 ){
+                    right = idx;
+                }
+
+                if( node->left ) q.push({node->left , 1LL*idx*2+1}); 
+                if(node->right) q.push({node->right , 1LL*idx*2+2}); 
+
+
             }
-        }
-        return maxi;
+            maxi = ( right-left+1 > maxi ) ? right-left+1 : maxi; 
 
+        }
+
+        return maxi; 
     }
 };
