@@ -573,6 +573,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2654-minimum-number-of-operations-to-make-all-array-elements-equal-to-1](https://github.com/AkshatSinghNayal/leetcode/tree/master/2654-minimum-number-of-operations-to-make-all-array-elements-equal-to-1) |
 | [2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1](https://github.com/AkshatSinghNayal/leetcode/tree/master/2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1) |
 | [2765-longest-alternating-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/2765-longest-alternating-subarray) |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [2845-count-of-interesting-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/2845-count-of-interesting-subarrays) |
 | [2906-construct-product-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/2906-construct-product-matrix) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/AkshatSinghNayal/leetcode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
@@ -706,6 +707,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
 | [2498-frog-jump-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2498-frog-jump-ii) |
 | [2540-minimum-common-value](https://github.com/AkshatSinghNayal/leetcode/tree/master/2540-minimum-common-value) |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3477-fruits-into-baskets-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3477-fruits-into-baskets-ii) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
@@ -909,6 +911,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2327-largest-number-after-digit-swaps-by-parity](https://github.com/AkshatSinghNayal/leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
 | [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
 | [2462-total-cost-to-hire-k-workers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2462-total-cost-to-hire-k-workers) |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3226-minimum-number-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/3226-minimum-number-game) |
 | [3781-maximum-score-after-binary-swaps](https://github.com/AkshatSinghNayal/leetcode/tree/master/3781-maximum-score-after-binary-swaps) |
 ## Bucket Sort
@@ -957,6 +960,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1559-detect-cycles-in-2d-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1631-path-with-minimum-effort](https://github.com/AkshatSinghNayal/leetcode/tree/master/1631-path-with-minimum-effort) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [2906-construct-product-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/2906-construct-product-matrix) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/AkshatSinghNayal/leetcode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3142-check-if-grid-satisfies-conditions](https://github.com/AkshatSinghNayal/leetcode/tree/master/3142-check-if-grid-satisfies-conditions) |
@@ -1270,6 +1274,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1559-detect-cycles-in-2d-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1631-path-with-minimum-effort](https://github.com/AkshatSinghNayal/leetcode/tree/master/1631-path-with-minimum-effort) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
 ## Union Find
 |  |
 | ------- |
@@ -1309,6 +1314,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1631-path-with-minimum-effort](https://github.com/AkshatSinghNayal/leetcode/tree/master/1631-path-with-minimum-effort) |
+| [2812-find-the-safest-path-in-a-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
 ## Graph Theory
 |  |
 | ------- |
