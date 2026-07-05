@@ -1,20 +1,23 @@
 class Solution {
 public:
 
-    int change(int amt, vector<int>& coins) {
-        int n  = coins.size(); 
-        vector<int>prev(amt+1 , 0);
-        prev[0] = 1; 
-        for(int i = 1; i<= n ; i++ ){
-            vector<int>curr(amt+1 , 0);
+    int solve( vector<int>& coins , vector<vector<int>>& dp, int  i , int amount ){
+        //base 
+        if( i == 0 ){
+            return ( amount%coins[i] == 0 ) ? 1 : 0 ;
+        }
 
-            for(int amount = 0 ; amount<= amt ; amount++ ){
-                long long  take = ( amount>=coins[i-1] ) ? curr[amount-coins[i-1]] : 0 ; 
-                long long notTake = prev[amount];
-                curr[amount] = (take+notTake);
-            }
-            prev = curr ; 
-        } 
-        return prev[amt]; 
+        if(dp[i][amount] != -1 ) return dp[i][amount]; 
+
+        int take = (amount>=coins[i]) ? solve(coins, dp , i, amount-coins[i]) : 0;
+        int notTake = solve(coins , dp , i-1 , amount );
+
+        return dp[i][amount] = take+notTake ; 
+    }
+
+    int change(int amount, vector<int>& coins) {
+        int n  = coins.size(); 
+        vector<vector<int>>dp(n,vector<int>(amount+1 , -1 )); 
+        return solve( coins, dp ,n-1 , amount ); 
     }
 };
