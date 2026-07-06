@@ -480,6 +480,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0733-flood-fill](https://github.com/AkshatSinghNayal/leetcode/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/AkshatSinghNayal/leetcode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/AkshatSinghNayal/leetcode/tree/master/0739-daily-temperatures) |
+| [0741-cherry-pickup](https://github.com/AkshatSinghNayal/leetcode/tree/master/0741-cherry-pickup) |
 | [0746-min-cost-climbing-stairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/0746-min-cost-climbing-stairs) |
 | [0748-largest-number-at-least-twice-of-others](https://github.com/AkshatSinghNayal/leetcode/tree/master/0748-largest-number-at-least-twice-of-others) |
 | [0757-set-intersection-size-at-least-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0757-set-intersection-size-at-least-two) |
@@ -803,6 +804,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0542-01-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/0542-01-matrix) |
 | [0583-delete-operation-for-two-strings](https://github.com/AkshatSinghNayal/leetcode/tree/master/0583-delete-operation-for-two-strings) |
 | [0678-valid-parenthesis-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0678-valid-parenthesis-string) |
+| [0741-cherry-pickup](https://github.com/AkshatSinghNayal/leetcode/tree/master/0741-cherry-pickup) |
 | [0746-min-cost-climbing-stairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/0746-min-cost-climbing-stairs) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/AkshatSinghNayal/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0879-profitable-schemes](https://github.com/AkshatSinghNayal/leetcode/tree/master/0879-profitable-schemes) |
@@ -952,6 +954,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0417-pacific-atlantic-water-flow](https://github.com/AkshatSinghNayal/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0542-01-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/AkshatSinghNayal/leetcode/tree/master/0733-flood-fill) |
+| [0741-cherry-pickup](https://github.com/AkshatSinghNayal/leetcode/tree/master/0741-cherry-pickup) |
 | [0778-swim-in-rising-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0778-swim-in-rising-water) |
 | [0931-minimum-falling-path-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0931-minimum-falling-path-sum) |
 | [0934-shortest-bridge](https://github.com/AkshatSinghNayal/leetcode/tree/master/0934-shortest-bridge) |
