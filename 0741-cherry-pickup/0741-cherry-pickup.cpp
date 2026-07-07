@@ -21,13 +21,17 @@ class Solution {
 
         int cherries = grid[r1][c1] + (r1 == r2 ? 0 : grid[r2][c2]);
 
+        int dr[] = {1, 0}; // Down, Right
+        int dc[] = {0, 1};
+
         int max_next = -1e9;
 
-        for (int d1 = 0; d1 <= 1; d1++) {
-            for (int d2 = 0; d2 <= 1; d2++) {
-                max_next = max(max_next, dfs(r1 + d1, c1 + (1 - d1), r2 + d2, grid));
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < 2; j++) {
+                max_next = max(max_next, dfs(r1 + dr[i], c1 + dc[i], r2 + dr[j], grid));
             }
         }
+
         return memo[r1][c1][r2] = cherries + max_next;
     }
 
