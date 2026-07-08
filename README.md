@@ -172,6 +172,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0058-length-of-last-word](https://github.com/AkshatSinghNayal/leetcode/tree/master/0058-length-of-last-word) |
 | [0067-add-binary](https://github.com/AkshatSinghNayal/leetcode/tree/master/0067-add-binary) |
 | [0076-minimum-window-substring](https://github.com/AkshatSinghNayal/leetcode/tree/master/0076-minimum-window-substring) |
+| [0091-decode-ways](https://github.com/AkshatSinghNayal/leetcode/tree/master/0091-decode-ways) |
 | [0127-word-ladder](https://github.com/AkshatSinghNayal/leetcode/tree/master/0127-word-ladder) |
 | [0131-palindrome-partitioning](https://github.com/AkshatSinghNayal/leetcode/tree/master/0131-palindrome-partitioning) |
 | [0151-reverse-words-in-a-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0151-reverse-words-in-a-string) |
@@ -778,6 +779,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0064-minimum-path-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0064-minimum-path-sum) |
 | [0070-climbing-stairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/0070-climbing-stairs) |
 | [0085-maximal-rectangle](https://github.com/AkshatSinghNayal/leetcode/tree/master/0085-maximal-rectangle) |
+| [0091-decode-ways](https://github.com/AkshatSinghNayal/leetcode/tree/master/0091-decode-ways) |
 | [0118-pascals-triangle](https://github.com/AkshatSinghNayal/leetcode/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/AkshatSinghNayal/leetcode/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/AkshatSinghNayal/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
