@@ -38,13 +38,8 @@ public:
             int temp = 0 ; 
 
 
-        if( i-1 >=0  ){
-            temp = stoi( s.substr( i-1 , 2 )); 
-            if(s[i-1] == '0') temp =0 ; 
-        }
-        if( temp>=10 and temp<=26 ){
-            if( i-2 < 0 ) two = 1; 
-            else two = dp[i-2]; 
+        if (s[i-1] == '1' || (s[i-1] == '2' && s[i] <= '6')) {
+            two = (i >= 2) ? dp[i-2] : 1;
         }
         
 
