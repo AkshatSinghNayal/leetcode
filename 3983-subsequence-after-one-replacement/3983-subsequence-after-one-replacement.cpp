@@ -1,32 +1,25 @@
 class Solution {
 public:
-    bool canMakeSubsequence(string s, string t) {
-        int n = s.size(), m = t.size();
-        int i0 = 0; 
-        int i1 = 0; 
+    bool canMakeSubsequence(const string& s, const string& t) {
+        int m = s.size();
+        int slowPtr = 0, fastPtr = 0;
 
-        for (int j = 0; j < m; j++) {
-            int next_i0 = i0;
-            int next_i1 = i1;
-
-            if (i1 < n && s[i1] == t[j]) {
-                next_i1 = max(next_i1, i1 + 1);
+        for(char c : t) {
+            if(c == s[fastPtr]) {
+                fastPtr++;
             }
 
-            if (i0 < n) {
-                next_i1 = max(next_i1, i0 + 1);
+            fastPtr = max(fastPtr, slowPtr + 1);
+
+            if(c == s[slowPtr]) {
+                slowPtr++;
             }
 
-            if (i0 < n && s[i0] == t[j]) {
-                next_i0 = max(next_i0, i0 + 1);
+            if(slowPtr == m || fastPtr == m) {
+                return true;
             }
-
-            i0 = next_i0;
-            i1 = next_i1;
-
-            if (i0 == n || i1 == n) return true;
         }
 
-        return i0 == n || i1 == n;
+        return false;
     }
 };
