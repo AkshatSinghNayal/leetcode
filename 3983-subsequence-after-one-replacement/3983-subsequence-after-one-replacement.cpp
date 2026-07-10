@@ -1,25 +1,21 @@
 class Solution {
 public:
-    bool canMakeSubsequence(const string& s, const string& t) {
-        int m = s.size();
-        int slowPtr = 0, fastPtr = 0;
+    bool canMakeSubsequence(string s, string t) {
+        int n  = s.size(); 
+        int cheat = 0 , notCheat = 0 ; 
+        for(auto& it : t ){
 
-        for(char c : t) {
-            if(c == s[fastPtr]) {
-                fastPtr++;
+            if( s[cheat] ==  it ) cheat++; 
+            else cheat = max(cheat , notCheat+1 ); 
+
+            if( s[notCheat] == it ){
+                notCheat++; 
             }
 
-            fastPtr = max(fastPtr, slowPtr + 1);
+            if( cheat >= n or notCheat >= n ) return true;
 
-            if(c == s[slowPtr]) {
-                slowPtr++;
-            }
-
-            if(slowPtr == m || fastPtr == m) {
-                return true;
-            }
         }
-
+        cout<< cheat << " " << notCheat; 
         return false;
     }
 };
