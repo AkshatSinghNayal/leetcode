@@ -45,7 +45,6 @@ public:
 
         solve(ans,high,initial,temp,ok);
 
-        sort(ans.begin(),ans.end());
 
         return ans;
     }
