@@ -1201,6 +1201,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | ------- |
 | [0204-count-primes](https://github.com/AkshatSinghNayal/leetcode/tree/master/0204-count-primes) |
 | [0869-reordered-power-of-2](https://github.com/AkshatSinghNayal/leetcode/tree/master/0869-reordered-power-of-2) |
+| [1291-sequential-digits](https://github.com/AkshatSinghNayal/leetcode/tree/master/1291-sequential-digits) |
 | [2337-remove-digit-from-number-to-maximize-result](https://github.com/AkshatSinghNayal/leetcode/tree/master/2337-remove-digit-from-number-to-maximize-result) |
 | [2765-longest-alternating-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/2765-longest-alternating-subarray) |
 | [3546-equal-sum-grid-partition-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3546-equal-sum-grid-partition-i) |
