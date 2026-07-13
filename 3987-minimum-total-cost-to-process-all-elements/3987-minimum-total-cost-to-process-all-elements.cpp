@@ -1,35 +1,26 @@
 class Solution {
 public:
+    const long long MOD = 1e9 + 7;
+
     int minimumCost(vector<int>& nums, int k1) {
-        const long long MOD = 1e9 + 7;
+        unsigned long long count = 0;
+        unsigned long long k = k1; 
+        long long last = 0;
 
-        long long cost = 0;
-        long long resources = k1;
-        long long operations = 0;
+        for (int it : nums) { 
+            if (it > k) {
+                long long total = (it - k + k1 - 1) / k1;
 
-        for (long long x : nums) {
-            if (resources < x) {
-                long long need = (x - resources + k1 - 1) / k1;
+                long long term = (total % MOD) * ((2 * (last % MOD) + (total % MOD) + 1) % MOD) % MOD;
+                term = (term * 500000004LL) % MOD; 
 
-                long long a = need;
-                long long b = 2 * operations + need + 1;
-
-                if (a % 2 == 0)
-                    a /= 2;
-                else
-                    b /= 2;
-
-                long long add = ((a % MOD) * (b % MOD)) % MOD;
-
-                cost = (cost + add) % MOD;
-
-                operations += need;
-                resources += need * k1;
+                count = (count + term) % MOD;
+                last = (last + total) % MOD;
+                
+                k += (unsigned long long)total * k1; 
             }
-
-            resources -= x;
+            k -= it;
         }
-
-        return cost;
+        return count;
     }
 };
