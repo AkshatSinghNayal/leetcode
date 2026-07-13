@@ -1,28 +1,40 @@
 class Solution {
 public:
-    void solve(string s, vector<string>& res, unordered_set<string>& st, vector<string>&temp){
-        if(s.length() == 0){
-            string str = "";
-            for(auto it:temp){
-                str += it + " ";
-            }
-            str.pop_back();
-            res.push_back(str);
-            return;
-        }
-        for(int i=0;i<s.length(); i++){
-            if(st.count(s.substr(0, i+1))){
-                temp.push_back(s.substr(0, i+1));
-                solve(s.substr(i+1), res, st, temp);
-                temp.pop_back();
+
+    vector<string> solve(string &s, unordered_set<string> &st, unordered_map<string, vector<string>> &mp, int i) {
+
+    if (s.empty()) return {""};
+
+    if (mp.count(s)) return mp[s];
+
+    for (int l = 1; l <= s.size(); l++) {
+
+        string currentWord = s.substr(0, l);
+
+        if (st.count(currentWord)) {
+
+            string subString = s.substr(l);
+
+            auto result = solve(subString, st, mp, l);
+
+            for (auto &x : result) {
+                if (x.empty())
+                    mp[s].push_back(currentWord);
+                else
+                    mp[s].push_back(currentWord + " " + x);
             }
         }
     }
+
+    return mp[s];
+}
+
     vector<string> wordBreak(string s, vector<string>& wordDict) {
-        vector<string>res, temp;
-        unordered_set<string>st(wordDict.begin(), wordDict.end());
-        
-        solve(s, res, st, temp);
-        return res;
+        unordered_set<string> st; 
+        for(auto& it : wordDict){
+            st.insert(it); 
+        }
+        unordered_map<string,vector<string>>mp; 
+        return solve(s , st , mp , 1 ); 
     }
 };
