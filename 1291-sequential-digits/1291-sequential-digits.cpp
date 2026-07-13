@@ -1,34 +1,28 @@
 class Solution {
 public:
+    bool check(int num) {
 
-bool check(int num) {
+        while (num >= 10) {
 
-while (num >= 10) {
+            int last_digit = num % 10;
 
-int last_digit = num % 10;
+            int prev_digit = (num / 10) % 10;
 
-int prev_digit = (num / 10) % 10;
+            if (last_digit != prev_digit + 1) {
 
+                return false;
+            }
 
-if (last_digit != prev_digit + 1) {
+            num /= 10;
+        }
 
-return false;
-
-}
-
-num /= 10;
-
-}
-
-return true;
-
-}
-
-    long long ok = 0 ; unordered_set<int> st;
+        return true;
+    }
+long long ok = 0 ; unordered_set<int> st;
     void solve( vector<int>& ans , int high , long long initial , long long temp , long long ok ){
         //base
         if( initial > high) return ; 
-        if( check(initial) == true and  temp%10 == 9 and !st.count(initial)){
+        if( check(initial) == true and temp%10 == 9 and !st.count(initial)){
             st.insert(initial);
             ans.push_back(initial); 
             solve(ans , high , 1LL*temp*10+temp%10+1 , 1LL*temp*10+temp%10+1 , ok*1LL*10+1 ); 
@@ -63,6 +57,6 @@ return true;
         solve( ans , high , initial , temp , ok) ; 
 
         return ans; 
-
-    }
+ 
+    }  
 };
