@@ -487,6 +487,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0705-design-hashset](https://github.com/AkshatSinghNayal/leetcode/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/AkshatSinghNayal/leetcode/tree/master/0706-design-hashmap) |
 | [0713-subarray-product-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/0713-subarray-product-less-than-k) |
+| [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/AkshatSinghNayal/leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0733-flood-fill](https://github.com/AkshatSinghNayal/leetcode/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/AkshatSinghNayal/leetcode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/AkshatSinghNayal/leetcode/tree/master/0739-daily-temperatures) |
@@ -819,6 +820,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0542-01-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/0542-01-matrix) |
 | [0583-delete-operation-for-two-strings](https://github.com/AkshatSinghNayal/leetcode/tree/master/0583-delete-operation-for-two-strings) |
 | [0678-valid-parenthesis-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0678-valid-parenthesis-string) |
+| [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/AkshatSinghNayal/leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0741-cherry-pickup](https://github.com/AkshatSinghNayal/leetcode/tree/master/0741-cherry-pickup) |
 | [0746-min-cost-climbing-stairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/0746-min-cost-climbing-stairs) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/AkshatSinghNayal/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
@@ -854,6 +856,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/AkshatSinghNayal/leetcode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0678-valid-parenthesis-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0680-valid-palindrome-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0680-valid-palindrome-ii) |
+| [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/AkshatSinghNayal/leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0757-set-intersection-size-at-least-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0757-set-intersection-size-at-least-two) |
 | [0759-set-intersection-size-at-least-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0759-set-intersection-size-at-least-two) |
 | [0767-reorganize-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0767-reorganize-string) |
