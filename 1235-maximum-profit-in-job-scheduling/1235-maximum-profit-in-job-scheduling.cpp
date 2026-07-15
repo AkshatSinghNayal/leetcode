@@ -1,35 +1,28 @@
 class Solution {
 public:
 
-    int solve(vector<vector<int>>& jobs, vector<int>& dp, int i) {
-        if (i >= jobs.size()) return 0;
+    int solve(vector<vector<int>>& temp, vector<int>&dp , int i , int n  ){
+        if( i >= n ) return 0 ; 
+        if(dp[i] != -1 ) return dp[i]; 
 
-        if (dp[i] != -1) return dp[i];
+        int next = lower_bound(temp.begin()+i+1 , temp.end() , vector<int>{temp[i][1] ,0,0}) - temp.begin(); 
 
-        int next = lower_bound( jobs.begin() + i + 1, jobs.end(),vector<int>{jobs[i][1], 0, 0}) - jobs.begin();
-
-        int take = jobs[i][2] + solve(jobs, dp, next);
-
-        int notTake = solve(jobs, dp, i + 1);
-
-        return dp[i] = max(take, notTake);
+        int take = temp[i][2]+solve(temp ,dp , next , n ); 
+        int notTake = solve(temp , dp , i+1 , n ); 
+        
+        return dp[i] = max(take , notTake); 
     }
 
-
-    int jobScheduling(vector<int>& startTime, vector<int>& endTime, vector<int>& profit) {
-
-        int n = startTime.size();
-
-        vector<vector<int>> jobs;
-
-        for (int i = 0; i < n; i++) {
-            jobs.push_back({startTime[i], endTime[i], profit[i]});
+    int jobScheduling(vector<int>& S, vector<int>& E, vector<int>& profit) {
+        int n = S.size(); 
+        vector<int>dp(n, -1 ); 
+        vector<vector<int>> temp; 
+        for(int i  = 0 ; i<n ;i++ ){
+            temp.push_back({S[i] , E[i] , profit[i]}); 
         }
+        sort(temp.begin() , temp.end());
 
-        sort(jobs.begin(), jobs.end());
+        return solve( temp ,dp , 0 , n ); 
 
-        vector<int> dp(n, -1);
-
-        return solve(jobs, dp, 0);
-    }
+    }   
 };
