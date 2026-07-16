@@ -1,39 +1,33 @@
-#include<bits/stdc++.h>
-using namespace std;
 class Solution {
 public:
+    int dp[601][101][101]; 
 
-    int findMaxForm(vector<string>& strs, int zero, int one) {
+    int solve( vector<pair<int,int>>&data , int one , int zero , int i ){
+        //base
+        if( i< 0 ) return 0;
+
+        if(dp[i][one][zero] != -1  ) return dp[i][one][zero]; 
+        auto [ t_one , t_zero ] = data[i]; 
+        int take = ( t_one <= one and t_zero <= zero ) ? 1 + solve(data , one-t_one , zero-t_zero , i-1 ) : 0;
+        int notTake = solve(data , one , zero , i-1 );
+
+        return dp[i][one][zero] = max(take , notTake);
+
+    }
+
+    int findMaxForm(vector<string>& strs, int m, int n1) {
         int n  = strs.size(); 
-        vector<pair<int,int>>nums(n); 
-        vector<vector<vector<int>>>dp(n+1,vector<vector<int>>(one+1,vector<int>(zero+1,0))); 
-
-        for(int i = 0 ;i<n ;i++ ){
-            int one1 = 0, zero1 = 0 , size = strs[i].size() ; 
-            for(int j  = 0; j<size ; j++ ){
-                char ch = strs[i][j];
-                if(ch =='1') one1++; 
-                else zero1++; 
+        vector<pair<int,int>>data;
+        for(auto& it : strs ){      
+        int one = 0 ,zero = 0;   
+            for(int i  = 0;i<it.size(); i++ ){
+                char ch = it[i]; 
+                if(ch == '0') zero++;
+                else one++;
             }
-            nums[i] = { one1 , zero1}; 
+            data.push_back({one , zero}); 
         }
-
-        
-
-        for(int i  =1; i<= n; i++ ){
-            for(int j =0 ; j<= one ;j++ ){
-                for(int k = 0; k<= zero ;k++ ){
-                    int take = ( nums[i-1].first <=j and nums[i-1].second<=k ) ? 1+dp[i-1][j-nums[i-1].first][k-nums[i-1].second] : 0 ;
-                    int notTake = dp[i-1][j][k]; 
-                    dp[i][j][k] = max(take,notTake); 
-                }
-            }
-        }
-
-
-        return dp[n][one][zero]; 
-    
+        memset(dp,-1,sizeof(dp));
+        return solve( data, n1 , m , n-1 ); 
     }
 };
-
-
