@@ -1,20 +1,22 @@
 class Solution {
 public:
+
     int minimumTotal(vector<vector<int>>& triangle) {
-        int n = triangle.size(); 
-        int size = triangle[n-1].size(); 
-        vector<int>prev(size  , 1e8 ); 
-        prev[0]=triangle[0][0]; 
-        for( int i  =1 ; i<n ; i++){
-            vector<int> temp(size,1e8);
-            for(int j = 0; j<=i; j++){
-                int up = (j<i) ? prev[j] : 1e8 ; 
-                int left = (j-1>=0) ?  prev[j-1] : 1e8 ; 
-                temp[j]=triangle[i][j]+ min( up ,left ); 
-            }
-            prev = temp ; 
+        int n = triangle.size() ; 
+        vector<vector<int>>dp(n , vector<int>(n ,1e9)); 
+        
+        for(int i =n-1 ;i>=0 ;i-- ){
+            dp[n-1][i] = triangle[n-1][i]; 
         }
-        int maxi = *min_element( prev.begin(),prev.end()); 
-        return maxi ; 
+
+        for(int i = n-2; i>=0; i--){
+            for(int j=n-2 ;j>=0 ;j-- ){
+                if(dp[i+1][j] ==  1e9 or dp[i+1][j+1] == 1e9 ) continue;
+                int forward = dp[i+1][j]; 
+                int right = dp[i+1][j+1]; 
+                dp[i][j] = triangle[i][j] + min(forward , right);
+            }
+        }
+        return dp[0][0];
     }
 };
