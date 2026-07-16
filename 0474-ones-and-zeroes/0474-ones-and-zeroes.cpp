@@ -1,6 +1,5 @@
 class Solution {
-public:
-    int dp[601][101][101]; 
+public: 
 
     // int solve( vector<pair<int,int>>&data , int one , int zero , int i ){
     //     //base
@@ -27,22 +26,24 @@ public:
             }
             data.push_back({one , zero}); 
         }
-        memset(dp,0,sizeof(dp));
+        vector<vector<int>>dp(n1+1 , vector<int>(m+1)) ; 
 
 
         for(int i =1 ; i<=n ; i++ ){
             auto [ t_one , t_zero ] = data[i-1]; 
+            vector<vector<int>>curr(n1+1 , vector<int>(m+1)) ; 
             for(int one =n1 ; one>=0; one-- ){
                 for(int zero = m; zero>=0; zero-- ){
 
-                    int take = ( t_one <= one and t_zero <= zero ) ? 1 + dp[i-1][one-t_one][zero-t_zero] : 0;
-                    int notTake = dp[i-1][one][zero];
-                    dp[i][one][zero] = max(take , notTake);
+                    int take = ( t_one <= one and t_zero <= zero ) ? 1 + dp[one-t_one][zero-t_zero] : 0;
+                    int notTake = dp[one][zero];
+                    curr[one][zero] = max(take , notTake);
                 }
             }
+            dp = curr; 
         }
 
-        return dp[n][n1][m]; 
+        return dp[n1][m]; 
 
 
     }
