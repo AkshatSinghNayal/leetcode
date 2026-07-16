@@ -535,6 +535,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/AkshatSinghNayal/leetcode/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
 | [1331-rank-transform-of-an-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1331-rank-transform-of-an-array) |
+| [1335-minimum-difficulty-of-a-job-schedule](https://github.com/AkshatSinghNayal/leetcode/tree/master/1335-minimum-difficulty-of-a-job-schedule) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
 | [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
@@ -839,6 +840,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1235-maximum-profit-in-job-scheduling](https://github.com/AkshatSinghNayal/leetcode/tree/master/1235-maximum-profit-in-job-scheduling) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/AkshatSinghNayal/leetcode/tree/master/1312-minimum-insertion-steps-to-make-a-string-palindrome) |
+| [1335-minimum-difficulty-of-a-job-schedule](https://github.com/AkshatSinghNayal/leetcode/tree/master/1335-minimum-difficulty-of-a-job-schedule) |
 | [1463-cherry-pickup-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1463-cherry-pickup-ii) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3877-minimum-removals-to-achieve-target-xor](https://github.com/AkshatSinghNayal/leetcode/tree/master/3877-minimum-removals-to-achieve-target-xor) |
