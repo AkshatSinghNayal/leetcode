@@ -292,6 +292,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0326-power-of-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/AkshatSinghNayal/leetcode/tree/master/0342-power-of-four) |
 | [0390-elimination-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0390-elimination-game) |
+| [0486-predict-the-winner](https://github.com/AkshatSinghNayal/leetcode/tree/master/0486-predict-the-winner) |
 | [0509-fibonacci-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0509-fibonacci-number) |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/1545-find-kth-bit-in-nth-binary-string) |
 | [2050-count-good-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2050-count-good-numbers) |
@@ -467,6 +468,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0474-ones-and-zeroes](https://github.com/AkshatSinghNayal/leetcode/tree/master/0474-ones-and-zeroes) |
 | [0480-sliding-window-median](https://github.com/AkshatSinghNayal/leetcode/tree/master/0480-sliding-window-median) |
 | [0485-max-consecutive-ones](https://github.com/AkshatSinghNayal/leetcode/tree/master/0485-max-consecutive-ones) |
+| [0486-predict-the-winner](https://github.com/AkshatSinghNayal/leetcode/tree/master/0486-predict-the-winner) |
 | [0494-target-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0494-target-sum) |
 | [0496-next-greater-element-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/0496-next-greater-element-i) |
 | [0502-ipo](https://github.com/AkshatSinghNayal/leetcode/tree/master/0502-ipo) |
@@ -647,6 +649,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0371-sum-of-two-integers](https://github.com/AkshatSinghNayal/leetcode/tree/master/0371-sum-of-two-integers) |
 | [0372-super-pow](https://github.com/AkshatSinghNayal/leetcode/tree/master/0372-super-pow) |
 | [0390-elimination-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0390-elimination-game) |
+| [0486-predict-the-winner](https://github.com/AkshatSinghNayal/leetcode/tree/master/0486-predict-the-winner) |
 | [0504-base-7](https://github.com/AkshatSinghNayal/leetcode/tree/master/0504-base-7) |
 | [0509-fibonacci-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0509-fibonacci-number) |
 | [0523-continuous-subarray-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0523-continuous-subarray-sum) |
@@ -818,6 +821,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0416-partition-equal-subset-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0435-non-overlapping-intervals](https://github.com/AkshatSinghNayal/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0474-ones-and-zeroes](https://github.com/AkshatSinghNayal/leetcode/tree/master/0474-ones-and-zeroes) |
+| [0486-predict-the-winner](https://github.com/AkshatSinghNayal/leetcode/tree/master/0486-predict-the-winner) |
 | [0494-target-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0494-target-sum) |
 | [0509-fibonacci-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0509-fibonacci-number) |
 | [0516-longest-palindromic-subsequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/0516-longest-palindromic-subsequence) |
@@ -1434,4 +1438,8 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1661-average-time-of-process-per-machine](https://github.com/AkshatSinghNayal/leetcode/tree/master/1661-average-time-of-process-per-machine) |
 | [1757-recyclable-and-low-fat-products](https://github.com/AkshatSinghNayal/leetcode/tree/master/1757-recyclable-and-low-fat-products) |
 | [1934-confirmation-rate](https://github.com/AkshatSinghNayal/leetcode/tree/master/1934-confirmation-rate) |
+## Game Theory
+|  |
+| ------- |
+| [0486-predict-the-winner](https://github.com/AkshatSinghNayal/leetcode/tree/master/0486-predict-the-winner) |
 <!---LeetCode Topics End-->
