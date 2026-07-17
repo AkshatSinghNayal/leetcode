@@ -26,6 +26,6 @@ public:
         int n = nums.size();
         memset(dp, -1, sizeof(dp));
         int ans = solve(nums, 0, n - 1, n, true);
-        return ans * 2 >= accumulate(nums.begin(), nums.end(), 0);
+        return ans >= (double)accumulate(nums.begin(), nums.end(), 0)/2;
     }
 };
