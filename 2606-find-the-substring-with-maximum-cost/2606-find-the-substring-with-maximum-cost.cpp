@@ -6,7 +6,7 @@ public:
         for(int i = 0; i<n ;i++ ){
             mp[chars[i]] = vals[i]; 
         }
-        for(auto& it : mp ) cout<<it.second << " " ; 
+        // for(auto& it : mp ) cout<<it.second << " " ; 
         
         int maxi = -1e9 , global = -1e9 ; 
 
