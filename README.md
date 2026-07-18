@@ -79,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2351-first-letter-to-appear-twice](https://github.com/AkshatSinghNayal/leetcode/tree/master/2351-first-letter-to-appear-twice) |
 | [2418-sort-the-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/2418-sort-the-people) |
 | [2540-minimum-common-value](https://github.com/AkshatSinghNayal/leetcode/tree/master/2540-minimum-common-value) |
+| [2606-find-the-substring-with-maximum-cost](https://github.com/AkshatSinghNayal/leetcode/tree/master/2606-find-the-substring-with-maximum-cost) |
 | [2615-sum-of-distances](https://github.com/AkshatSinghNayal/leetcode/tree/master/2615-sum-of-distances) |
 | [2716-minimize-string-length](https://github.com/AkshatSinghNayal/leetcode/tree/master/2716-minimize-string-length) |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
@@ -237,6 +238,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2351-first-letter-to-appear-twice](https://github.com/AkshatSinghNayal/leetcode/tree/master/2351-first-letter-to-appear-twice) |
 | [2418-sort-the-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/2418-sort-the-people) |
 | [2483-minimum-penalty-for-a-shop](https://github.com/AkshatSinghNayal/leetcode/tree/master/2483-minimum-penalty-for-a-shop) |
+| [2606-find-the-substring-with-maximum-cost](https://github.com/AkshatSinghNayal/leetcode/tree/master/2606-find-the-substring-with-maximum-cost) |
 | [2716-minimize-string-length](https://github.com/AkshatSinghNayal/leetcode/tree/master/2716-minimize-string-length) |
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/2839-check-if-strings-can-be-made-equal-with-operations-i) |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
@@ -590,6 +592,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2511-maximum-enemy-forts-that-can-be-captured](https://github.com/AkshatSinghNayal/leetcode/tree/master/2511-maximum-enemy-forts-that-can-be-captured) |
 | [2540-minimum-common-value](https://github.com/AkshatSinghNayal/leetcode/tree/master/2540-minimum-common-value) |
 | [2574-left-and-right-sum-differences](https://github.com/AkshatSinghNayal/leetcode/tree/master/2574-left-and-right-sum-differences) |
+| [2606-find-the-substring-with-maximum-cost](https://github.com/AkshatSinghNayal/leetcode/tree/master/2606-find-the-substring-with-maximum-cost) |
 | [2615-sum-of-distances](https://github.com/AkshatSinghNayal/leetcode/tree/master/2615-sum-of-distances) |
 | [2654-minimum-number-of-operations-to-make-all-array-elements-equal-to-1](https://github.com/AkshatSinghNayal/leetcode/tree/master/2654-minimum-number-of-operations-to-make-all-array-elements-equal-to-1) |
 | [2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1](https://github.com/AkshatSinghNayal/leetcode/tree/master/2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1) |
@@ -849,6 +852,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/AkshatSinghNayal/leetcode/tree/master/1312-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1335-minimum-difficulty-of-a-job-schedule](https://github.com/AkshatSinghNayal/leetcode/tree/master/1335-minimum-difficulty-of-a-job-schedule) |
 | [1463-cherry-pickup-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1463-cherry-pickup-ii) |
+| [2606-find-the-substring-with-maximum-cost](https://github.com/AkshatSinghNayal/leetcode/tree/master/2606-find-the-substring-with-maximum-cost) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3877-minimum-removals-to-achieve-target-xor](https://github.com/AkshatSinghNayal/leetcode/tree/master/3877-minimum-removals-to-achieve-target-xor) |
 ## Greedy
