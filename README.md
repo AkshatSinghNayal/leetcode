@@ -1176,6 +1176,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1448-count-good-nodes-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/AkshatSinghNayal/leetcode/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2384-root-equals-sum-of-children](https://github.com/AkshatSinghNayal/leetcode/tree/master/2384-root-equals-sum-of-children) |
+| [2415-reverse-odd-levels-of-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/2415-reverse-odd-levels-of-binary-tree) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 ## Binary Tree
 |  |
@@ -1214,6 +1215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1448-count-good-nodes-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/AkshatSinghNayal/leetcode/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2384-root-equals-sum-of-children](https://github.com/AkshatSinghNayal/leetcode/tree/master/2384-root-equals-sum-of-children) |
+| [2415-reverse-odd-levels-of-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/2415-reverse-odd-levels-of-binary-tree) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 ## Enumeration
 |  |
@@ -1275,6 +1277,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1448-count-good-nodes-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1631-path-with-minimum-effort](https://github.com/AkshatSinghNayal/leetcode/tree/master/1631-path-with-minimum-effort) |
+| [2415-reverse-odd-levels-of-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/2415-reverse-odd-levels-of-binary-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -1319,6 +1322,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1448-count-good-nodes-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1631-path-with-minimum-effort](https://github.com/AkshatSinghNayal/leetcode/tree/master/1631-path-with-minimum-effort) |
+| [2415-reverse-odd-levels-of-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/2415-reverse-odd-levels-of-binary-tree) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
 ## Union Find
