@@ -111,6 +111,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0705-design-hashset](https://github.com/AkshatSinghNayal/leetcode/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/AkshatSinghNayal/leetcode/tree/master/0706-design-hashmap) |
 | [0908-middle-of-the-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0908-middle-of-the-linked-list) |
+| [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 | [2181-merge-nodes-in-between-zeros](https://github.com/AkshatSinghNayal/leetcode/tree/master/2181-merge-nodes-in-between-zeros) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 ## Two Pointers
@@ -156,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0962-maximum-width-ramp](https://github.com/AkshatSinghNayal/leetcode/tree/master/0962-maximum-width-ramp) |
 | [1019-squares-of-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1019-squares-of-a-sorted-array) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/AkshatSinghNayal/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
+| [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2410-maximum-matching-of-players-with-trainers) |
 | [2462-total-cost-to-hire-k-workers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2462-total-cost-to-hire-k-workers) |
@@ -279,6 +281,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
 | [2104-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2104-sum-of-subarray-ranges) |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2116-check-if-a-parentheses-string-can-be-valid) |
+| [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 | [2227-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2227-sum-of-subarray-ranges) |
 | [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
 | [3834-merge-adjacent-equal-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3834-merge-adjacent-equal-elements) |
