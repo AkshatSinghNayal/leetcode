@@ -1,25 +1,31 @@
 class Solution {
 public:
-    bool canFinish(int V, vector<vector<int>>& edges) {
-        vector<int>ans;
-        vector<int>indgree(V); 
-        vector<vector<int>>list(V);
-        for(auto& it : edges ){
+    bool canFinish(int V, vector<vector<int>>& pre) {
+        vector<vector<int>>list(V); 
+        queue<int>q;
+        vector<int>indegree(V);
+        for(auto& it : pre){
             list[it[1]].push_back(it[0]); 
-            indgree[it[0]]++; 
+            indegree[it[0]]++; 
         }
-        priority_queue<int>pq;
-        for(int i =  0; i< V ;i++ ){
-            if(indgree[i] == 0 ) pq.push(i);
+        for(int i  = 0 ;i<indegree.size() ;i++ ){
+            if(indegree[i] == 0  ) q.push(i);
         }
-        while(!pq.empty()){
-            auto node = pq.top(); pq.pop();
-            ans.push_back(node); 
-            for(auto& it : list[node]){
-                indgree[it]--; 
-                if( indgree[it] == 0  ) pq.push(it); 
+
+        while(!q.empty()){
+            int size = q.size(); 
+            for(int i  = 0;i<size; i++ ){
+                auto edge = q.front(); q.pop(); 
+
+                for(auto& it : list[edge]){
+                    indegree[it]--; 
+                    if(indegree[it] == 0  ) q.push(it);
+                }
             }
         }
-        return ans.size() == V ; 
+        for(auto& it : indegree ){
+            if( it > 0 ) return false;
+        }
+        return true;
     }
 };
