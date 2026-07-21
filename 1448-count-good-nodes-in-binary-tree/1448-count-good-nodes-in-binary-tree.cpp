@@ -11,25 +11,34 @@
  */
 class Solution {
 public:
-
-    void solve( TreeNode* root , int& count , int maxi  ){
-        //base
-        if(!root) return ; 
-
-        if( root->val >= maxi ){
-            count++; 
-        }
-        maxi= max(maxi , root->val); 
-
-        solve(root->left , count , maxi ); 
-        solve(root->right,count , maxi ); 
-
-    }
-
     int goodNodes(TreeNode* root) {
-        if(!root->left and !root->right ) return 1; 
-        int count =0; int maxi  = root->val;
-        solve( root  , count , maxi ) ; 
-        return count ; 
+        queue<pair<TreeNode*,int>>q; 
+        q.push({root,root->val}); 
+        int count = 1; 
+
+        while(!q.empty()){
+            int size = q.size(); 
+            for(int i = 0 ;i<size ; i++ ){
+                auto [node , val ] = q.front(); q.pop(); 
+
+                if( node->left ){
+                    int maxi = max( val , node->left->val ); 
+                    if( node->left->val >= val ){
+                        count++; 
+                    }
+                    q.push({node->left , maxi}); 
+                }
+
+                if( node->right){
+                    int maxi = max( val , node->right->val ); 
+                    if(node->right->val  >= val ){
+                        count++;
+                    }
+                    q.push({node->right , maxi }); 
+                }
+
+            }
+        }
+        return count;
     }
 };
