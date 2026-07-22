@@ -18,27 +18,29 @@ public:
 
 
     int profitableSchemes(int n, int minProfit, vector<int>& group, vector<int>& profit) {
-        int m = group.size();
-        const int MOD = 1e9+7; 
+    int m = group.size();
+    const int MOD = 1e9 + 7;
 
-        vector<vector<int>>dp(n+1, vector<int>(minProfit+1, 0));
+    vector<vector<int>> dp(n + 1, vector<int>(minProfit + 1, 0));
 
-        for(int i = 0 ; i<=n ; i++ ){
-            dp[i][0] = 1 ; 
-        }
-
-        for(int i  = 1; i<=m;i++ ){
-            vector<vector<int>>curr(n+1 , vector<int>(minProfit+1 ,  0 )) ; 
-            for( int j= 0; j<= n; j++ ){
-                for(int k  = 0; k<=minProfit; k++ ){
-                    long long take = ( j>= group[i-1]) ? dp[j-group[i-1]][max(0,k-profit[i-1])] : 0; 
-                    long long notTake= dp[j][k]; 
-
-                    curr[j][k] = (take+notTake)%MOD;
-                }
-            }
-            dp = curr; 
-        }
-        return dp[n][minProfit]; 
+    for (int i = 0; i <= n; i++) {
+        dp[i][0] = 1;
     }
+
+    for (int i = 0; i < m; i++) {
+
+        for (int members = n; members >= group[i]; members--) {
+
+            for (int p = minProfit; p >= 0; p--) {
+
+                int take = dp[members - group[i]][max(0, p - profit[i])];
+
+                dp[members][p] = (dp[members][p] + take) % MOD;
+            }
+        }
+    }
+
+    return dp[n][minProfit];
+}
+
 };
