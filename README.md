@@ -608,6 +608,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2606-find-the-substring-with-maximum-cost](https://github.com/AkshatSinghNayal/leetcode/tree/master/2606-find-the-substring-with-maximum-cost) |
 | [2615-sum-of-distances](https://github.com/AkshatSinghNayal/leetcode/tree/master/2615-sum-of-distances) |
 | [2654-minimum-number-of-operations-to-make-all-array-elements-equal-to-1](https://github.com/AkshatSinghNayal/leetcode/tree/master/2654-minimum-number-of-operations-to-make-all-array-elements-equal-to-1) |
+| [2742-painting-the-walls](https://github.com/AkshatSinghNayal/leetcode/tree/master/2742-painting-the-walls) |
 | [2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1](https://github.com/AkshatSinghNayal/leetcode/tree/master/2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1) |
 | [2765-longest-alternating-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/2765-longest-alternating-subarray) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
@@ -867,6 +868,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1335-minimum-difficulty-of-a-job-schedule](https://github.com/AkshatSinghNayal/leetcode/tree/master/1335-minimum-difficulty-of-a-job-schedule) |
 | [1463-cherry-pickup-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1463-cherry-pickup-ii) |
 | [2606-find-the-substring-with-maximum-cost](https://github.com/AkshatSinghNayal/leetcode/tree/master/2606-find-the-substring-with-maximum-cost) |
+| [2742-painting-the-walls](https://github.com/AkshatSinghNayal/leetcode/tree/master/2742-painting-the-walls) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3877-minimum-removals-to-achieve-target-xor](https://github.com/AkshatSinghNayal/leetcode/tree/master/3877-minimum-removals-to-achieve-target-xor) |
 ## Greedy
