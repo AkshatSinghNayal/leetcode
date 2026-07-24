@@ -212,6 +212,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0678-valid-parenthesis-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0680-valid-palindrome-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0692-top-k-frequent-words](https://github.com/AkshatSinghNayal/leetcode/tree/master/0692-top-k-frequent-words) |
+| [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/AkshatSinghNayal/leetcode/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [0767-reorganize-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0767-reorganize-string) |
 | [0777-swap-adjacent-in-lr-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0777-swap-adjacent-in-lr-string) |
 | [0796-rotate-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0796-rotate-string) |
@@ -851,6 +852,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0583-delete-operation-for-two-strings](https://github.com/AkshatSinghNayal/leetcode/tree/master/0583-delete-operation-for-two-strings) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [0678-valid-parenthesis-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0678-valid-parenthesis-string) |
+| [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/AkshatSinghNayal/leetcode/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/AkshatSinghNayal/leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0741-cherry-pickup](https://github.com/AkshatSinghNayal/leetcode/tree/master/0741-cherry-pickup) |
 | [0746-min-cost-climbing-stairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/0746-min-cost-climbing-stairs) |
