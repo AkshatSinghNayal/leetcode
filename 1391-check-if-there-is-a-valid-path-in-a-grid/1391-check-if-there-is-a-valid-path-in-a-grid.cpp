@@ -1,61 +1,56 @@
-class DSU
-{
-    public:
-    vector<int> parent,size;
-    DSU(int n)
-    {
-        parent.resize(n);
-        iota(parent.begin(),parent.end(),0);
-        size.resize(n,1);
-    }
-    int find(int x)
-    {
-        return parent[x] = (parent[x] == x ? x : find(parent[x]));
-    }
-    bool unite(int x, int y)
-    {
-        int a = find(x);
-        int b = find(y);
-        if(a == b)
-            return false;
-        if(size[a] < size[b])
-            swap(a,b);
-        size[a] += size[b];
-        parent[b] = a;
-        return true;
-    }
-};
 class Solution {
 public:
-int N;
-    int id(int i , int j)
-    {
-        return N*i + j;
-    }
-    bool hasValidPath(vector<vector<int>>& grid) 
-    {
-        int m = grid.size();
-        int n = grid[0].size();
-        DSU dsu(m*n);
-        N = n;
-        for(int i = 0 ; i < m ; i++)
-        {
-            for(int j = 0 ; j < n ; j++)
-            {
-                if(i)
-                {
-                    if((grid[i][j] == 2 || grid[i][j] == 5 || grid[i][j] == 6) && (grid[i-1][j] == 2 || grid[i-1][j] == 3 || grid[i-1][j] == 4))
-                        dsu.unite(id(i,j) , id(i-1,j));
-                }
-                if(j)
-                {
-                    if((grid[i][j] == 1 || grid[i][j] == 3 || grid[i][j] == 5) && (grid[i][j-1] == 1 || grid[i][j-1] == 4 || grid[i][j-1] == 6))
-                        dsu.unite(id(i,j) , id(i,j-1));
+
+        unordered_map<int,vector<pair<int,int>>> mp; 
+
+        
+
+    bool solve(vector<vector<int>>& grid , int n , int m , int i , int j,vector<vector<int>>&vis){
+        //base 
+        if( i == n-1 and j ==  m-1 ) return true;
+        if( i<0 or j<0 or i>=n or j>=m ) return false;
+        vis[i][j] = 1; 
+
+        for(auto& it : mp[grid[i][j]]){
+            auto [ nr , nc ] = it ;
+            nr+=i; nc+=j; 
+            if(nr>=0 and nc>=0 and nr<n and nc < m and vis[nr][nc] == -1){
+                for(auto& temp : mp[grid[nr][nc]]){
+                    auto [ nr2 , nc2 ] = temp; 
+                    if(nr2+nr == i and nc2+nc == j ){
+                        if(solve(grid, n, m, nr, nc, vis)){
+                            return true;
+                        } 
+                    }
                 }
             }
         }
 
-        return dsu.find(id(0,0)) == dsu.find(id(m-1,n-1));
+        return false; 
+    }
+
+
+    bool hasValidPath(vector<vector<int>>& grid) {
+        int n = grid.size(); 
+        int m = grid[0].size(); 
+        mp[1] = {{0, -1}, {0, 1}};   // Left, Right
+        mp[2] = {{-1, 0}, {1, 0}};   // Up, Down
+        mp[3] = {{0, -1}, {1, 0}};   // Left, Down
+        mp[4] = {{0, 1}, {1, 0}};    // Right, Down
+        mp[5] = {{0, -1}, {-1, 0}};  // Left, Up
+        mp[6] = {{0, 1}, {-1, 0}};   // Right, Up
+        vector<vector<int>>vis(n,vector<int>(m , -1)); 
+
         
+
+        auto ans =  solve(grid,  n ,  m ,0,0,vis); 
+        for(auto& it : vis ){
+            for(int i = 0 ;i<it.size(); i++ ){
+                cout<<it[i]<<" "; 
+            } 
+            cout<<endl;
+        }
+
+        return ans; 
     }
 };
