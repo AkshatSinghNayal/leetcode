@@ -87,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
 | [2845-count-of-interesting-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/2845-count-of-interesting-subarrays) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AkshatSinghNayal/leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3779-minimum-number-of-operations-to-have-distinct-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3779-minimum-number-of-operations-to-have-distinct-elements) |
 | [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
@@ -633,6 +634,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3477-fruits-into-baskets-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3477-fruits-into-baskets-ii) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3546-equal-sum-grid-partition-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3546-equal-sum-grid-partition-i) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AkshatSinghNayal/leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3653-xor-after-range-multiplication-queries-i) |
@@ -714,6 +716,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/3172-divisible-and-non-divisible-sums-difference) |
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AkshatSinghNayal/leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/AkshatSinghNayal/leetcode/tree/master/3658-gcd-of-odd-and-even-sums) |
 | [3676-smallest-number-with-all-set-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/3676-smallest-number-with-all-set-bits) |
 | [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
@@ -1171,6 +1174,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2106-find-greatest-common-divisor-of-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2106-find-greatest-common-divisor-of-array) |
 | [2654-minimum-number-of-operations-to-make-all-array-elements-equal-to-1](https://github.com/AkshatSinghNayal/leetcode/tree/master/2654-minimum-number-of-operations-to-make-all-array-elements-equal-to-1) |
 | [2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1](https://github.com/AkshatSinghNayal/leetcode/tree/master/2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AkshatSinghNayal/leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/AkshatSinghNayal/leetcode/tree/master/3658-gcd-of-odd-and-even-sums) |
 | [3936-split-array-by-prime-indices](https://github.com/AkshatSinghNayal/leetcode/tree/master/3936-split-array-by-prime-indices) |
 ## Tree
@@ -1370,6 +1374,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2415-reverse-odd-levels-of-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/2415-reverse-odd-levels-of-binary-tree) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
+| [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AkshatSinghNayal/leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 ## Union Find
 |  |
 | ------- |
