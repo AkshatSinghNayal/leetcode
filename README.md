@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0389-find-the-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/0389-find-the-difference) |
 | [0409-longest-palindrome](https://github.com/AkshatSinghNayal/leetcode/tree/master/0409-longest-palindrome) |
 | [0424-longest-repeating-character-replacement](https://github.com/AkshatSinghNayal/leetcode/tree/master/0424-longest-repeating-character-replacement) |
+| [0433-minimum-genetic-mutation](https://github.com/AkshatSinghNayal/leetcode/tree/master/0433-minimum-genetic-mutation) |
 | [0451-sort-characters-by-frequency](https://github.com/AkshatSinghNayal/leetcode/tree/master/0451-sort-characters-by-frequency) |
 | [0480-sliding-window-median](https://github.com/AkshatSinghNayal/leetcode/tree/master/0480-sliding-window-median) |
 | [0496-next-greater-element-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/0496-next-greater-element-i) |
@@ -199,6 +200,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0402-remove-k-digits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0402-remove-k-digits) |
 | [0409-longest-palindrome](https://github.com/AkshatSinghNayal/leetcode/tree/master/0409-longest-palindrome) |
 | [0424-longest-repeating-character-replacement](https://github.com/AkshatSinghNayal/leetcode/tree/master/0424-longest-repeating-character-replacement) |
+| [0433-minimum-genetic-mutation](https://github.com/AkshatSinghNayal/leetcode/tree/master/0433-minimum-genetic-mutation) |
 | [0443-string-compression](https://github.com/AkshatSinghNayal/leetcode/tree/master/0443-string-compression) |
 | [0451-sort-characters-by-frequency](https://github.com/AkshatSinghNayal/leetcode/tree/master/0451-sort-characters-by-frequency) |
 | [0474-ones-and-zeroes](https://github.com/AkshatSinghNayal/leetcode/tree/master/0474-ones-and-zeroes) |
@@ -1336,6 +1338,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0322-coin-change](https://github.com/AkshatSinghNayal/leetcode/tree/master/0322-coin-change) |
 | [0404-sum-of-left-leaves](https://github.com/AkshatSinghNayal/leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0417-pacific-atlantic-water-flow](https://github.com/AkshatSinghNayal/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
+| [0433-minimum-genetic-mutation](https://github.com/AkshatSinghNayal/leetcode/tree/master/0433-minimum-genetic-mutation) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/AkshatSinghNayal/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0542-01-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/0542-01-matrix) |
 | [0547-number-of-provinces](https://github.com/AkshatSinghNayal/leetcode/tree/master/0547-number-of-provinces) |
