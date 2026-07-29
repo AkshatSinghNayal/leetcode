@@ -15,12 +15,12 @@ public:
         }
         vector<vector<int>>ans;
 
-        for (auto &[col, rowMap] : nodes) {
-            vector<int> colNodes;
-            for (auto &[row, vals] : rowMap) {
-                colNodes.insert(colNodes.end(), vals.begin(), vals.end());
+        for(auto [col , rowCol] : nodes ){
+            vector<int> temp; 
+            for(auto [row , st ] : rowCol){
+                temp.insert(temp.end() , st.begin(), st.end()); 
             }
-            ans.push_back(colNodes);
+            ans.push_back(temp); 
         }
         
         return ans;
