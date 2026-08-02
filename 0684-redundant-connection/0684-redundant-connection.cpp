@@ -40,16 +40,21 @@ class Solution {
 public:
     vector<int> findRedundantConnection(vector<vector<int>>& edges) {
         int n  = edges.size();
+        vector<int>ans; 
         Disjointset d(n);
-        for(auto& it : edges){
-            if(d.findParent(it[0]) == d.findParent(it[1])){
-               return { it[0] , it[1]}; 
-            }
-            else{
-                d.unionBySize( it[0] , it[1]); 
-            }
-        }
+        for(auto& it : edges ){
+            int u = it[0] , v = it[1]; 
 
-        return {-1,-1}; 
+            int p1  = d.findParent(u); 
+            int p2 = d.findParent(v); 
+
+            if(p1 == p2 ){
+                ans = {u,v}; 
+            }
+
+            d.unionBySize(u,v);
+
+        }
+        return ans; 
     }
 };
