@@ -527,6 +527,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0857-minimum-cost-to-hire-k-workers](https://github.com/AkshatSinghNayal/leetcode/tree/master/0857-minimum-cost-to-hire-k-workers) |
 | [0875-koko-eating-bananas](https://github.com/AkshatSinghNayal/leetcode/tree/master/0875-koko-eating-bananas) |
 | [0876-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0876-hand-of-straights) |
+| [0877-stone-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0877-stone-game) |
 | [0879-profitable-schemes](https://github.com/AkshatSinghNayal/leetcode/tree/master/0879-profitable-schemes) |
 | [0881-boats-to-save-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/0881-boats-to-save-people) |
 | [0890-lemonade-change](https://github.com/AkshatSinghNayal/leetcode/tree/master/0890-lemonade-change) |
@@ -684,6 +685,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0628-maximum-product-of-three-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/AkshatSinghNayal/leetcode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0869-reordered-power-of-2](https://github.com/AkshatSinghNayal/leetcode/tree/master/0869-reordered-power-of-2) |
+| [0877-stone-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0877-stone-game) |
 | [0973-k-closest-points-to-origin](https://github.com/AkshatSinghNayal/leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1323-maximum-69-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/1323-maximum-69-number) |
@@ -865,6 +867,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0741-cherry-pickup](https://github.com/AkshatSinghNayal/leetcode/tree/master/0741-cherry-pickup) |
 | [0746-min-cost-climbing-stairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/0746-min-cost-climbing-stairs) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/AkshatSinghNayal/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
+| [0877-stone-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0877-stone-game) |
 | [0879-profitable-schemes](https://github.com/AkshatSinghNayal/leetcode/tree/master/0879-profitable-schemes) |
 | [0907-sum-of-subarray-minimums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0907-sum-of-subarray-minimums) |
 | [0918-maximum-sum-circular-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/0918-maximum-sum-circular-subarray) |
@@ -1500,6 +1503,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0486-predict-the-winner](https://github.com/AkshatSinghNayal/leetcode/tree/master/0486-predict-the-winner) |
+| [0877-stone-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0877-stone-game) |
 ## Binary Indexed Tree
 |  |
 | ------- |
