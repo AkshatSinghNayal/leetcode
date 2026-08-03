@@ -58,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [0895-maximum-frequency-stack](https://github.com/AkshatSinghNayal/leetcode/tree/master/0895-maximum-frequency-stack) |
 | [0940-fruit-into-baskets](https://github.com/AkshatSinghNayal/leetcode/tree/master/0940-fruit-into-baskets) |
+| [0947-most-stones-removed-with-same-row-or-column](https://github.com/AkshatSinghNayal/leetcode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [0966-binary-subarrays-with-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/0974-subarray-sums-divisible-by-k) |
@@ -1315,6 +1316,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [0934-shortest-bridge](https://github.com/AkshatSinghNayal/leetcode/tree/master/0934-shortest-bridge) |
+| [0947-most-stones-removed-with-same-row-or-column](https://github.com/AkshatSinghNayal/leetcode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [1020-number-of-enclaves](https://github.com/AkshatSinghNayal/leetcode/tree/master/1020-number-of-enclaves) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
@@ -1412,6 +1414,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0684-redundant-connection](https://github.com/AkshatSinghNayal/leetcode/tree/master/0684-redundant-connection) |
 | [0778-swim-in-rising-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0778-swim-in-rising-water) |
 | [0785-is-graph-bipartite](https://github.com/AkshatSinghNayal/leetcode/tree/master/0785-is-graph-bipartite) |
+| [0947-most-stones-removed-with-same-row-or-column](https://github.com/AkshatSinghNayal/leetcode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [1020-number-of-enclaves](https://github.com/AkshatSinghNayal/leetcode/tree/master/1020-number-of-enclaves) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/AkshatSinghNayal/leetcode/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
@@ -1429,6 +1432,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0787-cheapest-flights-within-k-stops](https://github.com/AkshatSinghNayal/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0797-all-paths-from-source-to-target](https://github.com/AkshatSinghNayal/leetcode/tree/master/0797-all-paths-from-source-to-target) |
 | [0841-keys-and-rooms](https://github.com/AkshatSinghNayal/leetcode/tree/master/0841-keys-and-rooms) |
+| [0947-most-stones-removed-with-same-row-or-column](https://github.com/AkshatSinghNayal/leetcode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/AkshatSinghNayal/leetcode/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1514-path-with-maximum-probability](https://github.com/AkshatSinghNayal/leetcode/tree/master/1514-path-with-maximum-probability) |
 | [1791-find-center-of-star-graph](https://github.com/AkshatSinghNayal/leetcode/tree/master/1791-find-center-of-star-graph) |
@@ -1508,4 +1512,8 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/0673-number-of-longest-increasing-subsequence) |
+## Bipartite Graph
+|  |
+| ------- |
+| [0947-most-stones-removed-with-same-row-or-column](https://github.com/AkshatSinghNayal/leetcode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 <!---LeetCode Topics End-->
