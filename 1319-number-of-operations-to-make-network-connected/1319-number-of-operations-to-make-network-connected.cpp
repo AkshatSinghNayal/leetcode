@@ -39,30 +39,25 @@ class Solution {
 public:
     int makeConnected(int n, vector<vector<int>>& connections) {
         int V = connections.size() ; 
-        if( n-1 > V ) return -1; 
+        Disjointset d(V);
+        if(n-1 > V ) return -1;
+        int extra = 0; int setted = 1;
 
-        Disjointset d1(n); 
-        int count  = 0 ;
         for(auto& it : connections ){
-            if(d1.findParent(it[0]) == d1.findParent(it[1])){
-                count++; 
-                continue;
-            }
-            d1.unionBySize( it[0] , it[1]);
-        }
-        
-        int distinct = 0;  
-        for( int i  = 0  ;i < d1.parent.size()-1; i++ ){
-            if( d1.parent[i] ==  i ) {
-                distinct++;
-            }
-        }
-        
+            int node1  = it[0]; 
+            int node2 = it[1]; 
 
-        if( distinct - 1 <= count ){
-            return distinct - 1; 
+            if( d.findParent(node1) ==  d.findParent(node2)){
+                extra++; 
+                continue;  
+            } 
+
+            d.unionBySize( node1 , node2 ); 
+            setted++; 
         }
-        return -1 ; 
+
+        int needed =  n-setted; 
+        return needed;
 
     }
 };
