@@ -1,35 +1,63 @@
 class Solution {
 public:
+    vector<int> parent, rank;
+
+    int find(int x) {
+        if (parent[x] == x)
+            return x;
+        return parent[x] = find(parent[x]);
+    }
+
+    void unite(int u, int v) {
+        u = find(u);
+        v = find(v);
+
+        if (u == v) return;
+
+        if (rank[u] < rank[v])
+            swap(u, v);
+
+        parent[v] = u;
+
+        if (rank[u] == rank[v])
+            rank[u]++;
+    }
+
     int minCostConnectPoints(vector<vector<int>>& points) {
         int n = points.size();
 
-        vector<bool> visited(n, false);
-        vector<int> parent(n, -1);
-        vector<int> minCost(n, INT_MAX);
+        parent.resize(n);
+        rank.assign(n, 0);
 
-        priority_queue<tuple<int, int, int>,vector<tuple<int, int, int>>,greater<tuple<int, int, int>>> pq;
+        for (int i = 0; i < n; i++)
+            parent[i] = i;
 
-        pq.push({0, 0, -1});
+        vector<tuple<int, int, int>> edges;
+
+        // Build all edges
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                int dist = abs(points[i][0] - points[j][0]) +
+                           abs(points[i][1] - points[j][1]);
+
+                edges.push_back({dist, i, j});
+            }
+        }
+
+        sort(edges.begin(), edges.end());
 
         int ans = 0;
+        int edgesUsed = 0;
 
-        while (!pq.empty()) {
-            auto [dist, node, par] = pq.top();
-            pq.pop();
+        for (auto &[dist, u, v] : edges) {
+            if (find(u) != find(v)) {
+                unite(u, v);
+                ans += dist;
+                edgesUsed++;
 
-            if (visited[node]) continue;
-            visited[node]=true;
-            ans+=dist;
-            parent[node] = par ; 
-
-            for(int next = 0 ; next<n ; next++ ){
-                if(!visited[next]){
-                int distance = abs(points[node][0] - points[next][0]) + abs(points[node][1] - points[next][1]); 
-                    pq.push({ distance , next , node }); 
-                    minCost[next] = min(minCost[next] , dist ); 
-                }
+                if (edgesUsed == n - 1)
+                    break;
             }
-           
         }
 
         return ans;
