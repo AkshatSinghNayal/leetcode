@@ -1,36 +1,42 @@
+class Disjointset {
+public:
+    vector<int> size, parent;
+
+    Disjointset(int V) {
+        size.resize(V + 1, 1);
+        parent.resize(V + 1);
+
+        for (int i = 0; i <= V; i++)
+            parent[i] = i;
+    }
+
+    int findParent(int n) {
+        if (parent[n] == n)
+            return n;
+        return parent[n] = findParent(parent[n]);
+    }
+
+    void unionBySize(int u, int v) {
+        int NodeA = findParent(u);
+        int NodeB = findParent(v);
+
+        if (NodeA == NodeB)
+            return;
+
+        if (size[NodeA] > size[NodeB]) {
+            parent[NodeB] = NodeA;
+            size[NodeA] += size[NodeB];
+        } else {
+            parent[NodeA] = NodeB;
+            size[NodeB] += size[NodeA];
+        }
+    }
+};
+
 class Solution {
 public:
-    vector<int> parent, rank;
-
-    int find(int x) {
-        if (parent[x] == x)
-            return x;
-        return parent[x] = find(parent[x]);
-    }
-
-    void unite(int u, int v) {
-        u = find(u);
-        v = find(v);
-
-        if (u == v) return;
-
-        if (rank[u] < rank[v])
-            swap(u, v);
-
-        parent[v] = u;
-
-        if (rank[u] == rank[v])
-            rank[u]++;
-    }
-
     int minCostConnectPoints(vector<vector<int>>& points) {
         int n = points.size();
-
-        parent.resize(n);
-        rank.assign(n, 0);
-
-        for (int i = 0; i < n; i++)
-            parent[i] = i;
 
         vector<tuple<int, int, int>> edges;
 
@@ -46,16 +52,18 @@ public:
 
         sort(edges.begin(), edges.end());
 
+        Disjointset ds(n);
+
         int ans = 0;
-        int edgesUsed = 0;
+        int cnt = 0;
 
-        for (auto &[dist, u, v] : edges) {
-            if (find(u) != find(v)) {
-                unite(u, v);
-                ans += dist;
-                edgesUsed++;
+        for (auto &[wt, u, v] : edges) {
+            if (ds.findParent(u) != ds.findParent(v)) {
+                ds.unionBySize(u, v);
+                ans += wt;
+                cnt++;
 
-                if (edgesUsed == n - 1)
+                if (cnt == n - 1)
                     break;
             }
         }
