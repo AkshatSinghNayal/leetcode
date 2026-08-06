@@ -64,9 +64,9 @@ public:
             }
         }
         sort(edge.begin() ,edge.end());
-        for(auto& it : edge){
-            cout << get<0>(it) << " " ; 
-        }
+        // for(auto& it : edge){
+        //     cout << get<0>(it) << " " ; 
+        // }
 
         int check = (n*n) -1 ; 
         if (n == 1) return grid[0][0];
