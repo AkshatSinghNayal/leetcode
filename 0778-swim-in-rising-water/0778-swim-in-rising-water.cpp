@@ -1,73 +1,82 @@
-class DSU {
-public:
-    vector<int> parent, size;
+class Disjointset{
+    public :
+    vector<int> size , parent ; 
 
-    DSU(int n) {
-        parent.resize(n);
-        size.resize(n, 1);
-        for (int i = 0; i < n; i++) parent[i] = i;
+    Disjointset(int V ){
+        size.resize(V+1 , 1 ); 
+        parent.resize(V+1 ); 
+
+
+        for( int i  = 0; i<=V ; i++ ){
+            parent[i]= i ; 
+        }
     }
 
-    int find(int x) {
-        if (parent[x] != x)
-            parent[x] = find(parent[x]);
-        return parent[x];
+    int findParent( int n ){
+        if(parent[n] ==  n ) return n ; 
+        return parent[n]= findParent(parent[n]);
     }
 
-    void unite(int a, int b) {
-        a = find(a);
-        b = find(b);
-        if (a == b) return;
+    void unionBySize( int u , int v ){
+        int NodeA = findParent(u); 
+        int NodeB = findParent(v); 
 
-        // attach smaller tree under larger one
-        if (size[a] < size[b]) swap(a, b);
+        if( NodeA == NodeB ) return ; 
 
-        parent[b] = a;
-        size[a] += size[b];
+        if( size[NodeA] > size[NodeB]){
+            parent[NodeB]= NodeA; 
+            size[NodeA]+=size[NodeB];
+        }
+        else{
+            parent[NodeA] = NodeB; 
+            size[NodeB] +=  size[NodeA];
+        }
     }
-};
 
+}; 
 class Solution {
 public:
     int swimInWater(vector<vector<int>>& grid) {
-        int n = grid.size();
-        vector<tuple<int,int,int>> cells;
+        int n =  grid.size(); 
+        Disjointset d(n*n); 
+        vector<vector<int>>dir = {{1,0},{0,1}}; 
+        vector<tuple<int,int,int>>edge;
+        // edge.push_back({grid[i][j],0,0}); 
 
-        // store (height, i, j)
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                cells.push_back({grid[i][j], i, j});
-            }
-        }
+        for(int i = 0 ;i< n; i++ ){
+            for(int j = 0 ; j< n ;j++ ){
+                int currentCost = grid[i][j]; 
 
-        sort(cells.begin(), cells.end());
+                for(auto& it : dir ){
+                    int nr = i+it[0]; 
+                    int nc = it[1]+j; 
 
-        DSU dsu(n * n);
-        vector<vector<bool>> active(n, vector<bool>(n, false));
+                    if( nr >=0 and nc>=0 and nr<n and nc <n ){
+                        if( currentCost <= grid[nr][nc]){
+                            edge.push_back({grid[nr][nc] , i*n+j , nr*n+nc }); 
+                        }
+                        else{
+                            edge.push_back({currentCost , i*n+j , nr*n+nc }); 
+                        }
 
-        vector<pair<int,int>> dir{{1,0},{0,1},{0,-1},{-1,0}};
-
-        for (auto &[h, i, j] : cells) {
-            active[i][j] = true;
-
-            int id1 = i * n + j;
-
-            for (auto &d : dir) {
-                int ni = i + d.first;
-                int nj = j + d.second;
-
-                if (ni >= 0 && nj >= 0 && ni < n && nj < n && active[ni][nj]) {
-                    int id2 = ni * n + nj;
-                    dsu.unite(id1, id2);
+                    }
                 }
             }
-
-            // check connectivity
-            if (dsu.find(0) == dsu.find(n*n - 1)) {
-                return h;
-            }
+        }
+        sort(edge.begin() ,edge.end());
+        for(auto& it : edge){
+            cout << get<0>(it) << " " ; 
         }
 
+        int check = (n*n) -1 ; 
+        if (n == 1) return grid[0][0];
+        for(auto& it : edge ){
+            auto [ cost , nodeA , nodeB ] = it; 
+                d.unionBySize(nodeA , nodeB ); 
+            if(d.findParent(0) == d.findParent(check)) return cost;
+            
+            
+        }
         return -1;
     }
 };
