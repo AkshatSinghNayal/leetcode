@@ -1,68 +1,49 @@
-class Disjointset {
-public:
-    vector<int> size, parent, minChar; 
+class DisjoinSet{
+    public: 
+    vector<int> size , parent; 
+    DisjoinSet(int V ){
+        parent.resize(V+1); 
 
-    Disjointset(int V) {
-        size.resize(V, 1); 
-        parent.resize(V); 
-        minChar.resize(V);
-
-        for(int i = 0; i < V; i++){
+        for(int i = 0 ;i<=V ;i++ ){
             parent[i] = i; 
-            minChar[i] = i; // Track the smallest character in the set
         }
     }
 
-    int findParent(int n) {
-        if(parent[n] == n) return n; 
-        return parent[n] = findParent(parent[n]);
+    int find( int u){
+
+        if( parent[u] == u ) return u ; 
+        return parent[u] = find(parent[u]); 
     }
 
-    void unionBySize(int u, int v) {
-        int NodeA = findParent(u); 
-        int NodeB = findParent(v); 
+    void unionBySize( int u , int v ){
+        int pa = find(u) , pb = find(v); 
 
-        if(NodeA == NodeB) return; 
+        if( pa == pb ) return ;
 
-        if(size[NodeA] > size[NodeB]) {
-            parent[NodeB] = NodeA; 
-            size[NodeA] += size[NodeB];
-            // Update the minimum character for the new root
-            minChar[NodeA] = min(minChar[NodeA], minChar[NodeB]);
+        if( pa > pb ){
+            swap(pa,pb); 
         }
-        else {
-            parent[NodeA] = NodeB; 
-            size[NodeB] += size[NodeA];
-            // Update the minimum character for the new root
-            minChar[NodeB] = min(minChar[NodeA], minChar[NodeB]);
-        }
+
+        parent[pb] = pa ;
+
     }
     
-    // Helper to get the smallest character of a set
-    int getSmallest(int n) {
-        return minChar[findParent(n)];
-    }
-}; 
-
+};
 class Solution {
 public:
     string smallestEquivalentString(string s1, string s2, string baseStr) {
-        Disjointset d(26); 
-        int n = s1.size(); 
-        
-        for(int i = 0; i < n; i++) {
-            int ch1 = s1[i] - 'a'; 
-            int ch2 = s2[i] - 'a'; 
-            d.unionBySize(ch1, ch2); 
+        DisjoinSet d(26);
+
+        for(int i = 0 ;i<s1.size() ;i++ ){
+            d.unionBySize(s1[i]-'a' , s2[i]-'a'); 
         }
 
-        string result = ""; 
-        for(auto& it : baseStr) {
-            // Use the helper to get the smallest char in that character's group
-            int smallestCharIndex = d.getSmallest(it - 'a'); 
-            result += (smallestCharIndex + 'a'); 
+        string result=  ""; 
+
+        for(auto& it : baseStr ){
+            char par = d.parent[d.find(it-'a')]+'a' ; 
+            result+=par;
         }
-        
         return result;
     }
 };
