@@ -225,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0944-delete-columns-to-make-sorted](https://github.com/AkshatSinghNayal/leetcode/tree/master/0944-delete-columns-to-make-sorted) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [0990-satisfiability-of-equality-equations](https://github.com/AkshatSinghNayal/leetcode/tree/master/0990-satisfiability-of-equality-equations) |
+| [1061-lexicographically-smallest-equivalent-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/1061-lexicographically-smallest-equivalent-string) |
 | [1092-shortest-common-supersequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/1092-shortest-common-supersequence) |
 | [1143-longest-common-subsequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/1143-longest-common-subsequence) |
 | [1209-remove-all-adjacent-duplicates-in-string-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1209-remove-all-adjacent-duplicates-in-string-ii) |
@@ -1425,6 +1426,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/AkshatSinghNayal/leetcode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [0990-satisfiability-of-equality-equations](https://github.com/AkshatSinghNayal/leetcode/tree/master/0990-satisfiability-of-equality-equations) |
 | [1020-number-of-enclaves](https://github.com/AkshatSinghNayal/leetcode/tree/master/1020-number-of-enclaves) |
+| [1061-lexicographically-smallest-equivalent-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/1061-lexicographically-smallest-equivalent-string) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/AkshatSinghNayal/leetcode/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
