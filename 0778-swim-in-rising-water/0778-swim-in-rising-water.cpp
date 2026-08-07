@@ -72,7 +72,7 @@ public:
         if (n == 1) return grid[0][0];
         for(auto& it : edge ){
             auto [ cost , nodeA , nodeB ] = it; 
-                d.unionBySize(nodeA , nodeB ); 
+            d.unionBySize(nodeA , nodeB ); 
             if(d.findParent(0) == d.findParent(check)) return cost;
             
             
