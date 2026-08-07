@@ -1,24 +1,19 @@
-////// I bow to Lord Satyanarayan and Lord Hanuman ///////////
-#include<bits/stdc++.h>
-using namespace std;
 class Solution {
 public:
     int maxArea(vector<int>& nums) {
+        int left = 0  , right = nums.size()-1 ; long long maxi = LLONG_MIN; 
         int n = nums.size(); 
-        int maxi = INT_MIN; 
-        int left = 0 , right = n-1 ; 
+        while( left < right and right >= 0 and left < n ){
+            int length = right-left; 
+            long long cost = min(nums[right] , nums[left])*1LL*length; 
+            cout << nums[left] << " " << nums[right]; 
+            cout<<endl;
 
-        while(left < right ){
-            int len = right - left; 
-            maxi = max( {min(nums[right], nums[left])* len , maxi}); 
+            if( nums[left] <= nums[right]) left++; 
+            else right--;
 
-            if( nums[right]> nums[left]){
-                left++; 
-            }
-            else{
-                right--; 
-            }
+            maxi = max(maxi , cost ); 
         }
-        return maxi;
+        return (int)maxi ; 
     }
 };
