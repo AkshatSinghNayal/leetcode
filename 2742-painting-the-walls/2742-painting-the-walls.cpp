@@ -1,26 +1,26 @@
 class Solution {
 public:
+    int dp[501][501]; 
+
+    int solve(vector<int>& cost, vector<int>& time , int n , int i  ){
+        //base
+        if( n <= 0  ) return 0 ;
+        if( i >= cost.size() and n!= 0 ) return INT_MAX;  
+
+        if( dp[i][n]!= -1 ) return dp[i][n]; 
+        
+        
+        long long paid = 0LL+cost[i]+solve( cost , time , max(0,n-time[i]-1), i+1);
+        long long free = solve(cost ,time , n , i+1 ); 
+        
+        return dp[i][n] = min(paid , free ); 
+
+
+    }
+
     int paintWalls(vector<int>& cost, vector<int>& time) {
-        int n = cost.size();
-        vector<vector<int>>dp(n+1,vector<int>(n+1 , 1e9)); 
-
-        for( int i  = 0  ;i<= n ; i++ ){
-            dp[i][0] = 0 ;
-        }
-
-        for(int i  =n-1 ;i>=0 ;i-- ){
-            for(int walls = 1 ; walls<= n; walls++ ){
-                
-                int take =(walls-1-time[i] <0) ? 0 : dp[i+1][walls-1-time[i]];
-                if(take != 1e9 ) take+=cost[i] ;
-
-                int notTake = dp[i+1][walls];
-
-                dp[i][walls] = min(take, notTake);
-
-            }
-        }
-
-        return dp[0][n]; 
+        memset(dp,-1,sizeof(dp)); 
+        int n  = cost.size(); 
+        return solve( cost , time , n , 0); 
     }
 };
