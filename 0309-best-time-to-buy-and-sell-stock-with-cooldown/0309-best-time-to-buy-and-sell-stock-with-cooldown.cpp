@@ -1,26 +1,34 @@
 class Solution {
 public:
-    int maxProfit(vector<int>& prices) {
-        int n = prices.size();
+    int dp[5001][2]; 
 
-        // dp[i][1] = max profit starting from day i when we can buy
-        // dp[i][0] = max profit starting from day i when we have a stock to sell
-        vector<vector<int>> dp(n + 2, vector<int>(2, 0));
+    int solve( vector<int>& prices , int i , int buy){
+        //base 
+        if( i >= prices.size() ) return 0;
 
-        for (int i = n - 1; i >= 0; i--) {
-            // Can buy
-            dp[i][1] = max(
-                -prices[i] + dp[i + 1][0],
-                dp[i + 1][1]
-            );
+        if( dp[i][buy] != -1 ) return dp[i][buy]; 
 
-            // Have stock, can sell
-            dp[i][0] = max(
-                prices[i] + dp[i + 2][1],   // cooldown
-                dp[i + 1][0]
-            );
+        int maxi = INT_MIN; 
+
+        if( buy ){
+            int notBought = solve(prices , i+1 , true ); 
+            int bought = -prices[i]+solve(prices , i+1 , false); 
+            
+
+            maxi = max({bought , notBought , maxi}); 
+        }
+        else{
+            int sold = prices[i]+solve(prices , i+2 , true ); 
+            int notSold = solve( prices , i+1 , false ); 
+            maxi  = max({maxi, sold , notSold}); 
         }
 
-        return dp[0][1];
+        return dp[i][buy]= maxi ;
+
+    }
+
+    int maxProfit(vector<int>& prices) {
+        memset(dp , -1, sizeof(dp)); 
+        return solve( prices , 0 , true ); 
     }
 };
