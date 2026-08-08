@@ -160,6 +160,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0922-sort-array-by-parity-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0922-sort-array-by-parity-ii) |
 | [0962-maximum-width-ramp](https://github.com/AkshatSinghNayal/leetcode/tree/master/0962-maximum-width-ramp) |
 | [1019-squares-of-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1019-squares-of-a-sorted-array) |
+| [1697-checking-existence-of-edge-length-limited-paths](https://github.com/AkshatSinghNayal/leetcode/tree/master/1697-checking-existence-of-edge-length-limited-paths) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/AkshatSinghNayal/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
@@ -386,6 +387,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1460-make-two-arrays-equal-by-reversing-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1460-make-two-arrays-equal-by-reversing-subarrays) |
+| [1697-checking-existence-of-edge-length-limited-paths](https://github.com/AkshatSinghNayal/leetcode/tree/master/1697-checking-existence-of-edge-length-limited-paths) |
 | [1818-minimum-absolute-sum-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/1818-minimum-absolute-sum-difference) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/AkshatSinghNayal/leetcode/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
@@ -590,6 +592,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1646-kth-missing-positive-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/1646-kth-missing-positive-number) |
 | [1685-sum-of-absolute-differences-in-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1685-sum-of-absolute-differences-in-a-sorted-array) |
 | [1693-sum-of-all-odd-length-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1693-sum-of-all-odd-length-subarrays) |
+| [1697-checking-existence-of-edge-length-limited-paths](https://github.com/AkshatSinghNayal/leetcode/tree/master/1697-checking-existence-of-edge-length-limited-paths) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/AkshatSinghNayal/leetcode/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1818-minimum-absolute-sum-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/1818-minimum-absolute-sum-difference) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/AkshatSinghNayal/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
@@ -1432,6 +1435,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1559-detect-cycles-in-2d-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1584-min-cost-to-connect-all-points](https://github.com/AkshatSinghNayal/leetcode/tree/master/1584-min-cost-to-connect-all-points) |
 | [1631-path-with-minimum-effort](https://github.com/AkshatSinghNayal/leetcode/tree/master/1631-path-with-minimum-effort) |
+| [1697-checking-existence-of-edge-length-limited-paths](https://github.com/AkshatSinghNayal/leetcode/tree/master/1697-checking-existence-of-edge-length-limited-paths) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
 ## Graph Theory
 |  |
@@ -1449,6 +1453,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1319-number-of-operations-to-make-network-connected](https://github.com/AkshatSinghNayal/leetcode/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1514-path-with-maximum-probability](https://github.com/AkshatSinghNayal/leetcode/tree/master/1514-path-with-maximum-probability) |
 | [1584-min-cost-to-connect-all-points](https://github.com/AkshatSinghNayal/leetcode/tree/master/1584-min-cost-to-connect-all-points) |
+| [1697-checking-existence-of-edge-length-limited-paths](https://github.com/AkshatSinghNayal/leetcode/tree/master/1697-checking-existence-of-edge-length-limited-paths) |
 | [1791-find-center-of-star-graph](https://github.com/AkshatSinghNayal/leetcode/tree/master/1791-find-center-of-star-graph) |
 ## Shortest Path
 |  |
