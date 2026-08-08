@@ -49,28 +49,30 @@ public:
 
         sort(edges.begin() , edges.end()); 
 
-        // FIX 2: Store queries with original indices: {limit, nodeA, nodeB, originalIndex}
-        vector<tuple<int,int,int,int>> sortedQueries;
-        for (int i = 0; i < queries.size(); i++) {
-            sortedQueries.push_back({queries[i][2], queries[i][0], queries[i][1], i});
+        vector<tuple<int,int,int,int>> query; 
+
+        int i  =0 ; 
+        for(auto& it : queries){
+            int weight = it[2]; 
+            int a = it[1]; 
+            int b  = it[0]; 
+            query.push_back({weight,a,b,i}); i++; 
         }
-        sort(sortedQueries.begin(), sortedQueries.end());
+        sort(query.begin() , query.end()); 
 
-        vector<bool> ans(queries.size()) ; 
-        int edgeIdx = 0;
+        i =0; 
+        vector<bool>ans(query.size()); 
+        for(auto& it : query ){
+            auto [ weight , a , b , idx ] = it; 
 
-        // FIX 3: Process queries in increasing order of limit
-        for(auto& it : sortedQueries ){
-            auto [limit, nodeA, nodeB, originalIdx] = it;
-
-            while (edgeIdx < m && get<0>(edges[edgeIdx]) < limit) {
-                d.unionBySize(get<1>(edges[edgeIdx]), get<2>(edges[edgeIdx]));
-                edgeIdx++;
+            while( i<edges.size() and weight > get<0>(edges[i])){
+                d.unionBySize( get<1>(edges[i]) , get<2>(edges[i])); 
+                i++; 
             }
+            ans[idx] = (d.find(a) == d.find(b)); 
 
-            ans[originalIdx] = (d.find(nodeA) == d.find(nodeB));
+
         }
-
         return ans; 
     }
 };
