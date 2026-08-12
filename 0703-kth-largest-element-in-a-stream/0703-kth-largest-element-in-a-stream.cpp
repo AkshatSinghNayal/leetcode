@@ -1,27 +1,19 @@
 class KthLargest {
 public:
-
-    class comp{
-        public:
-        bool operator()(const int& a , const int& b ){
-            return a>b ; 
-        }
-    }; 
-    int kth ;
-    priority_queue<int,vector<int> ,comp>pq;
-    KthLargest(int k, vector<int>& nums) {
-        kth =k;
-        for(int i = 0 ; i< nums.size(); i++ ){
-            pq.push(nums[i]); 
-            if( pq.size()>k ) pq.pop();
+    priority_queue<int,vector<int>,greater<int>>pq; int kth ; 
+    KthLargest(int k, vector<int>& nums) {  
+            kth = k ;
+        for(auto& it : nums){
+            pq.push(it); 
+            if( pq.size() > k ) pq.pop(); 
         }
     }
     
     int add(int val) {
-    pq.push(val);
-    if (pq.size() > kth) pq.pop();
-    return pq.top();
-}
+        pq.push(val); 
+        if( pq.size() > kth ) pq.pop(); 
+        return pq.top();
+    }
 };
 
 /**
