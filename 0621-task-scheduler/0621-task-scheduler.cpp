@@ -1,31 +1,39 @@
-class Solution{
-    public :
+class Solution {
+public:
     int leastInterval(vector<char>& tasks, int n) {
-    unordered_map<char,int> freq;
-    for(char t : tasks) freq[t]++;
-
-    priority_queue<int> pq;
-    for(auto &p : freq) pq.push(p.second);
-
-    int time = 0;
-
-    while(!pq.empty()){
-        vector<int> temp;
-        int cycle = n + 1;
-
-        while(cycle-- && !pq.empty()){
-            int count = pq.top(); pq.pop();
-            if(count - 1 > 0) temp.push_back(count - 1);
-            time++;
+        unordered_map<char , int> mp ; 
+        n=n+1; 
+        int operations = 0 ; 
+        for(auto& it  : tasks){
+            mp[it]++; 
         }
 
-        for(int c : temp) pq.push(c);
+        priority_queue<pair<int,char> , vector<pair<int,char>> , less<pair<int, char>>>pq ;
 
-        if(pq.empty()) break;
+        for(auto& [key , freq] : mp ){
+            pq.push( {freq , key }); 
+        }
 
-        time += cycle + 1; // idle time
+        while( !pq.empty() ){
+            int temp =  0;
+            queue<pair<int,char>>q; 
+            while(!pq.empty() and temp < n  ){
+                auto [ freq , ch ]  = pq.top(); pq.pop();
+                freq--;
+                if( freq ){
+                    q.push({ freq , ch});
+                }
+                temp++;
+            }
+            if( !q.empty() ) operations = operations + (temp+( n - temp )); 
+            else operations += temp ;
+
+
+            while( !q.empty() ){
+                pq.push({ q.front().first , q.front().second}); 
+                q.pop(); 
+            }
+        }
+        return operations ;
     }
-
-    return time;
-}
-}; 
+};
