@@ -1,41 +1,33 @@
 class Solution {
 public:
-
-    class comp{
-        public:
-        bool operator()(const pair<int,int>& a , const pair<int,int>& b ){
-            return a.first > b.first;
-        }
-    }; 
-
-    bool isNStraightHand(vector<int>& hand, int gsize) {
-        int n = hand.size(); 
-        unordered_map<int,int> mp ;
-        priority_queue<pair<int,int>,vector<pair<int,int>>,comp>pq; 
-        if( n%gsize != 0 ) return false;
-        for(auto& it : hand ){
-            mp[it]++; 
-        }
-
-        for(auto& it : mp ){
-            pq.push({it.first , it.second}); 
-        }
-        
+    bool isNStraightHand(vector<int>& hand, int g) {
+        int n = hand.size();
+        if( n%g != 0 ) return false;
+        priority_queue<int , vector<int> , greater<int>> pq(hand.begin() , hand.end()); 
 
         while(!pq.empty()){
-            int temp = gsize;
-            int last = INT_MAX; 
-            mp.clear();
-            while(temp-- ){
-                auto [ ele , freq ]=  pq.top(); pq.pop(); 
-                if( last != INT_MAX and last != ele-1 ) return false;
-                last = ele; freq-=1;
-                if( freq ){
-                    mp[ele] = freq;
+            int last = INT_MIN ; 
+            int tempG = 0; 
+            queue<int>q; 
+            while( !pq.empty() and tempG < g  ){
+                auto top = pq.top() ; pq.pop(); 
+                if( last  == INT_MIN ){
+                    last = top; 
+                    tempG++; 
+                }
+                else{
+                    if( top-1 != last ){
+                        q.push(top);
+                    }
+                    else{
+                        tempG++;
+                        last = top;
+                    }
                 }
             }
-            for(auto& it  : mp ){
-                pq.push({it.first , it.second }); 
+            if( tempG != g ) return false;
+            while(!q.empty()){
+                pq.push(q.front()); q.pop();
             }
         }
         return true;
