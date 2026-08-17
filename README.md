@@ -66,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1015-smallest-integer-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1034-subarrays-with-k-different-integers](https://github.com/AkshatSinghNayal/leetcode/tree/master/1034-subarrays-with-k-different-integers) |
+| [1048-longest-string-chain](https://github.com/AkshatSinghNayal/leetcode/tree/master/1048-longest-string-chain) |
 | [1123-lowest-common-ancestor-of-deepest-leaves](https://github.com/AkshatSinghNayal/leetcode/tree/master/1123-lowest-common-ancestor-of-deepest-leaves) |
 | [1331-rank-transform-of-an-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1331-rank-transform-of-an-array) |
 | [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
@@ -162,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0922-sort-array-by-parity-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0922-sort-array-by-parity-ii) |
 | [0962-maximum-width-ramp](https://github.com/AkshatSinghNayal/leetcode/tree/master/0962-maximum-width-ramp) |
 | [1019-squares-of-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1019-squares-of-a-sorted-array) |
+| [1048-longest-string-chain](https://github.com/AkshatSinghNayal/leetcode/tree/master/1048-longest-string-chain) |
 | [1697-checking-existence-of-edge-length-limited-paths](https://github.com/AkshatSinghNayal/leetcode/tree/master/1697-checking-existence-of-edge-length-limited-paths) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/AkshatSinghNayal/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
@@ -228,6 +230,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0944-delete-columns-to-make-sorted](https://github.com/AkshatSinghNayal/leetcode/tree/master/0944-delete-columns-to-make-sorted) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [0990-satisfiability-of-equality-equations](https://github.com/AkshatSinghNayal/leetcode/tree/master/0990-satisfiability-of-equality-equations) |
+| [1048-longest-string-chain](https://github.com/AkshatSinghNayal/leetcode/tree/master/1048-longest-string-chain) |
 | [1061-lexicographically-smallest-equivalent-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/1061-lexicographically-smallest-equivalent-string) |
 | [1092-shortest-common-supersequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/1092-shortest-common-supersequence) |
 | [1143-longest-common-subsequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/1143-longest-common-subsequence) |
@@ -385,6 +388,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [1019-squares-of-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1019-squares-of-a-sorted-array) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [1048-longest-string-chain](https://github.com/AkshatSinghNayal/leetcode/tree/master/1048-longest-string-chain) |
 | [1235-maximum-profit-in-job-scheduling](https://github.com/AkshatSinghNayal/leetcode/tree/master/1235-maximum-profit-in-job-scheduling) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1331-rank-transform-of-an-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1331-rank-transform-of-an-array) |
@@ -567,6 +571,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1035-uncrossed-lines](https://github.com/AkshatSinghNayal/leetcode/tree/master/1035-uncrossed-lines) |
 | [1046-max-consecutive-ones-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1046-max-consecutive-ones-iii) |
 | [1046-last-stone-weight](https://github.com/AkshatSinghNayal/leetcode/tree/master/1046-last-stone-weight) |
+| [1048-longest-string-chain](https://github.com/AkshatSinghNayal/leetcode/tree/master/1048-longest-string-chain) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/AkshatSinghNayal/leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1235-maximum-profit-in-job-scheduling](https://github.com/AkshatSinghNayal/leetcode/tree/master/1235-maximum-profit-in-job-scheduling) |
@@ -891,6 +896,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0931-minimum-falling-path-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0931-minimum-falling-path-sum) |
 | [0943-sum-of-subarray-minimums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0943-sum-of-subarray-minimums) |
 | [1035-uncrossed-lines](https://github.com/AkshatSinghNayal/leetcode/tree/master/1035-uncrossed-lines) |
+| [1048-longest-string-chain](https://github.com/AkshatSinghNayal/leetcode/tree/master/1048-longest-string-chain) |
 | [1092-shortest-common-supersequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/1092-shortest-common-supersequence) |
 | [1143-longest-common-subsequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/1143-longest-common-subsequence) |
 | [1235-maximum-profit-in-job-scheduling](https://github.com/AkshatSinghNayal/leetcode/tree/master/1235-maximum-profit-in-job-scheduling) |
