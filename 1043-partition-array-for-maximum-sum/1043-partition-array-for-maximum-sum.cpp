@@ -1,12 +1,12 @@
 class Solution {
 public:
-    int dp[501][501]; 
+    int dp[501]; 
     
     int solve( vector<int>& arr , int i , int k , int n ){
         //base 
         if( i>=n ) return  0; 
 
-        if(dp[i][k] != -1 ) return dp[i][k]; 
+        if(dp[i] != -1 ) return dp[i]; 
 
         int maxi = INT_MIN; 
         int maxVal = INT_MIN;
@@ -16,7 +16,7 @@ public:
             maxVal = max(maxVal , (idx-i+1)*maxi + solve(arr , idx+1, k , n )) ; 
         }
 
-        return dp[i][k]=maxVal;
+        return dp[i]=maxVal;
     }
 
     int maxSumAfterPartitioning(vector<int>& arr, int k) {
