@@ -163,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0908-middle-of-the-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0908-middle-of-the-linked-list) |
 | [0922-sort-array-by-parity-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0922-sort-array-by-parity-ii) |
 | [0962-maximum-width-ramp](https://github.com/AkshatSinghNayal/leetcode/tree/master/0962-maximum-width-ramp) |
+| [0986-interval-list-intersections](https://github.com/AkshatSinghNayal/leetcode/tree/master/0986-interval-list-intersections) |
 | [1019-squares-of-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1019-squares-of-a-sorted-array) |
 | [1048-longest-string-chain](https://github.com/AkshatSinghNayal/leetcode/tree/master/1048-longest-string-chain) |
 | [1697-checking-existence-of-edge-length-limited-paths](https://github.com/AkshatSinghNayal/leetcode/tree/master/1697-checking-existence-of-edge-length-limited-paths) |
@@ -563,6 +564,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0966-binary-subarrays-with-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0973-k-closest-points-to-origin](https://github.com/AkshatSinghNayal/leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/0974-subarray-sums-divisible-by-k) |
+| [0986-interval-list-intersections](https://github.com/AkshatSinghNayal/leetcode/tree/master/0986-interval-list-intersections) |
 | [0990-satisfiability-of-equality-equations](https://github.com/AkshatSinghNayal/leetcode/tree/master/0990-satisfiability-of-equality-equations) |
 | [0994-rotting-oranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/0994-rotting-oranges) |
 | [1004-max-consecutive-ones-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1004-max-consecutive-ones-iii) |
@@ -1592,4 +1594,8 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/AkshatSinghNayal/leetcode/tree/master/0173-binary-search-tree-iterator) |
+## Sweep Line
+|  |
+| ------- |
+| [0986-interval-list-intersections](https://github.com/AkshatSinghNayal/leetcode/tree/master/0986-interval-list-intersections) |
 <!---LeetCode Topics End-->
