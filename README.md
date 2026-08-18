@@ -365,6 +365,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0389-find-the-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/0389-find-the-difference) |
 | [0435-non-overlapping-intervals](https://github.com/AkshatSinghNayal/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0451-sort-characters-by-frequency](https://github.com/AkshatSinghNayal/leetcode/tree/master/0451-sort-characters-by-frequency) |
+| [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/AkshatSinghNayal/leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0455-assign-cookies](https://github.com/AkshatSinghNayal/leetcode/tree/master/0455-assign-cookies) |
 | [0502-ipo](https://github.com/AkshatSinghNayal/leetcode/tree/master/0502-ipo) |
 | [0506-relative-ranks](https://github.com/AkshatSinghNayal/leetcode/tree/master/0506-relative-ranks) |
@@ -499,6 +500,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0416-partition-equal-subset-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/AkshatSinghNayal/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0435-non-overlapping-intervals](https://github.com/AkshatSinghNayal/leetcode/tree/master/0435-non-overlapping-intervals) |
+| [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/AkshatSinghNayal/leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0455-assign-cookies](https://github.com/AkshatSinghNayal/leetcode/tree/master/0455-assign-cookies) |
 | [0456-132-pattern](https://github.com/AkshatSinghNayal/leetcode/tree/master/0456-132-pattern) |
 | [0474-ones-and-zeroes](https://github.com/AkshatSinghNayal/leetcode/tree/master/0474-ones-and-zeroes) |
@@ -929,6 +931,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0402-remove-k-digits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0402-remove-k-digits) |
 | [0409-longest-palindrome](https://github.com/AkshatSinghNayal/leetcode/tree/master/0409-longest-palindrome) |
 | [0435-non-overlapping-intervals](https://github.com/AkshatSinghNayal/leetcode/tree/master/0435-non-overlapping-intervals) |
+| [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/AkshatSinghNayal/leetcode/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0455-assign-cookies](https://github.com/AkshatSinghNayal/leetcode/tree/master/0455-assign-cookies) |
 | [0502-ipo](https://github.com/AkshatSinghNayal/leetcode/tree/master/0502-ipo) |
 | [0621-task-scheduler](https://github.com/AkshatSinghNayal/leetcode/tree/master/0621-task-scheduler) |
