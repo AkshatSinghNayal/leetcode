@@ -401,6 +401,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1460-make-two-arrays-equal-by-reversing-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1460-make-two-arrays-equal-by-reversing-subarrays) |
 | [1697-checking-existence-of-edge-length-limited-paths](https://github.com/AkshatSinghNayal/leetcode/tree/master/1697-checking-existence-of-edge-length-limited-paths) |
 | [1818-minimum-absolute-sum-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/1818-minimum-absolute-sum-difference) |
+| [1851-minimum-interval-to-include-each-query](https://github.com/AkshatSinghNayal/leetcode/tree/master/1851-minimum-interval-to-include-each-query) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/AkshatSinghNayal/leetcode/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2191-sort-the-jumbled-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2191-sort-the-jumbled-numbers) |
@@ -613,6 +614,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1697-checking-existence-of-edge-length-limited-paths](https://github.com/AkshatSinghNayal/leetcode/tree/master/1697-checking-existence-of-edge-length-limited-paths) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/AkshatSinghNayal/leetcode/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1818-minimum-absolute-sum-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/1818-minimum-absolute-sum-difference) |
+| [1851-minimum-interval-to-include-each-query](https://github.com/AkshatSinghNayal/leetcode/tree/master/1851-minimum-interval-to-include-each-query) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/AkshatSinghNayal/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -788,6 +790,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1631-path-with-minimum-effort](https://github.com/AkshatSinghNayal/leetcode/tree/master/1631-path-with-minimum-effort) |
 | [1646-kth-missing-positive-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/1646-kth-missing-positive-number) |
 | [1818-minimum-absolute-sum-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/1818-minimum-absolute-sum-difference) |
+| [1851-minimum-interval-to-include-each-query](https://github.com/AkshatSinghNayal/leetcode/tree/master/1851-minimum-interval-to-include-each-query) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/AkshatSinghNayal/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2302-count-subarrays-with-score-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/2302-count-subarrays-with-score-less-than-k) |
 | [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
@@ -1019,6 +1022,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1514-path-with-maximum-probability](https://github.com/AkshatSinghNayal/leetcode/tree/master/1514-path-with-maximum-probability) |
 | [1631-path-with-minimum-effort](https://github.com/AkshatSinghNayal/leetcode/tree/master/1631-path-with-minimum-effort) |
 | [1642-furthest-building-you-can-reach](https://github.com/AkshatSinghNayal/leetcode/tree/master/1642-furthest-building-you-can-reach) |
+| [1851-minimum-interval-to-include-each-query](https://github.com/AkshatSinghNayal/leetcode/tree/master/1851-minimum-interval-to-include-each-query) |
 | [2208-minimum-operations-to-halve-array-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/2208-minimum-operations-to-halve-array-sum) |
 | [2327-largest-number-after-digit-swaps-by-parity](https://github.com/AkshatSinghNayal/leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
 | [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
@@ -1605,4 +1609,5 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0986-interval-list-intersections](https://github.com/AkshatSinghNayal/leetcode/tree/master/0986-interval-list-intersections) |
+| [1851-minimum-interval-to-include-each-query](https://github.com/AkshatSinghNayal/leetcode/tree/master/1851-minimum-interval-to-include-each-query) |
 <!---LeetCode Topics End-->
