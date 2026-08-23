@@ -683,6 +683,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3877-minimum-removals-to-achieve-target-xor](https://github.com/AkshatSinghNayal/leetcode/tree/master/3877-minimum-removals-to-achieve-target-xor) |
 | [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
 | [3936-split-array-by-prime-indices](https://github.com/AkshatSinghNayal/leetcode/tree/master/3936-split-array-by-prime-indices) |
+| [3994-minimum-adjacent-swaps-to-partition-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/3994-minimum-adjacent-swaps-to-partition-array) |
 ## Math
 |  |
 | ------- |
@@ -979,6 +980,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 | [3689-maximum-total-subarray-value-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3689-maximum-total-subarray-value-i) |
 | [3781-maximum-score-after-binary-swaps](https://github.com/AkshatSinghNayal/leetcode/tree/master/3781-maximum-score-after-binary-swaps) |
+| [3994-minimum-adjacent-swaps-to-partition-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/3994-minimum-adjacent-swaps-to-partition-array) |
 ## Trie
 |  |
 | ------- |
