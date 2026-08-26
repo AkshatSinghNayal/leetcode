@@ -619,6 +619,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1818-minimum-absolute-sum-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/1818-minimum-absolute-sum-difference) |
 | [1851-minimum-interval-to-include-each-query](https://github.com/AkshatSinghNayal/leetcode/tree/master/1851-minimum-interval-to-include-each-query) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/AkshatSinghNayal/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
+| [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2104-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2104-sum-of-subarray-ranges) |
@@ -737,6 +738,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1685-sum-of-absolute-differences-in-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1685-sum-of-absolute-differences-in-a-sorted-array) |
 | [1693-sum-of-all-odd-length-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1693-sum-of-all-odd-length-subarrays) |
 | [1817-calculate-money-in-leetcode-bank](https://github.com/AkshatSinghNayal/leetcode/tree/master/1817-calculate-money-in-leetcode-bank) |
+| [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
 | [2032-largest-odd-number-in-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2032-largest-odd-number-in-string) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2050-count-good-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2050-count-good-numbers) |
@@ -925,6 +927,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1312-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/AkshatSinghNayal/leetcode/tree/master/1312-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1335-minimum-difficulty-of-a-job-schedule](https://github.com/AkshatSinghNayal/leetcode/tree/master/1335-minimum-difficulty-of-a-job-schedule) |
 | [1463-cherry-pickup-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1463-cherry-pickup-ii) |
+| [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
 | [2606-find-the-substring-with-maximum-cost](https://github.com/AkshatSinghNayal/leetcode/tree/master/2606-find-the-substring-with-maximum-cost) |
 | [2742-painting-the-walls](https://github.com/AkshatSinghNayal/leetcode/tree/master/2742-painting-the-walls) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
@@ -1197,6 +1200,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1603-running-sum-of-1d-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1603-running-sum-of-1d-array) |
 | [1685-sum-of-absolute-differences-in-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1685-sum-of-absolute-differences-in-a-sorted-array) |
 | [1693-sum-of-all-odd-length-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1693-sum-of-all-odd-length-subarrays) |
+| [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
 | [2121-intervals-between-identical-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/2121-intervals-between-identical-elements) |
 | [2302-count-subarrays-with-score-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/2302-count-subarrays-with-score-less-than-k) |
 | [2483-minimum-penalty-for-a-shop](https://github.com/AkshatSinghNayal/leetcode/tree/master/2483-minimum-penalty-for-a-shop) |
@@ -1577,6 +1581,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | ------- |
 | [0486-predict-the-winner](https://github.com/AkshatSinghNayal/leetcode/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0877-stone-game) |
+| [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
 ## Binary Indexed Tree
 |  |
 | ------- |
@@ -1605,6 +1610,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0778-swim-in-rising-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0778-swim-in-rising-water) |
+| [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
 ## Dijkstra's Algorithm
 |  |
 | ------- |
@@ -1630,4 +1636,8 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+## Zero-Sum Game
+|  |
+| ------- |
+| [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
 <!---LeetCode Topics End-->
