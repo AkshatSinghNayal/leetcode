@@ -1615,6 +1615,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 ## Minimax
 |  |
 | ------- |
+| [0486-predict-the-winner](https://github.com/AkshatSinghNayal/leetcode/tree/master/0486-predict-the-winner) |
 | [0778-swim-in-rising-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0778-swim-in-rising-water) |
 | [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
 ## Dijkstra's Algorithm
@@ -1645,5 +1646,6 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 ## Zero-Sum Game
 |  |
 | ------- |
+| [0486-predict-the-winner](https://github.com/AkshatSinghNayal/leetcode/tree/master/0486-predict-the-winner) |
 | [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
 <!---LeetCode Topics End-->
