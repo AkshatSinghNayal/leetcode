@@ -265,6 +265,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2716-minimize-string-length](https://github.com/AkshatSinghNayal/leetcode/tree/master/2716-minimize-string-length) |
 | [2839-check-if-strings-can-be-made-equal-with-operations-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/2839-check-if-strings-can-be-made-equal-with-operations-i) |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
+| [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
 | [2937-make-three-strings-equal](https://github.com/AkshatSinghNayal/leetcode/tree/master/2937-make-three-strings-equal) |
 | [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
 | [3194-find-words-containing-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3194-find-words-containing-character) |
@@ -1179,6 +1180,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/AkshatSinghNayal/leetcode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/AkshatSinghNayal/leetcode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [2302-count-subarrays-with-score-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/2302-count-subarrays-with-score-less-than-k) |
+| [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/AkshatSinghNayal/leetcode/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2962-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/AkshatSinghNayal/leetcode/tree/master/2962-count-subarrays-where-max-element-appears-at-least-k-times) |
 ## Prefix Sum
