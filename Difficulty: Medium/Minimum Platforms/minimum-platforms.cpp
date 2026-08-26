@@ -1,24 +1,23 @@
 class Solution {
-public:
+  public:
     int minPlatform(vector<int>& arr, vector<int>& dep) {
-        sort(arr.begin(), arr.end());
-        sort(dep.begin(), dep.end());
-
-        int i = 0, j = 0;
-        int platforms = 0;
-        int ans = 0;
-
-        while (i < arr.size() && j < dep.size()) {
-            if (arr[i] <= dep[j]) {
-                platforms++;
-                ans = max(ans, platforms);
-                i++;
-            } else {
-                platforms--;
-                j++;
-            }
+        // code here
+        priority_queue<int , vector<int>, greater<int>>pq; 
+        vector<pair<int,int>>nums; 
+        for(int i  = 0 ;i< arr.size() ; i++ ){
+            nums.push_back({arr[i],dep[i]}); 
         }
-
-        return ans;
+        sort(nums.begin() , nums.end()) ; 
+        int maxi = 0;
+        
+        for(auto& it : nums ){
+            int start = it.first , end = it.second; 
+            while( !pq.empty() and pq.top() < start ){
+                pq.pop(); 
+            }
+            pq.push(end); 
+            maxi = max(maxi , (int)pq.size()); 
+        }
+        return maxi ;        
     }
 };
