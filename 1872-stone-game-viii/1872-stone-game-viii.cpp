@@ -1,26 +1,24 @@
 class Solution {
 public:
 
-    int solve( vector<int>& dp , vector<int>& prefix , int i , int n ){
-        //base
-        if( i == n -1 ) return prefix[i]; 
-
-        if(dp[i] != INT_MIN ) return dp[i]; 
-        int take = prefix[i] - solve( dp , prefix , i+1 , n );
-        int notTake = solve(dp , prefix , i+1 , n ); 
-
-
-        return dp[i]=  max(take, notTake ); 
-    }
-
     int stoneGameVIII(vector<int>& stones) {
         int n =stones.size(); 
         vector<int>prefix(n);
         prefix[0] = stones[0]; 
-        vector<int>dp(n ,INT_MIN); 
+        vector<int>dp(n+1 ,0); 
         for(int i =1 ;i<n ;i++ ){
             prefix[i] = prefix[i-1]+stones[i]; 
         }
-        return solve( dp , prefix , 1 , n ); 
+        dp[n-1] = prefix[n-1]; 
+        for(int i  = n-1 ;i>=0 ;i-- ){
+            if(i == n-1 ) continue; 
+
+            int take = prefix[i]- dp[i+1]; 
+            int notTake = dp[i+1]; 
+
+            dp[i] = max(take , notTake ); 
+
+        }
+        return dp[1]; 
     }
 };
