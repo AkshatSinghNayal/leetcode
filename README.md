@@ -588,6 +588,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1048-longest-string-chain](https://github.com/AkshatSinghNayal/leetcode/tree/master/1048-longest-string-chain) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/AkshatSinghNayal/leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/1091-shortest-path-in-binary-matrix) |
+| [1140-stone-game-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1140-stone-game-ii) |
 | [1235-maximum-profit-in-job-scheduling](https://github.com/AkshatSinghNayal/leetcode/tree/master/1235-maximum-profit-in-job-scheduling) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1299-replace-elements-with-greatest-element-on-right-side](https://github.com/AkshatSinghNayal/leetcode/tree/master/1299-replace-elements-with-greatest-element-on-right-side) |
@@ -728,6 +729,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0877-stone-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0877-stone-game) |
 | [0973-k-closest-points-to-origin](https://github.com/AkshatSinghNayal/leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/1015-smallest-integer-divisible-by-k) |
+| [1140-stone-game-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1140-stone-game-ii) |
 | [1323-maximum-69-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/1323-maximum-69-number) |
 | [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1390-four-divisors](https://github.com/AkshatSinghNayal/leetcode/tree/master/1390-four-divisors) |
@@ -922,6 +924,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1043-partition-array-for-maximum-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/1043-partition-array-for-maximum-sum) |
 | [1048-longest-string-chain](https://github.com/AkshatSinghNayal/leetcode/tree/master/1048-longest-string-chain) |
 | [1092-shortest-common-supersequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/1092-shortest-common-supersequence) |
+| [1140-stone-game-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1140-stone-game-ii) |
 | [1143-longest-common-subsequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/1143-longest-common-subsequence) |
 | [1235-maximum-profit-in-job-scheduling](https://github.com/AkshatSinghNayal/leetcode/tree/master/1235-maximum-profit-in-job-scheduling) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
@@ -1196,6 +1199,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0974-subarray-sums-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/0974-subarray-sums-divisible-by-k) |
 | [1004-max-consecutive-ones-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1004-max-consecutive-ones-iii) |
 | [1046-max-consecutive-ones-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1046-max-consecutive-ones-iii) |
+| [1140-stone-game-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1140-stone-game-ii) |
 | [1370-count-number-of-nice-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1370-count-number-of-nice-subarrays) |
 | [1538-maximum-points-you-can-obtain-from-cards](https://github.com/AkshatSinghNayal/leetcode/tree/master/1538-maximum-points-you-can-obtain-from-cards) |
 | [1590-make-sum-divisible-by-p](https://github.com/AkshatSinghNayal/leetcode/tree/master/1590-make-sum-divisible-by-p) |
@@ -1587,6 +1591,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | ------- |
 | [0486-predict-the-winner](https://github.com/AkshatSinghNayal/leetcode/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0877-stone-game) |
+| [1140-stone-game-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1140-stone-game-ii) |
 | [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
 ## Binary Indexed Tree
 |  |
@@ -1617,6 +1622,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | ------- |
 | [0486-predict-the-winner](https://github.com/AkshatSinghNayal/leetcode/tree/master/0486-predict-the-winner) |
 | [0778-swim-in-rising-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0778-swim-in-rising-water) |
+| [1140-stone-game-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1140-stone-game-ii) |
 | [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
 ## Dijkstra's Algorithm
 |  |
@@ -1647,5 +1653,6 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0486-predict-the-winner](https://github.com/AkshatSinghNayal/leetcode/tree/master/0486-predict-the-winner) |
+| [1140-stone-game-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1140-stone-game-ii) |
 | [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
 <!---LeetCode Topics End-->
