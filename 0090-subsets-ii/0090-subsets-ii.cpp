@@ -1,25 +1,34 @@
 class Solution {
 public:
 
-    void solve(int index, vector<int>& nums, vector<int>& temp, vector<vector<int>>& ans) {
-        if (index == nums.size()) {
-            ans.push_back(temp);
-            return;
-        }
+    void solve(vector<int>& nums, vector<int>& temp,
+               vector<vector<int>>& ans, int n, int index) {
 
-        temp.push_back(nums[index]); 
-        solve( index + 1 ,  nums , temp , ans ); 
-        temp.pop_back(); 
-        while( index+1 < nums.size() && nums[index] == nums[index+1]) index++; 
-        solve(index+1 , nums, temp , ans) ; 
-       
+        ans.push_back(temp);
+
+        for (int i = index; i < n; i++) {
+
+            // Skip duplicate choices at the same recursion level
+            if (i > index && nums[i] == nums[i - 1])
+                continue;
+
+            temp.push_back(nums[i]);
+
+            solve(nums, temp, ans, n, i + 1);
+
+            temp.pop_back();
+        }
     }
 
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
+
         sort(nums.begin(), nums.end());
+
         vector<vector<int>> ans;
         vector<int> temp;
-        solve(0, nums, temp, ans);
+
+        solve(nums, temp, ans, nums.size(), 0);
+
         return ans;
     }
 };
