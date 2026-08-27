@@ -1,30 +1,29 @@
 class Solution {
 public:
+    set<vector<int>>st;
+    void solve(vector<int>& temp, vector<vector<int>>& ans, int index, int n) {
+        
+        if(index == n and !st.count(temp) ) {
+            ans.push_back(temp);
+            st.insert(temp);
+            return;
+        }
 
-   struct VectorHash {
-    size_t operator()(const vector<int>& v) const {
-        size_t h = 0;
-        for (auto x : v)
-            h ^= hash<int>()(x);
-        return h;
+        for(int i = index; i < n; i++) {
+            swap(temp[i], temp[index]);
+
+            solve(temp, ans, index + 1, n);
+
+            swap(temp[i], temp[index]); // backtrack
+        }
     }
-};
+
     vector<vector<int>> permuteUnique(vector<int>& nums) {
-        unordered_map<vector<int> , int , VectorHash> mp;
+        vector<vector<int>> ans;
+        vector<int> temp = nums;
 
-        sort( nums.begin() , nums.end()); 
-        mp[nums]++; 
-        while( next_permutation(nums.begin() , nums.end())){
-            mp[nums]++; 
-        }
-        vector<vector<int>>ans;
+        solve(temp, ans, 0, temp.size());
 
-        for(auto& it : mp ){
-            auto [ vec , freq ] = it ; 
-            for( int i = 0  ; i< freq ; i++ ){
-                ans.push_back( vec ); 
-            }
-        }
         return ans;
     }
 };
