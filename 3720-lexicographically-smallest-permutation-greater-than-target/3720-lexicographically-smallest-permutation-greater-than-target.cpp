@@ -3,7 +3,7 @@ public:
 
     string result ="";
 
-    bool solve(string s , string target , int n , vector<int>&freq , int i, bool found  ){
+    bool solve(string& s , string& target , int n , vector<int>&freq , int i, bool found  ){
         //base
         if( i == n ){
             if( result > target ){
