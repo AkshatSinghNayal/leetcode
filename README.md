@@ -94,6 +94,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3471-find-the-largest-almost-missing-integer](https://github.com/AkshatSinghNayal/leetcode/tree/master/3471-find-the-largest-almost-missing-integer) |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AkshatSinghNayal/leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3718-smallest-missing-multiple-of-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3718-smallest-missing-multiple-of-k) |
+| [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/AkshatSinghNayal/leetcode/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3779-minimum-number-of-operations-to-have-distinct-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3779-minimum-number-of-operations-to-have-distinct-elements) |
 | [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
@@ -269,6 +270,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2937-make-three-strings-equal](https://github.com/AkshatSinghNayal/leetcode/tree/master/2937-make-three-strings-equal) |
 | [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
 | [3194-find-words-containing-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3194-find-words-containing-character) |
+| [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/AkshatSinghNayal/leetcode/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
 | [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
 | [3781-maximum-score-after-binary-swaps](https://github.com/AkshatSinghNayal/leetcode/tree/master/3781-maximum-score-after-binary-swaps) |
 | [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
@@ -865,6 +867,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2347-best-poker-hand](https://github.com/AkshatSinghNayal/leetcode/tree/master/2347-best-poker-hand) |
 | [2351-first-letter-to-appear-twice](https://github.com/AkshatSinghNayal/leetcode/tree/master/2351-first-letter-to-appear-twice) |
 | [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
+| [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/AkshatSinghNayal/leetcode/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
 | [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
 ## Dynamic Programming
 |  |
@@ -992,6 +995,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 | [3689-maximum-total-subarray-value-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3689-maximum-total-subarray-value-i) |
+| [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/AkshatSinghNayal/leetcode/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
 | [3781-maximum-score-after-binary-swaps](https://github.com/AkshatSinghNayal/leetcode/tree/master/3781-maximum-score-after-binary-swaps) |
 | [3994-minimum-adjacent-swaps-to-partition-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/3994-minimum-adjacent-swaps-to-partition-array) |
 ## Trie
@@ -1345,6 +1349,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2337-remove-digit-from-number-to-maximize-result](https://github.com/AkshatSinghNayal/leetcode/tree/master/2337-remove-digit-from-number-to-maximize-result) |
 | [2765-longest-alternating-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/2765-longest-alternating-subarray) |
 | [3546-equal-sum-grid-partition-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3546-equal-sum-grid-partition-i) |
+| [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/AkshatSinghNayal/leetcode/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 ## Brainteaser
 |  |
