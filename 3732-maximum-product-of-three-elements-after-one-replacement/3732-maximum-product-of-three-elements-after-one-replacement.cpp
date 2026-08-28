@@ -1,20 +1,41 @@
 class Solution {
 public:
     long long maxProduct(vector<int>& nums) {
-        int n = nums.size(); 
-        long long maxi = LLONG_MIN;
-        sort(nums.begin() , nums.end()); 
-        
-        maxi = max({maxi , 1LL*-100000*nums[n-1]*nums[n-2]});
-        maxi = max({maxi , 1LL*100000*nums[n-1]*nums[n-2]}); 
-        maxi = max({maxi , 1LL*-100000*nums[0]*nums[1]}); 
-        maxi = max({maxi , 1LL*100000*nums[0]*nums[1]}); 
-        maxi = max({maxi , 1LL*100000*nums[0]*nums[n-1]}); 
-        maxi = max({maxi , 1LL*-100000*nums[0]*nums[n-1]}); 
+        long long largest = LLONG_MIN, secondLargest = LLONG_MIN;
+        long long smallest = LLONG_MAX, secondSmallest = LLONG_MAX;
+
+        for (long long x : nums) {
+            if (x >= largest) {
+                secondLargest = largest;
+                largest = x;
+            } else if (x > secondLargest) {
+                secondLargest = x;
+            }
+
+            if (x <= smallest) {
+                secondSmallest = smallest;
+                smallest = x;
+            } else if (x < secondSmallest) {
+                secondSmallest = x;
+            }
+        }
+
+        long long M = 100000LL;
+
+        long long ans = LLONG_MIN;
+
+        // Replace one element with +100000
+        ans = max(ans, M * largest * secondLargest);
+        ans = max(ans, M * smallest * secondSmallest);
+
+        // Replace one element with -100000
+        ans = max(ans, -M * largest * secondLargest);
+        ans = max(ans, -M * smallest * secondSmallest);
+
+         ans = max(ans, -M * largest * smallest);
+        ans = max(ans, M * smallest * largest);
 
 
-        return maxi ; 
-
-
+        return ans;
     }
 };
