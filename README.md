@@ -95,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AkshatSinghNayal/leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3718-smallest-missing-multiple-of-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3718-smallest-missing-multiple-of-k) |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/AkshatSinghNayal/leetcode/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
+| [3731-find-missing-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3731-find-missing-elements) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3779-minimum-number-of-operations-to-have-distinct-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3779-minimum-number-of-operations-to-have-distinct-elements) |
 | [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
@@ -424,6 +425,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3226-minimum-number-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/3226-minimum-number-game) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
+| [3731-find-missing-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3731-find-missing-elements) |
 ## Merge Sort
 |  |
 | ------- |
@@ -684,6 +686,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3689-maximum-total-subarray-value-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3689-maximum-total-subarray-value-i) |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/AkshatSinghNayal/leetcode/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
 | [3718-smallest-missing-multiple-of-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3718-smallest-missing-multiple-of-k) |
+| [3731-find-missing-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3731-find-missing-elements) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3779-minimum-number-of-operations-to-have-distinct-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3779-minimum-number-of-operations-to-have-distinct-elements) |
 | [3781-maximum-score-after-binary-swaps](https://github.com/AkshatSinghNayal/leetcode/tree/master/3781-maximum-score-after-binary-swaps) |
