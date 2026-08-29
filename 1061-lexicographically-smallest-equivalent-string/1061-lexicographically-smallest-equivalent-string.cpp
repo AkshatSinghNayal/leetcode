@@ -1,49 +1,58 @@
-class DisjoinSet{
-    public: 
-    vector<int> size , parent; 
-    DisjoinSet(int V ){
-        parent.resize(V+1); 
+class Disjoint{
+    public:
+    vector<int> parent; 
+    
+    Disjoint(int V ){
+        parent.resize(V+1);
 
-        for(int i = 0 ;i<=V ;i++ ){
-            parent[i] = i; 
+        for(int i = 0 ; i<= V ;i++ ){
+            parent[i] = i ; 
         }
     }
 
-    int find( int u){
-
-        if( parent[u] == u ) return u ; 
-        return parent[u] = find(parent[u]); 
+    int findParent( int u ){
+        if( u == parent[u]) return u;
+        return parent[u] = findParent(parent[u]); 
     }
 
     void unionBySize( int u , int v ){
-        int pa = find(u) , pb = find(v); 
+        int Pu = findParent(u);
+        int Pv = findParent(v);
+        
+        if( Pu  == Pv ) return;
 
-        if( pa == pb ) return ;
-
-        if( pa > pb ){
-            swap(pa,pb); 
+        if(Pu > Pv){
+            parent[Pu] = Pv;
+        }
+        else{
+            parent[Pv] = Pu;
         }
 
-        parent[pb] = pa ;
-
     }
-    
-};
+
+}; 
+
+
+
 class Solution {
 public:
     string smallestEquivalentString(string s1, string s2, string baseStr) {
-        DisjoinSet d(26);
+        Disjoint d(26);
+        int n =  s1.size(); 
+        for(int i  = 0 ;i<n; i++ ){
+            int u = s1[i]-'a'; 
+            int v = s2[i]-'a'; 
 
-        for(int i = 0 ;i<s1.size() ;i++ ){
-            d.unionBySize(s1[i]-'a' , s2[i]-'a'); 
+            d.unionBySize( u , v );
         }
 
-        string result=  ""; 
+        string result ="";
 
         for(auto& it : baseStr ){
-            char par = d.parent[d.find(it-'a')]+'a' ; 
-            result+=par;
+            int p = d.findParent(it-'a'); 
+            result+=d.parent[p]+'a'; 
         }
+
         return result;
     }
 };
