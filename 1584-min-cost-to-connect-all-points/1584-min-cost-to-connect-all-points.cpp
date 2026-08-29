@@ -1,73 +1,64 @@
-class Disjointset {
-public:
-    vector<int> size, parent;
+class Disjoint{
+    public:
+    vector<int>size , parent; 
+    
+    Disjoint(int V ){
+        size.resize(V+1); parent.resize(V+1);
 
-    Disjointset(int V) {
-        size.resize(V + 1, 1);
-        parent.resize(V + 1);
-
-        for (int i = 0; i <= V; i++)
-            parent[i] = i;
-    }
-
-    int findParent(int n) {
-        if (parent[n] == n)
-            return n;
-        return parent[n] = findParent(parent[n]);
-    }
-
-    void unionBySize(int u, int v) {
-        int NodeA = findParent(u);
-        int NodeB = findParent(v);
-
-        if (NodeA == NodeB)
-            return;
-
-        if (size[NodeA] > size[NodeB]) {
-            parent[NodeB] = NodeA;
-            size[NodeA] += size[NodeB];
-        } else {
-            parent[NodeA] = NodeB;
-            size[NodeB] += size[NodeA];
+        for(int i = 0 ; i<= V ;i++ ){
+            parent[i] = i ; 
         }
     }
-};
+
+    int findParent( int u ){
+        if( u == parent[u]) return u;
+        return parent[u] = findParent(parent[u]); 
+    }
+
+    void unionBySize( int u , int v ){
+        int Pu = findParent(u);
+        int Pv = findParent(v);
+
+        if(size[Pu]>size[Pv]){
+            size[Pu]+=size[Pv]; 
+            parent[Pv] = Pu;
+        }
+        else{
+            size[Pv] +=size[Pu]; 
+            parent[Pu] = Pv;
+        }
+    }
+
+}; 
+
+
 
 class Solution {
 public:
     int minCostConnectPoints(vector<vector<int>>& points) {
-        int n = points.size();
-
-        vector<tuple<int, int, int>> edges;
-
-        // Build all edges
-        for (int i = 0; i < n; i++) {
-            for (int j = i + 1; j < n; j++) {
-                int dist = abs(points[i][0] - points[j][0]) +
-                           abs(points[i][1] - points[j][1]);
-
-                edges.push_back({dist, i, j});
+        vector<tuple<int,int,int>>nums;
+        int n = points.size(); 
+        Disjoint d(n);
+        for(int i  = 0 ;i<n ;i++ ){
+            for(int j = i+1; j<n ; j++ ){
+                int dist = abs(points[i][0]-points[j][0]) + abs(points[i][1]-points[j][1]); 
+                nums.push_back({dist, i, j});
             }
         }
+        sort(nums.begin() , nums.end());
 
-        sort(edges.begin(), edges.end());
+        int ans = 0 ; 
 
-        Disjointset ds(n);
-
-        int ans = 0;
-        int cnt = 0;
-
-        for (auto &[wt, u, v] : edges) {
-            if (ds.findParent(u) != ds.findParent(v)) {
-                ds.unionBySize(u, v);
-                ans += wt;
-                cnt++;
-
-                if (cnt == n - 1)
-                    break;
+        for(auto& it : nums ){
+            auto [ dist , i , j ] = it;
+            
+            if(d.findParent(i) != d.findParent(j)){
+                ans+=dist;
+                d.unionBySize(i,j);
             }
-        }
 
+
+        }
         return ans;
     }
 };
