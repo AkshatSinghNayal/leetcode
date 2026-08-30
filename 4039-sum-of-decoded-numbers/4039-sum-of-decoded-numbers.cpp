@@ -1,49 +1,47 @@
 class Solution {
 public:
-    long long binpow(long long x, long long y, long long mod) {
-        long long ans = 1;
 
-        while (y > 0) {
-            if (y & 1)
-                ans = ans * x % mod;
+    long long binpow(long long a, long long b, long long MOD) {
+    long long ans = 1;
 
-            x = x * x % mod;
-            y >>= 1;
-        }
+    while (b > 0) {
+        if (b & 1)
+            ans = (ans * a) % MOD;
 
-        return ans;
+        a = (a * a) % MOD;
+        b >>= 1;
     }
 
+    return ans;
+}
+
     int sumDecoded(vector<long long>& nums) {
-        const long long MOD = 1e9 + 7;
-        long long ans = 0;
+        const long long MOD = 1e9+7;
+        long long ans = 0 ; 
+        
+        for(auto& it : nums ){
+            long long width = it%10; 
+            long long d = it/10;
 
-        for (auto num : nums) {
-            long long width = num % 10;
-            long long d = num / 10;
-
-            long long integ = d;
-            long long countdig = 0;
-
-            while (integ > 0) {
-                integ /= 10;
-                countdig++;
+            int no_of_digit = 0; 
+            long long temp = it/10; 
+            while(temp){
+                no_of_digit++; 
+                temp/=10;
             }
 
-            long long p = 1;
 
-            for (int i = 0; i < countdig - width; i++) {
-                p *= 10;
-            }
+            long long p1 = 1;
+            for (int i = 0; i < no_of_digit - width; i++)
+                p1 *= 10;
 
-            long long x = d / p;
-            long long y = d - x * p;
+            long long x = (d / p1) % MOD;
+            long long y = (d % p1) % MOD;
+           
 
-            long long add = binpow(x, y, MOD);
 
-            ans = (ans + add) % MOD;
+            ans = (ans+ (binpow(x , y , MOD))%MOD)%MOD;
         }
-
-        return ans;
+        return (int)ans; 
     }
 };
