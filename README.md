@@ -696,6 +696,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3781-maximum-score-after-binary-swaps](https://github.com/AkshatSinghNayal/leetcode/tree/master/3781-maximum-score-after-binary-swaps) |
 | [3834-merge-adjacent-equal-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3834-merge-adjacent-equal-elements) |
 | [3847-find-the-score-difference-in-a-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/3847-find-the-score-difference-in-a-game) |
+| [3875-construct-uniform-parity-array-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3875-construct-uniform-parity-array-i) |
 | [3877-minimum-removals-to-achieve-target-xor](https://github.com/AkshatSinghNayal/leetcode/tree/master/3877-minimum-removals-to-achieve-target-xor) |
 | [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
 | [3936-split-array-by-prime-indices](https://github.com/AkshatSinghNayal/leetcode/tree/master/3936-split-array-by-prime-indices) |
@@ -781,6 +782,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3733-minimum-time-to-complete-all-deliveries](https://github.com/AkshatSinghNayal/leetcode/tree/master/3733-minimum-time-to-complete-all-deliveries) |
 | [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
+| [3875-construct-uniform-parity-array-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3875-construct-uniform-parity-array-i) |
 | [3932-count-k-th-roots-in-a-range](https://github.com/AkshatSinghNayal/leetcode/tree/master/3932-count-k-th-roots-in-a-range) |
 | [3936-split-array-by-prime-indices](https://github.com/AkshatSinghNayal/leetcode/tree/master/3936-split-array-by-prime-indices) |
 ## Binary Search
