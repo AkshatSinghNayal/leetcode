@@ -1,27 +1,30 @@
 class Solution {
 public:
-    bool uniformArray(vector<int>& nums1) {
-        int n  = nums1.size();
-        int count = 0;
-        int minEven = INT_MAX;
-        int minOdd = INT_MAX ; 
-        for(auto& it : nums1 ){
-            if( it%2 == 0 ){ 
-                count++; 
-                minEven = min(minEven , it );
+    bool uniformArray(vector<int>& nums) {
+        int n = nums.size();
+        int odd  = 0 , even = 0 , mini = INT_MAX  ; 
+        for(auto& it : nums ){
+            if(it&1){
+                mini = min( mini , it ); 
+                odd++;
+            }
+            else even++;
+        }
+
+        if( odd == n or even == n  ) return true;
+
+        int temp = n; 
+        for(auto& it : nums ){
+            if( it& 1 ){
+                temp--; 
             }
             else{
-                minOdd = min(minOdd , it); 
+                if( it - mini >= 1 ){
+                    temp--;
+                }
             }
-
-            
         }
-        if( count == n ) return true;
-
-        return (minEven - minOdd <1 ) ? false : true ;
-        
-
-
-
+        return temp == 0 ;
     }
 };
+
