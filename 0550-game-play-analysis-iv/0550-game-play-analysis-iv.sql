@@ -1,26 +1,10 @@
-WITH temp AS (
-    SELECT *,
-           ROW_NUMBER() OVER (
-               PARTITION BY player_id
-               ORDER BY event_date
-           ) AS streak
-    FROM Activity
-)
-
-SELECT 
-    ROUND(
-        COUNT(temp.player_id) /
-        (
-            SELECT COUNT(DISTINCT player_id)
-            FROM Activity
-        ) ,
-        2
-    ) AS fraction
-
-FROM temp
-
-INNER JOIN temp AS t
-    ON temp.player_id = t.player_id
-   AND DATEDIFF(temp.event_date, t.event_date) = 1
-
-WHERE temp.streak <= 2;
+select round(count(*)/(
+    select count( distinct player_id )
+    from Activity
+),2) as fraction 
+from Activity as a
+where datediff(a.event_date , (
+    select min(temp.event_date)
+    from Activity as temp 
+    where temp.player_id = a.player_id
+)) = 1 
