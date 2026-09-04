@@ -1609,6 +1609,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0595-big-countries](https://github.com/AkshatSinghNayal/leetcode/tree/master/0595-big-countries) |
 | [0620-not-boring-movies](https://github.com/AkshatSinghNayal/leetcode/tree/master/0620-not-boring-movies) |
 | [1148-article-views-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/1148-article-views-i) |
+| [1193-monthly-transactions-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/1193-monthly-transactions-i) |
 | [1211-queries-quality-and-percentage](https://github.com/AkshatSinghNayal/leetcode/tree/master/1211-queries-quality-and-percentage) |
 | [1251-average-selling-price](https://github.com/AkshatSinghNayal/leetcode/tree/master/1251-average-selling-price) |
 | [1280-students-and-examinations](https://github.com/AkshatSinghNayal/leetcode/tree/master/1280-students-and-examinations) |
