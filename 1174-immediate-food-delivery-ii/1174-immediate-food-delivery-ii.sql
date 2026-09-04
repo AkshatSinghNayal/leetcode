@@ -1,13 +1,11 @@
-SELECT ROUND(
-    AVG(order_date = customer_pref_delivery_date) * 100,
-    2
-) AS immediate_percentage
-FROM (
-    SELECT *,
-           ROW_NUMBER() OVER (
-               PARTITION BY customer_id
-               ORDER BY order_date
-           ) AS rn
-    FROM Delivery
-) d
-WHERE rn = 1;
+select 
+round(sum( case when temp.order_date = temp.customer_pref_delivery_date then 1 else 0 end )/count(*)*100,2) as immediate_percentage
+from (select * ,
+row_number() over(
+    partition by customer_id
+    order by order_date 
+) as rnk
+from Delivery
+) as temp
+
+where temp.rnk = 1
