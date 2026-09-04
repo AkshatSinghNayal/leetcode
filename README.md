@@ -699,6 +699,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3875-construct-uniform-parity-array-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3875-construct-uniform-parity-array-i) |
 | [3876-construct-uniform-parity-array-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3876-construct-uniform-parity-array-ii) |
 | [3877-minimum-removals-to-achieve-target-xor](https://github.com/AkshatSinghNayal/leetcode/tree/master/3877-minimum-removals-to-achieve-target-xor) |
+| [3903-smallest-stable-index-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3903-smallest-stable-index-i) |
 | [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
 | [3936-split-array-by-prime-indices](https://github.com/AkshatSinghNayal/leetcode/tree/master/3936-split-array-by-prime-indices) |
 | [3994-minimum-adjacent-swaps-to-partition-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/3994-minimum-adjacent-swaps-to-partition-array) |
@@ -1241,6 +1242,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2906-construct-product-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/2906-construct-product-matrix) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3546-equal-sum-grid-partition-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3546-equal-sum-grid-partition-i) |
+| [3903-smallest-stable-index-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3903-smallest-stable-index-i) |
 ## Quickselect
 |  |
 | ------- |
