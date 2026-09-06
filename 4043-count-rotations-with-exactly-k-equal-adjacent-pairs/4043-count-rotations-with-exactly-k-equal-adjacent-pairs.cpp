@@ -1,21 +1,32 @@
 class Solution {
 public:
     int countRotations(string s, int k) {
-        string result =  s; int n = s.size(); 
-        int i  = 0  ; int count = 0;
-        while( i < n ){
-            int score = 0; 
-            char temp = result[i]; 
-            for(int idx  = i; idx< result.size()-1 ; idx++ ){
-                
-                if( result[idx] == result[idx+1 ]) score++;
-            }    
-            cout<<result<<" "; 
-            if( score == k ) count++; 
-            result.push_back(temp);
-            i++;
+        int n = s.size();
 
+        int total = 0;
+
+        // Count all n circular adjacent pairs
+        for (int i = 0; i < n; i++) {
+            if (s[i] == s[(i + 1) % n])
+                total++;
         }
-        return count;
+
+        int ans = 0;
+
+        // Rotation by r positions excludes the pair
+        // immediately before r.
+        for (int r = 0; r < n; r++) {
+            int excluded = (r - 1 + n) % n;
+
+            int score = total;
+
+            if (s[excluded] == s[(excluded + 1) % n])
+                score--;
+
+            if (score == k)
+                ans++;
+        }
+
+        return ans;
     }
 };
