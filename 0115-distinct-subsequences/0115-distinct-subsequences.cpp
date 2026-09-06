@@ -19,22 +19,23 @@ public:
 
     int numDistinct(string s, string t) {
        int n =  s.size() , m = t.size(); 
-       vector<vector<int>>dp(n+1 , vector<int>(m+1, 0));
-        
-        for(int i = 0 ;i<=n ;i++ ){
-            dp[i][m] = 1;
-        }
+        vector<int>dp(m+1,0); 
+        dp[m]=1; 
 
         for(int i = n-1 ; i>=0 ;i--){
+            vector<int>curr(m+1 , 0); 
+            dp[m] = 1;
             for(int j = m-1; j>=0; j-- ){
 
-                long long  take = ( s[i] == t[j] ) ? dp[i+1][j+1]  : 0;
-                long long  notTake = dp[i+1][j];
+                long long  take = ( s[i] == t[j] ) ? dp[j+1]  : 0;
+                long long  notTake = dp[j];
 
-                dp[i][j] = take+notTake;
+                curr[j] = take+notTake;
 
             }
+            dp=curr;
         }
-        return dp[0][0]; 
+        for(auto& it : dp) cout<< it << " " ; 
+        return dp[0]; 
     }
 };
