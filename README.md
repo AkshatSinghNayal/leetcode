@@ -58,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0876-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0876-hand-of-straights) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [0895-maximum-frequency-stack](https://github.com/AkshatSinghNayal/leetcode/tree/master/0895-maximum-frequency-stack) |
+| [0930-binary-subarrays-with-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0930-binary-subarrays-with-sum) |
 | [0940-fruit-into-baskets](https://github.com/AkshatSinghNayal/leetcode/tree/master/0940-fruit-into-baskets) |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/AkshatSinghNayal/leetcode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0961-n-repeated-element-in-size-2n-array) |
@@ -569,6 +570,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0907-sum-of-subarray-minimums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0907-sum-of-subarray-minimums) |
 | [0918-maximum-sum-circular-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/0918-maximum-sum-circular-subarray) |
 | [0922-sort-array-by-parity-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0922-sort-array-by-parity-ii) |
+| [0930-binary-subarrays-with-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0930-binary-subarrays-with-sum) |
 | [0931-minimum-falling-path-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0931-minimum-falling-path-sum) |
 | [0934-shortest-bridge](https://github.com/AkshatSinghNayal/leetcode/tree/master/0934-shortest-bridge) |
 | [0940-fruit-into-baskets](https://github.com/AkshatSinghNayal/leetcode/tree/master/0940-fruit-into-baskets) |
@@ -1200,6 +1202,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/AkshatSinghNayal/leetcode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0658-find-k-closest-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/0658-find-k-closest-elements) |
 | [0713-subarray-product-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/0713-subarray-product-less-than-k) |
+| [0930-binary-subarrays-with-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0930-binary-subarrays-with-sum) |
 | [0940-fruit-into-baskets](https://github.com/AkshatSinghNayal/leetcode/tree/master/0940-fruit-into-baskets) |
 | [0966-binary-subarrays-with-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1004-max-consecutive-ones-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1004-max-consecutive-ones-iii) |
@@ -1222,6 +1225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0525-contiguous-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0713-subarray-product-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/0713-subarray-product-less-than-k) |
+| [0930-binary-subarrays-with-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0930-binary-subarrays-with-sum) |
 | [0966-binary-subarrays-with-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/0974-subarray-sums-divisible-by-k) |
 | [1004-max-consecutive-ones-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1004-max-consecutive-ones-iii) |
