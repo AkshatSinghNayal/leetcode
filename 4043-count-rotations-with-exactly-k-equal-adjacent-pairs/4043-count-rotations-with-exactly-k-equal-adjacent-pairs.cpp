@@ -1,19 +1,21 @@
 class Solution {
 public:
     int countRotations(string s, int k) {
-        int n  = s.size();
-        string temp = s+s.substr(0,n-1);
-        int maxi = 0;
+        string result =  s; int n = s.size(); 
+        int i  = 0  ; int count = 0;
+        while( i < n ){
+            int score = 0; 
+            char temp = result[i]; 
+            for(int idx  = i; idx< result.size()-1 ; idx++ ){
+                
+                if( result[idx] == result[idx+1 ]) score++;
+            }    
+            cout<<result<<" "; 
+            if( score == k ) count++; 
+            result.push_back(temp);
+            i++;
 
-        for( int i = 0 ;i<n; i++ ){
-            int score = 0;
-            for(int j = 0 ;j < n-1 ; j++ ){
-                int index = j+i; 
-                if( temp[index] == temp[index+1]) score++;
-            }
-
-            if( score ==  k ) maxi++;
         }
-        return maxi;
+        return count;
     }
 };
