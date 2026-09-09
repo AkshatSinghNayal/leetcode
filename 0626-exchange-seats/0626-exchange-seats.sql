@@ -1,16 +1,16 @@
-with temp as(
-    select  id , student , 
-    case when id%2 !=0 and id+1 in ( select id from Seat)
+with temp as (
+    select 
+    id , student , 
+    case when id%2 != 0 and id+1 in ( select id from Seat )
     then id+1
-    when id%2 = 0 and id-1 in( select id from Seat ) 
+    when id % 2 = 0 and id-1 in (select id from Seat ) 
     then id-1
-    else id
-    end as req
+    else id 
+    end  as req
     from Seat
 )
 
-select t.req as id, t.student as student 
-from temp as t 
+select t.id ,  s.student
+from temp  as t
 left join Seat as s 
-on t.req = s.id 
-order by id
+on t.req = s.id
