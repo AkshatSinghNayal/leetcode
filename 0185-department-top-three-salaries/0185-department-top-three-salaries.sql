@@ -1,14 +1,12 @@
 with temp as (
-    select d.name as Department , e.name as Employee , e.salary  as Salary, 
-    dense_rank() over(
-        partition by d.name
-        order by e.salary desc 
-    ) as rnk
-    from Employee as e 
-    left join Department as d 
-    on e.departmentId = d.id
+    select id , name as Employee , 
+    dense_rank() over( partition by departmentId 
+    order by salary desc
+    ) as rnk , departmentId , salary as Salary
+    from Employee
 )
-
-select Department,Employee, Salary
-from temp 
-where rnk <= 3
+select d.name as Department, t.Employee , t.Salary
+from temp as t
+left join Department as d 
+on t.departmentId = d.id 
+where t.rnk<=3
