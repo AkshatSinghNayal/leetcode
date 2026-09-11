@@ -1,18 +1,24 @@
 WITH temp AS (
-    SELECT requester_id AS id FROM RequestAccepted
+    SELECT requester_id AS id
+    FROM RequestAccepted
+
     UNION ALL
-    SELECT accepter_id AS id FROM RequestAccepted
+
+    SELECT accepter_id AS id
+    FROM RequestAccepted
 ),
-friend_count AS (
-    SELECT id, COUNT(*) AS num
-    FROM temp
-    GROUP BY id
+cnt as(
+    select id , count(*) as cnt 
+    from temp
+    group by id
+), 
+final as(
+    select id , cnt ,
+    rank() over(order by cnt desc ) as rnk
+    from cnt 
+
 )
-SELECT id, num
-FROM (
-    SELECT id,
-           num,
-           RANK() OVER (ORDER BY num DESC) AS rnk
-    FROM friend_count
-) t
-WHERE rnk = 1;
+
+select id , cnt as num
+from final 
+where rnk = 1
