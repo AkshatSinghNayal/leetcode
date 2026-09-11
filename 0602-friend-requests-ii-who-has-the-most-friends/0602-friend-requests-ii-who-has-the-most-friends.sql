@@ -9,5 +9,10 @@ friend_count AS (
     GROUP BY id
 )
 SELECT id, num
-FROM friend_count
-WHERE num = (SELECT MAX(num) FROM friend_count);
+FROM (
+    SELECT id,
+           num,
+           RANK() OVER (ORDER BY num DESC) AS rnk
+    FROM friend_count
+) t
+WHERE rnk = 1;
