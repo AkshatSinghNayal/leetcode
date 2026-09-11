@@ -1,16 +1,27 @@
-select c1.visited_on , sum(c2.amount) as amount , round(sum(c2.amount)/7,2) as average_amount
-from (
+with daily as (
     select visited_on , sum(amount) as amount 
-    from Customer
+    from Customer 
     group by visited_on
-) as c1
+), 
+temp as (
+    select visited_on,
+    sum(amount) over( order by visited_on 
+        rows between 6 preceding and current row
+    ) as amount
+    , 
+    round(avg(amount) over( 
+        order by visited_on
+        rows between 6 preceding and current row 
+    ),2) as average_amount
+    ,
+    count(*) over( order by visited_on 
+    rows between 6 preceding and current row 
+    
+    ) as cnt 
+    from daily
+)
 
-inner join (
-    select visited_on , sum(amount) as amount 
-    from Customer
-    group by visited_on
-) as c2 
-
-on c2.visited_on between c1.visited_on - interval 6 day and c1.visited_on 
-group by c1.visited_on
-having count(*)= 7
+select visited_on , amount , average_amount
+from temp
+where cnt = 7 
+order by visited_on
