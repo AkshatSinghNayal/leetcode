@@ -1,11 +1,13 @@
-with temp as(
-    select accepter_id as id from RequestAccepted
-    union all 
-    select requester_id as id from RequestAccepted
+WITH temp AS (
+    SELECT requester_id AS id FROM RequestAccepted
+    UNION ALL
+    SELECT accepter_id AS id FROM RequestAccepted
+),
+friend_count AS (
+    SELECT id, COUNT(*) AS num
+    FROM temp
+    GROUP BY id
 )
-
-select id , count(*) as num
-from temp
-group by id
-order by num  desc
-limit 1 
+SELECT id, num
+FROM friend_count
+WHERE num = (SELECT MAX(num) FROM friend_count);
