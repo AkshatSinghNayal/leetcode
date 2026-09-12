@@ -3,6 +3,5 @@ with temp as (
     dense_rank() over( order by salary desc ) as rnk
     from Employee
 )
-select case when count(*) = 0 then null else salary end as SecondHighestSalary
-from temp
-where rnk = 2
+select max( case when rnk = 2 then salary else null end ) as SecondHighestSalary
+from temp 
