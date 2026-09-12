@@ -1644,6 +1644,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1280-students-and-examinations](https://github.com/AkshatSinghNayal/leetcode/tree/master/1280-students-and-examinations) |
 | [1321-restaurant-growth](https://github.com/AkshatSinghNayal/leetcode/tree/master/1321-restaurant-growth) |
 | [1341-movie-rating](https://github.com/AkshatSinghNayal/leetcode/tree/master/1341-movie-rating) |
+| [1484-group-sold-products-by-the-date](https://github.com/AkshatSinghNayal/leetcode/tree/master/1484-group-sold-products-by-the-date) |
 | [1527-patients-with-a-condition](https://github.com/AkshatSinghNayal/leetcode/tree/master/1527-patients-with-a-condition) |
 | [1581-customer-who-visited-but-did-not-make-any-transactions](https://github.com/AkshatSinghNayal/leetcode/tree/master/1581-customer-who-visited-but-did-not-make-any-transactions) |
 | [1633-percentage-of-users-attended-a-contest](https://github.com/AkshatSinghNayal/leetcode/tree/master/1633-percentage-of-users-attended-a-contest) |
