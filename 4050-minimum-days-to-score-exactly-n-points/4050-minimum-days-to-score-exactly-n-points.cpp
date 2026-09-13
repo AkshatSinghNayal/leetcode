@@ -1,33 +1,46 @@
 class Solution {
 public:
-    int minDays(int n) {
 
-        int limit = 1e5;
+    int solve(int n, vector<int>& dp) {
 
-        int sm = 0;
-        int var = 1;
+        if (n == 0)
+            return 0;
 
-        vector<int> dp(n + 1, INT_MAX);
+        if (dp[n] != -1)
+            return dp[n];
 
-        dp[0] = 0;
+        int ans = 1e9;
 
-        while (sm <= limit) {
+        for (int i = 1; ; i++) {
 
-            sm += var;
+            // points earned in i continuous earning days
+            int sum = i * (i + 1) / 2;
 
-            for (int i = 1; i <= n; i++) {
+            if (sum > n)
+                break;
 
-                if (i - sm >= 0) {
-                    dp[i] = min(
-                        dp[i],
-                        dp[i - sm] + var + 1
-                    );
-                }
+            // exact score reached
+            if (sum == n) {
+                ans = min(ans, i);
             }
-
-            var++;
+            else {
+                // i earning days
+                // + 1 skip day
+                // + solve remaining score
+                ans = min(
+                    ans,
+                    i + 1 + solve(n - sum, dp)
+                );
+            }
         }
 
-        return dp[n] - 1;
+        return dp[n] = ans;
+    }
+
+    int minDays(int n) {
+
+        vector<int> dp(n + 1, -1);
+
+        return solve(n, dp);
     }
 };
