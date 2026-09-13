@@ -79,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1590-make-sum-divisible-by-p](https://github.com/AkshatSinghNayal/leetcode/tree/master/1590-make-sum-divisible-by-p) |
 | [1635-number-of-good-pairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/1635-number-of-good-pairs) |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/AkshatSinghNayal/leetcode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 | [2121-intervals-between-identical-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/2121-intervals-between-identical-elements) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/AkshatSinghNayal/leetcode/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
@@ -260,6 +261,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1869-longer-contiguous-segments-of-ones-than-zeros](https://github.com/AkshatSinghNayal/leetcode/tree/master/1869-longer-contiguous-segments-of-ones-than-zeros) |
 | [2027-minimum-moves-to-convert-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2027-minimum-moves-to-convert-string) |
 | [2032-largest-odd-number-in-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2032-largest-odd-number-in-string) |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/AkshatSinghNayal/leetcode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2116-check-if-a-parentheses-string-can-be-valid) |
 | [2219-maximum-number-of-words-found-in-sentences](https://github.com/AkshatSinghNayal/leetcode/tree/master/2219-maximum-number-of-words-found-in-sentences) |
 | [2337-remove-digit-from-number-to-maximize-result](https://github.com/AkshatSinghNayal/leetcode/tree/master/2337-remove-digit-from-number-to-maximize-result) |
@@ -640,6 +642,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2091-removing-minimum-and-maximum-from-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2091-removing-minimum-and-maximum-from-array) |
 | [2104-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2104-sum-of-subarray-ranges) |
 | [2106-find-greatest-common-divisor-of-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2106-find-greatest-common-divisor-of-array) |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/AkshatSinghNayal/leetcode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 | [2121-intervals-between-identical-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/2121-intervals-between-identical-elements) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/AkshatSinghNayal/leetcode/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2191-sort-the-jumbled-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2191-sort-the-jumbled-numbers) |
@@ -1561,6 +1564,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1584-min-cost-to-connect-all-points](https://github.com/AkshatSinghNayal/leetcode/tree/master/1584-min-cost-to-connect-all-points) |
 | [1697-checking-existence-of-edge-length-limited-paths](https://github.com/AkshatSinghNayal/leetcode/tree/master/1697-checking-existence-of-edge-length-limited-paths) |
 | [1791-find-center-of-star-graph](https://github.com/AkshatSinghNayal/leetcode/tree/master/1791-find-center-of-star-graph) |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/AkshatSinghNayal/leetcode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 ## Shortest Path
 |  |
 | ------- |
@@ -1608,6 +1612,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/AkshatSinghNayal/leetcode/tree/master/0207-course-schedule) |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/AkshatSinghNayal/leetcode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 ## Segment Tree
 |  |
 | ------- |
@@ -1729,4 +1734,8 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1140-stone-game-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1406-stone-game-iii) |
 | [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
+## Directed Acyclic Graph
+|  |
+| ------- |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/AkshatSinghNayal/leetcode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 <!---LeetCode Topics End-->
