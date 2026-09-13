@@ -1,49 +1,33 @@
 class Solution {
 public:
-
-    int solve(int n, vector<int>& dp) {
-
-        if (n == 0) return 0;
-        if (n < 0) return 1e9;
-
-        if (dp[n] != -1)
-            return dp[n];
-
-        // reset immediately
-        int ans = 2 + solve(n - 1, dp);
-
-        int eaten = 0;
-        int nextEat = 2;
-        int cost = 0;
-
-        while (eaten + nextEat <= n) {
-
-            eaten += nextEat;
-            nextEat++;
-            cost++;
-
-            // only take operations
-            if (eaten == n) {
-                ans = min(ans, cost);
-                break;
-            }
-
-            // after these takes, reset
-            ans = min(
-                ans,
-                cost + 2 + solve(n - eaten - 1, dp)
-            );
-        }
-
-        return dp[n] = ans;
-    }
-
     int minDays(int n) {
 
-        vector<int> dp(n + 1, -1);
+        int limit = 1e5;
 
-        // first take from streak = 0:
-        // eat 1, cost 1
-        return 1 + solve(n - 1, dp);
+        int sm = 0;
+        int var = 1;
+
+        vector<int> dp(n + 1, INT_MAX);
+
+        dp[0] = 0;
+
+        while (sm <= limit) {
+
+            sm += var;
+
+            for (int i = 1; i <= n; i++) {
+
+                if (i - sm >= 0) {
+                    dp[i] = min(
+                        dp[i],
+                        dp[i - sm] + var + 1
+                    );
+                }
+            }
+
+            var++;
+        }
+
+        return dp[n] - 1;
     }
 };
