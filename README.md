@@ -406,6 +406,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0987-vertical-order-traversal-of-a-binary-tree) |
 | [1019-squares-of-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1019-squares-of-a-sorted-array) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [1029-two-city-scheduling](https://github.com/AkshatSinghNayal/leetcode/tree/master/1029-two-city-scheduling) |
 | [1048-longest-string-chain](https://github.com/AkshatSinghNayal/leetcode/tree/master/1048-longest-string-chain) |
 | [1235-maximum-profit-in-job-scheduling](https://github.com/AkshatSinghNayal/leetcode/tree/master/1235-maximum-profit-in-job-scheduling) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
@@ -594,6 +595,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1018-binary-prefix-divisible-by-5](https://github.com/AkshatSinghNayal/leetcode/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1019-squares-of-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1019-squares-of-a-sorted-array) |
 | [1020-number-of-enclaves](https://github.com/AkshatSinghNayal/leetcode/tree/master/1020-number-of-enclaves) |
+| [1029-two-city-scheduling](https://github.com/AkshatSinghNayal/leetcode/tree/master/1029-two-city-scheduling) |
 | [1034-subarrays-with-k-different-integers](https://github.com/AkshatSinghNayal/leetcode/tree/master/1034-subarrays-with-k-different-integers) |
 | [1035-uncrossed-lines](https://github.com/AkshatSinghNayal/leetcode/tree/master/1035-uncrossed-lines) |
 | [1043-partition-array-for-maximum-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/1043-partition-array-for-maximum-sum) |
@@ -1003,6 +1005,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0881-boats-to-save-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/0881-boats-to-save-people) |
 | [0890-lemonade-change](https://github.com/AkshatSinghNayal/leetcode/tree/master/0890-lemonade-change) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0955-delete-columns-to-make-sorted-ii) |
+| [1029-two-city-scheduling](https://github.com/AkshatSinghNayal/leetcode/tree/master/1029-two-city-scheduling) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1323-maximum-69-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/1323-maximum-69-number) |
 | [1405-longest-happy-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/1405-longest-happy-string) |
@@ -1743,4 +1746,12 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | ------- |
 | [0207-course-schedule](https://github.com/AkshatSinghNayal/leetcode/tree/master/0207-course-schedule) |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/AkshatSinghNayal/leetcode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
+## Hungarian Algorithm
+|  |
+| ------- |
+| [1029-two-city-scheduling](https://github.com/AkshatSinghNayal/leetcode/tree/master/1029-two-city-scheduling) |
+## Successive Shortest Path Algorithm
+|  |
+| ------- |
+| [1029-two-city-scheduling](https://github.com/AkshatSinghNayal/leetcode/tree/master/1029-two-city-scheduling) |
 <!---LeetCode Topics End-->
