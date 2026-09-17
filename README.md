@@ -641,6 +641,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/AkshatSinghNayal/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
+| [2050-parallel-courses-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2050-parallel-courses-iii) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2091-removing-minimum-and-maximum-from-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2091-removing-minimum-and-maximum-from-array) |
 | [2104-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2104-sum-of-subarray-ranges) |
@@ -969,6 +970,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1406-stone-game-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1406-stone-game-iii) |
 | [1463-cherry-pickup-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1463-cherry-pickup-ii) |
 | [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
+| [2050-parallel-courses-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2050-parallel-courses-iii) |
 | [2606-find-the-substring-with-maximum-cost](https://github.com/AkshatSinghNayal/leetcode/tree/master/2606-find-the-substring-with-maximum-cost) |
 | [2742-painting-the-walls](https://github.com/AkshatSinghNayal/leetcode/tree/master/2742-painting-the-walls) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
@@ -1574,6 +1576,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1584-min-cost-to-connect-all-points](https://github.com/AkshatSinghNayal/leetcode/tree/master/1584-min-cost-to-connect-all-points) |
 | [1697-checking-existence-of-edge-length-limited-paths](https://github.com/AkshatSinghNayal/leetcode/tree/master/1697-checking-existence-of-edge-length-limited-paths) |
 | [1791-find-center-of-star-graph](https://github.com/AkshatSinghNayal/leetcode/tree/master/1791-find-center-of-star-graph) |
+| [2050-parallel-courses-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2050-parallel-courses-iii) |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/AkshatSinghNayal/leetcode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 ## Shortest Path
 |  |
@@ -1623,6 +1626,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | ------- |
 | [0207-course-schedule](https://github.com/AkshatSinghNayal/leetcode/tree/master/0207-course-schedule) |
 | [1203-sort-items-by-groups-respecting-dependencies](https://github.com/AkshatSinghNayal/leetcode/tree/master/1203-sort-items-by-groups-respecting-dependencies) |
+| [2050-parallel-courses-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2050-parallel-courses-iii) |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/AkshatSinghNayal/leetcode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 ## Segment Tree
 |  |
@@ -1750,6 +1754,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | ------- |
 | [0207-course-schedule](https://github.com/AkshatSinghNayal/leetcode/tree/master/0207-course-schedule) |
 | [1203-sort-items-by-groups-respecting-dependencies](https://github.com/AkshatSinghNayal/leetcode/tree/master/1203-sort-items-by-groups-respecting-dependencies) |
+| [2050-parallel-courses-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2050-parallel-courses-iii) |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/AkshatSinghNayal/leetcode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 ## Hungarian Algorithm
 |  |
