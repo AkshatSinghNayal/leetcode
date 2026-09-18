@@ -22,37 +22,53 @@ public:
 class Solution {
 public:
     Node* cloneGraph(Node* node) {
-        if( node ==  NULL ) return nullptr; 
-        unordered_map<Node* , Node*>mp; 
-        queue<Node*>q; 
-        q.push(node);
-        Node* head =  new Node(node->val); 
-        mp[node] = head; 
+        if(!node) return nullptr;
+        unordered_map<Node*,Node*>mp;
+        unordered_set<Node*>st;
+        Node* temp = new Node(node->val);
+        mp[node]=temp;
+        queue<pair<Node*,Node*>>q;
 
+        for(auto& it : node->neighbors) {
+            q.push({it,node}); 
+        }
+        st.insert(node);   
+        
         while(!q.empty()){
 
-            auto temp  = q.front(); q.pop(); 
+            int size = q.size(); 
 
-            int val = temp->val; 
-            auto vec =  temp->neighbors; 
+            while(size--){
 
+                auto [ newNode , parent ] = q.front() ; q.pop(); 
 
-            for(auto& it : vec){
-                if( mp.find(it) == mp.end()){
-                    Node* ok = new Node(it->val); 
-                    mp[temp]->neighbors.push_back(ok);
-                    mp[it] = ok;
-                    q.push(it); 
+                if(!mp.count(newNode)){
+                    Node* temp = new Node(newNode->val);
+                    mp[newNode]=temp;
+                    mp[parent]->neighbors.push_back(temp);
                 }
                 else{
-                    mp[temp]->neighbors.push_back(mp[it]); 
+                    mp[parent]->neighbors.push_back(mp[newNode]);
                 }
+
+                if(st.count(newNode)) continue;
+                st.insert(newNode); 
+                for(auto& it : newNode->neighbors){
+                    q.push({ it , newNode});
+                }
+
             }
 
-
-
         }
-        return mp[node]; 
 
+
+        // // if(node)cout<<node->val;    
+        // for(auto& it : node->neighbors) {
+        //     if(it){
+        //         cout<<it->val<<" ";
+        //     }
+        // }
+
+        return temp;
     }
 };
