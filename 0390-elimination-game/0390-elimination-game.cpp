@@ -1,20 +1,17 @@
 class Solution {
 public:
     int lastRemaining(int n) {
-        if( n ==1 ) return 1;
-        int gap = 1 , head = 1 , rem = n ; 
-        bool left = true; 
-
-        while(rem>1){
-            if( (left == false and rem %2 != 0) or left == true  ){
-                // change head
-                head+=gap; 
+        bool left = true;
+        int size = n; int head = 1 , gap =1 ;
+        while(size>1){
+            cout<<head<< " " ; 
+            if( left or !left and size % 2 != 0 ){
+                head+=gap;
             }
-            rem/=2;
             gap*=2;
-            left = !left;
-
+            size/=2; 
+            left =!left;
         }
-    return head;
+        return head;
     }
 };
