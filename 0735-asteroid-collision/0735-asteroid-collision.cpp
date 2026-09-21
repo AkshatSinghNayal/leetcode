@@ -1,31 +1,42 @@
 class Solution {
 public:
-    vector<int> asteroidCollision(vector<int>& aster) {
-        vector<int> st; 
-        int left = 0; 
-        while (left < aster.size()) {
-            bool destroyed = false;
+    vector<int> asteroidCollision(vector<int>& nums) {
+        stack<pair<int,bool>>st;
 
-            if (aster[left] < 0) {
-                // keep checking as long as last asteroid is moving right
-                while (!st.empty() && st.back() > 0) {
-                    if (abs(st.back()) < abs(aster[left])) {
-                        st.pop_back(); 
-                        continue; // check again with new top
-                    }
-                    if (abs(st.back()) == abs(aster[left])) {
-                        st.pop_back(); 
-                    }
-                    destroyed = true; 
-                    break; // current asteroid is gone
+        int i  = 0 ; 
+        while( i < nums.size() ){
+            int ele = nums[i] ; 
+            bool sign = ( ele < 0 ) ? false : true; 
+            bool equal = false;
+            while(!st.empty() and st.top().second == true and sign == false) {
+                if( abs(st.top().first) < abs(ele)){
+                    st.pop();
+                }
+                else if( abs(st.top().first) == abs(ele) ){
+                    st.pop(); 
+                    equal = true;
+                    break;
+                }
+                else{
+                    equal=true;
+                    break;
                 }
             }
-
-            if (!destroyed) {
-                st.push_back(aster[left]);
-            }
-            left++;
+            if(!equal) st.push({ele , sign });
+            i++; 
         }
-        return st; 
+
+        // while(!st.empty() ){
+        //     cout<<st.top().first << "->" << st.top().second<<" ";
+        //     st.pop();
+        // }
+
+        vector<int>ans ; 
+        while(!st.empty()){
+            ans.push_back(st.top().first ); 
+            st.pop(); 
+        }
+        reverse(ans.begin(), ans.end());
+        return ans; 
     }
 };
