@@ -1,36 +1,38 @@
-class Disjointset{
-    public :
-    vector<int> size , parent ; 
+class DSU{
+    public:
+    vector<int>parent,size;
 
-    Disjointset(int V ){
-        size.resize(V+1 , 1 ); 
-        parent.resize(V+1 ); 
+    DSU(int V ){
+        parent.resize(V+1); size.resize(V+1,1); 
 
-
-        for( int i  = 0; i<=V ; i++ ){
-            parent[i]= i ; 
+        for(int i = 0 ;i<=V; i++ ){
+            parent[i] = i; 
         }
     }
 
-    int findParent( int n ){
-        if(parent[n] ==  n ) return n ; 
-        return parent[n]= findParent(parent[n]);
+    int find(int u ){
+        if( u == parent[u] ) return u ; 
+        return parent[u] = find(parent[u]); 
     }
 
-    void unionBySize( int u , int v ){
-        int NodeA = findParent(u); 
-        int NodeB = findParent(v); 
+    void unite( int u , int v ){
+        int a = find(u); 
+        int b  =  find(v); 
 
-        if( NodeA == NodeB ) return ; 
+        if( a ==b ) return ; 
 
-        if( size[NodeA] > size[NodeB]){
-            parent[NodeB]= NodeA; 
-            size[NodeA]+=size[NodeB];
+        if(size[a] > size[b]){
+            size[a]+=size[b]; 
+            parent[b] = a; 
         }
         else{
-            parent[NodeA] = NodeB; 
-            size[NodeB] +=  size[NodeA];
+            size[b]+=size[a]; 
+            parent[a] = b ; 
         }
+    }
+
+    bool connected( int u , int v ){
+        return find(u) == find(v) ;
     }
 
 }; 
@@ -38,26 +40,23 @@ class Disjointset{
 class Solution {
 public:
     int makeConnected(int n, vector<vector<int>>& connections) {
-        int V = connections.size() ; 
-        Disjointset d(V);
-        if(n-1 > V ) return -1;
-        int extra = 0; int setted = 1;
+        int count = 0 ; int total = 1; 
+        DSU d(n);
 
         for(auto& it : connections ){
-            int node1  = it[0]; 
-            int node2 = it[1]; 
+            int node1 = it[0] , node2 = it[1]; 
 
-            if( d.findParent(node1) ==  d.findParent(node2)){
-                extra++; 
-                continue;  
-            } 
+            if(!d.connected(node1 , node2)){
+                d.unite(node1 , node2 );
+                total++; 
+            }
+            else{
+                count++;
+            }
 
-            d.unionBySize( node1 , node2 ); 
-            setted++; 
         }
-
-        int needed =  n-setted; 
-        return needed;
-
+        
+        cout<< total << " " << count; 
+        return ( total+count < n ) ? -1 : min( count , n-total);
     }
 };
