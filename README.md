@@ -258,6 +258,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1542-consecutive-characters](https://github.com/AkshatSinghNayal/leetcode/tree/master/1542-consecutive-characters) |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/1545-find-kth-bit-in-nth-binary-string) |
+| [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/AkshatSinghNayal/leetcode/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1869-longer-contiguous-segments-of-ones-than-zeros](https://github.com/AkshatSinghNayal/leetcode/tree/master/1869-longer-contiguous-segments-of-ones-than-zeros) |
 | [2027-minimum-moves-to-convert-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2027-minimum-moves-to-convert-string) |
@@ -313,6 +314,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0962-maximum-width-ramp](https://github.com/AkshatSinghNayal/leetcode/tree/master/0962-maximum-width-ramp) |
 | [1209-remove-all-adjacent-duplicates-in-string-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1209-remove-all-adjacent-duplicates-in-string-ii) |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
+| [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [2104-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2104-sum-of-subarray-ranges) |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2116-check-if-a-parentheses-string-can-be-valid) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
@@ -1788,4 +1790,8 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0337-house-robber-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0337-house-robber-iii) |
+## Bracket Sequences
+|  |
+| ------- |
+| [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 <!---LeetCode Topics End-->
