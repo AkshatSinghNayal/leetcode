@@ -178,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1048-longest-string-chain](https://github.com/AkshatSinghNayal/leetcode/tree/master/1048-longest-string-chain) |
 | [1697-checking-existence-of-edge-length-limited-paths](https://github.com/AkshatSinghNayal/leetcode/tree/master/1697-checking-existence-of-edge-length-limited-paths) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/AkshatSinghNayal/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
+| [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/AkshatSinghNayal/leetcode/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2410-maximum-matching-of-players-with-trainers) |
@@ -264,6 +265,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/AkshatSinghNayal/leetcode/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1869-longer-contiguous-segments-of-ones-than-zeros](https://github.com/AkshatSinghNayal/leetcode/tree/master/1869-longer-contiguous-segments-of-ones-than-zeros) |
+| [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/AkshatSinghNayal/leetcode/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2027-minimum-moves-to-convert-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2027-minimum-moves-to-convert-string) |
 | [2032-largest-odd-number-in-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2032-largest-odd-number-in-string) |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/AkshatSinghNayal/leetcode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
@@ -321,6 +323,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1209-remove-all-adjacent-duplicates-in-string-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1209-remove-all-adjacent-duplicates-in-string-ii) |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
+| [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/AkshatSinghNayal/leetcode/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2104-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2104-sum-of-subarray-ranges) |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2116-check-if-a-parentheses-string-can-be-valid) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
@@ -1026,6 +1029,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1422-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/1422-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1448-maximum-69-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/1448-maximum-69-number) |
 | [1642-furthest-building-you-can-reach](https://github.com/AkshatSinghNayal/leetcode/tree/master/1642-furthest-building-you-can-reach) |
+| [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/AkshatSinghNayal/leetcode/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2027-minimum-moves-to-convert-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2027-minimum-moves-to-convert-string) |
 | [2032-largest-odd-number-in-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/2032-largest-odd-number-in-string) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -1806,4 +1810,5 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/AkshatSinghNayal/leetcode/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
+| [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/AkshatSinghNayal/leetcode/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
 <!---LeetCode Topics End-->
