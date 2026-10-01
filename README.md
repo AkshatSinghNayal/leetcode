@@ -198,6 +198,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0014-longest-common-prefix](https://github.com/AkshatSinghNayal/leetcode/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0020-valid-parentheses) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+| [0032-longest-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/AkshatSinghNayal/leetcode/tree/master/0049-group-anagrams) |
 | [0058-length-of-last-word](https://github.com/AkshatSinghNayal/leetcode/tree/master/0058-length-of-last-word) |
 | [0067-add-binary](https://github.com/AkshatSinghNayal/leetcode/tree/master/0067-add-binary) |
@@ -289,6 +290,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0020-valid-parentheses) |
+| [0032-longest-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0042-trapping-rain-water) |
 | [0085-maximal-rectangle](https://github.com/AkshatSinghNayal/leetcode/tree/master/0085-maximal-rectangle) |
 | [0094-binary-tree-inorder-traversal](https://github.com/AkshatSinghNayal/leetcode/tree/master/0094-binary-tree-inorder-traversal) |
@@ -908,6 +910,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/AkshatSinghNayal/leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0032-longest-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/0053-maximum-subarray) |
@@ -1795,6 +1798,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 ## Bracket Sequences
 |  |
 | ------- |
+| [0032-longest-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0032-longest-valid-parentheses) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/AkshatSinghNayal/leetcode/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 <!---LeetCode Topics End-->
