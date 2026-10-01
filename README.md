@@ -241,6 +241,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0777-swap-adjacent-in-lr-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0777-swap-adjacent-in-lr-string) |
 | [0796-rotate-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0796-rotate-string) |
 | [0812-rotate-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0812-rotate-string) |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [0926-flip-string-to-monotone-increasing](https://github.com/AkshatSinghNayal/leetcode/tree/master/0926-flip-string-to-monotone-increasing) |
 | [0944-delete-columns-to-make-sorted](https://github.com/AkshatSinghNayal/leetcode/tree/master/0944-delete-columns-to-make-sorted) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0955-delete-columns-to-make-sorted-ii) |
@@ -313,6 +314,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0895-maximum-frequency-stack](https://github.com/AkshatSinghNayal/leetcode/tree/master/0895-maximum-frequency-stack) |
 | [0901-online-stock-span](https://github.com/AkshatSinghNayal/leetcode/tree/master/0901-online-stock-span) |
 | [0907-sum-of-subarray-minimums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0907-sum-of-subarray-minimums) |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [0943-sum-of-subarray-minimums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0943-sum-of-subarray-minimums) |
 | [0962-maximum-width-ramp](https://github.com/AkshatSinghNayal/leetcode/tree/master/0962-maximum-width-ramp) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/AkshatSinghNayal/leetcode/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
@@ -1015,6 +1017,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0876-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0876-hand-of-straights) |
 | [0881-boats-to-save-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/0881-boats-to-save-people) |
 | [0890-lemonade-change](https://github.com/AkshatSinghNayal/leetcode/tree/master/0890-lemonade-change) |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [1029-two-city-scheduling](https://github.com/AkshatSinghNayal/leetcode/tree/master/1029-two-city-scheduling) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
@@ -1800,6 +1803,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | ------- |
 | [0020-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0020-valid-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0032-longest-valid-parentheses) |
+| [0921-minimum-add-to-make-parentheses-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/AkshatSinghNayal/leetcode/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 <!---LeetCode Topics End-->
