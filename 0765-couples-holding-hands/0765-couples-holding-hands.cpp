@@ -1,55 +1,49 @@
-class DSU{
-    public:
-    vector<int>parent;
+class DSU {
+public:
+    vector<int> parent;
 
-    DSU(int v){
-        parent.resize(v+1); 
+    DSU(int n) {
+        parent.resize(n);
 
-        for(int i  = 0 ;i<=v;i++ ){
-            parent[i] =i; 
-        }
+        for (int i = 0; i < n; i++)
+            parent[i] = i;
     }
 
-    int find(int u){
-        return parent[u]; 
+    int find(int u) {
+        if (parent[u] == u)
+            return u;
+
+        return parent[u] = find(parent[u]);
     }
 
-    void unionBySize( int u , int v ){
-    
-        parent[v] = u;
-        parent[u] = v;
+    void unite(int u, int v) {
+        u = find(u);
+        v = find(v);
 
+        if (u != v)
+            parent[v] = u;
     }
 };
 
 class Solution {
 public:
     int minSwapsCouples(vector<int>& row) {
-        int n = row.size(); 
-        DSU d(n);
+        int n = row.size() / 2;
 
-        unordered_map<int,int>mp; 
-        for(int i  = 0; i<n-1; i+=2){
-            mp[i] = i+1;
-            mp[i+1]= i;
-            d.unionBySize(row[i],row[i+1]);
+        DSU dsu(n);
+
+        int components = n;
+
+        for (int i = 0; i < row.size(); i += 2) {
+            int a = row[i] / 2;
+            int b = row[i + 1] / 2;
+
+            if (dsu.find(a) != dsu.find(b)) {
+                dsu.unite(a, b);
+                components--;
+            }
         }
 
-        int swap = 0;
-
-        for(int i = 0 ;i<n ;i++ ){
-           int pi = d.find(row[i]); 
-        //    cout<< pi << " " ; 
-           if(mp[row[i]] == pi  ) continue;
-           else{
-                int temp = mp[row[i]]; 
-                int ptemp = d.find(temp);
-                // cout<<temp << " ";
-                swap++;
-                d.unionBySize(row[i],temp);
-                d.unionBySize(pi,ptemp);
-           }
-        }
-        return swap;
+        return n - components;
     }
 };
