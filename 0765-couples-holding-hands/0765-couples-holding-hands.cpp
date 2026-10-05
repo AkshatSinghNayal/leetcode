@@ -39,7 +39,7 @@ public:
 
         for(int i = 0 ;i<n ;i++ ){
            int pi = d.find(row[i]); 
-           cout<< pi << " " ; 
+        //    cout<< pi << " " ; 
            if(mp[row[i]] == pi  ) continue;
            else{
                 int temp = mp[row[i]]; 
