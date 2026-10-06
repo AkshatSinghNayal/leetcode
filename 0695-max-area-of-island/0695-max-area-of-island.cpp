@@ -37,6 +37,7 @@ public:
     int maxAreaOfIsland(vector<vector<int>>& grid) {
         int n = grid.size() , m = grid[0].size();
         DSU d(n*m); 
+        int maxi = 0 ;
 
         vector<pair<int,int>>dir = {{1,0},{-1,0},{0,-1},{0,1}}; 
 
@@ -55,19 +56,10 @@ public:
                     }
                 }
 
+                maxi = max( maxi , d.size[d.find(node)]);
             }
         }
-        int maxi = 0;
-        unordered_map<int,int>mp;
-        for(int i = 0;i<n; i++ ){
-            for(int j= 0; j<m ; j++ ){
-                int node = i*m+j;
-                if( grid[i][j] == 0 ) continue;
-                int root = d.find(node);
-                mp[root]++;
-                maxi = max(maxi, mp[root]);
-            }
-        }
+        
         return (!found) ? 0 :maxi;
     }
 };
