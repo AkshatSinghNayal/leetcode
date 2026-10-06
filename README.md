@@ -561,6 +561,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0673-number-of-longest-increasing-subsequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [0682-baseball-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0682-baseball-game) |
 | [0692-top-k-frequent-words](https://github.com/AkshatSinghNayal/leetcode/tree/master/0692-top-k-frequent-words) |
+| [0695-max-area-of-island](https://github.com/AkshatSinghNayal/leetcode/tree/master/0695-max-area-of-island) |
 | [0697-degree-of-an-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0697-degree-of-an-array) |
 | [0705-design-hashset](https://github.com/AkshatSinghNayal/leetcode/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/AkshatSinghNayal/leetcode/tree/master/0706-design-hashmap) |
@@ -1145,6 +1146,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0417-pacific-atlantic-water-flow](https://github.com/AkshatSinghNayal/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0542-01-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/0542-01-matrix) |
+| [0695-max-area-of-island](https://github.com/AkshatSinghNayal/leetcode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/AkshatSinghNayal/leetcode/tree/master/0733-flood-fill) |
 | [0741-cherry-pickup](https://github.com/AkshatSinghNayal/leetcode/tree/master/0741-cherry-pickup) |
 | [0778-swim-in-rising-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0778-swim-in-rising-water) |
@@ -1452,6 +1454,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/AkshatSinghNayal/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0684-redundant-connection](https://github.com/AkshatSinghNayal/leetcode/tree/master/0684-redundant-connection) |
+| [0695-max-area-of-island](https://github.com/AkshatSinghNayal/leetcode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/AkshatSinghNayal/leetcode/tree/master/0733-flood-fill) |
 | [0743-network-delay-time](https://github.com/AkshatSinghNayal/leetcode/tree/master/0743-network-delay-time) |
 | [0765-couples-holding-hands](https://github.com/AkshatSinghNayal/leetcode/tree/master/0765-couples-holding-hands) |
@@ -1506,6 +1509,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/AkshatSinghNayal/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0684-redundant-connection](https://github.com/AkshatSinghNayal/leetcode/tree/master/0684-redundant-connection) |
+| [0695-max-area-of-island](https://github.com/AkshatSinghNayal/leetcode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/AkshatSinghNayal/leetcode/tree/master/0733-flood-fill) |
 | [0743-network-delay-time](https://github.com/AkshatSinghNayal/leetcode/tree/master/0743-network-delay-time) |
 | [0765-couples-holding-hands](https://github.com/AkshatSinghNayal/leetcode/tree/master/0765-couples-holding-hands) |
@@ -1571,6 +1575,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0200-number-of-islands](https://github.com/AkshatSinghNayal/leetcode/tree/master/0200-number-of-islands) |
 | [0547-number-of-provinces](https://github.com/AkshatSinghNayal/leetcode/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/AkshatSinghNayal/leetcode/tree/master/0684-redundant-connection) |
+| [0695-max-area-of-island](https://github.com/AkshatSinghNayal/leetcode/tree/master/0695-max-area-of-island) |
 | [0765-couples-holding-hands](https://github.com/AkshatSinghNayal/leetcode/tree/master/0765-couples-holding-hands) |
 | [0778-swim-in-rising-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0778-swim-in-rising-water) |
 | [0785-is-graph-bipartite](https://github.com/AkshatSinghNayal/leetcode/tree/master/0785-is-graph-bipartite) |
