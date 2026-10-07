@@ -42,7 +42,7 @@ public:
     bool topo(int from, vector<int>&indegree, queue<int>q , unordered_map<int,vector<int>>&mp, int digit,int n){
         while(!q.empty()){
             auto node = q.front() ; q.pop();
-            cout<<node<<" ";
+            // cout<<node<<" ";
             n--;
             for(auto& it: mp[node]){
                 if(node == from and digit == it ) continue;
