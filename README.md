@@ -217,6 +217,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0205-isomorphic-strings](https://github.com/AkshatSinghNayal/leetcode/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/AkshatSinghNayal/leetcode/tree/master/0242-valid-anagram) |
 | [0290-word-pattern](https://github.com/AkshatSinghNayal/leetcode/tree/master/0290-word-pattern) |
+| [0301-remove-invalid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0301-remove-invalid-parentheses) |
 | [0318-maximum-product-of-word-lengths](https://github.com/AkshatSinghNayal/leetcode/tree/master/0318-maximum-product-of-word-lengths) |
 | [0387-first-unique-character-in-a-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0389-find-the-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/0389-find-the-difference) |
@@ -1130,6 +1131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0090-subsets-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0090-subsets-ii) |
 | [0131-palindrome-partitioning](https://github.com/AkshatSinghNayal/leetcode/tree/master/0131-palindrome-partitioning) |
 | [0140-word-break-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0140-word-break-ii) |
+| [0301-remove-invalid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0301-remove-invalid-parentheses) |
 | [0357-count-numbers-with-unique-digits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0357-count-numbers-with-unique-digits) |
 | [0494-target-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0494-target-sum) |
 | [0797-all-paths-from-source-to-target](https://github.com/AkshatSinghNayal/leetcode/tree/master/0797-all-paths-from-source-to-target) |
@@ -1500,6 +1502,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0207-course-schedule](https://github.com/AkshatSinghNayal/leetcode/tree/master/0207-course-schedule) |
 | [0226-invert-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0226-invert-binary-tree) |
 | [0279-perfect-squares](https://github.com/AkshatSinghNayal/leetcode/tree/master/0279-perfect-squares) |
+| [0301-remove-invalid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0301-remove-invalid-parentheses) |
 | [0322-coin-change](https://github.com/AkshatSinghNayal/leetcode/tree/master/0322-coin-change) |
 | [0404-sum-of-left-leaves](https://github.com/AkshatSinghNayal/leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0417-pacific-atlantic-water-flow](https://github.com/AkshatSinghNayal/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
