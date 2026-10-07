@@ -580,6 +580,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0792-binary-search](https://github.com/AkshatSinghNayal/leetcode/tree/master/0792-binary-search) |
 | [0827-making-a-large-island](https://github.com/AkshatSinghNayal/leetcode/tree/master/0827-making-a-large-island) |
 | [0846-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0846-hand-of-straights) |
+| [0851-loud-and-rich](https://github.com/AkshatSinghNayal/leetcode/tree/master/0851-loud-and-rich) |
 | [0857-minimum-cost-to-hire-k-workers](https://github.com/AkshatSinghNayal/leetcode/tree/master/0857-minimum-cost-to-hire-k-workers) |
 | [0875-koko-eating-bananas](https://github.com/AkshatSinghNayal/leetcode/tree/master/0875-koko-eating-bananas) |
 | [0876-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0876-hand-of-straights) |
@@ -1468,6 +1469,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0802-find-eventual-safe-states](https://github.com/AkshatSinghNayal/leetcode/tree/master/0802-find-eventual-safe-states) |
 | [0827-making-a-large-island](https://github.com/AkshatSinghNayal/leetcode/tree/master/0827-making-a-large-island) |
 | [0841-keys-and-rooms](https://github.com/AkshatSinghNayal/leetcode/tree/master/0841-keys-and-rooms) |
+| [0851-loud-and-rich](https://github.com/AkshatSinghNayal/leetcode/tree/master/0851-loud-and-rich) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [0934-shortest-bridge](https://github.com/AkshatSinghNayal/leetcode/tree/master/0934-shortest-bridge) |
@@ -1613,6 +1615,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0797-all-paths-from-source-to-target](https://github.com/AkshatSinghNayal/leetcode/tree/master/0797-all-paths-from-source-to-target) |
 | [0802-find-eventual-safe-states](https://github.com/AkshatSinghNayal/leetcode/tree/master/0802-find-eventual-safe-states) |
 | [0841-keys-and-rooms](https://github.com/AkshatSinghNayal/leetcode/tree/master/0841-keys-and-rooms) |
+| [0851-loud-and-rich](https://github.com/AkshatSinghNayal/leetcode/tree/master/0851-loud-and-rich) |
 | [0947-most-stones-removed-with-same-row-or-column](https://github.com/AkshatSinghNayal/leetcode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [0990-satisfiability-of-equality-equations](https://github.com/AkshatSinghNayal/leetcode/tree/master/0990-satisfiability-of-equality-equations) |
 | [1203-sort-items-by-groups-respecting-dependencies](https://github.com/AkshatSinghNayal/leetcode/tree/master/1203-sort-items-by-groups-respecting-dependencies) |
@@ -1672,6 +1675,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | ------- |
 | [0207-course-schedule](https://github.com/AkshatSinghNayal/leetcode/tree/master/0207-course-schedule) |
 | [0802-find-eventual-safe-states](https://github.com/AkshatSinghNayal/leetcode/tree/master/0802-find-eventual-safe-states) |
+| [0851-loud-and-rich](https://github.com/AkshatSinghNayal/leetcode/tree/master/0851-loud-and-rich) |
 | [1203-sort-items-by-groups-respecting-dependencies](https://github.com/AkshatSinghNayal/leetcode/tree/master/1203-sort-items-by-groups-respecting-dependencies) |
 | [2050-parallel-courses-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2050-parallel-courses-iii) |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/AkshatSinghNayal/leetcode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
@@ -1801,6 +1805,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/AkshatSinghNayal/leetcode/tree/master/0207-course-schedule) |
+| [0851-loud-and-rich](https://github.com/AkshatSinghNayal/leetcode/tree/master/0851-loud-and-rich) |
 | [1203-sort-items-by-groups-respecting-dependencies](https://github.com/AkshatSinghNayal/leetcode/tree/master/1203-sort-items-by-groups-respecting-dependencies) |
 | [2050-parallel-courses-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2050-parallel-courses-iii) |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/AkshatSinghNayal/leetcode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
