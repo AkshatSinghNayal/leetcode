@@ -1454,6 +1454,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/AkshatSinghNayal/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0684-redundant-connection](https://github.com/AkshatSinghNayal/leetcode/tree/master/0684-redundant-connection) |
+| [0685-redundant-connection-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0685-redundant-connection-ii) |
 | [0695-max-area-of-island](https://github.com/AkshatSinghNayal/leetcode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/AkshatSinghNayal/leetcode/tree/master/0733-flood-fill) |
 | [0743-network-delay-time](https://github.com/AkshatSinghNayal/leetcode/tree/master/0743-network-delay-time) |
@@ -1509,6 +1510,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/AkshatSinghNayal/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0662-maximum-width-of-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0684-redundant-connection](https://github.com/AkshatSinghNayal/leetcode/tree/master/0684-redundant-connection) |
+| [0685-redundant-connection-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0685-redundant-connection-ii) |
 | [0695-max-area-of-island](https://github.com/AkshatSinghNayal/leetcode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/AkshatSinghNayal/leetcode/tree/master/0733-flood-fill) |
 | [0743-network-delay-time](https://github.com/AkshatSinghNayal/leetcode/tree/master/0743-network-delay-time) |
@@ -1575,6 +1577,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0200-number-of-islands](https://github.com/AkshatSinghNayal/leetcode/tree/master/0200-number-of-islands) |
 | [0547-number-of-provinces](https://github.com/AkshatSinghNayal/leetcode/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/AkshatSinghNayal/leetcode/tree/master/0684-redundant-connection) |
+| [0685-redundant-connection-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0685-redundant-connection-ii) |
 | [0695-max-area-of-island](https://github.com/AkshatSinghNayal/leetcode/tree/master/0695-max-area-of-island) |
 | [0765-couples-holding-hands](https://github.com/AkshatSinghNayal/leetcode/tree/master/0765-couples-holding-hands) |
 | [0778-swim-in-rising-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0778-swim-in-rising-water) |
@@ -1599,6 +1602,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0207-course-schedule](https://github.com/AkshatSinghNayal/leetcode/tree/master/0207-course-schedule) |
 | [0547-number-of-provinces](https://github.com/AkshatSinghNayal/leetcode/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/AkshatSinghNayal/leetcode/tree/master/0684-redundant-connection) |
+| [0685-redundant-connection-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0685-redundant-connection-ii) |
 | [0743-network-delay-time](https://github.com/AkshatSinghNayal/leetcode/tree/master/0743-network-delay-time) |
 | [0765-couples-holding-hands](https://github.com/AkshatSinghNayal/leetcode/tree/master/0765-couples-holding-hands) |
 | [0785-is-graph-bipartite](https://github.com/AkshatSinghNayal/leetcode/tree/master/0785-is-graph-bipartite) |
