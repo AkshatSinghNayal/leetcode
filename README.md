@@ -250,6 +250,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0944-delete-columns-to-make-sorted](https://github.com/AkshatSinghNayal/leetcode/tree/master/0944-delete-columns-to-make-sorted) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [0990-satisfiability-of-equality-equations](https://github.com/AkshatSinghNayal/leetcode/tree/master/0990-satisfiability-of-equality-equations) |
+| [1021-remove-outermost-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1021-remove-outermost-parentheses) |
 | [1048-longest-string-chain](https://github.com/AkshatSinghNayal/leetcode/tree/master/1048-longest-string-chain) |
 | [1061-lexicographically-smallest-equivalent-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/1061-lexicographically-smallest-equivalent-string) |
 | [1092-shortest-common-supersequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/1092-shortest-common-supersequence) |
@@ -323,6 +324,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [0943-sum-of-subarray-minimums](https://github.com/AkshatSinghNayal/leetcode/tree/master/0943-sum-of-subarray-minimums) |
 | [0962-maximum-width-ramp](https://github.com/AkshatSinghNayal/leetcode/tree/master/0962-maximum-width-ramp) |
+| [1021-remove-outermost-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1021-remove-outermost-parentheses) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/AkshatSinghNayal/leetcode/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1209-remove-all-adjacent-duplicates-in-string-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1209-remove-all-adjacent-duplicates-in-string-ii) |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
@@ -1838,6 +1840,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0678-valid-parenthesis-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0856-score-of-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0856-score-of-parentheses) |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/0921-minimum-add-to-make-parentheses-valid) |
+| [1021-remove-outermost-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1021-remove-outermost-parentheses) |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/AkshatSinghNayal/leetcode/tree/master/1111-maximum-nesting-depth-of-two-valid-parentheses-strings) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/AkshatSinghNayal/leetcode/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
