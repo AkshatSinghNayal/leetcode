@@ -1,8 +1,14 @@
-with first as (
-    select product_id , min(year) as year , quantity , price
+with temp as (
+    select*, rank() over(
+        partition by product_id
+        order by year asc
+    ) as rnk 
     from Sales
-    group by product_id
 )
 
-select a.product_id , a.year as first_year , a.quantity , a.price
-from first as a
+SELECT product_id,
+       year AS first_year,
+       quantity,
+       price
+FROM temp
+WHERE rnk = 1;
