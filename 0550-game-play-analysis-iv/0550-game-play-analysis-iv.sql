@@ -1,13 +1,7 @@
-with first_day as (
-    select a.player_id , min(a.event_date ) as first
-    from Activity as a 
-    group by a.player_id
+select round(count(*)/(select count(distinct player_id) from Activity),2) as fraction
+from Activity as a
+where a.event_date = (
+    select min(b.event_date)+ interval 1 day 
+    from Activity as b 
+    where a.player_id = b.player_id
 )
-
-select round(count(*)/(
-    select count( distinct temp.player_id )
-    from Activity as temp
- ),2) as fraction
-from first_day as f
-left join Activity as a 
-on f.player_id = a.player_id where datediff( a.event_date , f.first ) =1 
