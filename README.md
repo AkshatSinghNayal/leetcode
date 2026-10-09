@@ -586,6 +586,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0846-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0846-hand-of-straights) |
 | [0851-loud-and-rich](https://github.com/AkshatSinghNayal/leetcode/tree/master/0851-loud-and-rich) |
 | [0857-minimum-cost-to-hire-k-workers](https://github.com/AkshatSinghNayal/leetcode/tree/master/0857-minimum-cost-to-hire-k-workers) |
+| [0864-shortest-path-to-get-all-keys](https://github.com/AkshatSinghNayal/leetcode/tree/master/0864-shortest-path-to-get-all-keys) |
 | [0875-koko-eating-bananas](https://github.com/AkshatSinghNayal/leetcode/tree/master/0875-koko-eating-bananas) |
 | [0876-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0876-hand-of-straights) |
 | [0877-stone-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/0877-stone-game) |
@@ -890,6 +891,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0389-find-the-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/0389-find-the-difference) |
 | [0645-set-mismatch](https://github.com/AkshatSinghNayal/leetcode/tree/master/0645-set-mismatch) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/AkshatSinghNayal/leetcode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
+| [0864-shortest-path-to-get-all-keys](https://github.com/AkshatSinghNayal/leetcode/tree/master/0864-shortest-path-to-get-all-keys) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/AkshatSinghNayal/leetcode/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
 | [1444-number-of-steps-to-reduce-a-number-to-zero](https://github.com/AkshatSinghNayal/leetcode/tree/master/1444-number-of-steps-to-reduce-a-number-to-zero) |
@@ -1159,6 +1161,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0741-cherry-pickup](https://github.com/AkshatSinghNayal/leetcode/tree/master/0741-cherry-pickup) |
 | [0778-swim-in-rising-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0778-swim-in-rising-water) |
 | [0827-making-a-large-island](https://github.com/AkshatSinghNayal/leetcode/tree/master/0827-making-a-large-island) |
+| [0864-shortest-path-to-get-all-keys](https://github.com/AkshatSinghNayal/leetcode/tree/master/0864-shortest-path-to-get-all-keys) |
 | [0931-minimum-falling-path-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0931-minimum-falling-path-sum) |
 | [0934-shortest-bridge](https://github.com/AkshatSinghNayal/leetcode/tree/master/0934-shortest-bridge) |
 | [0994-rotting-oranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/0994-rotting-oranges) |
@@ -1533,6 +1536,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0827-making-a-large-island](https://github.com/AkshatSinghNayal/leetcode/tree/master/0827-making-a-large-island) |
 | [0841-keys-and-rooms](https://github.com/AkshatSinghNayal/leetcode/tree/master/0841-keys-and-rooms) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
+| [0864-shortest-path-to-get-all-keys](https://github.com/AkshatSinghNayal/leetcode/tree/master/0864-shortest-path-to-get-all-keys) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
 | [0934-shortest-bridge](https://github.com/AkshatSinghNayal/leetcode/tree/master/0934-shortest-bridge) |
 | [0965-univalued-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0965-univalued-binary-tree) |
