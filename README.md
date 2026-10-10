@@ -441,6 +441,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2191-sort-the-jumbled-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2191-sort-the-jumbled-numbers) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2327-largest-number-after-digit-swaps-by-parity](https://github.com/AkshatSinghNayal/leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2410-maximum-matching-of-players-with-trainers) |
 | [2418-sort-the-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/2418-sort-the-people) |
 | [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
@@ -681,6 +682,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2293-min-max-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/2293-min-max-game) |
 | [2302-count-subarrays-with-score-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/2302-count-subarrays-with-score-less-than-k) |
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2316-count-hills-and-valleys-in-an-array) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2347-best-poker-hand](https://github.com/AkshatSinghNayal/leetcode/tree/master/2347-best-poker-hand) |
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2410-maximum-matching-of-players-with-trainers) |
 | [2418-sort-the-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/2418-sort-the-people) |
@@ -861,6 +863,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1851-minimum-interval-to-include-each-query](https://github.com/AkshatSinghNayal/leetcode/tree/master/1851-minimum-interval-to-include-each-query) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/AkshatSinghNayal/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2302-count-subarrays-with-score-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/2302-count-subarrays-with-score-less-than-k) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
 | [2498-frog-jump-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2498-frog-jump-ii) |
 | [2540-minimum-common-value](https://github.com/AkshatSinghNayal/leetcode/tree/master/2540-minimum-common-value) |
@@ -1052,6 +1055,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2116-check-if-a-parentheses-string-can-be-valid) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/AkshatSinghNayal/leetcode/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2208-minimum-operations-to-halve-array-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/2208-minimum-operations-to-halve-array-sum) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2337-remove-digit-from-number-to-maximize-result](https://github.com/AkshatSinghNayal/leetcode/tree/master/2337-remove-digit-from-number-to-maximize-result) |
 | [2410-maximum-matching-of-players-with-trainers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2410-maximum-matching-of-players-with-trainers) |
 | [2498-frog-jump-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2498-frog-jump-ii) |
@@ -1114,6 +1118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1851-minimum-interval-to-include-each-query](https://github.com/AkshatSinghNayal/leetcode/tree/master/1851-minimum-interval-to-include-each-query) |
 | [2208-minimum-operations-to-halve-array-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/2208-minimum-operations-to-halve-array-sum) |
 | [2327-largest-number-after-digit-swaps-by-parity](https://github.com/AkshatSinghNayal/leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
+| [2333-minimum-sum-of-squared-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2454-next-greater-element-iv](https://github.com/AkshatSinghNayal/leetcode/tree/master/2454-next-greater-element-iv) |
 | [2462-total-cost-to-hire-k-workers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2462-total-cost-to-hire-k-workers) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
