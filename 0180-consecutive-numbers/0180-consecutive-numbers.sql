@@ -1,10 +1,16 @@
-SELECT DISTINCT num AS ConsecutiveNums
-FROM (
-    SELECT
-        num,
-        LEAD(num, 1) OVER (ORDER BY id) AS next_num,
-        LEAD(num, 2) OVER (ORDER BY id) AS next_next_num
-    FROM Logs
-) t
-WHERE num = next_num
-  AND num = next_next_num;
+with temp1 as (
+    select l.id, l.num
+    from Logs as l 
+    where l.num = (
+        select num
+        from Logs 
+        where l.id+1 = id
+    )  and l.num = (
+        select num
+        from logs 
+        where l.id+2 = id
+    )
+) 
+
+select distinct num as "ConsecutiveNums"
+from temp1
