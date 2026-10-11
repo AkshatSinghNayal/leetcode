@@ -5,6 +5,6 @@ with sec as (
     from Employee
 )
 
-select case when count(*) >= 1 then salary else null end as "SecondHighestSalary"
+select max(salary) as "SecondHighestSalary"
 from sec
 where rnk = 2
