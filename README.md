@@ -300,6 +300,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0020-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0020-valid-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0042-trapping-rain-water) |
+| [0084-largest-rectangle-in-histogram](https://github.com/AkshatSinghNayal/leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/AkshatSinghNayal/leetcode/tree/master/0085-maximal-rectangle) |
 | [0094-binary-tree-inorder-traversal](https://github.com/AkshatSinghNayal/leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0114-flatten-binary-tree-to-linked-list) |
@@ -494,6 +495,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0075-sort-colors](https://github.com/AkshatSinghNayal/leetcode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/AkshatSinghNayal/leetcode/tree/master/0078-subsets) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0081-search-in-rotated-sorted-array-ii) |
+| [0084-largest-rectangle-in-histogram](https://github.com/AkshatSinghNayal/leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/AkshatSinghNayal/leetcode/tree/master/0085-maximal-rectangle) |
 | [0088-merge-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0088-merge-sorted-array) |
 | [0090-subsets-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0090-subsets-ii) |
@@ -1235,6 +1237,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0042-trapping-rain-water) |
+| [0084-largest-rectangle-in-histogram](https://github.com/AkshatSinghNayal/leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/AkshatSinghNayal/leetcode/tree/master/0085-maximal-rectangle) |
 | [0402-remove-k-digits](https://github.com/AkshatSinghNayal/leetcode/tree/master/0402-remove-k-digits) |
 | [0456-132-pattern](https://github.com/AkshatSinghNayal/leetcode/tree/master/0456-132-pattern) |
@@ -1865,4 +1868,8 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/1541-minimum-insertions-to-balance-a-parentheses-string) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [1963-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/AkshatSinghNayal/leetcode/tree/master/1963-minimum-number-of-swaps-to-make-the-string-balanced) |
+## Range Minimum/Maximum Query
+|  |
+| ------- |
+| [0084-largest-rectangle-in-histogram](https://github.com/AkshatSinghNayal/leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 <!---LeetCode Topics End-->
