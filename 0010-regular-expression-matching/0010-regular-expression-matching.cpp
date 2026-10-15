@@ -48,14 +48,14 @@ public:
         vector<vector<int>>dp(n,vector<int>(m , -1 )); 
         int ans = solve( dp, s, p, n-1 , m-1 ); 
 
-        cout<<"length->"<<s.size() << endl;
+        // cout<<"length->"<<s.size() << endl;
 
-        for(auto& it : dp ){
-            for(auto& temp : it ){
-                cout<<temp<< " ";
-            }
-            cout<<endl;
-        }
+        // for(auto& it : dp ){
+        //     for(auto& temp : it ){
+        //         cout<<temp<< " ";
+        //     }
+        //     cout<<endl;
+        // }
 
         // cout<<ans<< " ";
         return ans == n;
