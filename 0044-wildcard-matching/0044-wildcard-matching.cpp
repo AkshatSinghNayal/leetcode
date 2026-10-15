@@ -17,17 +17,15 @@ public:
         // if( s[i] != p[j] and p[j]!='?' or p[j]!='*') return INT_MIN;
 
         int take = INT_MIN ;
-        int take2 = INT_MIN;
         int take3 = INT_MIN ; 
-        if(s[i] == p[j]) take = 1+solve(dp ,s,p,i-1,j-1);
-        if(p[j] == '?')  take2 = 1+ solve(dp,s,p,i-1,j-1);
+        if(s[i] == p[j] or p[j] == '?') take = 1+solve(dp ,s,p,i-1,j-1);
         if(p[j] == '*'){
             int case1 = 1+solve(dp,s,p,i-1,j-1);
             int case2 = solve(dp,s,p,i,j-1);
             int case3 = 1+solve(dp,s,p,i-1,j);
             take3 = max({ case1 , case2 , case3 }); 
         }
-        return dp[i][j] = max({take,take2 , take3}); 
+        return dp[i][j] = max({take , take3}); 
 
     }
 
