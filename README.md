@@ -196,6 +196,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0003-longest-substring-without-repeating-characters](https://github.com/AkshatSinghNayal/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0005-longest-palindromic-substring](https://github.com/AkshatSinghNayal/leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0008-string-to-integer-atoi](https://github.com/AkshatSinghNayal/leetcode/tree/master/0008-string-to-integer-atoi) |
+| [0010-regular-expression-matching](https://github.com/AkshatSinghNayal/leetcode/tree/master/0010-regular-expression-matching) |
 | [0013-roman-to-integer](https://github.com/AkshatSinghNayal/leetcode/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/AkshatSinghNayal/leetcode/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0020-valid-parentheses) |
@@ -345,6 +346,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/0002-add-two-numbers) |
+| [0010-regular-expression-matching](https://github.com/AkshatSinghNayal/leetcode/tree/master/0010-regular-expression-matching) |
 | [0021-merge-two-sorted-lists](https://github.com/AkshatSinghNayal/leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0044-wildcard-matching](https://github.com/AkshatSinghNayal/leetcode/tree/master/0044-wildcard-matching) |
 | [0050-powx-n](https://github.com/AkshatSinghNayal/leetcode/tree/master/0050-powx-n) |
@@ -939,6 +941,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/AkshatSinghNayal/leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0010-regular-expression-matching](https://github.com/AkshatSinghNayal/leetcode/tree/master/0010-regular-expression-matching) |
 | [0022-generate-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/AkshatSinghNayal/leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0042-trapping-rain-water) |
