@@ -93,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2716-minimize-string-length](https://github.com/AkshatSinghNayal/leetcode/tree/master/2716-minimize-string-length) |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
 | [2845-count-of-interesting-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/2845-count-of-interesting-subarrays) |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/2913-subarrays-distinct-element-sum-of-squares-i) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/AkshatSinghNayal/leetcode/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/AkshatSinghNayal/leetcode/tree/master/3471-find-the-largest-almost-missing-integer) |
@@ -706,6 +707,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2812-find-the-safest-path-in-a-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [2845-count-of-interesting-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/2845-count-of-interesting-subarrays) |
 | [2906-construct-product-matrix](https://github.com/AkshatSinghNayal/leetcode/tree/master/2906-construct-product-matrix) |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/2913-subarrays-distinct-element-sum-of-squares-i) |
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/AkshatSinghNayal/leetcode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/AkshatSinghNayal/leetcode/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2962-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/AkshatSinghNayal/leetcode/tree/master/2962-count-subarrays-where-max-element-appears-at-least-k-times) |
@@ -1705,6 +1707,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/0673-number-of-longest-increasing-subsequence) |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/2913-subarrays-distinct-element-sum-of-squares-i) |
 | [3477-fruits-into-baskets-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3477-fruits-into-baskets-ii) |
 ## Database
 |  |
@@ -1765,6 +1768,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/AkshatSinghNayal/leetcode/tree/master/0673-number-of-longest-increasing-subsequence) |
+| [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/2913-subarrays-distinct-element-sum-of-squares-i) |
 ## Bipartite Graph
 |  |
 | ------- |
