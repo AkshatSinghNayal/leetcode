@@ -5,14 +5,14 @@ public:
         //base
         if( i<0 and j<0 ) return 0;
         if( i <0 ){
-            while(j>=0 and p[j] == '*') j--; 
+            while(j>=0 and p[j] == '*') j--;
             if( j <0 ) return 0;
             else return INT_MIN;
         }
         if(j<0 or i<0) return INT_MIN;
 
 
-        if( dp[i][j] != -1 ) return dp[i][j]; 
+        if( dp[i][j] != -1 ) return dp[i][j];
 
         // if( s[i] != p[j] and p[j]!='?' or p[j]!='*') return INT_MIN;
 
