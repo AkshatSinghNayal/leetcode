@@ -97,6 +97,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/AkshatSinghNayal/leetcode/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3471-find-the-largest-almost-missing-integer](https://github.com/AkshatSinghNayal/leetcode/tree/master/3471-find-the-largest-almost-missing-integer) |
+| [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/3551-minimum-swaps-to-sort-by-digit-sum) |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AkshatSinghNayal/leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3718-smallest-missing-multiple-of-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3718-smallest-missing-multiple-of-k) |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/AkshatSinghNayal/leetcode/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
@@ -457,6 +458,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3074-apple-redistribution-into-boxes](https://github.com/AkshatSinghNayal/leetcode/tree/master/3074-apple-redistribution-into-boxes) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/AkshatSinghNayal/leetcode/tree/master/3075-maximize-happiness-of-selected-children) |
 | [3226-minimum-number-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/3226-minimum-number-game) |
+| [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/3551-minimum-swaps-to-sort-by-digit-sum) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/AkshatSinghNayal/leetcode/tree/master/3727-maximum-alternating-sum-of-squares) |
@@ -728,6 +730,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3477-fruits-into-baskets-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3477-fruits-into-baskets-ii) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3546-equal-sum-grid-partition-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3546-equal-sum-grid-partition-i) |
+| [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/3551-minimum-swaps-to-sort-by-digit-sum) |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AkshatSinghNayal/leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
