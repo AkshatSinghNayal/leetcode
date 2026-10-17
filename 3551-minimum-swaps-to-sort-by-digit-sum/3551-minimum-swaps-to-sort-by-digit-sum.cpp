@@ -1,81 +1,67 @@
-class DSU {
-public:
-    vector<int> parent, sz;
-    int components;
-
-    DSU(int n) {
-        parent.resize(n);
-        sz.assign(n, 1);
-        iota(parent.begin(), parent.end(), 0);
-        components = n;
-    }
-
-    int find(int x) {
-        if (parent[x] != x)
-            parent[x] = find(parent[x]);
-
-        return parent[x];
-    }
-
-    void unite(int a, int b) {
-        a = find(a);
-        b = find(b);
-
-        if (a == b) return;
-
-        if (sz[a] < sz[b])
-            swap(a, b);
-
-        parent[b] = a;
-        sz[a] += sz[b];
-        components--;
-    }
-};
-
 class Solution {
 public:
+    int digitSum(int x) {
+        int sum = 0;
+
+        while (x > 0) {
+            sum += x % 10;
+            x /= 10;
+        }
+
+        return sum;
+    }
+
     int minSwaps(vector<int>& nums) {
-        vector<pair<long long, int>> ok;
+        int n = nums.size();
 
-        // 1. Calculate digit sums
-        for (auto& it : nums) {
-            int temp = it;
-            long long sum = 0;
+        // 1. Store {digit sum, number}
+        vector<pair<int, int>> ok;
 
-            while (temp > 0) {
-                sum += temp % 10;
-                temp /= 10;
-            }
-
-            ok.push_back({sum, it});
+        for (int x : nums) {
+            ok.push_back({digitSum(x), x});
         }
 
         // 2. Sort by digit sum, then by number
         sort(ok.begin(), ok.end(),
              [](const auto& a, const auto& b) {
-                 if (a.first == b.first)
-                     return a.second < b.second;
+                 if (a.first != b.first)
+                     return a.first < b.first;
 
-                 return a.first < b.first;
+                 return a.second < b.second;
              });
 
-        int n = nums.size();
-
-        // 3. Store each number's target index
-        unordered_map<int, int> targetPos;
+        // 3. Build target sorted array
+        vector<int> target(n);
 
         for (int i = 0; i < n; i++) {
-            targetPos[ok[i].second] = i;
+            target[i] = ok[i].second;
         }
 
-        // 4. Connect current index to target index
-        DSU dsu(n);
+        // 4. Store current position of each number
+        vector<int> cur = nums;
+        unordered_map<int, int> pos;
 
         for (int i = 0; i < n; i++) {
-            dsu.unite(i, targetPos[nums[i]]);
+            pos[cur[i]] = i;
         }
 
-        // 5. Minimum swaps
-        return n - dsu.components;
+        // 5. Greedily put each number in its correct position
+        int swaps = 0;
+
+        for (int i = 0; i < n; i++) {
+            if (cur[i] == target[i])
+                continue;
+
+            int j = pos[target[i]];
+
+            swap(cur[i], cur[j]);
+
+            pos[cur[i]] = i;
+            pos[cur[j]] = j;
+
+            swaps++;
+        }
+
+        return swaps;
     }
 };
