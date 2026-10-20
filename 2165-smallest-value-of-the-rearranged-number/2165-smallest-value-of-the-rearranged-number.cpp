@@ -1,24 +1,54 @@
 class Solution {
 public:
     long long smallestNumber(long long num) {
+        map<int, long long> mp;
+        long long temp = num;
+        bool flag = (num < 0);
+
+        if (flag) temp = -temp;
         if (num == 0) return 0;
 
-        bool neg = num < 0;
-        string s = to_string(num);
+        while (temp > 0) {
+            mp[temp % 10]++;
+            temp /= 10;
+        }
 
-        if (neg) {
-            sort(s.begin() + 1, s.end(), greater<char>());
+        long long sum = 0;
+
+        if (flag) {
+            // FIX 1: Loop from 9 down to 0 instead of 0 to 9
+            for (int ele = 9; ele >= 0; ele--) {
+                while (mp[ele] > 0) {
+                    sum = sum * 10 + ele;
+                    mp[ele]--;
+                }
+            }
+            return -sum;
         } else {
-            sort(s.begin(), s.end());
+            bool first = true;
 
-            if (s[0] == '0') {
-                int i = 0;
-                while (i < s.size() && s[i] == '0') i++;
+            for (auto& [ele, count] : mp) {
+                if (ele == 0) continue;
 
-                swap(s[0], s[i]);
+                if (first) {
+                    sum = ele;
+                    count--;
+                    first = false;
+
+                    // FIX 2: Moved your zero-loop right here!
+                    while (mp[0] > 0) {
+                        sum *= 10;
+                        mp[0]--;
+                    }
+                }
+
+                while (count > 0) {
+                    sum = sum * 10 + ele;
+                    count--;
+                }
             }
         }
 
-        return stoll(s);
+        return sum;
     }
 };
