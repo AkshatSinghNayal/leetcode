@@ -20,7 +20,7 @@ public:
             i++; 
         }
 
-        for(auto& it : ans) cout<<it<< " ";
+        // for(auto& it : ans) cout<<it<< " ";
 
         return count;
     }
