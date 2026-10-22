@@ -758,6 +758,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3904-smallest-stable-index-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3904-smallest-stable-index-ii) |
 | [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
 | [3936-split-array-by-prime-indices](https://github.com/AkshatSinghNayal/leetcode/tree/master/3936-split-array-by-prime-indices) |
+| [3942-minimum-operations-to-sort-a-permutation](https://github.com/AkshatSinghNayal/leetcode/tree/master/3942-minimum-operations-to-sort-a-permutation) |
 | [3994-minimum-adjacent-swaps-to-partition-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/3994-minimum-adjacent-swaps-to-partition-array) |
 ## Math
 |  |
