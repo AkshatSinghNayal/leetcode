@@ -689,6 +689,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2191-sort-the-jumbled-numbers](https://github.com/AkshatSinghNayal/leetcode/tree/master/2191-sort-the-jumbled-numbers) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/AkshatSinghNayal/leetcode/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2208-minimum-operations-to-halve-array-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/2208-minimum-operations-to-halve-array-sum) |
+| [2210-count-hills-and-valleys-in-an-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/2210-count-hills-and-valleys-in-an-array) |
 | [2219-maximum-number-of-words-found-in-sentences](https://github.com/AkshatSinghNayal/leetcode/tree/master/2219-maximum-number-of-words-found-in-sentences) |
 | [2227-sum-of-subarray-ranges](https://github.com/AkshatSinghNayal/leetcode/tree/master/2227-sum-of-subarray-ranges) |
 | [2239-find-closest-number-to-zero](https://github.com/AkshatSinghNayal/leetcode/tree/master/2239-find-closest-number-to-zero) |
