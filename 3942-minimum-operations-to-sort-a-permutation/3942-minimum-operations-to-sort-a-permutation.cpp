@@ -1,48 +1,33 @@
 class Solution {
 public:
-
-    bool solve(vector<int>& nums , int minIdx , int n ){
-        int i = minIdx ; 
-        for( ;i<n+minIdx ;i++ ){
-            if( nums[i%n] != nums[(i+1)%n] -1) break;
-        }
-        if( (i+1)%n == minIdx ){
-            return true; 
-        }
-        return false ;
-    }
-
     int minOperations(vector<int>& nums) {
-        int n = nums.size(); 
-        int minIdx = 0; 
-        for(int i = 0 ; i< n; i++ ){
-            if( nums[i] == 0 ){
-                minIdx = i; 
-                break;
+        int n = nums.size();
+
+        int zero = find(nums.begin(), nums.end(), 0) - nums.begin();
+
+        auto check = [&](int step) {
+            for (int i = 1; i < n; i++) {
+                int prev = (zero + (i - 1) * step + n) % n;
+                int curr = (zero + i * step + n) % n;
+
+                if (nums[prev] > nums[curr])
+                    return false;
             }
+            return true;
+        };
+
+        int ans = INT_MAX;
+
+        if (check(1)) {
+            ans = min(ans, zero);
+            ans = min(ans, n - zero + 2);
         }
 
-        int globalMinIdx = minIdx; 
-        bool increasing = solve(nums, minIdx , n); 
-        bool decreasing = false;
-
-        if( !increasing){
-            reverse(nums.begin() , nums.end() ) ; 
-            minIdx = (n-1)-minIdx ;
-            decreasing = solve(nums, minIdx , n) ;
+        if (check(-1)) {
+            ans = min(ans, zero + 2);
+            ans = min(ans, n - zero);
         }
 
-        if(!increasing and !decreasing ){
-            return -1; 
-        }
-        int minOperations = n ; 
-        if( increasing ){
-            minOperations = min({minOperations , minIdx ,(n-1)-minIdx+3 } ); 
-        }
-        else{
-            minOperations = min( {minOperations , (globalMinIdx+2) , minIdx+1 } ); 
-        }
-        cout<<n-minIdx;
-        return minOperations ; 
+        return ans == INT_MAX ? -1 : ans;
     }
 };
