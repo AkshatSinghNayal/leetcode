@@ -1,11 +1,12 @@
 class Solution {
 public:
-    int countMagicalPairs(string s) {
-        int count = 0; 
+    long long countMagicalPairs(string s) {
+        long long count = 0; 
         int n =s.size(); 
+        int hash1[27]= {}; 
+        int hash2[27] = {};
         for(int j = 1; j<=n-1 ; j++ ){
-            unordered_map<int,int>hash1; 
-            unordered_map<int,int>hash2;
+            
             unordered_set<int>st;
 
             for(int i=j-1; i>=0 ; i-- ){
@@ -20,6 +21,9 @@ public:
 
             for(int ch = 1 ; ch<=26 ; ch++ ){
                 count = count+ ( hash1[ch]*hash2[ch]); 
+                hash1[ch] = 0;
+                hash2[ch] =0; 
+                
             }
         }
         return count;
