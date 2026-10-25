@@ -1,7 +1,6 @@
 class Solution {
 public:
     int countStaircase(vector<int>& nums) {
-        auto qalverinos = nums;
         int n = nums.size(); 
         int total = 0; 
         int mp[100001] = {}, order[100001]; // 1. Use fast flat arrays outside the loop
