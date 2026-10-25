@@ -1,31 +1,40 @@
-
 class Solution {
 public:
     long long maximizeSum(vector<int>& nums, int k) {
-        int n = nums.size();
-        vector<pair<int, int>> gain;
+        vector<tuple<int,int,int>>ans;
+        for(auto& it : nums ){
+            string temp = to_string(it); 
+            sort(temp.rbegin(), temp.rend());
+            int after = stoi(temp); 
 
-        for (int x : nums) {
-            string s = to_string(x);
-            sort(s.rbegin(), s.rend());
+            ans.push_back({after - it , after , it }); 
 
-            int after = stoi(s);
-            gain.push_back({after - x, x});
         }
 
-        sort(gain.rbegin(), gain.rend());
+        sort(ans.begin() , ans.end(), [&](auto a , auto b ){
+            auto [gain1 , after1 , it1 ] = a;
+            auto [gain2 , after2 , it2 ]= b; 
 
-        long long sum = 0;
+            return gain1>gain2;
 
-        for (int i = 0; i < n; i++) {
-            if (k > 0 && gain[i].first > 0) {
-                sum += gain[i].second + gain[i].first;
-                k--;
-            } else {
-                sum += gain[i].second;
+        }); 
+        long long score= 0; 
+        for(auto& [ gain , after , it ] : ans ){
+
+            // cout<< gain << " " << after << " "<< it << endl; 
+
+            if( gain == 0 ) score+=it;
+            else{
+                if( k > 0 ){
+                    score+=after;
+                    k--; 
+                }
+                else{
+                    score+=it;
+                }
             }
         }
 
-        return sum;
+        return score ; 
     }
 };
