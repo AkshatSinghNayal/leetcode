@@ -7,7 +7,7 @@ public:
         while(right<n){
             mp[nums[right]]++;
             while( left<right and mp[nums[right]]>k ){
-                --mp[nums[left]];
+                mp[nums[left]]--;
                 left++;
             }
             maxi = max(maxi , right-left+1); 
