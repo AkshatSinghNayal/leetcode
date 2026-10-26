@@ -1,17 +1,17 @@
 class Solution {
 public:
-    int maxSubarrayLength(vector<int>& s, int k) {
-        int left = 0 , right = 0 ; int maxi = 1; 
-        unordered_map<int , int> mp ; 
-        while( right < s.size() ){
-            mp[s[right]]++; 
-
-            while( left < s.size() and mp[s[right]] > k ){
-                mp[s[left]]--; 
-                left++; 
+    int maxSubarrayLength(vector<int>& nums, int k) {
+        unordered_map<int,int>mp;
+        int left =0 , right = 0, n = nums.size(); 
+        int maxi = INT_MIN;
+        while(right<n){
+            mp[nums[right]]++;
+            while( left<right and mp[nums[right]]>k ){
+                --mp[nums[left]];
+                left++;
             }
-
-            maxi = max( maxi , right-left+1 ); 
+            maxi = max(maxi , right-left+1); 
+            // cout<< left << "->" << right << endl;
             right++; 
         }
         return maxi ; 
