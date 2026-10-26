@@ -1905,4 +1905,8 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/AkshatSinghNayal/leetcode/tree/master/0084-largest-rectangle-in-histogram) |
+## Treap
+|  |
+| ------- |
+| [0480-sliding-window-median](https://github.com/AkshatSinghNayal/leetcode/tree/master/0480-sliding-window-median) |
 <!---LeetCode Topics End-->
