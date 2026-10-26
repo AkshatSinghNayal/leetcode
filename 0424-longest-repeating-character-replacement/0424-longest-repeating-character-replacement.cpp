@@ -7,7 +7,7 @@ public:
         while(right<n){
             mp[nums[right]]++;
             maxFreq = max(maxFreq , mp[nums[right]]);
-            while( left<right and (right-left+1) - maxFreq >k  ){
+            while( left<right and (right-left+1)>maxFreq+k  ){
                 mp[nums[left]]--;   
                 left++; 
             }
