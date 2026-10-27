@@ -395,6 +395,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0179-largest-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0179-largest-number) |
 | [0215-kth-largest-element-in-an-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/AkshatSinghNayal/leetcode/tree/master/0217-contains-duplicate) |
+| [0220-contains-duplicate-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0220-contains-duplicate-iii) |
 | [0229-majority-element-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0229-majority-element-ii) |
 | [0242-valid-anagram](https://github.com/AkshatSinghNayal/leetcode/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/AkshatSinghNayal/leetcode/tree/master/0268-missing-number) |
@@ -534,6 +535,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0215-kth-largest-element-in-an-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/AkshatSinghNayal/leetcode/tree/master/0217-contains-duplicate) |
 | [0219-contains-duplicate-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0219-contains-duplicate-ii) |
+| [0220-contains-duplicate-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0220-contains-duplicate-iii) |
 | [0229-majority-element-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0229-majority-element-ii) |
 | [0238-product-of-array-except-self](https://github.com/AkshatSinghNayal/leetcode/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0239-sliding-window-maximum) |
@@ -1156,6 +1158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 ## Bucket Sort
 |  |
 | ------- |
+| [0220-contains-duplicate-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0220-contains-duplicate-iii) |
 | [0347-top-k-frequent-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/AkshatSinghNayal/leetcode/tree/master/0451-sort-characters-by-frequency) |
 | [0692-top-k-frequent-words](https://github.com/AkshatSinghNayal/leetcode/tree/master/0692-top-k-frequent-words) |
@@ -1283,6 +1286,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0076-minimum-window-substring](https://github.com/AkshatSinghNayal/leetcode/tree/master/0076-minimum-window-substring) |
 | [0209-minimum-size-subarray-sum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0219-contains-duplicate-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0219-contains-duplicate-ii) |
+| [0220-contains-duplicate-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0220-contains-duplicate-iii) |
 | [0239-sliding-window-maximum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0239-sliding-window-maximum) |
 | [0424-longest-repeating-character-replacement](https://github.com/AkshatSinghNayal/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0480-sliding-window-median](https://github.com/AkshatSinghNayal/leetcode/tree/master/0480-sliding-window-median) |
@@ -1712,6 +1716,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 ## Ordered Set
 |  |
 | ------- |
+| [0220-contains-duplicate-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0220-contains-duplicate-iii) |
 | [0456-132-pattern](https://github.com/AkshatSinghNayal/leetcode/tree/master/0456-132-pattern) |
 | [0895-maximum-frequency-stack](https://github.com/AkshatSinghNayal/leetcode/tree/master/0895-maximum-frequency-stack) |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/AkshatSinghNayal/leetcode/tree/master/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
