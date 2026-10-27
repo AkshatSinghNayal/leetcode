@@ -763,6 +763,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
 | [3936-split-array-by-prime-indices](https://github.com/AkshatSinghNayal/leetcode/tree/master/3936-split-array-by-prime-indices) |
 | [3942-minimum-operations-to-sort-a-permutation](https://github.com/AkshatSinghNayal/leetcode/tree/master/3942-minimum-operations-to-sort-a-permutation) |
+| [3946-maximum-number-of-items-from-sale-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3946-maximum-number-of-items-from-sale-i) |
 | [3994-minimum-adjacent-swaps-to-partition-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/3994-minimum-adjacent-swaps-to-partition-array) |
 ## Math
 |  |
@@ -1033,6 +1034,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2742-painting-the-walls](https://github.com/AkshatSinghNayal/leetcode/tree/master/2742-painting-the-walls) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3877-minimum-removals-to-achieve-target-xor](https://github.com/AkshatSinghNayal/leetcode/tree/master/3877-minimum-removals-to-achieve-target-xor) |
+| [3946-maximum-number-of-items-from-sale-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3946-maximum-number-of-items-from-sale-i) |
 ## Greedy
 |  |
 | ------- |
@@ -1097,6 +1099,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3727-maximum-alternating-sum-of-squares](https://github.com/AkshatSinghNayal/leetcode/tree/master/3727-maximum-alternating-sum-of-squares) |
 | [3732-maximum-product-of-three-elements-after-one-replacement](https://github.com/AkshatSinghNayal/leetcode/tree/master/3732-maximum-product-of-three-elements-after-one-replacement) |
 | [3781-maximum-score-after-binary-swaps](https://github.com/AkshatSinghNayal/leetcode/tree/master/3781-maximum-score-after-binary-swaps) |
+| [3946-maximum-number-of-items-from-sale-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3946-maximum-number-of-items-from-sale-i) |
 | [3994-minimum-adjacent-swaps-to-partition-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/3994-minimum-adjacent-swaps-to-partition-array) |
 ## Trie
 |  |
