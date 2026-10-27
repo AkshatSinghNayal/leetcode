@@ -1,33 +1,56 @@
 class Solution {
 public:
+
+    int dp[1001][1501][2]; 
+
+    int solve(int idx ,vector<vector<int>>& items,unordered_map<int,int>&mp, int amount , int yes){
+        //base
+        if(idx < 0 ) return 0;
+
+        if(dp[idx][amount][yes] != -1 ) return dp[idx][amount][yes]; 
+
+        int take = 0;
+
+        if (yes) {
+            take = (amount >= items[idx][1]) ? mp[idx] + 1 + solve(idx, items, mp, amount - items[idx][1], 1 - yes) : 0;
+        }
+        else {
+            take = (amount >= items[idx][1]) ? 1 + solve(idx, items, mp, amount - items[idx][1], yes) : 0;
+            // int another = (amount >= items[idx][1]) ? 1 + solve(idx-1, items, mp, amount - items[idx][1], 1-yes) : 0;
+            // take = max(take, another);
+        }
+
+        int notTake = max(solve( idx-1 , items , mp , amount, yes),solve(idx-1,items,mp,amount,1-yes));
+
+        return dp[idx][amount][yes] = max(take,notTake);
+    }
+
     int maximumSaleItems(vector<vector<int>>& items, int budget) {
+        unordered_map<int,int>mp;
         int n = items.size();
-        vector<int> bonus(n);
+        
 
-        // Calculate bonus for each item
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (i == j) continue;
-                if (items[j][0] % items[i][0] == 0) bonus[i]++;
+        for(int i = 0;i<n; i++ ){
+            int ele = items[i][0]; 
+            for(int j =0;j<n; j++ ){
+                if(i==j) continue;
+                mp[i]+= ( items[j][0] % ele == 0 ) ? 1 : 0; 
             }
         }
 
-        vector<int> dp(budget + 1, 0);
+        // for(auto& it : items){
+        //     cout<< it[0] << "->" << it[1] <<endl;
+        // }
 
-        for (int i = 0; i < n; i++) {
-            int price = items[i][1];
+        memset(dp,-1,sizeof(dp)); 
 
-            // First copy with bonus (0-1 knapsack)
-            for (int b = budget; b >= price; b--) {
-                dp[b] = max(dp[b], dp[b - price] + 1 + bonus[i]);
-            }
+        // for(auto&[ele , count] : mp ){
+        //     cout<< ele <<"->" << count << endl;
+        // }
 
-            // Additional copies without bonus (unbounded knapsack)
-            for (int b = price; b <= budget; b++) {
-                dp[b] = max(dp[b], dp[b - price] + 1);
-            }
-        }
+        return solve(n-1,items,mp,budget,1);
 
-        return dp[budget];
+
+        return  0; 
     }
 };
