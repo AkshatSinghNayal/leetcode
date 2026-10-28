@@ -170,6 +170,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0658-find-k-closest-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/0658-find-k-closest-elements) |
 | [0680-valid-palindrome-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0777-swap-adjacent-in-lr-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0777-swap-adjacent-in-lr-string) |
+| [0795-number-of-subarrays-with-bounded-maximum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0795-number-of-subarrays-with-bounded-maximum) |
 | [0881-boats-to-save-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/0881-boats-to-save-people) |
 | [0905-sort-array-by-parity](https://github.com/AkshatSinghNayal/leetcode/tree/master/0905-sort-array-by-parity) |
 | [0908-middle-of-the-linked-list](https://github.com/AkshatSinghNayal/leetcode/tree/master/0908-middle-of-the-linked-list) |
@@ -598,6 +599,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0759-set-intersection-size-at-least-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0759-set-intersection-size-at-least-two) |
 | [0778-swim-in-rising-water](https://github.com/AkshatSinghNayal/leetcode/tree/master/0778-swim-in-rising-water) |
 | [0792-binary-search](https://github.com/AkshatSinghNayal/leetcode/tree/master/0792-binary-search) |
+| [0795-number-of-subarrays-with-bounded-maximum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0795-number-of-subarrays-with-bounded-maximum) |
 | [0827-making-a-large-island](https://github.com/AkshatSinghNayal/leetcode/tree/master/0827-making-a-large-island) |
 | [0846-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0846-hand-of-straights) |
 | [0851-loud-and-rich](https://github.com/AkshatSinghNayal/leetcode/tree/master/0851-loud-and-rich) |
