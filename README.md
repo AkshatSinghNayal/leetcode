@@ -681,6 +681,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/AkshatSinghNayal/leetcode/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1818-minimum-absolute-sum-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/1818-minimum-absolute-sum-difference) |
 | [1851-minimum-interval-to-include-each-query](https://github.com/AkshatSinghNayal/leetcode/tree/master/1851-minimum-interval-to-include-each-query) |
+| [1854-maximum-population-year](https://github.com/AkshatSinghNayal/leetcode/tree/master/1854-maximum-population-year) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/AkshatSinghNayal/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/AkshatSinghNayal/leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
@@ -953,6 +954,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1034-subarrays-with-k-different-integers](https://github.com/AkshatSinghNayal/leetcode/tree/master/1034-subarrays-with-k-different-integers) |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/AkshatSinghNayal/leetcode/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
 | [1635-number-of-good-pairs](https://github.com/AkshatSinghNayal/leetcode/tree/master/1635-number-of-good-pairs) |
+| [1854-maximum-population-year](https://github.com/AkshatSinghNayal/leetcode/tree/master/1854-maximum-population-year) |
 | [2347-best-poker-hand](https://github.com/AkshatSinghNayal/leetcode/tree/master/2347-best-poker-hand) |
 | [2351-first-letter-to-appear-twice](https://github.com/AkshatSinghNayal/leetcode/tree/master/2351-first-letter-to-appear-twice) |
 | [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
@@ -1343,6 +1345,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [1603-running-sum-of-1d-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1603-running-sum-of-1d-array) |
 | [1685-sum-of-absolute-differences-in-a-sorted-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/1685-sum-of-absolute-differences-in-a-sorted-array) |
 | [1693-sum-of-all-odd-length-subarrays](https://github.com/AkshatSinghNayal/leetcode/tree/master/1693-sum-of-all-odd-length-subarrays) |
+| [1854-maximum-population-year](https://github.com/AkshatSinghNayal/leetcode/tree/master/1854-maximum-population-year) |
 | [1872-stone-game-viii](https://github.com/AkshatSinghNayal/leetcode/tree/master/1872-stone-game-viii) |
 | [2121-intervals-between-identical-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/2121-intervals-between-identical-elements) |
 | [2302-count-subarrays-with-score-less-than-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/2302-count-subarrays-with-score-less-than-k) |
