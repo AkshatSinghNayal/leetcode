@@ -1265,6 +1265,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0731-my-calendar-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0731-my-calendar-ii) |
 | [0895-maximum-frequency-stack](https://github.com/AkshatSinghNayal/leetcode/tree/master/0895-maximum-frequency-stack) |
 | [0901-online-stock-span](https://github.com/AkshatSinghNayal/leetcode/tree/master/0901-online-stock-span) |
+| [0933-number-of-recent-calls](https://github.com/AkshatSinghNayal/leetcode/tree/master/0933-number-of-recent-calls) |
 ## Queue
 |  |
 | ------- |
@@ -1273,6 +1274,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0239-sliding-window-maximum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0239-sliding-window-maximum) |
 | [0387-first-unique-character-in-a-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0918-maximum-sum-circular-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/0918-maximum-sum-circular-subarray) |
+| [0933-number-of-recent-calls](https://github.com/AkshatSinghNayal/leetcode/tree/master/0933-number-of-recent-calls) |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/AkshatSinghNayal/leetcode/tree/master/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
 | [2444-count-subarrays-with-fixed-bounds](https://github.com/AkshatSinghNayal/leetcode/tree/master/2444-count-subarrays-with-fixed-bounds) |
 ## Monotonic Stack
@@ -1747,6 +1749,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0295-find-median-from-data-stream](https://github.com/AkshatSinghNayal/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/AkshatSinghNayal/leetcode/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0901-online-stock-span](https://github.com/AkshatSinghNayal/leetcode/tree/master/0901-online-stock-span) |
+| [0933-number-of-recent-calls](https://github.com/AkshatSinghNayal/leetcode/tree/master/0933-number-of-recent-calls) |
 ## Topological Sort
 |  |
 | ------- |
