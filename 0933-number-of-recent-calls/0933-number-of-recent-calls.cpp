@@ -1,14 +1,7 @@
 class RecentCounter {
 public:
 
-    class comp{
-        public:
-        bool operator()(const int& a , const int&b ){
-            return a > b; 
-        }
-    }; 
-
-    priority_queue<int,vector<int>,comp>pq;
+    queue<int>pq;
     RecentCounter() {
         
     }
@@ -19,7 +12,7 @@ public:
             return 1; 
         }
         else{
-            while(!pq.empty() and pq.top() < (t-3000) ){
+            while(!pq.empty() and pq.front() < (t-3000) ){
                 pq.pop();
             }
             pq.push(t);
