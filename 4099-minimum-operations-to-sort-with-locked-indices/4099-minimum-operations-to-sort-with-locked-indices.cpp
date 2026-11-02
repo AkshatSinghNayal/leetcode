@@ -1,20 +1,41 @@
 class Solution {
 public:
     int minOperations(vector<int>& nums, vector<int>& locked, int k) {
-        int mx=0,ops=0;
-        int n=nums.size();
-        for(int i=0;i<nums.size();i++){
-            if((mx>i||nums[i]!=i+1)&&locked[i]){
-                locked[i]=0;
-                ops++;
-            }
-            mx=max(mx,nums[i]);
-        }        
-        if(ops>k)return -1;
-        for(int i=0;i<n;i++)
-            for(int j=i+1;j<n;j++)
-                ops+=(nums[i]>nums[j]);
+        int n = nums.size();
+        int correct =0 , notCorrect = 0;
 
-        return ops;
+        int operations = 0;
+        vector<int>temp = nums; 
+        sort(temp.begin(), temp.end()); 
+
+        for(int i = 0;i<n ;i++ ){
+            for(int j =0; j< n-i-1 ; j++ ){
+
+                if(nums[j] > nums[j+1]){
+                     if( locked[j] ==1 and locked[j+1]and k >=2){
+                        operations+=2;
+                        locked[j] = 0; 
+                        locked[j+1] =0 ;
+                        k-=2; 
+                    }
+                    else if( locked[j] == 1 and k >0){
+                        locked[j]=0; 
+                        operations++; 
+                        k-=1;
+                    }
+                    else if( locked[j+1] == 1 and k >0){
+                        locked[j+1]=0; 
+                        operations++; 
+                        k-=1;
+                    }
+                }
+                if( nums[j] > nums[j+1] and locked[j] == 0 and locked[j+1] == 0  ){
+                    swap(nums[j], nums[j+1]); 
+                    operations++; 
+                }
+            }
+            if( temp == nums ) return operations;
+        }        
+        return -1;
     }
 };
