@@ -856,6 +856,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3733-minimum-time-to-complete-all-deliveries](https://github.com/AkshatSinghNayal/leetcode/tree/master/3733-minimum-time-to-complete-all-deliveries) |
 | [3750-minimum-number-of-flips-to-reverse-binary-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/3750-minimum-number-of-flips-to-reverse-binary-string) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
+| [3789-minimum-cost-to-acquire-required-items](https://github.com/AkshatSinghNayal/leetcode/tree/master/3789-minimum-cost-to-acquire-required-items) |
 | [3871-count-commas-in-range-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3871-count-commas-in-range-ii) |
 | [3875-construct-uniform-parity-array-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3875-construct-uniform-parity-array-i) |
 | [3876-construct-uniform-parity-array-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3876-construct-uniform-parity-array-ii) |
@@ -1108,6 +1109,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3727-maximum-alternating-sum-of-squares](https://github.com/AkshatSinghNayal/leetcode/tree/master/3727-maximum-alternating-sum-of-squares) |
 | [3732-maximum-product-of-three-elements-after-one-replacement](https://github.com/AkshatSinghNayal/leetcode/tree/master/3732-maximum-product-of-three-elements-after-one-replacement) |
 | [3781-maximum-score-after-binary-swaps](https://github.com/AkshatSinghNayal/leetcode/tree/master/3781-maximum-score-after-binary-swaps) |
+| [3789-minimum-cost-to-acquire-required-items](https://github.com/AkshatSinghNayal/leetcode/tree/master/3789-minimum-cost-to-acquire-required-items) |
 | [3946-maximum-number-of-items-from-sale-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3946-maximum-number-of-items-from-sale-i) |
 | [3994-minimum-adjacent-swaps-to-partition-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/3994-minimum-adjacent-swaps-to-partition-array) |
 ## Trie
