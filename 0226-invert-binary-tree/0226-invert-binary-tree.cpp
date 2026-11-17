@@ -11,19 +11,30 @@
  */
 class Solution {
 public:
+
+    void solve( TreeNode* root ){
+        if(!root) return;
+        solve(root->left);
+        solve(root->right);
+        swap(root->left , root->right);
+    }
+
     TreeNode* invertTree(TreeNode* root) {
-        queue<TreeNode*>q;
-        if( !root ) return root;
-        q.push(root);
-        while(!q.empty()){
-            int size = q.size();
-            while(size--){
-                auto node = q.front(); q.pop();
-                swap(node->left , node->right);
-                if(node->left) q.push(node->left); 
-                if(node->right) q.push(node->right);
-            }            
-        }
+        // queue<TreeNode*>q;
+        // if( !root ) return root;
+        // q.push(root);
+        // while(!q.empty()){
+        //     int size = q.size();
+        //     while(size--){
+        //         auto node = q.front(); q.pop();
+        //         swap(node->left ,)
+        //         if(node->left) q.push(node->left); 
+        //         if(node->right) q.push(node->right);
+        //     }            
+        // }
+        // return root;
+
+        solve(root);
         return root;
     }
 };
