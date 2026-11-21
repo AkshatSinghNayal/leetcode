@@ -52,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0697-degree-of-an-array](https://github.com/AkshatSinghNayal/leetcode/tree/master/0697-degree-of-an-array) |
 | [0705-design-hashset](https://github.com/AkshatSinghNayal/leetcode/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/AkshatSinghNayal/leetcode/tree/master/0706-design-hashmap) |
+| [0763-partition-labels](https://github.com/AkshatSinghNayal/leetcode/tree/master/0763-partition-labels) |
 | [0767-reorganize-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0767-reorganize-string) |
 | [0846-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0846-hand-of-straights) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
@@ -169,6 +170,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/AkshatSinghNayal/leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0658-find-k-closest-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/0658-find-k-closest-elements) |
 | [0680-valid-palindrome-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0680-valid-palindrome-ii) |
+| [0763-partition-labels](https://github.com/AkshatSinghNayal/leetcode/tree/master/0763-partition-labels) |
 | [0777-swap-adjacent-in-lr-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0777-swap-adjacent-in-lr-string) |
 | [0795-number-of-subarrays-with-bounded-maximum](https://github.com/AkshatSinghNayal/leetcode/tree/master/0795-number-of-subarrays-with-bounded-maximum) |
 | [0881-boats-to-save-people](https://github.com/AkshatSinghNayal/leetcode/tree/master/0881-boats-to-save-people) |
@@ -245,6 +247,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0680-valid-palindrome-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0692-top-k-frequent-words](https://github.com/AkshatSinghNayal/leetcode/tree/master/0692-top-k-frequent-words) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/AkshatSinghNayal/leetcode/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
+| [0763-partition-labels](https://github.com/AkshatSinghNayal/leetcode/tree/master/0763-partition-labels) |
 | [0767-reorganize-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0767-reorganize-string) |
 | [0777-swap-adjacent-in-lr-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0777-swap-adjacent-in-lr-string) |
 | [0796-rotate-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0796-rotate-string) |
@@ -1073,6 +1076,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/AkshatSinghNayal/leetcode/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0757-set-intersection-size-at-least-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0757-set-intersection-size-at-least-two) |
 | [0759-set-intersection-size-at-least-two](https://github.com/AkshatSinghNayal/leetcode/tree/master/0759-set-intersection-size-at-least-two) |
+| [0763-partition-labels](https://github.com/AkshatSinghNayal/leetcode/tree/master/0763-partition-labels) |
 | [0765-couples-holding-hands](https://github.com/AkshatSinghNayal/leetcode/tree/master/0765-couples-holding-hands) |
 | [0767-reorganize-string](https://github.com/AkshatSinghNayal/leetcode/tree/master/0767-reorganize-string) |
 | [0846-hand-of-straights](https://github.com/AkshatSinghNayal/leetcode/tree/master/0846-hand-of-straights) |
