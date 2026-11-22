@@ -464,6 +464,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/AkshatSinghNayal/leetcode/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 | [2840-check-if-strings-can-be-made-equal-with-operations-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2840-check-if-strings-can-be-made-equal-with-operations-ii) |
 | [3024-type-of-triangle](https://github.com/AkshatSinghNayal/leetcode/tree/master/3024-type-of-triangle) |
+| [3041-maximize-consecutive-elements-in-an-array-after-modification](https://github.com/AkshatSinghNayal/leetcode/tree/master/3041-maximize-consecutive-elements-in-an-array-after-modification) |
 | [3074-apple-redistribution-into-boxes](https://github.com/AkshatSinghNayal/leetcode/tree/master/3074-apple-redistribution-into-boxes) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/AkshatSinghNayal/leetcode/tree/master/3075-maximize-happiness-of-selected-children) |
 | [3226-minimum-number-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/3226-minimum-number-game) |
@@ -738,6 +739,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/AkshatSinghNayal/leetcode/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2962-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/AkshatSinghNayal/leetcode/tree/master/2962-count-subarrays-where-max-element-appears-at-least-k-times) |
 | [3024-type-of-triangle](https://github.com/AkshatSinghNayal/leetcode/tree/master/3024-type-of-triangle) |
+| [3041-maximize-consecutive-elements-in-an-array-after-modification](https://github.com/AkshatSinghNayal/leetcode/tree/master/3041-maximize-consecutive-elements-in-an-array-after-modification) |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3069-distribute-elements-into-two-arrays-i) |
 | [3074-apple-redistribution-into-boxes](https://github.com/AkshatSinghNayal/leetcode/tree/master/3074-apple-redistribution-into-boxes) |
 | [3075-maximize-happiness-of-selected-children](https://github.com/AkshatSinghNayal/leetcode/tree/master/3075-maximize-happiness-of-selected-children) |
@@ -1047,6 +1049,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2050-parallel-courses-iii](https://github.com/AkshatSinghNayal/leetcode/tree/master/2050-parallel-courses-iii) |
 | [2606-find-the-substring-with-maximum-cost](https://github.com/AkshatSinghNayal/leetcode/tree/master/2606-find-the-substring-with-maximum-cost) |
 | [2742-painting-the-walls](https://github.com/AkshatSinghNayal/leetcode/tree/master/2742-painting-the-walls) |
+| [3041-maximize-consecutive-elements-in-an-array-after-modification](https://github.com/AkshatSinghNayal/leetcode/tree/master/3041-maximize-consecutive-elements-in-an-array-after-modification) |
 | [3751-total-waviness-of-numbers-in-range-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3877-minimum-removals-to-achieve-target-xor](https://github.com/AkshatSinghNayal/leetcode/tree/master/3877-minimum-removals-to-achieve-target-xor) |
 | [3946-maximum-number-of-items-from-sale-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3946-maximum-number-of-items-from-sale-i) |
