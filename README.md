@@ -107,6 +107,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3779-minimum-number-of-operations-to-have-distinct-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3779-minimum-number-of-operations-to-have-distinct-elements) |
 | [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
+| [3934-smallest-unique-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/3934-smallest-unique-subarray) |
 ## Linked List
 |  |
 | ------- |
@@ -776,6 +777,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3903-smallest-stable-index-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3903-smallest-stable-index-i) |
 | [3904-smallest-stable-index-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3904-smallest-stable-index-ii) |
 | [3926-count-valid-word-occurrences](https://github.com/AkshatSinghNayal/leetcode/tree/master/3926-count-valid-word-occurrences) |
+| [3934-smallest-unique-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/3934-smallest-unique-subarray) |
 | [3936-split-array-by-prime-indices](https://github.com/AkshatSinghNayal/leetcode/tree/master/3936-split-array-by-prime-indices) |
 | [3942-minimum-operations-to-sort-a-permutation](https://github.com/AkshatSinghNayal/leetcode/tree/master/3942-minimum-operations-to-sort-a-permutation) |
 | [3946-maximum-number-of-items-from-sale-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3946-maximum-number-of-items-from-sale-i) |
@@ -919,6 +921,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3635-earliest-finish-time-for-land-and-water-rides-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3635-earliest-finish-time-for-land-and-water-rides-ii) |
 | [3733-minimum-time-to-complete-all-deliveries](https://github.com/AkshatSinghNayal/leetcode/tree/master/3733-minimum-time-to-complete-all-deliveries) |
 | [3932-count-k-th-roots-in-a-range](https://github.com/AkshatSinghNayal/leetcode/tree/master/3932-count-k-th-roots-in-a-range) |
+| [3934-smallest-unique-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/3934-smallest-unique-subarray) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -1727,12 +1730,14 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
+| [3934-smallest-unique-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/3934-smallest-unique-subarray) |
 ## Hash Function
 |  |
 | ------- |
 | [0705-design-hashset](https://github.com/AkshatSinghNayal/leetcode/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/AkshatSinghNayal/leetcode/tree/master/0706-design-hashmap) |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
+| [3934-smallest-unique-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/3934-smallest-unique-subarray) |
 ## Monotonic Queue
 |  |
 | ------- |
@@ -1953,4 +1958,8 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [0480-sliding-window-median](https://github.com/AkshatSinghNayal/leetcode/tree/master/0480-sliding-window-median) |
+## Suffix Array
+|  |
+| ------- |
+| [3934-smallest-unique-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/3934-smallest-unique-subarray) |
 <!---LeetCode Topics End-->
