@@ -1962,4 +1962,8 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 |  |
 | ------- |
 | [3934-smallest-unique-subarray](https://github.com/AkshatSinghNayal/leetcode/tree/master/3934-smallest-unique-subarray) |
+## Quicksort
+|  |
+| ------- |
+| [0056-merge-intervals](https://github.com/AkshatSinghNayal/leetcode/tree/master/0056-merge-intervals) |
 <!---LeetCode Topics End-->
