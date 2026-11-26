@@ -858,6 +858,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/AkshatSinghNayal/leetcode/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/AkshatSinghNayal/leetcode/tree/master/3172-divisible-and-non-divisible-sums-difference) |
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/AkshatSinghNayal/leetcode/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
+| [3360-stone-removal-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/3360-stone-removal-game) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/AkshatSinghNayal/leetcode/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3622-check-divisibility-by-digit-sum-and-product](https://github.com/AkshatSinghNayal/leetcode/tree/master/3622-check-divisibility-by-digit-sum-and-product) |
 | [3629-minimum-jumps-to-reach-end-via-prime-teleportation](https://github.com/AkshatSinghNayal/leetcode/tree/master/3629-minimum-jumps-to-reach-end-via-prime-teleportation) |
@@ -1264,6 +1265,7 @@ A collection of LeetCode questions to ace the coding interview! - Created By  [A
 | [2946-matrix-similarity-after-cyclic-shifts](https://github.com/AkshatSinghNayal/leetcode/tree/master/2946-matrix-similarity-after-cyclic-shifts) |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3069-distribute-elements-into-two-arrays-i) |
 | [3226-minimum-number-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/3226-minimum-number-game) |
+| [3360-stone-removal-game](https://github.com/AkshatSinghNayal/leetcode/tree/master/3360-stone-removal-game) |
 | [3477-fruits-into-baskets-ii](https://github.com/AkshatSinghNayal/leetcode/tree/master/3477-fruits-into-baskets-ii) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/AkshatSinghNayal/leetcode/tree/master/3653-xor-after-range-multiplication-queries-i) |
 | [3834-merge-adjacent-equal-elements](https://github.com/AkshatSinghNayal/leetcode/tree/master/3834-merge-adjacent-equal-elements) |
