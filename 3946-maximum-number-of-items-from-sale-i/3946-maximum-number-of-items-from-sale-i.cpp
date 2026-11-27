@@ -1,56 +1,48 @@
 class Solution {
 public:
 
-    int dp[1001][1501][2]; 
+    int dp[1001][1501][2];  
 
-    int solve(int idx ,vector<vector<int>>& items,unordered_map<int,int>&mp, int amount , int yes){
-        //base
-        if(idx < 0 ) return 0;
+    int solve(vector<vector<int>>& items , int budget , int i , bool bought , unordered_map<int,int>& mp , int n ){
+        if(i>=n or budget == 0) return 0; 
 
-        if(dp[idx][amount][yes] != -1 ) return dp[idx][amount][yes]; 
+        if(dp[i][budget][bought]!=-1) return dp[i][budget][bought]; 
 
-        int take = 0;
+        int take =0 ; 
+        if( items[i][1] <= budget ){
+            if(bought){
+                take =1+mp[i]+solve(items, max(0 , budget-items[i][1]) , i , false , mp , n ); 
+            }   
+            else{
+                take = 1+solve(items, max(0 , budget-items[i][1]) , i , false , mp , n );
+            }
+            take = max(take ,1+solve(items, max(0 , budget-items[i][1]) , i+1 , true , mp , n )); 
 
-        if (yes) {
-            take = (amount >= items[idx][1]) ? mp[idx] + 1 + solve(idx, items, mp, amount - items[idx][1], 1 - yes) : 0;
         }
-        else {
-            take = (amount >= items[idx][1]) ? 1 + solve(idx, items, mp, amount - items[idx][1], yes) : 0;
-            // int another = (amount >= items[idx][1]) ? 1 + solve(idx-1, items, mp, amount - items[idx][1], 1-yes) : 0;
-            // take = max(take, another);
-        }
+        int notTake = solve(items,budget , i+1 , true , mp , n ); 
 
-        int notTake = max(solve( idx-1 , items , mp , amount, yes),solve(idx-1,items,mp,amount,1-yes));
 
-        return dp[idx][amount][yes] = max(take,notTake);
+        return dp[i][budget][bought] = max(take , notTake ); 
+
     }
 
     int maximumSaleItems(vector<vector<int>>& items, int budget) {
-        unordered_map<int,int>mp;
         int n = items.size();
+        unordered_map<int,int>mp; 
         
-
-        for(int i = 0;i<n; i++ ){
-            int ele = items[i][0]; 
-            for(int j =0;j<n; j++ ){
+        for(int i =0 ;i<n; i++ ){
+            int ele = items[i][0];
+            int count = 0; 
+            for(int j = 0; j<n; j++ ){
                 if(i==j) continue;
-                mp[i]+= ( items[j][0] % ele == 0 ) ? 1 : 0; 
+                if( items[j][0]%ele == 0 ) count++; 
             }
+            mp[i] = count;
         }
 
-        // for(auto& it : items){
-        //     cout<< it[0] << "->" << it[1] <<endl;
-        // }
+        memset(dp,-1 , sizeof(dp)); 
 
-        memset(dp,-1,sizeof(dp)); 
-
-        // for(auto&[ele , count] : mp ){
-        //     cout<< ele <<"->" << count << endl;
-        // }
-
-        return solve(n-1,items,mp,budget,1);
-
-
-        return  0; 
+        return solve(items , budget , 0 , true , mp , n); 
+        
     }
 };
